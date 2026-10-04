@@ -1,6 +1,6 @@
 # Temporal Fields 4D Gaussian Splatting (TF4DGS): Project memory
 
-Last updated: 2026-10-03 (America/New_York)
+Last updated: 2026-10-04 (America/New_York)
 
 ## Project identity
 
@@ -22,7 +22,10 @@ published the packaging fix on `tf4dgs` at `b4e26dc929d23ad8c4cc266e61eb8bf7334e
 and switched the submodule URL to the fork. The user pushed initial TF4DGS
 commit `8e826bd113158a71ed8ab3d15e31335572ed91be` to private `NijatM/TF4DGS`;
 local `main` tracks `origin/main`. Git setup/publication is complete. Next is
-real static capture and reconstruction quality validation.
+real static capture and reconstruction quality validation. The first real
+dataset has now passed model parsing, fresh GUI loading and one full-resolution
+GPU training iteration; full training and visual quality assessment remain.
+See the real-dataset checkpoint below before repeating dataset preparation.
 The user handles all commits/pushes; provide VS Code terminal commands and
 commit messages, including for source forks. See `GIT_SETUP.md` and the latest
 Git checkpoint below.
@@ -53,6 +56,9 @@ or installed. Update this file before any required restart. The earlier requeste
 `grill-me` / `grilling` skill installation is complete.
 
 ## User's intended sequence
+
+The classic static COLMAP GUI -> dataset export -> LichtFeld GUI training,
+viewing and export workflow must remain available after later 4D modifications.
 
 1. Understand and agree on the project scope through questions.
 2. When the user asks, write a clean installation Markdown guide in this folder.
@@ -989,3 +995,53 @@ stable baseline, not a requirement to record every later documentation commit.
 No Git setup step remains to repeat. Next project phase is the first real
 static capture/reconstruction quality check in Section 7 of `INSTALLATION.md`.
 The assistant has performed no commits or pushes.
+
+## First real static dataset and import recovery: 2026-10-04
+
+- Capture: DJI Osmo Action 6, Standard (Dewarp) view, as confirmed by the user.
+  There are 128 JPEG frames, all 3840 x 2160. The user explicitly requests
+  full-resolution training. Start with shared PINHOLE intrinsics and SIFT.
+- Initial reconstruction was attempted before matching; read-only database
+  inspection found 128 feature/descriptor entries and zero matched pairs.
+  The user subsequently completed matching and reconstruction.
+- COLMAP's real-model analysis reports 128/128 registered images and frames,
+  one camera, 52,553 points, 345,025 observations, mean track length 6.565277,
+  and mean reprojection error 0.745140 px. These checks do not establish final
+  Gaussian rendering quality.
+- Undistortion originally landed in
+  `data/static_desk_001/sparse/0/undistorted`. The intended dataset root was
+  empty, then absent during preparation. Copied the original dataset into
+  `data/static_desk_001/undistorted`, preserving the nested original, and copied
+  its five binary model files into `undistorted/sparse/0`. All 128 image files
+  are present; copied model files match originals byte for byte. The corrected
+  camera dimensions remain 3840 x 2160.
+- The user's saved configuration at
+  `data/static_desk_001/run_01/training_config.json` allows 5,000,000 Gaussians.
+  Created a separate retry configuration at
+  `outputs/static_desk_001/run_01/training_config_4k_1m.json`: 30,000 iterations,
+  MRNF, 1,000,000 maximum Gaussians, SH degree 3, resize factor 1, no width cap,
+  and checkpoint steps 10,000/20,000/30,000. Original configuration preserved.
+- The user encountered an import error classified as corrupted data, wrapping
+  `CUDA out of memory: failed to allocate 630636 bytes`. The original GUI
+  failure's exact cause has not been isolated. About 11.7 GiB GPU memory was
+  free after the failure; the small allocation error alone does not prove the
+  4K dataset exceeds VRAM or that its files are corrupt.
+- A fresh headless diagnostic completed exactly one real-data GPU training
+  iteration with MRNF, SH3, 1M capacity and resize factor 1. Decoder logs
+  confirm 3840x2160 -> 3840x2160; training completed successfully, with a
+  diagnostic PLY and checkpoint. Artifacts/logs are ignored under
+  `.local/build/real-dataset-import-e3248456c565462caf9e022968a6ad33`.
+- A separate fresh GUI successfully loaded 52,553 points and all 128 views;
+  no CUDA allocation/import error appeared in its log. Training was not
+  started in that GUI. Its ignored logs are under
+  `.local/build/real-dataset-gui-6cb649e2e30548c9a0858098a77a8374`. Both diagnostic
+  processes had exited when checked. The assistant did not close the user's
+  applications, restart Windows, commit, push, or modify source submodules.
+- Next user action: open a fresh LichtFeld instance; import the prepared retry
+  config; import the absolute dataset root
+  `C:\Users\mnijat\Desktop\Git\TF4DGS\data\static_desk_001\undistorted`; set
+  output to `C:\Users\mnijat\Desktop\Git\TF4DGS\outputs\static_desk_001\run_01`;
+  disable downscaling and verify resize factor 1, then train and assess the
+  result. A long training run was not started by the assistant. Avoid relative
+  output paths that resolve inside the model directory. Data, configs, logs
+  and training results in these locations remain excluded from Git.
