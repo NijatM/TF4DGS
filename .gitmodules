@@ -1,0 +1,6 @@
+[submodule "lichtfeld"]
+	path = .local/src/LichtFeld-Studio
+	url = https://github.com/NijatM/LichtFeld-Studio.git
+[submodule "vcpkg"]
+	path = .local/src/vcpkg
+	url = https://github.com/microsoft/vcpkg.git

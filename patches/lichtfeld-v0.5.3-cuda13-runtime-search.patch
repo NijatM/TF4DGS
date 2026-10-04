@@ -1,0 +1,14 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -1156,6 +1156,10 @@ if(BUILD_PORTABLE)
+             "${CMAKE_BINARY_DIR}/external/nvImageCodec"
+             "${CUDAToolkit_BIN_DIR}"
+             "${CUDAToolkit_LIBRARY_DIR}")
++    # CUDA 13 Windows runtime DLLs also live under bin/x64.
++    if(WIN32 AND EXISTS "${CUDAToolkit_BIN_DIR}/x64")
++        list(APPEND _RUNTIME_SEARCH_DIRS "${CUDAToolkit_BIN_DIR}/x64")
++    endif()
+     if(DEFINED VCPKG_TARGET_TRIPLET)
+         list(APPEND _RUNTIME_SEARCH_DIRS
+                 "${CMAKE_BINARY_DIR}/vcpkg_installed/${VCPKG_TARGET_TRIPLET}/bin"

@@ -1,0 +1,748 @@
+﻿{
+    "project":  "TF4DGS",
+    "generated_utc":  "2026-10-04T01:56:07.8949369Z",
+    "source_commit":  "d8c50c6a3e2273cb74130a6e9023de8d068af52d",
+    "vcpkg_tool_commit":  "930ecc42b512b564571d767f70775d284a6fa307",
+    "vcpkg_manifest_baseline":  "c3867e714dd3a51c272826eea77267876517ed99",
+    "target_triplet":  "x64-windows",
+    "package_count":  92,
+    "note":  "Resolved installed core packages for this native build; version pins are defined by the recorded source manifest and vcpkg registry revisions.",
+    "packages":  [
+                     {
+                         "name":  "args",
+                         "version":  "6.4.8",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "cbb0b3c80d52bd134183b92d82152e6263c3ca6e56e0c6ecc4f9bde562949975",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "assimp",
+                         "version":  "6.0.4",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "5dbcfc4c9813bee9ece8bef086ca57fd41287072e5e8db60241f51f3ff4d156d",
+                         "dependencies":  "draco, jhasse-poly2tri, kubazip, minizip, polyclipping, pugixml, rapidjson, stb, utfcpp, vcpkg-cmake, vcpkg-cmake-config, zlib"
+                     },
+                     {
+                         "name":  "boost-assert",
+                         "version":  "1.90.0",
+                         "port_version":  "1",
+                         "triplet":  "x64-windows",
+                         "abi":  "0cfc78e2bf733ec23df5dd83b42b9311a32640b44e1d6ccbd0330178f71be730",
+                         "dependencies":  "boost-cmake, boost-config, boost-headers"
+                     },
+                     {
+                         "name":  "boost-cmake",
+                         "version":  "1.90.0",
+                         "port_version":  "1",
+                         "triplet":  "x64-windows",
+                         "abi":  "ea23c1cae41e6312d62e61d63de5177363cd584d0ccc23f09bd70829ec668597",
+                         "dependencies":  "boost-uninstall, vcpkg-boost"
+                     },
+                     {
+                         "name":  "boost-concept-check",
+                         "version":  "1.90.0",
+                         "port_version":  "1",
+                         "triplet":  "x64-windows",
+                         "abi":  "4246d414a8db84f231b221a7d7a8da2908856a6cd9cc3822a18bdb4fa2173c7f",
+                         "dependencies":  "boost-cmake, boost-config, boost-headers, boost-preprocessor, boost-static-assert, boost-type-traits"
+                     },
+                     {
+                         "name":  "boost-config",
+                         "version":  "1.90.0",
+                         "port_version":  "1",
+                         "triplet":  "x64-windows",
+                         "abi":  "2ce84898ddaef600b11808eca5de3749094dfeb5a194fdd63b70ac82e63f4689",
+                         "dependencies":  "boost-cmake, boost-headers"
+                     },
+                     {
+                         "name":  "boost-core",
+                         "version":  "1.90.0",
+                         "port_version":  "1",
+                         "triplet":  "x64-windows",
+                         "abi":  "9aa1b98e142473e8c042cbf345dccebeb7c4cc874a61720e40e3633874a7377e",
+                         "dependencies":  "boost-assert, boost-cmake, boost-config, boost-headers, boost-throw-exception"
+                     },
+                     {
+                         "name":  "boost-headers",
+                         "version":  "1.90.0",
+                         "port_version":  "1",
+                         "triplet":  "x64-windows",
+                         "abi":  "f0431ef384b2dd479888ca0a620222eda26023c6729f13d554f6109750c3f80b",
+                         "dependencies":  "boost-cmake"
+                     },
+                     {
+                         "name":  "boost-predef",
+                         "version":  "1.90.0",
+                         "port_version":  "1",
+                         "triplet":  "x64-windows",
+                         "abi":  "9b79901b392175595f1be8cecd322a640279a1ea18df9d3937ce83c4ae21cd39",
+                         "dependencies":  "boost-cmake, boost-config, boost-headers"
+                     },
+                     {
+                         "name":  "boost-preprocessor",
+                         "version":  "1.90.0",
+                         "port_version":  "1",
+                         "triplet":  "x64-windows",
+                         "abi":  "3e3be35be28f3e893106a696005f3770c5d2ae6bc36f8fe23eabc0dd26e697f5",
+                         "dependencies":  "boost-cmake, boost-config, boost-headers"
+                     },
+                     {
+                         "name":  "boost-regex",
+                         "version":  "1.90.0",
+                         "port_version":  "1",
+                         "triplet":  "x64-windows",
+                         "abi":  "3b457fb1a36c90ec7e36e1e929e9b444d58f8a65771077c1bc5edd9d5eca12c1",
+                         "dependencies":  "boost-assert, boost-cmake, boost-concept-check, boost-config, boost-core, boost-headers, boost-predef, boost-static-assert, boost-throw-exception, boost-type-traits"
+                     },
+                     {
+                         "name":  "boost-static-assert",
+                         "version":  "1.90.0",
+                         "port_version":  "1",
+                         "triplet":  "x64-windows",
+                         "abi":  "e583ba205259ee54058fc8a31bb0b0be2258cb94b47baa41ecda41081bbdf504",
+                         "dependencies":  "boost-cmake, boost-config, boost-headers"
+                     },
+                     {
+                         "name":  "boost-throw-exception",
+                         "version":  "1.90.0",
+                         "port_version":  "1",
+                         "triplet":  "x64-windows",
+                         "abi":  "87a379a9fc7752c6277d5fdef1e7d4025239eee98ba3805069db6de1ab3692b1",
+                         "dependencies":  "boost-assert, boost-cmake, boost-config, boost-headers"
+                     },
+                     {
+                         "name":  "boost-type-traits",
+                         "version":  "1.90.0",
+                         "port_version":  "1",
+                         "triplet":  "x64-windows",
+                         "abi":  "81eef07261880cae1f324306b940e8fca5153e11b53d5cdac6dfc304845228f0",
+                         "dependencies":  "boost-cmake, boost-config, boost-headers, boost-static-assert"
+                     },
+                     {
+                         "name":  "boost-uninstall",
+                         "version":  "1.90.0",
+                         "port_version":  "1",
+                         "triplet":  "x64-windows",
+                         "abi":  "23a419c66d737535fd3e769af78a1bcc5dfd7d5ed7a77c514d8b1b41d75d2c31",
+                         "dependencies":  null
+                     },
+                     {
+                         "name":  "brotli",
+                         "version":  "1.2.0",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "b2cd4d38a3d4ad1eebaa147d5abb15f9357406c62cf9c4c814a8d66c8a24187a",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "bzip2",
+                         "version":  "1.0.8",
+                         "port_version":  "6",
+                         "triplet":  "x64-windows",
+                         "abi":  "eb297b9233763811b324a22281134b9e85f8f52ecead8da6e32ee4335951a516",
+                         "dependencies":  "vcpkg-cmake"
+                     },
+                     {
+                         "name":  "cppzmq",
+                         "version":  "4.11.0",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "6655651d86f1d1d64f185c7b65ba2532aa6df5cea40b712d34411fa26531836d",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config, zeromq"
+                     },
+                     {
+                         "name":  "draco",
+                         "version":  "1.5.7",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "eed2aba2b91abd3f0791902a93a299190e02aa5f220e04095ae6b4aa0fc4c61b",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "expat",
+                         "version":  "2.7.4",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "739ef66a5b539a75432d58a0fd964f29bfba1cd1ed194016957d5ee19b27de1a",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "ffmpeg",
+                         "version":  "8.0.1",
+                         "port_version":  "2",
+                         "triplet":  "x64-windows",
+                         "abi":  "91659f7a8e94cf6a7449c1c4e5cc3d8fa3579a51ab8d53d8be2054a9646ae924",
+                         "dependencies":  "ffmpeg-bin2c, vcpkg-cmake-get-vars, vcpkg-pkgconfig-get-modules"
+                     },
+                     {
+                         "name":  "ffmpeg-bin2c",
+                         "version":  "8.0.1",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "8b0559cab6a5835d73cba01fe61eb1a8bcb7717b98ffb63fbd94c916e65cc371",
+                         "dependencies":  "vcpkg-cmake"
+                     },
+                     {
+                         "name":  "ffnvcodec",
+                         "version":  "13.0.19.0",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "344172691e99e27dde64f571d3c93270c1772699dbe5292fc8633f7d2babcda5",
+                         "dependencies":  null
+                     },
+                     {
+                         "name":  "fmt",
+                         "version":  "12.1.0",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "7c5e0a1ba8988a5266a48003af81ba3d3438c77526dbd601e077362692cec0d1",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "freetype",
+                         "version":  "2.13.3",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "b5e09934d4baffacb5b983b46db63519dc14ec8e533652633be5ef2ddc4a8748",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "glm",
+                         "version":  "1.0.3",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "3f15f6497d6856fb930dff5b000ff98960fdb8160b9542126a7d635a004956b5",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "glslang",
+                         "version":  "16.2.0",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "1c2478053480c6577dbb4fa28554ff89681560c5130e49af6cdb12f716f84844",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "gtest",
+                         "version":  "1.17.0",
+                         "port_version":  "2",
+                         "triplet":  "x64-windows",
+                         "abi":  "4741c86a036d7fb8dc522d6c1283e2bdc2b271de0948111611c19e2f2f0be3fa",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "hwloc",
+                         "version":  "2.11.2",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "e179f9f0424c6a5c9d99bd4d2e50d7cb81343393f0f2300925f54c9083fd2e93",
+                         "dependencies":  null
+                     },
+                     {
+                         "name":  "imath",
+                         "version":  "3.2.2",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "4d79f12184dd44b6e1655974e68866a47dc02b38591243ee0786a72d41f3055c",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "imgui",
+                         "version":  "1.92.6",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "8b81ea89f1c2ec120e2f6e904bd0bdc41b83f4ac6628a5aa405d748ce4e137b8",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "implot",
+                         "version":  "0.17",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "37dce21c47cdb42e12189e3a0feeae1ea706b3e4ae8f91c77180c55f1bd7339e",
+                         "dependencies":  "imgui, vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "itlib",
+                         "version":  "1.12.1",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "80f532c2b10a85f82083ad55a652f18186791b00c5ce336c666edfb87dacb466",
+                         "dependencies":  null
+                     },
+                     {
+                         "name":  "jhasse-poly2tri",
+                         "version":  "2023-12-27",
+                         "port_version":  "2",
+                         "triplet":  "x64-windows",
+                         "abi":  "99d96259c16c532693e0eb649dc434b9af2ed0cab88f40658a40d80f6564cb3c",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "kubazip",
+                         "version":  "0.3.6",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "30ee6fe9a95503fef4377f102259afb12553f7f8e15b00629a9d3e744bbc7dbd",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "libarchive",
+                         "version":  "3.8.6",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "eff6e6b1f2a13986429c69f28b2a3ff49132c5012d7b53611af1d5fef1a1ea9a",
+                         "dependencies":  "vcpkg-cmake, zlib"
+                     },
+                     {
+                         "name":  "libdeflate",
+                         "version":  "1.25",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "198676989d80dae72b5c9801baf83f18a733c06052c93429dbfb54a54f815830",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "libffi",
+                         "version":  "3.5.2",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "1184128f46275f037e72c4c4217f2d6e313b8be45dcc02d12e2c108f6c8a2bfb",
+                         "dependencies":  "vcpkg-cmake-get-vars, vcpkg-make"
+                     },
+                     {
+                         "name":  "libjpeg-turbo",
+                         "version":  "3.1.3",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "3a8755f3e197a32a0e634893288c06a736abdb4738fe89b4e93dad5512e7eaac",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "liblzma",
+                         "version":  "5.8.2",
+                         "port_version":  "1",
+                         "triplet":  "x64-windows",
+                         "abi":  "90e851989cfaa3cdd87f36cfca4105c6ec1bf070c0fd46f8dfec7e76226b15f3",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "libpng",
+                         "version":  "1.6.55",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "232e6d1cd2285d7e6e58bf61ad4f89e5eb0d2e8eb9d814a01f942da2ad671bb8",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config, zlib"
+                     },
+                     {
+                         "name":  "libwebp",
+                         "version":  "1.6.0",
+                         "port_version":  "2",
+                         "triplet":  "x64-windows",
+                         "abi":  "cb566f34fc8f55d95d7ffdd9ed8c796cd48871910bf25df1c68c12efeb5eaea5",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "lunasvg",
+                         "version":  "3.5.0",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "f9fa532250121a9fce5286874508591325fa902e12e7983f8e44e31dada6f01a",
+                         "dependencies":  "plutovg, vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "lz4",
+                         "version":  "1.10.0",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "38ed39a5d01ef27596a6d036ac26a7fcc84d782eadeac92f1bb88d7fde9750e9",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "minizip",
+                         "version":  "1.3.1",
+                         "port_version":  "1",
+                         "triplet":  "x64-windows",
+                         "abi":  "43f17192415fd6fba7aa8d8620983cff5330653bad81af81c64b6596ae5f54ea",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config, vcpkg-cmake-get-vars, zlib"
+                     },
+                     {
+                         "name":  "minizip-ng",
+                         "version":  "4.1.0",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "f8f39412a6b01f0fc820d5740c8b361c6b6775ae2122462828b4efde79b722f7",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "nanobind",
+                         "version":  "2.12.0",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "5df315a5ee3f4b665a7a6700c526d8f09795771229c76b7d2b8986fbdc571bb7",
+                         "dependencies":  "python3, robin-map, vcpkg-cmake"
+                     },
+                     {
+                         "name":  "nativefiledialog-extended",
+                         "version":  "1.3.0",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "f4b30468a213b71f415f503ea0049bfe2b2b6f42a811df24c479255797e6023a",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "nlohmann-json",
+                         "version":  "3.12.0",
+                         "port_version":  "2",
+                         "triplet":  "x64-windows",
+                         "abi":  "1c29a81d30a02abe789c25cb484e7cd44e1a983bb229c186af843ca341356114",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "opencolorio",
+                         "version":  "2.5.1",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "c0e1a569014463933f121617b160a7a215d798d90d74f6a9c29fed4e6b624bde",
+                         "dependencies":  "expat, imath, minizip-ng, pystring, vcpkg-cmake, vcpkg-cmake-config, yaml-cpp"
+                     },
+                     {
+                         "name":  "openexr",
+                         "version":  "3.4.7",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "e5bc84caf2da3b57a1835b537bdc51f8f82dcc8978567e9ae398e0bc9ed2a858",
+                         "dependencies":  "imath, libdeflate, openjph, vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "openimageio",
+                         "version":  "3.0.9.1",
+                         "port_version":  "3",
+                         "triplet":  "x64-windows",
+                         "abi":  "519ab990fcea1b0cfcfc7f547b27213fda3822de3ba2416b5a3b84e8322c445b",
+                         "dependencies":  "fmt, libjpeg-turbo, libpng, opencolorio, openexr, robin-map, tiff, vcpkg-cmake, vcpkg-cmake-config, zlib"
+                     },
+                     {
+                         "name":  "openjph",
+                         "version":  "0.26.3",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "d46108693c8056bfdb2b6dd37b35880902b38dd2dfa1703e27eed2f2beef3308",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "openssl",
+                         "version":  "3.6.1",
+                         "port_version":  "3",
+                         "triplet":  "x64-windows",
+                         "abi":  "0a840d3d33848b16a3cb67c4a86f584bd9dc0897f5ed4551d37198800d933808",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config, vcpkg-cmake-get-vars"
+                     },
+                     {
+                         "name":  "pkgconf",
+                         "version":  "2.5.1",
+                         "port_version":  "4",
+                         "triplet":  "x64-windows",
+                         "abi":  "66be6cad3c94f2b8a90c6b8907d6da1bae9c1337e378e5da4bbf57fa64452485",
+                         "dependencies":  "vcpkg-tool-meson"
+                     },
+                     {
+                         "name":  "plutovg",
+                         "version":  "1.3.2",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "eac6abf1492b89d73752bd82f6196d57f3ac4a83f15820d35d52dc342e27319f",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "polyclipping",
+                         "version":  "6.4.2",
+                         "port_version":  "13",
+                         "triplet":  "x64-windows",
+                         "abi":  "a9ae59e2abf8d5184791d87cfa4444b3620d87b1542c75171fda09b0bd560250",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "pugixml",
+                         "version":  "1.15",
+                         "port_version":  "1",
+                         "triplet":  "x64-windows",
+                         "abi":  "4cad665af8f5faa14f920626fba20c56b1d6bd3e1196240ef34bfd05cb7e9a63",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "pystring",
+                         "version":  "1.1.4",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "719793aacf2eae26be5033ad496b917d8bb5473797082489725439321906c1a0",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "python3",
+                         "version":  "3.12.13",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "a016e8b626b1173a705a57ab07d32303f70410c05f5f080bb5a0c7441aba21a3",
+                         "dependencies":  "vcpkg-get-python, vcpkg-msbuild, zlib"
+                     },
+                     {
+                         "name":  "rapidjson",
+                         "version":  "2025-02-26",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "773301bf58a3645e48ad7a0968c800bf826f4236f249c9865c4519370ff1e691",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "rmlui",
+                         "version":  "6.2",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "6d261e8c55a3d5d3e82584f4f77f4a9eb2a936560f71db78711573e307372ec9",
+                         "dependencies":  "itlib, robin-hood-hashing, vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "robin-hood-hashing",
+                         "version":  "3.11.5",
+                         "port_version":  "2",
+                         "triplet":  "x64-windows",
+                         "abi":  "9997a7a4c91ee9a3a4c34dfa399e6709c0f784bc6017dc48b09e95e909a61554",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "robin-map",
+                         "version":  "1.4.1",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "14482163f403f215175a28adc2ceb99b03b3751cbeced898c770b862b2437dc5",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "sdl3",
+                         "version":  "3.4.2",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "3242feb2636bff353d2eee1f681f2c16d2e7121944e8c8f3fd2bec0771c02ed9",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "shader-slang",
+                         "version":  "2026.5",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "0d1e9697b4b5ca95ed786d0c83fb3fe47aa70d2aa5fc3e3dc0643b0cb8808dab",
+                         "dependencies":  "vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "spdlog",
+                         "version":  "1.17.0",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "afbf5220d4de0b3525bdf4afc5bfe332cc76aaee6ecf9f2996906383cb47c74e",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "sqlite3",
+                         "version":  "3.52.0",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "12d85d6e6eb123bf7b01d2206fdd1373771e7d73098771cdd26b2be08c43e44f",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "stb",
+                         "version":  "2024-07-29",
+                         "port_version":  "1",
+                         "triplet":  "x64-windows",
+                         "abi":  "c3679e2cb7576be96b7c81a9667cd475e360052e712f56c4914028ab9d33c835",
+                         "dependencies":  null
+                     },
+                     {
+                         "name":  "tbb",
+                         "version":  "2022.3.0",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "eac774113284617a641ca2aa0e8748c841598a5334726127e5b35ff0ae0cd52f",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "tiff",
+                         "version":  "4.7.1",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "e81edeeb00b1e969f6adb4786360522cc31b809f08b735622de0284097d37670",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "usd",
+                         "version":  "26.3",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "e0068a010f4bd2552961307238cbd7456c48ad8931fbc1f762a0bf54bc5d515f",
+                         "dependencies":  "tbb, vcpkg-cmake, vcpkg-cmake-config, zlib"
+                     },
+                     {
+                         "name":  "utfcpp",
+                         "version":  "4.0.9",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "5cbabf82995de661cd28b69ea89b523459f2decff5beff75c6bfb1ecef1c7268",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "vcpkg-boost",
+                         "version":  "2025-03-29",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "379d08b15e2fc1899973c0a219180a8145510e1674fea3b3377977a88c84f6f3",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "vcpkg-cmake",
+                         "version":  "2024-04-23",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "36b3428a8fc9a8479a70d6bf1b94ec76308436019f2685b27841ea4d750bafa1",
+                         "dependencies":  null
+                     },
+                     {
+                         "name":  "vcpkg-cmake-config",
+                         "version":  "2024-05-23",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "56dbbad2fe59c538169daf021f3afb308ef085321ab7d434d12103bd94875f0f",
+                         "dependencies":  null
+                     },
+                     {
+                         "name":  "vcpkg-cmake-get-vars",
+                         "version":  "2025-05-29",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "4bf5a8b4708485e897ca1875af0c9490c464f338845175ac4021e0effa71eda1",
+                         "dependencies":  "vcpkg-cmake"
+                     },
+                     {
+                         "name":  "vcpkg-get-python",
+                         "version":  "2025-02-09",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "1fdf62e1fc81a2bd42b04a84e85a686bff25c8110fe63aec622363b1cc077a89",
+                         "dependencies":  null
+                     },
+                     {
+                         "name":  "vcpkg-make",
+                         "version":  "2026-01-01",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "4c1b2ef74a3a630cd6e6236c56b1b7b15e100bf7c994368fb1eda87d9c3c4d6c",
+                         "dependencies":  "vcpkg-cmake-get-vars"
+                     },
+                     {
+                         "name":  "vcpkg-msbuild",
+                         "version":  "2023-08-08",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "9a64d68d5ab2e1d120ee41500d981314af87e871b95d9d9ae9423d155034d02c",
+                         "dependencies":  "vcpkg-cmake-get-vars, vcpkg-pkgconfig-get-modules"
+                     },
+                     {
+                         "name":  "vcpkg-pkgconfig-get-modules",
+                         "version":  "2024-04-03",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "a989f2a7b082ea6bc188eeeec30695d9d52cc1bd2c006ca26e5f473a1fc21b65",
+                         "dependencies":  "pkgconf"
+                     },
+                     {
+                         "name":  "vcpkg-tool-meson",
+                         "version":  "1.9.0",
+                         "port_version":  "4",
+                         "triplet":  "x64-windows",
+                         "abi":  "7af8ce2fb8b6f2d75575939799dbfa2a9ca37add536bf77928eb6e68e52e3cae",
+                         "dependencies":  "vcpkg-cmake-get-vars"
+                     },
+                     {
+                         "name":  "volk",
+                         "version":  "1.4.341.0",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "b5d1b28e8fbfcc9b1485ec01229d1efd3df1dcb057d7095f9f98254d7f14d838",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config, vulkan-headers"
+                     },
+                     {
+                         "name":  "vulkan",
+                         "version":  "2023-12-17",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "76ab16c25fbfdf3ad172e14b9278bb8a55c9f07ff7a60a7de3099da12347d5ce",
+                         "dependencies":  "vcpkg-cmake, vulkan-headers, vulkan-loader"
+                     },
+                     {
+                         "name":  "vulkan-headers",
+                         "version":  "1.4.341.0",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "f3b13c081327ec6ff08bc33ceed7b9c553b638b116e5a845e62dcc25a26c1863",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "vulkan-loader",
+                         "version":  "1.4.341.0",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "8baffe9d671c32a5448cb9e60e4f44ed428d8a0b74483a34e82c74c14890689a",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config, vulkan-headers"
+                     },
+                     {
+                         "name":  "vulkan-memory-allocator",
+                         "version":  "3.3.0",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "cb243d98414d3a6432b33baab3b88322b8f23a075a0cc58b2677e327f6c89fc2",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "x264",
+                         "version":  "0.164.3108",
+                         "port_version":  "2",
+                         "triplet":  "x64-windows",
+                         "abi":  "f842e402ec33842f0bc7af6377f31fc79090aed629de9443be509198f546fda3",
+                         "dependencies":  "vcpkg-make"
+                     },
+                     {
+                         "name":  "yaml-cpp",
+                         "version":  "0.9.0",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "1bb68d82c9ce1a8e2484c429f8a44583d133a91e0b043f73be5fe5dcf51728f2",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "zeromq",
+                         "version":  "4.3.5",
+                         "port_version":  "3",
+                         "triplet":  "x64-windows",
+                         "abi":  "ef5b90b62195598a5a6841811c92489fa1c9bd1e3385b426bab1fa9df1b8d633",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     },
+                     {
+                         "name":  "zlib",
+                         "version":  "1.3.1",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "8a8331e8a244fbd6541eb68ae99bb323549cd0afad8a07cc68c251fd4cd1b23d",
+                         "dependencies":  "vcpkg-cmake"
+                     },
+                     {
+                         "name":  "zstd",
+                         "version":  "1.5.7",
+                         "port_version":  null,
+                         "triplet":  "x64-windows",
+                         "abi":  "9c280715591606471b529e4bd81c015a40c26d5ca6c0f6cf09a455584048016c",
+                         "dependencies":  "vcpkg-cmake, vcpkg-cmake-config"
+                     }
+                 ]
+}

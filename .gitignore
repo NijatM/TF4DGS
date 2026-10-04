@@ -1,0 +1,34 @@
+# Keep only the two registered source submodules under .local.
+# Their contents belong to their own repositories, not TF4DGS's Git history.
+/.local/*
+!/.local/src/
+/.local/src/*
+!/.local/src/LichtFeld-Studio/
+!/.local/src/vcpkg/
+
+# Captures, models, training results and environments.
+/data/
+/outputs/
+/build/
+/dist/
+/.venv/
+/.conda/
+__pycache__/
+*.py[cod]
+
+# Machine-specific snapshots; preserve summaries in PROJECT_MEMORY.md.
+/*-installation.json
+/*-validation.json
+/installation-worker.json
+/static-tools.json
+
+# Local editor settings and credentials.
+/.vscode/
+/.idea/
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+Thumbs.db
+.DS_Store
