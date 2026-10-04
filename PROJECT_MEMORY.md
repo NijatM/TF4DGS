@@ -19,8 +19,10 @@ Git preparation is complete: the local repository is initialized on `main`,
 with LichtFeld and vcpkg registered as pinned submodules at their existing
 paths. The user created private `NijatM/TF4DGS` and their LichtFeld fork,
 published the packaging fix on `tf4dgs` at `b4e26dc929d23ad8c4cc266e61eb8bf7334ede36`,
-and switched the submodule URL to the fork. The main project still has no
-commit or local remote; next is its first staging/review/commit/push.
+and switched the submodule URL to the fork. The user pushed initial TF4DGS
+commit `8e826bd113158a71ed8ab3d15e31335572ed91be` to private `NijatM/TF4DGS`;
+local `main` tracks `origin/main`. Git setup/publication is complete. Next is
+real static capture and reconstruction quality validation.
 The user handles all commits/pushes; provide VS Code terminal commands and
 commit messages, including for source forks. See `GIT_SETUP.md` and the latest
 Git checkpoint below.
@@ -961,3 +963,29 @@ add `origin` as `https://github.com/NijatM/TF4DGS.git`, then run
 The assistant performed no commits or pushes. After the user reports success,
 verify the main remote/reference and update this checkpoint before continuing
 with real static capture validation.
+
+## Initial GitHub publication completed on 2026-10-03
+
+The user successfully made and pushed TF4DGS's first commit:
+`8e826bd113158a71ed8ab3d15e31335572ed91be`, message
+`Initialize TF4DGS with pinned source submodules and reproducible Windows setup`.
+The main remote is `https://github.com/NijatM/TF4DGS.git`; branch `main` tracks
+`origin/main`. Local HEAD and the remote-tracking reference matched, and the
+working tree was clean when checked immediately after the push.
+
+The commit contains 30 entries, including two source gitlinks:
+LichtFeld fork `b4e26dc929d23ad8c4cc266e61eb8bf7334ede36` and upstream vcpkg
+`930ecc42b512b564571d767f70775d284a6fa307`. The push's submodule availability
+check passed. Its payload was 77.59 KiB; installers, apps/builds/cache/logs,
+footage, outputs and local status JSON were not included. LF/CRLF messages
+were informational text normalization warnings and did not prevent the push.
+
+Updated README, installation guide, Git guide and this checkpoint to mark
+publication complete. These documentation changes can be saved by the user's
+next commit, suggested message `Record completed GitHub publication`; no code
+or source references were changed. The initial publication hash above is a
+stable baseline, not a requirement to record every later documentation commit.
+
+No Git setup step remains to repeat. Next project phase is the first real
+static capture/reconstruction quality check in Section 7 of `INSTALLATION.md`.
+The assistant has performed no commits or pushes.

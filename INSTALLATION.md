@@ -819,8 +819,8 @@ while allowing the two source submodules:
 ```
 
 The local Git repository is initialized on `main`, with the source submodules
-registered. The user published the LichtFeld fix; the main first commit/push
-is still pending. [GIT_SETUP.md](GIT_SETUP.md)
+registered. The user published the LichtFeld fix and the main project;
+`main` tracks `origin/main`. [GIT_SETUP.md](GIT_SETUP.md)
 contains the commands for publishing the existing patch to your fork and making
 the first TF4DGS commit/push. Later clone with `--recurse-submodules`.
 

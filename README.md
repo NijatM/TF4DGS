@@ -41,7 +41,8 @@ viewer will be developed in the later project phases.
 LichtFeld and vcpkg are pinned Git submodules under `.local/src`. TF4DGS tracks
 their commit references; future trainer/viewer changes belong in your LichtFeld
 fork. The packaging fix is published in `NijatM/LichtFeld-Studio` on `tf4dgs`.
-Follow Section 3 of GIT_SETUP.md to make the first main-project commit/push.
+The main project is published to private `NijatM/TF4DGS`. See GIT_SETUP.md for
+the completed setup and recursive-clone instructions.
 
 Actual versions, paths and resumable stages are recorded in PROJECT_MEMORY.md
 and local installation JSON records. Generated tools, builds, caches, data and

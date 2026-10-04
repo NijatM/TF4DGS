@@ -3,19 +3,19 @@
 GitHub account: `NijatM`. The main repository is private `NijatM/TF4DGS`;
 the source fork is `NijatM/LichtFeld-Studio`.
 
-Current checkpoint (2026-10-03): the user installed GitHub CLI 2.102.0, logged
-in as `NijatM`, and created both GitHub repositories. The user committed and
-pushed the four-line packaging fix to the fork's `tf4dgs` branch at
-`b4e26dc929d23ad8c4cc266e61eb8bf7334ede36`, then switched the submodule URL to
-the fork. Source setup is complete. Continue at **Section 3** to stage/review
-and make TF4DGS's first commit/push. Sections 1-2 document the completed setup.
+Current checkpoint (2026-10-03): initial publication is complete. The user
+created both repositories, published the packaging fix on the fork's `tf4dgs`
+branch at `b4e26dc929d23ad8c4cc266e61eb8bf7334ede36`, and pushed TF4DGS's initial
+commit `8e826bd113158a71ed8ab3d15e31335572ed91be` to `origin/main`.
+TF4DGS records the fork URL and the tested vcpkg reference. Sections 1-3 document
+the completed initial setup; use Section 4 when cloning on another machine.
 
 The local repository has already been initialized with `git init -b main`.
 The existing LichtFeld and vcpkg checkouts are registered as submodules at their
-tested revisions. No main-project commits or pushes have been made, and the
-local main repository has no remote yet. All commands below are for the user
-to run in VS Code's
-PowerShell terminal.
+tested revisions. The local `main` branch tracks `origin/main` at
+`https://github.com/NijatM/TF4DGS.git`. All commands below are reference commands
+for the user to run in VS Code's PowerShell terminal. The assistant does not
+perform commits or pushes.
 
 ## 1. Create the GitHub repositories
 
