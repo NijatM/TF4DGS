@@ -1,0 +1,87 @@
+{
+    "status":  "unsaved_preview_awaiting_user_review",
+    "source_model":  "outputs/static_desk_002/run_01/static_desk_002_bright_rgb_1p4.ply",
+    "source_gaussians":  3000000,
+    "remaining_gaussians":  2848365,
+    "deleted_gaussians":  151635,
+    "preview_node":  "workspace_cleanup_preview",
+    "crop":  {
+                 "translation":  [
+                                     -0.02211599051952362,
+                                     -4.434183120727539,
+                                     -2.5715363025665283
+                                 ],
+                 "rotation":  [
+                                  -0.6730618476867676,
+                                  0.08721669763326645,
+                                  0.1092926412820816
+                              ],
+                 "scale":  [
+                               0.9999999403953552,
+                               1.0,
+                               0.9999999403953552
+                           ],
+                 "min":  [
+                             -6.253461837768555,
+                             -6.253461837768555,
+                             -9.380192756652832
+                         ],
+                 "max":  [
+                             6.253461837768555,
+                             6.253461837768555,
+                             9.546952247619629
+                         ],
+                 "inverse":  false,
+                 "enabled":  true,
+                 "use":  true,
+                 "show":  false,
+                 "approximate_metres":  [
+                                            3,
+                                            3,
+                                            4.5
+                                        ],
+                 "scale_reference":  "Desktop width approximately 150 cm; rough Gaussian centre picks"
+             },
+    "tensor_definitions":  {
+                               "alpha":  "get_opacity().squeeze()",
+                               "major":  "get_scaling().max(dim=1)",
+                               "bright":  "(sh0_raw.squeeze(1) * 0.28209479177387814 + 0.5).max(dim=1)",
+                               "p":  "means_raw",
+                               "height":  "-0.0002922*p[:,0] + 0.6270927*p[:,1] + 0.7789446*p[:,2]"
+                           },
+    "pass_1":  "(alpha \u003c 0.01) | ((major \u003e 1.0) \u0026 (alpha \u003c 0.2)) | ((bright \u003e 1.4) \u0026 (alpha \u003c 0.15) \u0026 (major \u003e 0.1))",
+    "pass_2":  "(alpha \u003c 0.02) | ((major \u003e 0.5) \u0026 (alpha \u003c 0.3)) | ((p[:,0] \u003c -2.5) \u0026 (height \u003e 0.0) \u0026 (height \u003c 4.5) \u0026 (bright \u003e 1.4) \u0026 (major \u003e 0.015))",
+    "pass_3_indices":  "cleanup_window_spot_indices.json",
+    "newly_deleted_each_pass":  [
+                                    51478,
+                                    99965,
+                                    192
+                                ],
+    "deletion_api":  "scene.set_selection(local_indices); lf.pipeline.edit.delete_().execute() — require preview as the only visible splat and verify selection ownership",
+    "raster_backend":  "3dgut",
+    "camera":  {
+                   "eye":  [
+                               0.9239556789398193,
+                               -1.9984432458877563,
+                               1.6748602390289307
+                           ],
+                   "target":  [
+                                  0.8068526983261108,
+                                  1.7187682390213013,
+                                  -3.638681173324585
+                              ],
+                   "up":  [
+                              0.012631157413125038,
+                              0.8194615244865417,
+                              0.5729950070381165
+                          ],
+                   "fov_degrees":  70.79472351074219
+               },
+    "constraints":  [
+                        "No cleaned PLY or scene saved",
+                        "Crop is a render filter; check eventual export separately",
+                        "Original node hidden and locked, 3M undeleted",
+                        "Original source files untouched",
+                        "Some haze and window glare remain"
+                    ]
+}

@@ -1045,3 +1045,165 @@ The assistant has performed no commits or pushes.
   result. A long training run was not started by the assistant. Avoid relative
   output paths that resolve inside the model directory. Data, configs, logs
   and training results in these locations remain excluded from Git.
+
+## Daylight dataset GUI run in progress: 2026-10-04
+
+- User authorized autonomous visible-GUI reconstruction and highest practical
+  quality training for `data/static_desk_002/images`, with screenshots of every
+  major step under `documentation/static_desk_002` and a brighter presentation.
+- All 300 JPEG frames are 3840 x 2160. Originals remain unchanged. Views cover
+  the desk, underside, floor and ceiling, not just the tabletop.
+- Visible COLMAP process 29092 is reconstructing cameras. Shared PINHOLE,
+  native-size SIFT, 16,384 feature cap, GPU 0. Extraction: 1,738,530 entries.
+  Exhaustive guided matching completed in 14.582 minutes; 9,836 verified
+  pairs and 3,986,056 inlier correspondences. All 300 images are connected.
+- Saved GUI project: `data/static_desk_002/project.ini`. Sparse export and
+  undistortion have not yet completed. Training has not started.
+- Prepared planned full-4K MRNF/SH3/3M-cap/30k PPISP configuration under
+  `outputs/static_desk_002/run_01/training_config_4k_3m_ppisp.json`, with held-out
+  evaluation every eighth image and save/eval steps 7k/15k/30k. Verify accepted
+  settings and memory use before relying on this configuration.
+- Ignored helpers/logs live under `.local/workflows/static_desk_002`.
+  `Gui-Control.ps1` operates and captures real visible windows. `Lfs-Mcp.ps1`
+  will use the visible application's local MCP interface for training and
+  screenshots. LichtFeld has not successfully launched for this dataset yet;
+  launch with both `-d` and `-o` once undistortion is complete.
+- No changes to installations or source pins; no assistant Git commits/pushes.
+  Continue camera reconstruction, export/validate the model, undistort through
+  the GUI, train visibly, evaluate, adjust exposure, save results and update
+  the report/checkpoint. Do not repeat matching or discard completed work.
+
+### Dataset 002 training started, 16:23 local time
+
+- COLMAP finished: 300/300 registered, 168,166 points, 985,960 observations,
+  mean track 5.863016, mean reprojection 0.995828 px; 9.886 minutes.
+  Shared PINHOLE fx=1519.166753, fy=1519.855750, cx=1920, cy=1080.
+- Sparse model exported to `data/static_desk_002/sparse/0`. GUI undistortion
+  completed; all 300 full-4K images are SHA-256 identical to originals.
+  Both flat `undistorted/sparse` binaries and conventional `sparse/0` copies
+  exist. No source frames were edited or discarded.
+- Visible LichtFeld process 11088 is actively training: MRNF, SH3, 3M capacity,
+  30k iterations, PPISP enabled, 262 training / 38 evaluation views, full 4K
+  confirmed by decoder logs. The model starts from the 168,166 SfM points.
+- Native GUI MCP is available at `http://127.0.0.1:45677/mcp`; helper
+  `.local/workflows/static_desk_002/Lfs-Mcp.ps1` initializes and calls it.
+  Tool/resource schemas are saved beside the helper. It captures real GUI
+  screenshots with `render.capture_window`, without headless training.
+- Output root: `outputs/static_desk_002/run_01`. Save/eval steps: 7k/15k/30k.
+  Native checkpoint files may be overwritten at each save; preserve copies if
+  intermediate resumable states are needed. Do not start a second training run
+  while this GUI is active. Query `runtime.job.describe` for `training.main`.
+- App opened maximized; startup splash dismissed. Selected desk camera
+  `frame_04622.jpeg`, UID 51, and hid camera frustums/grid for the preview.
+  PPISP manual exposure remains 0 EV pending assessment after training.
+- The installed binary does not accept `--no-splash`; omit that flag. Earlier
+  attempted launches exited before training. Use both `-d` and `-o` in future
+  CLI-assisted GUI launches. No installation/source changes were made.
+- Continue monitoring checkpoints, evaluation quality and GPU memory; assess
+  brightness, save final results and update documentation. No Git push/commit.
+
+### Dataset 002 halfway checkpoint, approximately 17:01 local time
+
+- The visible GUI is still training, now beyond 15,000 of 30,000 iterations.
+  Gaussian count reached the configured 3M cap. Keep process 11088 running;
+  do not reset the scene or launch another trainer.
+- Held-out metrics: 7k PSNR 22.429337 / SSIM 0.821145; 15k PSNR 23.948362 /
+  SSIM 0.846573. Native checkpoints are preserved as `checkpoint_07000.resume`
+  and `checkpoint_15000.resume` under the run's checkpoints directory.
+- Hidden monitor process 32724 records actual GUI state every 30 seconds,
+  captures milestones and copies checkpoints only when their binary header
+  contains the expected iteration. Its state is in
+  `.local/workflows/static_desk_002/training_monitor.json`.
+- Generic `session.pause` and `training.get_state` do not bind to this GUI
+  trainer. Use `runtime.job.describe/control` for job `training.main`; named
+  pause/resume were verified and the brief diagnostic pause was resumed.
+- The Vulkan preview ignores stored PPISP manual exposure. Controlled paused
+  captures at 0/0.8/1.2 EV were visually and numerically almost identical;
+  pinned source confirms its preview path bypasses appearance correction.
+  PPISP remains enabled in training and the native checkpoint. Native held-out
+  evaluation is performed on the model render, without the planned brightness
+  variant. Do not describe the stored preview exposure as effective.
+- Added `scripts/Adjust-SplatBrightness.ps1` for a separate brighter SH3 PLY.
+  It preserves original PLY, verifies every non-color attribute byte and
+  Gaussian order by SHA-256, and publishes only the adjusted copy. It has not
+  yet been run against the final PLY. After training, export canonical PLY,
+  run and validate this script, reopen both versions in the GUI at the same
+  camera, capture the actual brightness comparison, and finish the report.
+- Portable `documentation/static_desk_002/training_recipe.json` was copied
+  from actual saved training parameters with relative dataset/output paths.
+  `held_out_frames.txt` records the 38 validation views; its order is not a
+  guarantee of native evaluation PNG numbering.
+
+## Daylight dataset 002 completed: 2026-10-04, final save 17:46:17 local
+
+- This checkpoint supersedes the earlier in-progress dataset 002 entries.
+  All reconstruction, preparation, full-4K Gaussian training, validation,
+  brightness adjustment and GUI reopening requested by the user are complete.
+- COLMAP registered 300/300 images in one shared PINHOLE model: 168,166 points,
+  985,960 observations and 0.995828 px mean reprojection error. All 300 prepared
+  images remain byte-identical to the originals. Dataset/project paths above
+  remain valid; do not repeat matching or reconstruction for this result.
+- Visible LichtFeld finished MRNF, SH3, 3M capacity, 30k iterations, PPISP and
+  full 3840 x 2160 decoding. There were 262 training and 38 held-out views.
+  Final PSNR 25.855387 dB / SSIM 0.875689 improved on both earlier evaluations.
+  The native training-manager log reports 4917.5 seconds (81m58s); wall time
+  was about 83 minutes. The runtime job's elapsed field changes after finish
+  and must not be used for the completed duration.
+- Outputs under `outputs/static_desk_002/run_01`: original `splat_30000.ply`,
+  `splat_30000.ppisp`, and separate `static_desk_002_bright_rgb_1p4.ply`.
+  Both PLYs contain 3M Gaussians and are 744,001,532 bytes. Native checkpoints
+  `checkpoint_07000.resume`, `checkpoint_15000.resume` and
+  `checkpoint_30000.resume` are preserved in the checkpoints subfolder.
+  The final header confirms 30k/3M/SH3/PPISP. Do not retrain automatically.
+- `scripts/Adjust-SplatBrightness.ps1` successfully processed the actual
+  final PLY at RGB gain 1.4. All 48 SH color properties were adjusted; every
+  non-color byte and vertex order remained identical. Non-color SHA-256:
+  `65facfb43cd9e1bbfc94edf6029a99cc4d62e38e1579b857ccbbc6c763907918`.
+  This is a viewing brightness derivative, not physically simulated relighting.
+  Use the original model/checkpoint for future color analysis or training.
+- Both PLYs were reopened in the same visible GUI and verified as one model,
+  3M Gaussians each. Same-view sampled luma changed 54.8298 -> 76.7540 (~40%).
+  A nearby novel view rendered correctly. The brighter model is left open in
+  process 11088, with the original overview camera restored and Rendering tab
+  visible. Loading a PLY cleared the completed trainer from memory; its saved
+  checkpoint remains available through File > Import Checkpoint.
+- Monitor process 32724 completed and exited after preserving the 30k
+  checkpoint and screenshot. Its ignored status/progress/log files remain.
+  No restart is needed. Installation, source pins and originals are unchanged.
+- `documentation/static_desk_002/README.md` has the final report, screenshots,
+  before/after previews, held-out examples and reopening instructions. Small
+  portable JSON/CSV records and the verified training recipe are also there.
+  Root README links this completed real-data validation. Models, data and local
+  helpers/logs remain ignored; only useful documentation and the reusable script
+  belong in Git. The assistant made no Git commits or pushes.
+- Remaining project phases are the 4D reconstruction backend and deformation/
+  appearance analysis viewer. This completed static run is a baseline, not
+  measured deformation accuracy. Future capture quality work can target dark
+  regions, reflective surfaces and more complete viewpoint coverage.
+
+## Dataset 002 cleanup preview: 2026-10-04 — UNSAVED, awaiting user review
+
+- This supersedes the completed-run entry's GUI state only. Training and saved
+  originals remain complete and unchanged. No retraining, model export, Git
+  commit or push was performed.
+- Visible LichtFeld process 11088 has hidden/locked original node
+  `static_desk_002_bright_rgb_1p4` (3,000,000 intact) and an editable duplicate
+  `workspace_cleanup_preview` (2,848,365 undeleted). Three native undoable
+  Gaussian deletion passes removed 151,635 splats. The last operation removed
+  192 more bright candidates near a window glare spot.
+- User requested keeping the existing oriented crop, removing floaters and
+  super-bright glare, then asked to finalize promptly. Crop dimensions and
+  transform were preserved as a reversible render filter, not baked. Approximate
+  scope is 3 x 3 metres and 4.5 metres high, referenced to a 150 cm desktop.
+- Final display uses 3DGUT, SH3, render scale 1, black background, crop filtering
+  enabled and crop outline hidden. Initial close desk camera restored. Some
+  haze and glare remain; do not claim every artifact is gone. Avoid further
+  aggressive edits without review. The native 3DGS crop preview was inconsistent
+  after deletion; inspect the crop when changing renderers or preparing export.
+- Documentation: `documentation/static_desk_002/CLEANUP_REVIEW.md`, screenshots
+  28–34, `cleanup_recipe.json`, `cleanup_window_spot_indices.json`. These small
+  records can recreate cleanup against the unchanged bright source PLY if the
+  GUI closes. No cleaned model is saved; preserve the live scene for review.
+- IMPORTANT: User explicitly asked to see cleanup before saving. Wait for their
+  acceptance before saving/exporting a separate cleaned output. Preserve both
+  original PLYs and checkpoint. The assistant must not commit or push to Git.

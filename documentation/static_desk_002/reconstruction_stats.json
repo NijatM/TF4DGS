@@ -1,0 +1,25 @@
+{
+    "registered_images":  300,
+    "input_images":  300,
+    "input_dimensions":  [
+                             3840,
+                             2160
+                         ],
+    "shared_camera_model":  "PINHOLE",
+    "fx":  1519.16675325344,
+    "fy":  1519.8557502412393,
+    "cx":  1920,
+    "cy":  1080,
+    "points3D":  168166,
+    "observations":  985960,
+    "mean_track_length":  5.863016,
+    "mean_reprojection_error_px":  0.995828,
+    "prepared_images_identical_to_originals":  300,
+    "training_views":  262,
+    "evaluation_views":  38,
+    "training_iterations":  30000,
+    "final_gaussians":  3000000,
+    "training_seconds_reported":  4917.5,
+    "final_save_local":  "2026-10-04T17:46:17",
+    "timezone":  "America/New_York"
+}

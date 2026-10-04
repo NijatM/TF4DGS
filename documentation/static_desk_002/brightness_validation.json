@@ -1,0 +1,16 @@
+{
+    "Gaussians":  3000000,
+    "RgbGain":  1.4,
+    "ColorProperties":  48,
+    "AllNonColorBytesIdentical":  true,
+    "NonColorSha256":  "65facfb43cd9e1bbfc94edf6029a99cc4d62e38e1579b857ccbbc6c763907918",
+    "Source":  "outputs/static_desk_002/run_01/splat_30000.ply",
+    "Output":  "outputs/static_desk_002/run_01/static_desk_002_bright_rgb_1p4.ply",
+    "OriginalViewportMeanLuma":  54.8298,
+    "BrighterViewportMeanLuma":  76.754,
+    "GuiReimportGaussians":  3000000,
+    "ViewportSize":  [
+                         1540,
+                         980
+                     ]
+}
