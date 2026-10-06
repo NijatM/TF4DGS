@@ -1,0 +1,1492 @@
+[
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00002.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00002.jpeg",
+        "bytes":  1673304
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00014.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00014.jpeg",
+        "bytes":  1494909
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00029.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00029.jpeg",
+        "bytes":  1491845
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00042.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00042.jpeg",
+        "bytes":  1220910
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00067.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00067.jpeg",
+        "bytes":  1357575
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00081.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00081.jpeg",
+        "bytes":  1516209
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00094.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00094.jpeg",
+        "bytes":  1487355
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00106.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00106.jpeg",
+        "bytes":  1502455
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00118.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00118.jpeg",
+        "bytes":  1518893
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00136.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00136.jpeg",
+        "bytes":  1449687
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00147.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00147.jpeg",
+        "bytes":  1494259
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00164.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00164.jpeg",
+        "bytes":  1523007
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00180.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00180.jpeg",
+        "bytes":  1605442
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00195.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00195.jpeg",
+        "bytes":  1702361
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00209.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00209.jpeg",
+        "bytes":  1814359
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00222.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00222.jpeg",
+        "bytes":  1837339
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00235.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00235.jpeg",
+        "bytes":  1850660
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00251.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00251.jpeg",
+        "bytes":  1824834
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00265.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00265.jpeg",
+        "bytes":  1713220
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00276.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00276.jpeg",
+        "bytes":  1697287
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00286.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00286.jpeg",
+        "bytes":  1606922
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00296.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00296.jpeg",
+        "bytes":  1694295
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00308.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00308.jpeg",
+        "bytes":  1518228
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00325.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00325.jpeg",
+        "bytes":  1520409
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00335.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00335.jpeg",
+        "bytes":  1586863
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00349.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00349.jpeg",
+        "bytes":  1679401
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00361.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00361.jpeg",
+        "bytes":  1712569
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00374.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00374.jpeg",
+        "bytes":  1786606
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00390.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00390.jpeg",
+        "bytes":  1832103
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00401.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00401.jpeg",
+        "bytes":  1805949
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00411.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00411.jpeg",
+        "bytes":  1669357
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00423.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00423.jpeg",
+        "bytes":  1631637
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00433.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00433.jpeg",
+        "bytes":  1693663
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00446.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00446.jpeg",
+        "bytes":  1777858
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00457.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00457.jpeg",
+        "bytes":  1751814
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00469.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00469.jpeg",
+        "bytes":  1785215
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00479.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00479.jpeg",
+        "bytes":  1652035
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00489.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00489.jpeg",
+        "bytes":  1749603
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00499.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00499.jpeg",
+        "bytes":  1915551
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00510.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00510.jpeg",
+        "bytes":  1885049
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00526.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00526.jpeg",
+        "bytes":  1856736
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00536.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00536.jpeg",
+        "bytes":  1768347
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00553.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00553.jpeg",
+        "bytes":  1749282
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00568.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00568.jpeg",
+        "bytes":  1703161
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00578.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00578.jpeg",
+        "bytes":  1605051
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00590.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00590.jpeg",
+        "bytes":  1624131
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00600.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00600.jpeg",
+        "bytes":  1674982
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00615.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00615.jpeg",
+        "bytes":  1764756
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00629.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00629.jpeg",
+        "bytes":  1845202
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00640.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00640.jpeg",
+        "bytes":  1941893
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00653.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00653.jpeg",
+        "bytes":  2063967
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00663.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00663.jpeg",
+        "bytes":  1846937
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00673.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00673.jpeg",
+        "bytes":  1828178
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00689.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00689.jpeg",
+        "bytes":  1676902
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00699.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00699.jpeg",
+        "bytes":  1822978
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00713.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00713.jpeg",
+        "bytes":  2068166
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00725.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00725.jpeg",
+        "bytes":  1992810
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00738.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00738.jpeg",
+        "bytes":  2006505
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00753.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00753.jpeg",
+        "bytes":  1930168
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00763.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00763.jpeg",
+        "bytes":  1828664
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00773.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00773.jpeg",
+        "bytes":  1730514
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00784.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00784.jpeg",
+        "bytes":  1632666
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00811.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00811.jpeg",
+        "bytes":  1253405
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00824.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00824.jpeg",
+        "bytes":  1517487
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00838.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00838.jpeg",
+        "bytes":  1624357
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00849.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00849.jpeg",
+        "bytes":  1526773
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00867.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00867.jpeg",
+        "bytes":  1572892
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00880.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00880.jpeg",
+        "bytes":  1558282
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00895.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00895.jpeg",
+        "bytes":  1550435
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00907.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00907.jpeg",
+        "bytes":  1524198
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00917.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00917.jpeg",
+        "bytes":  1309901
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00936.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00936.jpeg",
+        "bytes":  1317029
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00951.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00951.jpeg",
+        "bytes":  1472346
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00961.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00961.jpeg",
+        "bytes":  1608731
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00974.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00974.jpeg",
+        "bytes":  1625658
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_00992.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_00992.jpeg",
+        "bytes":  1536403
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01007.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01007.jpeg",
+        "bytes":  1476938
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01021.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01021.jpeg",
+        "bytes":  1407934
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01031.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01031.jpeg",
+        "bytes":  1474495
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01048.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01048.jpeg",
+        "bytes":  1567063
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01059.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01059.jpeg",
+        "bytes":  1624188
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01077.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01077.jpeg",
+        "bytes":  1628853
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01090.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01090.jpeg",
+        "bytes":  1692534
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01105.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01105.jpeg",
+        "bytes":  1686265
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01115.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01115.jpeg",
+        "bytes":  1676205
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01130.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01130.jpeg",
+        "bytes":  1440673
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01140.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01140.jpeg",
+        "bytes":  1264593
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01159.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01159.jpeg",
+        "bytes":  1285807
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01169.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01169.jpeg",
+        "bytes":  1308234
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01182.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01182.jpeg",
+        "bytes":  1204290
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01202.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01202.jpeg",
+        "bytes":  1426295
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01212.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01212.jpeg",
+        "bytes":  1482626
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01227.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01227.jpeg",
+        "bytes":  1357773
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01238.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01238.jpeg",
+        "bytes":  1390099
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01248.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01248.jpeg",
+        "bytes":  1392592
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01260.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01260.jpeg",
+        "bytes":  1280451
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01282.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01282.jpeg",
+        "bytes":  1200017
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01298.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01298.jpeg",
+        "bytes":  1549558
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01308.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01308.jpeg",
+        "bytes":  1402418
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor1/frame_01327.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor1/frame_01327.jpeg",
+        "bytes":  1496381
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00006.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00006.jpeg",
+        "bytes":  1550375
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00016.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00016.jpeg",
+        "bytes":  1510981
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00026.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00026.jpeg",
+        "bytes":  1550490
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00041.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00041.jpeg",
+        "bytes":  1617020
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00051.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00051.jpeg",
+        "bytes":  1585738
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00062.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00062.jpeg",
+        "bytes":  1484861
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00080.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00080.jpeg",
+        "bytes":  1602591
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00090.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00090.jpeg",
+        "bytes":  1524840
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00107.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00107.jpeg",
+        "bytes":  1511030
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00123.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00123.jpeg",
+        "bytes":  1607330
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00134.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00134.jpeg",
+        "bytes":  1646598
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00149.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00149.jpeg",
+        "bytes":  1720670
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00161.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00161.jpeg",
+        "bytes":  1731256
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00175.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00175.jpeg",
+        "bytes":  1817607
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00188.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00188.jpeg",
+        "bytes":  1779440
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00206.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00206.jpeg",
+        "bytes":  1869079
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00224.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00224.jpeg",
+        "bytes":  1966787
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00242.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00242.jpeg",
+        "bytes":  1950236
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00252.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00252.jpeg",
+        "bytes":  1635798
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00268.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00268.jpeg",
+        "bytes":  1562913
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00278.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00278.jpeg",
+        "bytes":  1626954
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00288.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00288.jpeg",
+        "bytes":  1811889
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00298.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00298.jpeg",
+        "bytes":  1603045
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00313.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00313.jpeg",
+        "bytes":  1520519
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00323.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00323.jpeg",
+        "bytes":  1603434
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00337.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00337.jpeg",
+        "bytes":  1742489
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00347.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00347.jpeg",
+        "bytes":  1763399
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00359.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00359.jpeg",
+        "bytes":  1808485
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00377.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00377.jpeg",
+        "bytes":  1699279
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00390.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00390.jpeg",
+        "bytes":  1692081
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00404.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00404.jpeg",
+        "bytes":  1580368
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00417.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00417.jpeg",
+        "bytes":  1551331
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00430.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00430.jpeg",
+        "bytes":  1481414
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00440.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00440.jpeg",
+        "bytes":  1691043
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00450.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00450.jpeg",
+        "bytes":  1889847
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00463.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00463.jpeg",
+        "bytes":  1956688
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00473.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00473.jpeg",
+        "bytes":  1632975
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00484.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00484.jpeg",
+        "bytes":  1531944
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00494.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00494.jpeg",
+        "bytes":  1621822
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00504.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00504.jpeg",
+        "bytes":  1478908
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00521.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00521.jpeg",
+        "bytes":  1487355
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00537.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00537.jpeg",
+        "bytes":  1484363
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00548.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00548.jpeg",
+        "bytes":  1465479
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00559.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00559.jpeg",
+        "bytes":  1592895
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00570.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00570.jpeg",
+        "bytes":  1615370
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00580.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00580.jpeg",
+        "bytes":  1530158
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00590.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00590.jpeg",
+        "bytes":  1513712
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00600.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00600.jpeg",
+        "bytes":  1369602
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00610.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00610.jpeg",
+        "bytes":  1439862
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00620.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00620.jpeg",
+        "bytes":  1398410
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00638.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00638.jpeg",
+        "bytes":  1581193
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00655.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00655.jpeg",
+        "bytes":  2064767
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00665.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00665.jpeg",
+        "bytes":  2124427
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00675.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00675.jpeg",
+        "bytes":  1953618
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00690.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00690.jpeg",
+        "bytes":  1798986
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00701.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00701.jpeg",
+        "bytes":  1790897
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00719.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00719.jpeg",
+        "bytes":  1959144
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00729.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00729.jpeg",
+        "bytes":  2043464
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00739.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00739.jpeg",
+        "bytes":  1968531
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00750.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00750.jpeg",
+        "bytes":  1843716
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00763.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00763.jpeg",
+        "bytes":  1817424
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00773.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00773.jpeg",
+        "bytes":  1694772
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00783.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00783.jpeg",
+        "bytes":  1671192
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00794.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00794.jpeg",
+        "bytes":  1665003
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00804.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00804.jpeg",
+        "bytes":  1662703
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00818.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00818.jpeg",
+        "bytes":  1664051
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00828.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00828.jpeg",
+        "bytes":  1701985
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00840.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00840.jpeg",
+        "bytes":  1521579
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00850.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00850.jpeg",
+        "bytes":  1641135
+    },
+    {
+        "original":  "DJI/Necto_DJI_Floor2/frame_00863.jpeg",
+        "sfm_input":  "DJI/Necto_DJI_Floor2/frame_00863.jpeg",
+        "bytes":  1686622
+    },
+    {
+        "original":  "Fuji/DSCF1290.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1290.jpg",
+        "bytes":  10940554
+    },
+    {
+        "original":  "Fuji/DSCF1291.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1291.jpg",
+        "bytes":  10390480
+    },
+    {
+        "original":  "Fuji/DSCF1292.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1292.jpg",
+        "bytes":  10952037
+    },
+    {
+        "original":  "Fuji/DSCF1293.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1293.jpg",
+        "bytes":  9951235
+    },
+    {
+        "original":  "Fuji/DSCF1294.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1294.jpg",
+        "bytes":  11622205
+    },
+    {
+        "original":  "Fuji/DSCF1295.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1295.jpg",
+        "bytes":  12007251
+    },
+    {
+        "original":  "Fuji/DSCF1296.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1296.jpg",
+        "bytes":  10964324
+    },
+    {
+        "original":  "Fuji/DSCF1297.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1297.jpg",
+        "bytes":  11247622
+    },
+    {
+        "original":  "Fuji/DSCF1298.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1298.jpg",
+        "bytes":  11624862
+    },
+    {
+        "original":  "Fuji/DSCF1299.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1299.jpg",
+        "bytes":  11207110
+    },
+    {
+        "original":  "Fuji/DSCF1300.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1300.jpg",
+        "bytes":  11486954
+    },
+    {
+        "original":  "Fuji/DSCF1301.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1301.jpg",
+        "bytes":  12107919
+    },
+    {
+        "original":  "Fuji/DSCF1302.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1302.jpg",
+        "bytes":  11354452
+    },
+    {
+        "original":  "Fuji/DSCF1303.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1303.jpg",
+        "bytes":  12589447
+    },
+    {
+        "original":  "Fuji/DSCF1304.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1304.jpg",
+        "bytes":  13820219
+    },
+    {
+        "original":  "Fuji/DSCF1305.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1305.jpg",
+        "bytes":  11629723
+    },
+    {
+        "original":  "Fuji/DSCF1306.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1306.jpg",
+        "bytes":  12152668
+    },
+    {
+        "original":  "Fuji/DSCF1307.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1307.jpg",
+        "bytes":  14888169
+    },
+    {
+        "original":  "Fuji/DSCF1308.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1308.jpg",
+        "bytes":  14944869
+    },
+    {
+        "original":  "Fuji/DSCF1309.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1309.jpg",
+        "bytes":  13229484
+    },
+    {
+        "original":  "Fuji/DSCF1310.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1310.jpg",
+        "bytes":  12640600
+    },
+    {
+        "original":  "Fuji/DSCF1311.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1311.jpg",
+        "bytes":  10732441
+    },
+    {
+        "original":  "Fuji/DSCF1312.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1312.jpg",
+        "bytes":  12496198
+    },
+    {
+        "original":  "Fuji/DSCF1313.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1313.jpg",
+        "bytes":  14833946
+    },
+    {
+        "original":  "Fuji/DSCF1314.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1314.jpg",
+        "bytes":  14141732
+    },
+    {
+        "original":  "Fuji/DSCF1315.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1315.jpg",
+        "bytes":  12363635
+    },
+    {
+        "original":  "Fuji/DSCF1316.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1316.jpg",
+        "bytes":  14490240
+    },
+    {
+        "original":  "Fuji/DSCF1317.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1317.jpg",
+        "bytes":  15012874
+    },
+    {
+        "original":  "Fuji/DSCF1318.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1318.jpg",
+        "bytes":  14734947
+    },
+    {
+        "original":  "Fuji/DSCF1319.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1319.jpg",
+        "bytes":  15630740
+    },
+    {
+        "original":  "Fuji/DSCF1320.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1320.jpg",
+        "bytes":  16656365
+    },
+    {
+        "original":  "Fuji/DSCF1321.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1321.jpg",
+        "bytes":  10840120
+    },
+    {
+        "original":  "Fuji/DSCF1322.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1322.jpg",
+        "bytes":  13987925
+    },
+    {
+        "original":  "Fuji/DSCF1323.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1323.jpg",
+        "bytes":  14154495
+    },
+    {
+        "original":  "Fuji/DSCF1324.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1324.jpg",
+        "bytes":  12863082
+    },
+    {
+        "original":  "Fuji/DSCF1325.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1325.jpg",
+        "bytes":  10975977
+    },
+    {
+        "original":  "Fuji/DSCF1326.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1326.jpg",
+        "bytes":  11259504
+    },
+    {
+        "original":  "Fuji/DSCF1327.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1327.jpg",
+        "bytes":  11716394
+    },
+    {
+        "original":  "Fuji/DSCF1328.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1328.jpg",
+        "bytes":  12282059
+    },
+    {
+        "original":  "Fuji/DSCF1329.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1329.jpg",
+        "bytes":  10499058
+    },
+    {
+        "original":  "Fuji/DSCF1330.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1330.jpg",
+        "bytes":  10344401
+    },
+    {
+        "original":  "Fuji/DSCF1331.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1331.jpg",
+        "bytes":  10819858
+    },
+    {
+        "original":  "Fuji/DSCF1332.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1332.jpg",
+        "bytes":  11559350
+    },
+    {
+        "original":  "Fuji/DSCF1333.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1333.jpg",
+        "bytes":  10767643
+    },
+    {
+        "original":  "Fuji/DSCF1334.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1334.jpg",
+        "bytes":  8576947
+    },
+    {
+        "original":  "Fuji/DSCF1335.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1335.jpg",
+        "bytes":  8172549
+    },
+    {
+        "original":  "Fuji/DSCF1336.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1336.jpg",
+        "bytes":  7871230
+    },
+    {
+        "original":  "Fuji/DSCF1337.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1337.jpg",
+        "bytes":  8029551
+    },
+    {
+        "original":  "Fuji/DSCF1338.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1338.jpg",
+        "bytes":  10964878
+    },
+    {
+        "original":  "Fuji/DSCF1339.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1339.jpg",
+        "bytes":  11148958
+    },
+    {
+        "original":  "Fuji/DSCF1340.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1340.jpg",
+        "bytes":  10498583
+    },
+    {
+        "original":  "Fuji/DSCF1341.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1341.jpg",
+        "bytes":  11896159
+    },
+    {
+        "original":  "Fuji/DSCF1342.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1342.jpg",
+        "bytes":  10591775
+    },
+    {
+        "original":  "Fuji/DSCF1343.jpg",
+        "sfm_input":  "Fuji/portrait/DSCF1343.jpg",
+        "bytes":  16403930
+    },
+    {
+        "original":  "Fuji/DSCF1344.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1344.jpg",
+        "bytes":  13192206
+    },
+    {
+        "original":  "Fuji/DSCF1345.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1345.jpg",
+        "bytes":  15351380
+    },
+    {
+        "original":  "Fuji/DSCF1346.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1346.jpg",
+        "bytes":  15901545
+    },
+    {
+        "original":  "Fuji/DSCF1347.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1347.jpg",
+        "bytes":  14493786
+    },
+    {
+        "original":  "Fuji/DSCF1348.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1348.jpg",
+        "bytes":  10320899
+    },
+    {
+        "original":  "Fuji/DSCF1349.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1349.jpg",
+        "bytes":  11918174
+    },
+    {
+        "original":  "Fuji/DSCF1350.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1350.jpg",
+        "bytes":  13665301
+    },
+    {
+        "original":  "Fuji/DSCF1351.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1351.jpg",
+        "bytes":  12851738
+    },
+    {
+        "original":  "Fuji/DSCF1352.jpg",
+        "sfm_input":  "Fuji/portrait/DSCF1352.jpg",
+        "bytes":  14745350
+    },
+    {
+        "original":  "Fuji/DSCF1353.jpg",
+        "sfm_input":  "Fuji/portrait/DSCF1353.jpg",
+        "bytes":  12651321
+    },
+    {
+        "original":  "Fuji/DSCF1354.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1354.jpg",
+        "bytes":  13031358
+    },
+    {
+        "original":  "Fuji/DSCF1355.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1355.jpg",
+        "bytes":  10177721
+    },
+    {
+        "original":  "Fuji/DSCF1356.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1356.jpg",
+        "bytes":  14596115
+    },
+    {
+        "original":  "Fuji/DSCF1357.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1357.jpg",
+        "bytes":  15563989
+    },
+    {
+        "original":  "Fuji/DSCF1358.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1358.jpg",
+        "bytes":  15288160
+    },
+    {
+        "original":  "Fuji/DSCF1359.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1359.jpg",
+        "bytes":  15782692
+    },
+    {
+        "original":  "Fuji/DSCF1360.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1360.jpg",
+        "bytes":  17156589
+    },
+    {
+        "original":  "Fuji/DSCF1361.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1361.jpg",
+        "bytes":  20150354
+    },
+    {
+        "original":  "Fuji/DSCF1362.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1362.jpg",
+        "bytes":  15573364
+    },
+    {
+        "original":  "Fuji/DSCF1363.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1363.jpg",
+        "bytes":  12817440
+    },
+    {
+        "original":  "Fuji/DSCF1364.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1364.jpg",
+        "bytes":  17869076
+    },
+    {
+        "original":  "Fuji/DSCF1365.jpg",
+        "sfm_input":  "Fuji/portrait/DSCF1365.jpg",
+        "bytes":  18230700
+    },
+    {
+        "original":  "Fuji/DSCF1366.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1366.jpg",
+        "bytes":  7929028
+    },
+    {
+        "original":  "Fuji/DSCF1367.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1367.jpg",
+        "bytes":  9480511
+    },
+    {
+        "original":  "Iphone/frame_00006.jpeg",
+        "sfm_input":  "Iphone/frame_00006.jpeg",
+        "bytes":  2017114
+    },
+    {
+        "original":  "Iphone/frame_00028.jpeg",
+        "sfm_input":  "Iphone/frame_00028.jpeg",
+        "bytes":  1791527
+    },
+    {
+        "original":  "Iphone/frame_00055.jpeg",
+        "sfm_input":  "Iphone/frame_00055.jpeg",
+        "bytes":  1616264
+    },
+    {
+        "original":  "Iphone/frame_00082.jpeg",
+        "sfm_input":  "Iphone/frame_00082.jpeg",
+        "bytes":  1443521
+    },
+    {
+        "original":  "Iphone/frame_00132.jpeg",
+        "sfm_input":  "Iphone/frame_00132.jpeg",
+        "bytes":  1532457
+    },
+    {
+        "original":  "Iphone/frame_00149.jpeg",
+        "sfm_input":  "Iphone/frame_00149.jpeg",
+        "bytes":  1535614
+    },
+    {
+        "original":  "Iphone/frame_00188.jpeg",
+        "sfm_input":  "Iphone/frame_00188.jpeg",
+        "bytes":  1447790
+    },
+    {
+        "original":  "Iphone/frame_00211.jpeg",
+        "sfm_input":  "Iphone/frame_00211.jpeg",
+        "bytes":  1567544
+    },
+    {
+        "original":  "Iphone/frame_00240.jpeg",
+        "sfm_input":  "Iphone/frame_00240.jpeg",
+        "bytes":  1625105
+    },
+    {
+        "original":  "Iphone/frame_00261.jpeg",
+        "sfm_input":  "Iphone/frame_00261.jpeg",
+        "bytes":  1676992
+    },
+    {
+        "original":  "Iphone/frame_00290.jpeg",
+        "sfm_input":  "Iphone/frame_00290.jpeg",
+        "bytes":  1735404
+    },
+    {
+        "original":  "Iphone/frame_00319.jpeg",
+        "sfm_input":  "Iphone/frame_00319.jpeg",
+        "bytes":  1831805
+    },
+    {
+        "original":  "Iphone/frame_00348.jpeg",
+        "sfm_input":  "Iphone/frame_00348.jpeg",
+        "bytes":  1891340
+    },
+    {
+        "original":  "Iphone/frame_00377.jpeg",
+        "sfm_input":  "Iphone/frame_00377.jpeg",
+        "bytes":  1965730
+    },
+    {
+        "original":  "Iphone/frame_00401.jpeg",
+        "sfm_input":  "Iphone/frame_00401.jpeg",
+        "bytes":  1954533
+    },
+    {
+        "original":  "Iphone/frame_00418.jpeg",
+        "sfm_input":  "Iphone/frame_00418.jpeg",
+        "bytes":  1902573
+    },
+    {
+        "original":  "Iphone/frame_00435.jpeg",
+        "sfm_input":  "Iphone/frame_00435.jpeg",
+        "bytes":  1874518
+    },
+    {
+        "original":  "Iphone/frame_00464.jpeg",
+        "sfm_input":  "Iphone/frame_00464.jpeg",
+        "bytes":  1808568
+    },
+    {
+        "original":  "Iphone/frame_00493.jpeg",
+        "sfm_input":  "Iphone/frame_00493.jpeg",
+        "bytes":  1787985
+    },
+    {
+        "original":  "Iphone/frame_00522.jpeg",
+        "sfm_input":  "Iphone/frame_00522.jpeg",
+        "bytes":  1779603
+    },
+    {
+        "original":  "Iphone/frame_00551.jpeg",
+        "sfm_input":  "Iphone/frame_00551.jpeg",
+        "bytes":  1786413
+    },
+    {
+        "original":  "Iphone/frame_00580.jpeg",
+        "sfm_input":  "Iphone/frame_00580.jpeg",
+        "bytes":  1752787
+    },
+    {
+        "original":  "Iphone/frame_00609.jpeg",
+        "sfm_input":  "Iphone/frame_00609.jpeg",
+        "bytes":  1999498
+    },
+    {
+        "original":  "Iphone/frame_00638.jpeg",
+        "sfm_input":  "Iphone/frame_00638.jpeg",
+        "bytes":  2216110
+    },
+    {
+        "original":  "Iphone/frame_00654.jpeg",
+        "sfm_input":  "Iphone/frame_00654.jpeg",
+        "bytes":  2306631
+    },
+    {
+        "original":  "Iphone/frame_00675.jpeg",
+        "sfm_input":  "Iphone/frame_00675.jpeg",
+        "bytes":  2178668
+    },
+    {
+        "original":  "Iphone/frame_00691.jpeg",
+        "sfm_input":  "Iphone/frame_00691.jpeg",
+        "bytes":  2079118
+    },
+    {
+        "original":  "Iphone/frame_00708.jpeg",
+        "sfm_input":  "Iphone/frame_00708.jpeg",
+        "bytes":  1961829
+    },
+    {
+        "original":  "Iphone/frame_00754.jpeg",
+        "sfm_input":  "Iphone/frame_00754.jpeg",
+        "bytes":  1648747
+    },
+    {
+        "original":  "Iphone/frame_00782.jpeg",
+        "sfm_input":  "Iphone/frame_00782.jpeg",
+        "bytes":  1708977
+    },
+    {
+        "original":  "Iphone/frame_00797.jpeg",
+        "sfm_input":  "Iphone/frame_00797.jpeg",
+        "bytes":  1609047
+    },
+    {
+        "original":  "Iphone/frame_00812.jpeg",
+        "sfm_input":  "Iphone/frame_00812.jpeg",
+        "bytes":  1582957
+    },
+    {
+        "original":  "Iphone/frame_00841.jpeg",
+        "sfm_input":  "Iphone/frame_00841.jpeg",
+        "bytes":  1484413
+    },
+    {
+        "original":  "Iphone/frame_00870.jpeg",
+        "sfm_input":  "Iphone/frame_00870.jpeg",
+        "bytes":  1423302
+    },
+    {
+        "original":  "Iphone/frame_00917.jpeg",
+        "sfm_input":  "Iphone/frame_00917.jpeg",
+        "bytes":  1386637
+    },
+    {
+        "original":  "Iphone/frame_00944.jpeg",
+        "sfm_input":  "Iphone/frame_00944.jpeg",
+        "bytes":  1665867
+    },
+    {
+        "original":  "Iphone/frame_00969.jpeg",
+        "sfm_input":  "Iphone/frame_00969.jpeg",
+        "bytes":  1872107
+    },
+    {
+        "original":  "Iphone/frame_00986.jpeg",
+        "sfm_input":  "Iphone/frame_00986.jpeg",
+        "bytes":  1650313
+    },
+    {
+        "original":  "Iphone/frame_01002.jpeg",
+        "sfm_input":  "Iphone/frame_01002.jpeg",
+        "bytes":  1416223
+    },
+    {
+        "original":  "Iphone/frame_01052.jpeg",
+        "sfm_input":  "Iphone/frame_01052.jpeg",
+        "bytes":  1539711
+    },
+    {
+        "original":  "Iphone/frame_01073.jpeg",
+        "sfm_input":  "Iphone/frame_01073.jpeg",
+        "bytes":  1610131
+    },
+    {
+        "original":  "Iphone/frame_01102.jpeg",
+        "sfm_input":  "Iphone/frame_01102.jpeg",
+        "bytes":  1582254
+    },
+    {
+        "original":  "Iphone/frame_01122.jpeg",
+        "sfm_input":  "Iphone/frame_01122.jpeg",
+        "bytes":  1504712
+    },
+    {
+        "original":  "Iphone/frame_01160.jpeg",
+        "sfm_input":  "Iphone/frame_01160.jpeg",
+        "bytes":  1498590
+    },
+    {
+        "original":  "Iphone/frame_01176.jpeg",
+        "sfm_input":  "Iphone/frame_01176.jpeg",
+        "bytes":  1445896
+    },
+    {
+        "original":  "Iphone/frame_01213.jpeg",
+        "sfm_input":  "Iphone/frame_01213.jpeg",
+        "bytes":  1482912
+    },
+    {
+        "original":  "Iphone/frame_01230.jpeg",
+        "sfm_input":  "Iphone/frame_01230.jpeg",
+        "bytes":  1577876
+    },
+    {
+        "original":  "Iphone/frame_01247.jpeg",
+        "sfm_input":  "Iphone/frame_01247.jpeg",
+        "bytes":  1700947
+    },
+    {
+        "original":  "Iphone/frame_01288.jpeg",
+        "sfm_input":  "Iphone/frame_01288.jpeg",
+        "bytes":  1572647
+    },
+    {
+        "original":  "Iphone/frame_01305.jpeg",
+        "sfm_input":  "Iphone/frame_01305.jpeg",
+        "bytes":  1654193
+    }
+]

@@ -14,7 +14,8 @@ This guide establishes the first static workflow:
 The project scope is in [PROJECT_SCOPE.md](PROJECT_SCOPE.md). Setup progress and
 restart checkpoints belong in [PROJECT_MEMORY.md](PROJECT_MEMORY.md).
 
-**Status:** Miniconda and the empty `tf4dgs` environment are installed. CUDA
+**Status (updated 2026-10-05):** Miniconda and the Python 3.11 `tf4dgs` CPU
+capture/analysis environment are installed. CUDA
 13.2.2 is installed and its ordinary/forced-PTX GPU checks passed on 2026-10-03.
 COLMAP 4.2.1 and FFmpeg 9.0.2 are installed and their GPU/media smoke checks
 passed. LichtFeld v0.5.3 is built and installed with the recorded CUDA 13
@@ -45,7 +46,7 @@ ABIs and paths in the records describe this machine's build.
 | FFmpeg | **9.0.2**, Gyan essentials Windows build | Installed; encode/decode/extraction passed |
 | LichtFeld Studio | **v0.5.3**, source build with recorded CUDA 13 packaging patch | Installed; synthetic training/resume/export and viewer loading passed |
 | vcpkg | Tool/repository commit `930ecc42b512b564571d767f70775d284a6fa307`; retain manifest baseline | Bootstrapped; all 92 dependency ports installed |
-| Conda manager | Miniconda 26.7.1, base Python 3.14.7 | Installed; empty `tf4dgs` environment created |
+| Conda manager | Miniconda 26.7.1, base Python 3.14.7 | Installed; `tf4dgs` now uses Python 3.11.16 for the CPU foundation |
 
 The machine has an i7-13700, approximately 32 GB RAM and approximately 819 GB free
 on C: at inspection. Build parallelism starts at four jobs.
@@ -72,8 +73,8 @@ still needs its own validation.
 [pinned Windows CI](https://github.com/MrNeRF/LichtFeld-Studio/blob/v0.5.3/.github/workflows/windows.yml).
 
 This is a free source-build route. The static setup uses LichtFeld's bundled
-Python dependencies. The planned Conda environment will support later Python
-research and analysis; see Section 10 for reproducibility and Git handling.
+Python dependencies. The Conda environment supports the CPU capture and
+point-analysis foundation; see Section 10 for reproducibility and Git handling.
 The later 4D backend and its dependencies will be chosen in a separate phase.
 
 ## 2. Start a setup PowerShell session
@@ -824,15 +825,19 @@ registered. The user published the LichtFeld fix and the main project;
 contains the commands for publishing the existing patch to your fork and making
 the first TF4DGS commit/push. Later clone with `--recurse-submodules`.
 
-The dynamic phase will add mixed-camera calibration, synchronization checks,
-a chosen 4D reconstruction backend, appearance/geometry maps and fading trails.
-Those installations belong to that later phase.
+The CPU dynamic foundation now supplies session/calibration checks,
+timestamp synchronization, extraction and selected-point maps/trails. See
+[the foundation guide](docs/DYNAMIC_FOUNDATION.md). A calibrated real-data
+pipeline and GPU 4D reconstruction backend remain pending; their research
+dependencies will be selected separately.
 
 ## 10. tf4dgs Conda environment and setup on another machine
 
 The project environment is named **`tf4dgs`**, defined in
-[environment.yml](environment.yml). It begins as an empty bootstrap environment
-until the dynamic implementation's Python and research dependencies are selected.
+[environment.yml](environment.yml). It supplies Python 3.11, pip and setuptools
+from conda-forge for the CPU foundation. Research GPU dependencies are pending
+backend selection. The tested Windows builds are saved in
+[environments/tf4dgs-win-64.explicit.txt](environments/tf4dgs-win-64.explicit.txt).
 Between Miniconda and Anaconda Distribution, **Miniconda for Windows x86_64**
 is the recommended starting point: it supplies Conda and Python with a minimal
 initial package set, allowing this project to select its own dependencies.
@@ -880,10 +885,12 @@ On this computer, the installed manager can be checked directly:
 
 Files to keep in Git:
 
-- `environment.yml`: the `tf4dgs` name is saved now; add channels, the supported
-  Python version, direct dependencies and any pip dependencies when validated.
-- A lockfile or `conda-win-64.explicit.txt`: the resolved Conda packages/builds
-  for reproducible installation on a compatible Windows machine.
+- `environment.yml`: environment name, channels, Python version and direct
+  CPU-foundation dependencies.
+- `environments/tf4dgs-win-64.explicit.txt`: resolved Conda package builds
+  for this tested Windows CPU environment.
+- `pyproject.toml`, `src/` and `scripts/TF4DGS.py`: the local project package;
+  install it separately with the command below.
 - Pinned pip dependency records where applicable; a Conda explicit file alone
   does not capture pip-installed packages.
 - Installer version, download URL and checksum in the setup documentation.
@@ -900,15 +907,18 @@ On a new machine with Conda available, create the named environment:
 ```powershell
 conda env create --file environment.yml --no-default-packages
 conda activate tf4dgs
+python -m pip install -e . --no-deps --no-build-isolation
+python -m unittest discover -s tests -v
 ```
 
-The empty bootstrap recipe can be created offline by adding `--offline`.
-Python/PyTorch/CUDA-extension pins and a validated lockfile will follow the
-chosen 4D implementation. An empty environment does not supply a project
-Python interpreter yet.
+Alternatively, replace the environment-create command with
+`conda create -n tf4dgs --file environments/tf4dgs-win-64.explicit.txt` for the
+exact tested Windows package builds. Package downloads are needed unless they
+are already cached. The explicit file does not include the editable project
+or native GUI tools. PyTorch/CUDA-extension pins will follow backend selection.
 
 Use the developer-shell setup in Section 2 for the native LichtFeld build.
-Activate `tf4dgs` for the later project research tools.
+Activate `tf4dgs` for the project's capture and point-analysis tools.
 
 If keeping the installer EXE locally, save it under `.local\downloads`, which
 the root Git exclusions already cover. Commit the small environment

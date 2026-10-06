@@ -1,0 +1,39 @@
+{
+  "ply_path": "outputs/static_multi-camera_Necto_001/run_01/splat_30000.ply",
+  "ply_bytes": 744001532,
+  "ply_header_bytes": 1532,
+  "ply_vertices": 3000000,
+  "float_properties_per_vertex": 62,
+  "expected_ply_bytes": 744001532,
+  "ply_body_size_verified": true,
+  "finite_values_sample": {
+    "evenly_spaced_vertices": 1024,
+    "all_properties": true,
+    "passed": true
+  },
+  "checkpoint_path": "outputs/static_multi-camera_Necto_001/run_01/checkpoints/checkpoint_30000.resume",
+  "checkpoint_bytes": 1230038577,
+  "checkpoint_sha256": "88c28744563d82daa4a3b557691e6435ca882c9db97541db6c10000448ddf7f0",
+  "latest_checkpoint_matches_preserved_copy": true,
+  "checkpoint_header": {
+    "iteration": 30000,
+    "gaussians": 3000000,
+    "sh_degree": 3,
+    "flags": 2,
+    "ppisp": true,
+    "controller": false
+  },
+  "checkpoint_embedded_json_valid": true,
+  "appearance_sidecar_path": "outputs/static_multi-camera_Necto_001/run_01/splat_30000.ppisp",
+  "appearance_sidecar_bytes": 19703,
+  "appearance_sidecar_sha256": "61b95c61105f4d6981520bfbbca6f1464bfd54fb9b28004d29d13f7f6d1b8dd8",
+  "appearance_sidecar_header": {
+    "version": 2,
+    "cameras": 5,
+    "frames": 257,
+    "metadata": true,
+    "controller": false
+  },
+  "validation_images_saved": 37,
+  "verification_scope": "PLY structure/body length, finite samples (not exhaustive), checkpoint header/JSON/hash equality, sidecar presence/hash, evaluation count. Does not measure physical geometry accuracy."
+}

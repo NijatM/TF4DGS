@@ -1,0 +1,12 @@
+{
+    "saved_iteration":  15000,
+    "gaussians":  3000000,
+    "checkpoint_path":  "outputs/static_multi-camera_Necto_001/run_01/checkpoints/checkpoint_15000.resume",
+    "checkpoint_bytes":  1254038585,
+    "checkpoint_sha256":  "47590b695945a658d8b552202262982fba83097249ea4b720c6ab9237d97b142",
+    "header_verified":  true,
+    "validation_views_evaluated":  37,
+    "psnr_db":  20.256014,
+    "ssim":  0.771705,
+    "visual_review":  "Matching GT/render comparison shows modest refinement; fine yarn detail remains soft and canonical color is blue."
+}

@@ -1,0 +1,42 @@
+{
+  "status": "saved_and_reopened",
+  "source_model": "outputs/static_multi-camera_Necto_001/run_01/splat_30000.ply",
+  "cleaned_model": "outputs/static_multi-camera_Necto_001/run_01/necto_room_clean_01.ply",
+  "cleaned_appearance_companion": "outputs/static_multi-camera_Necto_001/run_01/necto_room_clean_01.ppisp",
+  "source_gaussians": 3000000,
+  "remaining_gaussians": 2994969,
+  "removed_gaussians": 5031,
+  "removed_fraction": 0.001677,
+  "scope": "Keep room, windows, pavilion and suspension cables; conservative large faint artifact pass.",
+  "predicate": "(m.get_scaling().max(dim=1) > 1.0) & (m.get_opacity().squeeze() < 0.1)",
+  "scale_units": "Unscaled COLMAP reconstruction units; threshold is specific to this dataset.",
+  "indices": "cleanup_large_weak_indices.json",
+  "selection_api": "lf.get_scene().set_selection(indices); lf.pipeline.edit.delete_().execute()",
+  "safety": "Original hidden/locked and editable duplicate as the only visible splat; source node stayed at 3M undeleted. Saved originals and checkpoints unchanged.",
+  "export": "Native scene.export_ply, explicit duplicate node and SH3; same-stem PPISP companion copied byte-for-byte from original because node export does not create it.",
+  "render_binding": "Dataset mode renders the training-model node; temporarily bound it to the duplicate for cleanup preview. No training resumed. Reopened clean PLY in viewer mode after saving.",
+  "crop_baked": false,
+  "brightness_baked": false,
+  "matched_gui_pairs": [
+    {
+      "uid": 11,
+      "camera": "Fuji/landscape/DSCF1300.jpg",
+      "before": "40_cleanup_before_overview.png",
+      "after": "42_cleanup_after_overview.png"
+    },
+    {
+      "uid": 292,
+      "camera": "Fuji/landscape/DSCF1345.jpg",
+      "before": "43_cleanup_before_weave.png",
+      "after": "44_cleanup_after_weave.png"
+    },
+    {
+      "uid": 84,
+      "camera": "DJI/Necto_DJI_Floor1/frame_00180.jpeg",
+      "before": "45_cleanup_before_room.png",
+      "after": "46_cleanup_after_room.png"
+    }
+  ],
+  "limitations": "Conservative scale/opacity heuristic, not semantic classification. No global low-opacity pruning to avoid removing thin yarn. Softness, glass reflections and artifacts at unseen angles can remain. Original validation metrics were not rerun after cleanup.",
+  "existing_other_export_preserved": "outputs/static_multi-camera_Necto_001/run_01/splat_30000_CleanupV1.ply (pre-existing, not edited or assessed in this cleanup)"
+}

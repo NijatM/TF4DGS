@@ -1,0 +1,37 @@
+{
+    "status":  "training_in_progress",
+    "saved_iteration":  7000,
+    "gaussians":  3000000,
+    "checkpoint_path":  "outputs/static_multi-camera_Necto_001/run_01/checkpoints/checkpoint_07000.resume",
+    "checkpoint_bytes":  1254038585,
+    "checkpoint_sha256":  "111d0e355f2f78bea4c38472e55de9d240b15b48a05db2760e5a5d0c8df926b2",
+    "preserved_copy_verified":  true,
+    "optimizer_and_ppisp_included":  true,
+    "validation_views_evaluated":  37,
+    "psnr_db":  19.814346,
+    "ssim":  0.755788,
+    "seconds_per_validation_image":  1.657128,
+    "fuji_evaluation_pair_size":  [
+                                      15452,
+                                      4341
+                                  ],
+    "native_crop":  {
+                        "evaluation_pair":  "outputs/static_multi-camera_Necto_001/run_01/eval_step_7000/9.png",
+                        "single_image_size":  [
+                                                  7724,
+                                                  4341
+                                              ],
+                        "right":  "render",
+                        "left":  "ground_truth",
+                        "xy":  [
+                                   3000,
+                                   2300
+                               ],
+                        "resized":  false,
+                        "size":  [
+                                     768,
+                                     768
+                                 ]
+                    },
+    "visual_review":  "Pavilion shape and seams consistent in early comparison; fine yarn texture remains softer than photograph. Raw render has a blue cast. Continue to 30000 iterations and reassess."
+}

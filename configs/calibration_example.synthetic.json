@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "synthetic_only": true,
+  "camera_id": "dji",
+  "image_size": [3840, 2160],
+  "model": "PINHOLE",
+  "params": [2000, 2000, 1920, 1080],
+  "world_to_camera": {
+    "R": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+    "t": [0, 0, 0]
+  }
+}

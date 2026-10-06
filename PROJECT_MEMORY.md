@@ -1,6 +1,6 @@
 # Temporal Fields 4D Gaussian Splatting (TF4DGS): Project memory
 
-Last updated: 2026-10-04 (America/New_York)
+Last updated: 2026-10-05 (America/New_York)
 
 ## Project identity
 
@@ -8,8 +8,9 @@ Last updated: 2026-10-04 (America/New_York)
 - Short name / repository folder: **TF4DGS**.
 - Canonical project path: `C:\Users\mnijat\Desktop\Git\TF4DGS`.
 - Conda environment: **`tf4dgs`**.
-- Environment recipe: `environment.yml`, currently an empty bootstrap recipe.
-- Identity update status: completed. The TF4DGS folder and empty tf4dgs environment are verified.
+- Environment recipe: `environment.yml`, Python 3.11 CPU capture/analysis
+  foundation; tested builds in `environments/tf4dgs-win-64.explicit.txt`.
+- Identity update status: completed. The TF4DGS folder and tf4dgs environment are verified.
 - Previous directory holders were identified during the completed rename;
   no folder-rename action remains. Keep the rename helper as a local record.
 
@@ -21,11 +22,13 @@ paths. The user created private `NijatM/TF4DGS` and their LichtFeld fork,
 published the packaging fix on `tf4dgs` at `b4e26dc929d23ad8c4cc266e61eb8bf7334ede36`,
 and switched the submodule URL to the fork. The user pushed initial TF4DGS
 commit `8e826bd113158a71ed8ab3d15e31335572ed91be` to private `NijatM/TF4DGS`;
-local `main` tracks `origin/main`. Git setup/publication is complete. Next is
-real static capture and reconstruction quality validation. The first real
-dataset has now passed model parsing, fresh GUI loading and one full-resolution
-GPU training iteration; full training and visual quality assessment remain.
-See the real-dataset checkpoint below before repeating dataset preparation.
+local `main` tracks `origin/main`. Git setup/publication is complete. The desk
+and multi-camera Necto static captures are trained, evaluated and documented;
+Necto room cleanup is exported and reopened. The user now requested the
+multi-camera dynamic foundation while recordings are pending. CPU timing,
+extraction and selected-point analysis are implemented and tested, with a
+synthetic local preview. The real 4D GPU backend is not installed or integrated.
+Read the latest dynamic checkpoint before repeating setup or processing data.
 The user handles all commits/pushes; provide VS Code terminal commands and
 commit messages, including for source forks. See `GIT_SETUP.md` and the latest
 Git checkpoint below.
@@ -50,9 +53,10 @@ The user additionally requested a Conda environment definition in the repository
 to make setup on another machine easier. Section 10 of `INSTALLATION.md` now
 records that requirement. Miniconda is recommended over full Anaconda; the
 assistant has now completed the Miniconda installation.
-Next, follow Section 7 of `INSTALLATION.md` with the user's static footage to
-establish reconstruction quality. The later 4D backend has not been selected
-or installed. Update this file before any required restart. The earlier requested
+Next, follow `docs/CAPTURE_CHECKLIST.md` for the first controlled dynamic
+recording and `docs/DYNAMIC_FOUNDATION.md` for preparation. The 4D backend has
+not been selected or installed. Update this file before any required restart.
+The earlier requested
 `grill-me` / `grilling` skill installation is complete.
 
 ## User's intended sequence
@@ -1207,3 +1211,295 @@ The assistant has performed no commits or pushes.
 - IMPORTANT: User explicitly asked to see cleanup before saving. Wait for their
   acceptance before saving/exporting a separate cleaned output. Preserve both
   original PLYs and checkpoint. The assistant must not commit or push to Git.
+
+## Necto multi-camera static run: 2026-10-04 — IN PROGRESS
+
+- User requested autonomous high-quality processing of
+  `data/static_multi-camera_Necto_001/images`, preserving native Fuji training
+  resolution. Pavilion stayed still with unchanged shape/lighting. Fuji used
+  fixed XF 33 mm F1.4. DJI lens/zoom fixed, stabilization off; iPhone lens/zoom
+  fixed, stabilization possibly on.
+- 298 inputs: DJI floor 1 = 100, floor 2 = 70 (3840x2160); Fuji = 74 landscape
+  7728x4344 and 4 portrait 4344x7728; iPhone = 50 at 2160x3840.
+  `sfm_images` holds hard links with Fuji orientations grouped separately,
+  without pixel changes. Mapping and screenshots are tracked under
+  `documentation/static_multi-camera_Necto_001`. Originals remain unchanged.
+- Initial visible COLMAP process 18968 finished 244 landscape images, with
+  9,047,491 feature rows. At a large portrait image, GPU allocation failed and
+  poisoned CUDA. Four portrait Fuji + 50 iPhone images failed. NVIDIA error
+  dialog No button was clicked by native GUI automation; the failed process
+  closed. Do not repeat successful feature extraction.
+- Current visible COLMAP process 10700, main handle 2098940, loaded
+  `data/static_multi-camera_Necto_001/project.ini`. Database is `database.db`;
+  input is `sfm_images`. CPU SIFT retry started with max size 7728, target 32768,
+  8 threads, OPENCV shared per folder. Recovery completed all 298 feature sets,
+  11,219,052 descriptor rows. Active cameras: 1/2 DJI floors, 3 Fuji landscape,
+  6 Fuji portrait, 7 iPhone; unused camera rows 4/5 are harmless. Initial focal
+  values and their assumptions are recorded in the documentation calibration
+  JSON; video priors are not fixed. Exhaustive guided matching started through
+  the GUI on GPU 0, block size 20, maximum matching features 32768. GPU usage
+  initially about 13 GiB. Matching truncates excess descriptors without resizing
+  images. Matching completed at 21:14 local in 60.755 minutes: 44,253/44,253
+  attempted pairs, 8,673 verified pairs (at least 15 inliers), all 298 images
+  in one connected component. Matching summary JSON and completion screenshot
+  are in the documentation folder. Do not repeat extraction or matching.
+  Read-only progress helper is
+  `.local/workflows/static_multi-camera_Necto_001/inspect_database.py`.
+- Local logs/contact sheets/UI snapshots:
+  `.local/workflows/static_multi-camera_Necto_001`. Recovery logs are
+  `colmap_recovery_stdout.log` and `colmap_recovery_stderr.log`. Original
+  `colmap_stderr.log` records the GPU allocation failure. GPU memory returned
+  to approximately 630 MiB after restart. No Windows restart needed.
+- Incremental reconstruction started visibly at 21:17 local. Initial pair
+  #171/#176 are Fuji landscape views. Main GUI handle remains 2098940; settings
+  dialogs are closed. Mapper CPU threads 16, local BA max 50, global BA max 100,
+  focal and distortion refinement enabled, principal points fixed. Project.ini
+  was saved through GUI with verified values. Automatic snapshots every 50
+  registered frames under `data/static_multi-camera_Necto_001/snapshots`.
+  Matching GPU memory was released to about 831 MiB. No training yet.
+- Next: finish SfM, export the largest correct model and validate calibration,
+  native-resolution preparation, visible LichtFeld
+  training and quality checks. Tiling is advertised in Python UI but not yet
+  verified implemented by installed trainer; preserve full Fuji resolution
+  and check actual memory before selecting fallback.
+- Prepared ignored configuration:
+  `outputs/static_multi-camera_Necto_001/run_01/training_config_native_3m_ppisp.json`.
+  Planned MRNF, SH3, PPISP, 30k iterations, starting 3M capacity, native images,
+  save/eval 7k/15k/30k. Choose final capacity after actual native-image VRAM
+  checks. Matching itself keeps about 13 GiB allocated; finish/close COLMAP
+  before launching LichtFeld to release GPU resources.
+- Installed CLI `--config` and Python `load_config_file` read ONLY optimization
+  settings, ignoring the nested dataset section. Launch visible LichtFeld with
+  explicit `-d`, `-o`, `--resize_factor 1`, `--max-width 0`, `--test-every 8`,
+  `--no-fs-cache` in addition to `--config`. Verify accepted native GUI params
+  and decoder image sizes before training. CPU-cache defaults reserve max of
+  1 GiB or 10% RAM and choose CPU cache only if estimated dataset fits. Planned
+  JSON now records these defaults, not unsupported 4 GiB/20% overrides.
+  JPEG hardware decoding may bypass that cache. Disable filesystem cache to
+  avoid an additional JPEG recompression path. New ignored Monitor-Training.ps1
+  is adapted to Necto and calls the existing desk_002 MCP helper; do not run it
+  until the new visible training process exists.
+- Old desk cleanup GUI is no longer running. Its saved originals and replay
+  recipe remain intact; no unsaved cleaned model was exported. No assistant
+  commits, pushes, installation changes or source-pin changes were performed.
+
+### Necto continuation: SfM exported and native dataset prepared (2026-10-04)
+
+- User explicitly approved ignoring the four unregistered images. Do not
+  spend further time recovering them. Main model completed at 21:52 local in
+  35.163 minutes and was exported through GUI into
+  `data/static_multi-camera_Necto_001/sparse/0`: 294 views, 553,662 points,
+  2,373,914 observations. All 170 DJI, 50 iPhone, 74 Fuji views registered.
+- Final audit is `documentation/static_multi-camera_Necto_001/reconstruction_quality.json`.
+  Mean stored point error 0.848577 px. Per-group observation means range
+  0.6264–0.9939 native pixels, no behind-camera observations. Fuji portrait
+  focal ~11310 px agrees with landscape ~11335 px. CHOLMOD solver warnings
+  occurred during final BA; later refinement finished and final model audited.
+- Undistortion completed through visible COLMAP Dense reconstruction GUI at
+  22:12 local in 0.307 min. Exact official bd1fcf6 source confirms default
+  max image size -1 and JPEG quality 100. Focal lengths unchanged in pixels;
+  only lens-corrected borders/canvas changed. Landscape Fuji 7724x4341,
+  portrait Fuji 4333x7715, DJI 3815x2148 / 3806x2145, iPhone 2158x3841.
+  Prepared dataset `data/static_multi-camera_Necto_001/undistorted`, with
+  flat sparse binaries preserved and copies in sparse/0. COLMAP closed normally.
+- LichtFeld visible process 23604 opened at 22:15 local with explicit native
+  resolution CLI args, config, no filesystem cache. Dataset loaded successfully:
+  257 training and 37 validation cameras. Native params confirm resize_factor=1,
+  max_width=0, test_every=8, use_fs_cache=False, 30k iterations, MRNF, SH3,
+  3M capacity and PPISP enabled. Local MCP initialized on port 45677.
+  Training started through native lf.start_training() at 22:18:28 local.
+  At ~22:25, >1400 iterations and ~841k Gaussians, no training errors. Full
+  Fuji resolution confirmed by camera.list (7724x4341). GPU memory fluctuates
+  roughly 5–10 GB at this early stage. Temporary viewport movement pauses
+  resume automatically; leave view idle to improve training throughput.
+  Background screenshot/checkpoint monitor PID 31628 is running, saving
+  training_monitor.json/training_progress.jsonl under the ignored workflow.
+  Portable training_recipe.json and actual training_split.json are in docs;
+  nine Fuji views are held out. Excluded images are DSCF1352,1353,1361,1362.
+  Continue monitoring checkpoints, native-resolution VRAM and evaluate final
+  results. Logs are lichtfeld_stdout/stderr.log
+  under the ignored Necto workflow folder. No Git writes by assistant.
+- Monitor was extended to record sampled peak GPU memory, copy final metrics
+  into docs, list PLY sizes/header vertex counts and capture completion screenshot.
+  Its completion JSON labels visual review pending. Monitor restarted without
+  stopping trainer. At ~22:38 local, ~4700 iterations / 1.76M Gaussians;
+  no errors, sampled GPU peak 9438 MiB. Camera movement pauses can add runtime.
+  Checkpoint source writes a temporary file then atomically replaces the final
+  resume file; the monitor additionally verifies header magic and saved iteration.
+- Important evaluation caveat: installed training/metrics/metrics.cpp applies
+  no PPISP correction in validation. Raw canonical-render versus photo scores
+  include camera appearance mismatch. Inspect saved GT/render images, including
+  native Fuji weave details, rather than treating aggregate PSNR/SSIM as geometry
+  accuracy. MCP render.capture with camera_index is REMOVED in this build despite
+  stale tool schema. Use native camera.go_to_dataset_camera and live Vulkan GUI
+  captures, or the trainer's saved evaluation image pairs.
+- 7,000-iteration evaluation completed at 22:49 local: all 37 views evaluated,
+  PSNR 19.814346 dB, SSIM 0.755788; 3,000,000 Gaussians. Resumable checkpoint
+  with optimizer and PPISP at run_01/checkpoints/checkpoint.resume, preserved
+  as checkpoint_07000.resume, both 1,254,038,585 bytes with identical SHA256
+  111d0e355f2f78bea4c38472e55de9d240b15b48a05db2760e5a5d0c8df926b2.
+  Verified details are in docs/checkpoint_7000_summary.json. Scheduled saves
+  only write checkpoints, not PLY; final train loop synchronously saves PLY,
+  PPISP companion and final checkpoint before reporting completed. This is
+  confirmed in pinned trainer.cpp, so monitor won't race a partial final PLY.
+- Training is continuing past 7k, no errors. Early native Fuji comparison
+  follows silhouette/seams, but yarn texture remains blurred and canonical
+  render is blue. Do not claim final crisp quality yet. Genuine evaluation
+  previews/crops are saved as 18_eval_7000_fuji_overview.png (downsampled fit)
+  and 19_eval_7000_fuji_native_crop.png (768x768 each, unresized, GT left).
+  Pair 9's full 15452x4341 PNG exceeds tool IPC size; use small GDI previews
+  or native crops for inspection instead of passing the entire PNG to view_image.
+  Actual native dataset camera UID 261 (DSCF1310) is a useful close weave view.
+- Halfway evaluation completed at 23:26 local: all 37 views, PSNR 20.256014,
+  SSIM 0.771705, 3M Gaussians; checkpoint_15000.resume preserved (1,254,038,585
+  bytes). GPU sampled peak 9815 MiB, no errors. Training continues past 16k.
+- Evaluator shuffles order: 15k pair 9 is DJI, NOT the same Fuji image as 7k
+  pair 9. An invalid crop was overwritten with a proper matched pair. Correct
+  match is 15k pair 1; 128x72 GT thumbnail RMS 0.07956/255 vs next 64.5344.
+  Exact SHA matching failed due tiny pixel rounding differences, so use low
+  pixel RMSE with clear separation. Docs 21/22 now show the corrected Fuji
+  overview/native crop; evaluation_match_15000.json records provenance.
+  Fine texture improves modestly but remains softer than photo; blue cast
+  persists in canonical rendering. Final 30k evaluation pending.
+- Added ignored Compare-Evaluation.ps1 for the final comparison. It reads PNG
+  dimensions, searches native Fuji candidates, requires unambiguous GT match
+  to 7k pair 9, and writes overview/native crops plus matching JSON. Run with
+  -Step 30000 -Prefix 31_eval_30000 -ProjectRoot actual TF4DGS path after final
+  evaluation. Do NOT assume file index stays constant between evaluations.
+
+### Necto completed training and conservative room cleanup (2026-10-05)
+
+- Training finished successfully at 00:32:13 Boston local time: 30,000 MRNF
+  iterations, SH3, 3M Gaussians, PPISP, native images (resize factor 1 / width
+  cap 0). Native completion log reports 8,025.3 seconds (~2h14m); completed
+  runtime job resets elapsed_seconds to zero, so training_result.json was
+  corrected from the log. Sampled peak total GPU usage 9,815 MiB.
+- All 37 final held-out images evaluated. Final canonical PSNR 20.342001 dB,
+  SSIM 0.775352, best recorded scores with modest improvement after 15k.
+  Canonical evaluation omits PPISP. Matched 30k Fuji pair is 2.png; reference
+  thumbnail RMSE 0.10725/255 vs next 64.5348. Fine yarn remains softer and
+  color cooler in held-out rendering. Calibrated training views show more
+  detailed weave; no claim of physical deformation accuracy.
+- Original run_01/splat_30000.ply and .ppisp saved, all three checkpoints
+  preserved. Final checkpoint 1,230,038,577 bytes; SHA256
+  88c28744563d82daa4a3b557691e6435ca882c9db97541db6c10000448ddf7f0.
+  Final PLY 744,001,532 bytes, 3M vertices. Export/header/checkpoint audits
+  and final comparison screenshots are in the Necto documentation folder.
+- Documentation finalization was interrupted by an automatic approval review
+  usage-limit failure; the user asked to wait, then continue with cleanup.
+  Continued after reset. User confirmed KEEP ROOM and remove artifacts.
+- Native GUI duplicate necto_room_cleanup received one undoable deletion pass:
+  activated major scale >1.0 scene units AND opacity <0.1, removing 5,031
+  large faint candidates. Avoided global opacity pruning to protect thin yarn.
+  Original Model remained locked/hidden and 3M undeleted during edits. Dataset
+  render binding temporarily switched to duplicate to avoid black rendering;
+  training never resumed. No room crop or brightness bake was applied.
+- Clean output is outputs/static_multi-camera_Necto_001/run_01/necto_room_clean_01.ply:
+  2,994,969 Gaussians, 742,753,844 bytes, SHA256
+  877aa5aa390d9605f2db85ca033a01ce10009ad3f74217591e746020582bdbdf.
+  Complete retained binary body matches the original byte-for-byte after
+  excluding recorded indices. Same-stem .ppisp companion copied intact from
+  original; native node export does not automatically save the appearance file.
+- Clean PLY reopened successfully in visible LichtFeld PID23604, SH3; native
+  logs confirm its 5-camera/257-frame PPISP companion loaded. CURRENT GUI is
+  VIEWER MODE with only necto_room_clean_01 and trainer state idle; original
+  dataset/camera nodes were cleared by reopening the file. Restore original
+  training with saved checkpoint, not by treating this viewer as a live trainer.
+  Useful overview eye/target/up/FOV saved in cleaned_overview_camera.json.
+- Before/after screenshots 40/42 (overview), 43/44 (weave), 45/46 (room);
+  screenshot 47 proves cleaned export reopened. cleanup_recipe.json, exact
+  source indices and cleanup_verification.json record the pass. Room and weave
+  remain in reviewed views; softness/reflections and unseen-angle artifacts
+  can remain. Original metrics were not rerun after deletion. Pre-existing
+  splat_30000_CleanupV1.ply was preserved untouched and not assessed.
+- No installation changes, source pin changes, commits or pushes. Images,
+  checkpoints, PLYs, caches and workflow logs remain ignored. Reports and
+  genuine GUI screenshots are ready for the user's own commit/push.
+
+### Multi-camera dynamic CPU foundation (2026-10-05)
+
+- User requested slowly building the multi-camera 4D base while recordings
+  are unavailable. Implemented a useful CPU foundation, not a real 4D trainer.
+  Static native apps and source pins were preserved: LichtFeld
+  b4e26dc929d23ad8c4cc266e61eb8bf7334ede36; vcpkg
+  930ecc42b512b564571d767f70775d284a6fa307. No Git commits/pushes or restart.
+- Existing empty Conda environment received Python 3.11.16, pip 26.2.1,
+  setuptools 84.0.0 and resolved conda-forge CPU dependencies (20 Conda
+  packages, ~35.4 MB downloaded). Local package tf4dgs 0.1.0 installed editable
+  with no added pip dependencies/no build isolation. `pip check` passed.
+  Python executable: C:/Users/mnijat/miniconda3/envs/tf4dgs/python.exe.
+  Base Python and LichtFeld bundled Python were not modified.
+- `environment.yml` now specifies Python 3.11/pip/setuptools and conda-forge
+  plus nodefaults. `environments/tf4dgs-win-64.explicit.txt` records exact
+  Windows CPU package URLs, with no machine prefix or credentials. Recreate
+  Conda first, then pip install -e . --no-deps --no-build-isolation. No research
+  PyTorch/CUDA stack is selected/installed or covered by this lock.
+- New source package `src/tf4dgs`, pyproject.toml and scripts/TF4DGS.py provide
+  init-session, validate, probe, plan, extract, analyse and serve-preview.
+  Pure standard-library Python; native FFmpeg/FFprobe reused. Checks support
+  portable paths, fixed cameras, baseline/time/scale metadata and calibration
+  structure (PINHOLE/OPENCV, world-to-camera proper rotation). Actual camera
+  calibration solving/import and real-data accuracy are not implemented.
+- Synchronization uses decoded PTS relative to each video's first frame.
+  Shared cues fit offset or affine clock drift. Bundles use actual reference
+  timestamps and reject excessive cross-camera timestamp span or reuse of any
+  source frame. Plan records accepted/rejected samples and per-view deltas;
+  sensor_sync_accuracy_verified remains false. Two cues fit exactly and are
+  not an accuracy certificate. 10 Hz/35 ms template values are placeholders.
+- Extraction verifies source SHA-256 and plan freshness, refuses existing
+  outputs, uses FFmpeg 9's filter argument file and selects decoded indices.
+  Native coded dimensions/no autorotation/no resize, 8-bit RGB PNG only.
+  PQ/HLG HDR refused until color workflow chosen. Unknown/log transfer needs
+  review. Original video remains untouched; cross-camera photometric
+  normalization and high-bit-depth analysis are pending. Partial failure
+  leaves an in-progress extraction record; inspect/archive before retry.
+- Point analysis requires assigned point or declared persistent Gaussian IDs,
+  normalized linear RGB and explicit scale. Reference displacement and RGB
+  distance are independent. Recent mode is a linearly fading sum of contiguous
+  increments within the history window, not speed or strain; trails share the
+  fade and never bridge missing/occluded/new identities. Missing values are
+  null/gray, not zero. Independent PLY row indices are not stable identities.
+- Initial ignored session created at data/dynamic_001/session.json with
+  raw/dji, raw/fuji, raw/iphone, calibration, manifests, baseline and frames.
+  No videos or real calibration supplied. Local preflight correctly reports
+  three missing videos, pending calibration/cues/capture locks and training
+  not ready. Keep the template incomplete; do not substitute synthetic poses.
+  Tracked configs include capture template and explicitly synthetic
+  calibration/point-track examples. data/outputs/.local/egg-info are ignored.
+- Local read-only synthetic point preview opened visibly in Edge at
+  http://127.0.0.1:8094, hidden server PID32832 at this checkpoint. PID/logs
+  under .local/workflows/dynamic_foundation. It may not survive a Windows
+  restart/session end; health-check the URL before starting another server.
+  Start with conda activate tf4dgs then python scripts/TF4DGS.py serve-preview
+  (or --port 8096 if occupied). Ctrl+C stops a foreground server. Preview
+  renders points, not splats: RGB, appearance, geometry and both maps; time
+  scrub/play, orbit/zoom, point selection, fixed scales and fading trails.
+- Final 23 tests passed without skips in ~1.7 seconds. Real FFmpeg test uses
+  three 160x96 synthetic videos (12/8/16 FPS), four bundles each; selected PNGs
+  matched independent single-frame decode hashes. Includes stale-plan,
+  altered-source, HDR and repeat-extraction rejection. Tests also cover drift,
+  irregular timestamps, skew/reuse, return motion, new/missing points, metric
+  scale and invalid API inputs. Python compilation and Git diff checks passed.
+- Isolated headless Edge exercised four view modes at t=4 s, no page errors,
+  correct combined visibility/RGB legend hiding and playback restart. Return
+  point recent activity 0.875 reconstruction units vs reference displacement
+  ~1e-32 (numerical zero). Genuine screenshots/report are in
+  documentation/dynamic_foundation; helper, browser profile and detailed logs
+  remain ignored. Visible browser also opened, refreshed and screenshot checked.
+- Updated README, scope, installation/current-state docs and this memory;
+  docs/DYNAMIC_FOUNDATION.md provides commands/contracts/reproducibility and
+  user's Git commands; CAPTURE_CHECKLIST.md covers a controlled first capture;
+  DYNAMIC_BACKEND_NOTES.md records research and pending adapter requirements.
+- Backend research: official 4DGaussians has a temporal SH branch disabled
+  by default (no_dshs=True), legacy Python3.7/torch1.13.1+cu116 setup and a
+  renderer path needing temporal-feature audit. Not verified Windows/CUDA13
+  compatible. Dynamic3DGaussians keeps appearance persistent by design, so
+  stock configuration does not match requested changing color. No repository
+  cloned/forked/pinned and no claim of completed Gaussian training integration.
+- NEXT: await controlled 5–10 s recordings with fixed cameras, shared before
+  and after timing cues, stable baseline and board/known scale captures. Probe
+  originals, enter measured cues, inspect timing/capture/photometric constraints
+  and solve/import common calibration. Benchmark a compatible temporal geometry
+  AND appearance backend in isolation (native Windows or later WSL fallback),
+  then connect validated point tracks and temporal Gaussian rendering. Preserve
+  classic static GUI training throughout; do not restart Necto training.

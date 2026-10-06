@@ -1,0 +1,2060 @@
+[
+    {
+        "image_name":  "Fuji/landscape/DSCF1295.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1291.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1296.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1293.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1294.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1292.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1298.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1299.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1301.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1300.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1302.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1323.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1327.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1325.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00450.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00440.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00390.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00404.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00417.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00430.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00473.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00494.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00504.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00377.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00521.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00359.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00224.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00242.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00288.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00347.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00323.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00337.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00188.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00175.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00278.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00149.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00161.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00298.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00134.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00252.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00537.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00123.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00026.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00548.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00268.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00016.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00006.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00080.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00051.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00090.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00863.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00850.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00828.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00794.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00804.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00818.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00783.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1304.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00773.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1307.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1303.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00580.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00559.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00062.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00570.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00590.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00739.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00750.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00600.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00610.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1312.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00729.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1308.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00180.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00701.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00325.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00296.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00286.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00276.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00265.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00251.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00738.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00308.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00335.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01007.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00164.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00195.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00209.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00222.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00235.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00725.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00992.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00961.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01115.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00974.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00951.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00377.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01105.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00136.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00118.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00106.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00094.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00055.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00028.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00435.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01090.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01059.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01048.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00006.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01130.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00240.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00082.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00361.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00390.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00374.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00457.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00446.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00433.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00401.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00536.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00568.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00526.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00499.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00510.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00479.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00489.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00411.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00423.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00578.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00590.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00600.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00663.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00673.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00615.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00689.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00699.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00640.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00629.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1359.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00014.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00797.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00782.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1357.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1358.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00763.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00838.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00754.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00849.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00654.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00638.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00691.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00675.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00824.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00609.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00880.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00867.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00895.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00936.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01327.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00753.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00081.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01212.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01238.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01248.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00812.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00784.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00773.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00188.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00261.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00290.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00418.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01140.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00401.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00464.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00493.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00319.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00348.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00522.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00907.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00917.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00029.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00811.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_01102.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_01122.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00551.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_01052.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_01002.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00067.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01308.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01298.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_01288.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_01160.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_01176.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00841.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01021.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1348.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01182.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01169.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01260.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_01230.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00917.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00944.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_01305.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00870.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1340.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1366.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00042.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1332.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01282.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00149.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1305.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00665.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00986.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1344.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1347.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01159.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00655.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_00969.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00719.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Iphone/frame_01247.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1326.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1306.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1315.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1316.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1313.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1318.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1320.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1319.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1310.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1309.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1329.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1317.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00638.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1341.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1349.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1321.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1322.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1360.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1336.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1338.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1342.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1339.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1337.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/portrait/DSCF1343.jpg",
+        "camera_id":  6,
+        "image_width":  4333,
+        "image_height":  7715,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1346.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1351.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1364.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1363.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1367.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1354.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1356.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/portrait/DSCF1365.jpg",
+        "camera_id":  6,
+        "image_width":  4333,
+        "image_height":  7715,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1330.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1331.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1334.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1345.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1333.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "training"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1290.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1297.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00463.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00484.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00206.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00313.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00041.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00107.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00840.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00763.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00620.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00690.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00349.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00713.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00147.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01077.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00002.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00469.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00553.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_00653.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01227.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "Iphone/frame_00708.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "Iphone/frame_00580.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01202.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "Iphone/frame_00211.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor1/frame_01031.jpeg",
+        "camera_id":  1,
+        "image_width":  3815,
+        "image_height":  2148,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "Iphone/frame_01073.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "Iphone/frame_01213.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1328.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "DJI/Necto_DJI_Floor2/frame_00675.jpeg",
+        "camera_id":  2,
+        "image_width":  3806,
+        "image_height":  2145,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "Iphone/frame_00132.jpeg",
+        "camera_id":  7,
+        "image_width":  2158,
+        "image_height":  3841,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1311.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1314.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1324.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1355.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1350.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "validation"
+    },
+    {
+        "image_name":  "Fuji/landscape/DSCF1335.jpg",
+        "camera_id":  3,
+        "image_width":  7724,
+        "image_height":  4341,
+        "split":  "validation"
+    }
+]

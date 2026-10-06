@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "identity_kind": "assigned_points",
+  "color_space": "linear_rgb",
+  "reference_frame": 0,
+  "metres_per_unit": null,
+  "frames": [
+    {"time_s": 0, "points": [
+      {"id": "moving_point", "position": [0, 0, 0], "rgb": [0.2, 0.4, 0.6]},
+      {"id": "color_point", "position": [1, 0, 0], "rgb": [0.2, 0.2, 0.2]}
+    ]},
+    {"time_s": 1, "points": [
+      {"id": "moving_point", "position": [0, 1, 0], "rgb": [0.2, 0.4, 0.6]},
+      {"id": "color_point", "position": [1, 0, 0], "rgb": [0.8, 0.2, 0.2]}
+    ]},
+    {"time_s": 2, "points": [
+      {"id": "moving_point", "position": [0, 0, 0], "rgb": [0.2, 0.4, 0.6]},
+      {"id": "color_point", "position": [1, 0, 0], "rgb": [0.8, 0.2, 0.2]},
+      {"id": "new_surface", "status": "new", "position": [0.5, 0.5, 0], "rgb": [0.5, 0.3, 0.2]}
+    ]}
+  ]
+}

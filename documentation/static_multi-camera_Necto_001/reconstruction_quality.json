@@ -1,0 +1,2179 @@
+{
+  "registered_images": 294,
+  "points": 553662,
+  "observations": 2373914,
+  "mean_stored_point_error_px": 0.8485773325931854,
+  "registered_by_camera": {
+    "1": {
+      "images": 100,
+      "behind_camera": 0,
+      "model_id": 4,
+      "width": 3840,
+      "height": 2160,
+      "params": [
+        1520.07260150011,
+        1520.6405578934587,
+        1920.0,
+        1080.0,
+        -0.0026658258463118758,
+        0.0013526587968833684,
+        0.0003846256357034066,
+        0.0013686932042623107
+      ],
+      "observations": 1106051,
+      "mean_error_px": 0.8310154333090134,
+      "median_error_px": 0.6488587371890411,
+      "p95_error_px": 2.2176311643615203,
+      "rms_error_px": 1.0593856870205194
+    },
+    "2": {
+      "images": 70,
+      "behind_camera": 0,
+      "model_id": 4,
+      "width": 3840,
+      "height": 2160,
+      "params": [
+        1522.3347775322657,
+        1521.71061057551,
+        1920.0,
+        1080.0,
+        -0.002498889861738213,
+        0.0017205162514895135,
+        0.00010472457342431989,
+        0.0015781381960479968
+      ],
+      "observations": 681977,
+      "mean_error_px": 0.8969723677658167,
+      "median_error_px": 0.7083952755980064,
+      "p95_error_px": 2.353642512558616,
+      "rms_error_px": 1.1324292539294964
+    },
+    "3": {
+      "images": 72,
+      "behind_camera": 0,
+      "model_id": 4,
+      "width": 7728,
+      "height": 4344,
+      "params": [
+        11335.365707239427,
+        11331.702409998783,
+        3864.0,
+        2172.0,
+        0.008111981026259039,
+        -0.056876594762599625,
+        0.00037712159390993703,
+        0.00020927587657855885
+      ],
+      "observations": 263159,
+      "mean_error_px": 0.9939023535640331,
+      "median_error_px": 0.8340472204454773,
+      "p95_error_px": 2.4095725290740098,
+      "rms_error_px": 1.220644598859619
+    },
+    "6": {
+      "images": 2,
+      "behind_camera": 0,
+      "model_id": 4,
+      "width": 4344,
+      "height": 7728,
+      "params": [
+        11310.168928328681,
+        11300.538476524262,
+        2172.0,
+        3864.0,
+        0.0044550024871922046,
+        -0.003813504301415952,
+        -0.0003875514789149066,
+        -0.0011118953564785265
+      ],
+      "observations": 3478,
+      "mean_error_px": 0.6264059321083837,
+      "median_error_px": 0.43277558774085184,
+      "p95_error_px": 1.913724322794233,
+      "rms_error_px": 0.862281034316078
+    },
+    "7": {
+      "images": 50,
+      "behind_camera": 0,
+      "model_id": 4,
+      "width": 2160,
+      "height": 3840,
+      "params": [
+        1675.7152980804626,
+        1675.136717039467,
+        1080.0,
+        1920.0,
+        -0.0023080047540656426,
+        0.0003379905983726825,
+        0.000547119953172274,
+        -0.0004445350034516354
+      ],
+      "observations": 319249,
+      "mean_error_px": 0.8865718300891676,
+      "median_error_px": 0.6568285064026875,
+      "p95_error_px": 2.473757407675458,
+      "rms_error_px": 1.1553815539631993
+    }
+  },
+  "unused_camera_ids": [],
+  "images": [
+    {
+      "id": 1,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00002.jpeg",
+      "observations": 5732,
+      "mean_error_px": 1.1093441594679834
+    },
+    {
+      "id": 2,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00014.jpeg",
+      "observations": 6397,
+      "mean_error_px": 1.1366010482426012
+    },
+    {
+      "id": 3,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00029.jpeg",
+      "observations": 4625,
+      "mean_error_px": 1.356932614920061
+    },
+    {
+      "id": 4,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00042.jpeg",
+      "observations": 2844,
+      "mean_error_px": 1.2738887631526923
+    },
+    {
+      "id": 5,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00067.jpeg",
+      "observations": 4206,
+      "mean_error_px": 1.0511015222578557
+    },
+    {
+      "id": 6,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00081.jpeg",
+      "observations": 6073,
+      "mean_error_px": 1.027592198757963
+    },
+    {
+      "id": 7,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00094.jpeg",
+      "observations": 6763,
+      "mean_error_px": 1.0579743789145761
+    },
+    {
+      "id": 8,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00106.jpeg",
+      "observations": 6903,
+      "mean_error_px": 1.1149016995885914
+    },
+    {
+      "id": 9,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00118.jpeg",
+      "observations": 7698,
+      "mean_error_px": 1.0257727058202084
+    },
+    {
+      "id": 10,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00136.jpeg",
+      "observations": 9375,
+      "mean_error_px": 0.9726836666541397
+    },
+    {
+      "id": 11,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00147.jpeg",
+      "observations": 10813,
+      "mean_error_px": 0.8989285320341709
+    },
+    {
+      "id": 12,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00164.jpeg",
+      "observations": 13804,
+      "mean_error_px": 0.7754216924801753
+    },
+    {
+      "id": 13,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00180.jpeg",
+      "observations": 14059,
+      "mean_error_px": 0.7799414683014775
+    },
+    {
+      "id": 14,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00195.jpeg",
+      "observations": 13067,
+      "mean_error_px": 0.8196953099901554
+    },
+    {
+      "id": 15,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00209.jpeg",
+      "observations": 12499,
+      "mean_error_px": 0.7808053938124446
+    },
+    {
+      "id": 16,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00222.jpeg",
+      "observations": 12113,
+      "mean_error_px": 0.7521951366687455
+    },
+    {
+      "id": 17,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00235.jpeg",
+      "observations": 11725,
+      "mean_error_px": 0.7494005613313925
+    },
+    {
+      "id": 18,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00251.jpeg",
+      "observations": 11375,
+      "mean_error_px": 0.7383780077257759
+    },
+    {
+      "id": 19,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00265.jpeg",
+      "observations": 12259,
+      "mean_error_px": 0.8391296576176731
+    },
+    {
+      "id": 20,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00276.jpeg",
+      "observations": 12251,
+      "mean_error_px": 0.8551175023066085
+    },
+    {
+      "id": 21,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00286.jpeg",
+      "observations": 12162,
+      "mean_error_px": 0.6943000554564398
+    },
+    {
+      "id": 22,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00296.jpeg",
+      "observations": 9842,
+      "mean_error_px": 0.7679063622889303
+    },
+    {
+      "id": 23,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00308.jpeg",
+      "observations": 6932,
+      "mean_error_px": 0.9290402908474881
+    },
+    {
+      "id": 24,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00325.jpeg",
+      "observations": 8033,
+      "mean_error_px": 0.9615162102848537
+    },
+    {
+      "id": 25,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00335.jpeg",
+      "observations": 8192,
+      "mean_error_px": 0.9028080889508173
+    },
+    {
+      "id": 26,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00349.jpeg",
+      "observations": 8846,
+      "mean_error_px": 0.9213207891720392
+    },
+    {
+      "id": 27,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00361.jpeg",
+      "observations": 11997,
+      "mean_error_px": 0.8619891707520452
+    },
+    {
+      "id": 28,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00374.jpeg",
+      "observations": 16109,
+      "mean_error_px": 0.7832784749384245
+    },
+    {
+      "id": 29,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00390.jpeg",
+      "observations": 18276,
+      "mean_error_px": 0.7565535498623779
+    },
+    {
+      "id": 30,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00401.jpeg",
+      "observations": 20362,
+      "mean_error_px": 0.6735527411045056
+    },
+    {
+      "id": 31,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00411.jpeg",
+      "observations": 19871,
+      "mean_error_px": 0.6896366556516496
+    },
+    {
+      "id": 32,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00423.jpeg",
+      "observations": 19939,
+      "mean_error_px": 0.7222434397506462
+    },
+    {
+      "id": 33,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00433.jpeg",
+      "observations": 21370,
+      "mean_error_px": 0.6481659740238008
+    },
+    {
+      "id": 34,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00446.jpeg",
+      "observations": 18540,
+      "mean_error_px": 0.7549660635690804
+    },
+    {
+      "id": 35,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00457.jpeg",
+      "observations": 17693,
+      "mean_error_px": 0.7868451470114864
+    },
+    {
+      "id": 36,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00469.jpeg",
+      "observations": 18553,
+      "mean_error_px": 0.878904654800385
+    },
+    {
+      "id": 37,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00479.jpeg",
+      "observations": 18953,
+      "mean_error_px": 0.8627633369135779
+    },
+    {
+      "id": 38,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00489.jpeg",
+      "observations": 18290,
+      "mean_error_px": 0.7511557043559376
+    },
+    {
+      "id": 39,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00499.jpeg",
+      "observations": 19957,
+      "mean_error_px": 0.7284826493046386
+    },
+    {
+      "id": 40,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00510.jpeg",
+      "observations": 19803,
+      "mean_error_px": 0.7784670205605786
+    },
+    {
+      "id": 41,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00526.jpeg",
+      "observations": 21789,
+      "mean_error_px": 0.8305041312770738
+    },
+    {
+      "id": 42,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00536.jpeg",
+      "observations": 21689,
+      "mean_error_px": 0.7061155455573409
+    },
+    {
+      "id": 43,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00553.jpeg",
+      "observations": 18065,
+      "mean_error_px": 0.7007766027172578
+    },
+    {
+      "id": 44,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00568.jpeg",
+      "observations": 17213,
+      "mean_error_px": 0.7956445248318585
+    },
+    {
+      "id": 45,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00578.jpeg",
+      "observations": 13447,
+      "mean_error_px": 0.7512123922878872
+    },
+    {
+      "id": 46,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00590.jpeg",
+      "observations": 11882,
+      "mean_error_px": 0.8368060521535071
+    },
+    {
+      "id": 47,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00600.jpeg",
+      "observations": 10192,
+      "mean_error_px": 0.8393753316605209
+    },
+    {
+      "id": 48,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00615.jpeg",
+      "observations": 8779,
+      "mean_error_px": 0.8598408312940128
+    },
+    {
+      "id": 49,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00629.jpeg",
+      "observations": 7725,
+      "mean_error_px": 0.7654894796485127
+    },
+    {
+      "id": 50,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00640.jpeg",
+      "observations": 9258,
+      "mean_error_px": 0.7273867524712931
+    },
+    {
+      "id": 51,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00653.jpeg",
+      "observations": 13346,
+      "mean_error_px": 0.8589734642372409
+    },
+    {
+      "id": 52,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00663.jpeg",
+      "observations": 14393,
+      "mean_error_px": 0.7813007289872702
+    },
+    {
+      "id": 53,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00673.jpeg",
+      "observations": 14692,
+      "mean_error_px": 0.7921107568779101
+    },
+    {
+      "id": 54,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00689.jpeg",
+      "observations": 9466,
+      "mean_error_px": 0.9711869336812928
+    },
+    {
+      "id": 55,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00699.jpeg",
+      "observations": 7098,
+      "mean_error_px": 0.8353323012925834
+    },
+    {
+      "id": 56,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00713.jpeg",
+      "observations": 10258,
+      "mean_error_px": 0.9153638037453702
+    },
+    {
+      "id": 57,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00725.jpeg",
+      "observations": 10296,
+      "mean_error_px": 0.7682236038798136
+    },
+    {
+      "id": 58,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00738.jpeg",
+      "observations": 11057,
+      "mean_error_px": 0.8889211222363291
+    },
+    {
+      "id": 59,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00753.jpeg",
+      "observations": 10628,
+      "mean_error_px": 0.6563197182169882
+    },
+    {
+      "id": 60,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00763.jpeg",
+      "observations": 10656,
+      "mean_error_px": 0.6061919056421524
+    },
+    {
+      "id": 61,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00773.jpeg",
+      "observations": 9802,
+      "mean_error_px": 0.6478554706312828
+    },
+    {
+      "id": 62,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00784.jpeg",
+      "observations": 8251,
+      "mean_error_px": 0.7516541192801683
+    },
+    {
+      "id": 63,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00811.jpeg",
+      "observations": 3605,
+      "mean_error_px": 1.3567842225917177
+    },
+    {
+      "id": 64,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00824.jpeg",
+      "observations": 8129,
+      "mean_error_px": 0.9650281951667492
+    },
+    {
+      "id": 65,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00838.jpeg",
+      "observations": 11616,
+      "mean_error_px": 0.9198500363691996
+    },
+    {
+      "id": 66,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00849.jpeg",
+      "observations": 11749,
+      "mean_error_px": 0.7854963590975164
+    },
+    {
+      "id": 67,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00867.jpeg",
+      "observations": 13534,
+      "mean_error_px": 0.7690262938225568
+    },
+    {
+      "id": 68,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00880.jpeg",
+      "observations": 14746,
+      "mean_error_px": 0.7829354006674308
+    },
+    {
+      "id": 69,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00895.jpeg",
+      "observations": 14526,
+      "mean_error_px": 0.7827326001123669
+    },
+    {
+      "id": 70,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00907.jpeg",
+      "observations": 11683,
+      "mean_error_px": 0.8749646789530007
+    },
+    {
+      "id": 71,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00917.jpeg",
+      "observations": 9596,
+      "mean_error_px": 0.7720781345491027
+    },
+    {
+      "id": 72,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00936.jpeg",
+      "observations": 7831,
+      "mean_error_px": 0.9924449885567784
+    },
+    {
+      "id": 73,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00951.jpeg",
+      "observations": 9146,
+      "mean_error_px": 1.1235533078767013
+    },
+    {
+      "id": 74,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00961.jpeg",
+      "observations": 9942,
+      "mean_error_px": 0.991144723204771
+    },
+    {
+      "id": 75,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00974.jpeg",
+      "observations": 9708,
+      "mean_error_px": 1.0016005981981306
+    },
+    {
+      "id": 76,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_00992.jpeg",
+      "observations": 11284,
+      "mean_error_px": 0.9003272066812358
+    },
+    {
+      "id": 77,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01007.jpeg",
+      "observations": 14646,
+      "mean_error_px": 0.8363328664291018
+    },
+    {
+      "id": 78,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01021.jpeg",
+      "observations": 13867,
+      "mean_error_px": 0.6627850032443843
+    },
+    {
+      "id": 79,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01031.jpeg",
+      "observations": 13845,
+      "mean_error_px": 0.8110426320390914
+    },
+    {
+      "id": 80,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01048.jpeg",
+      "observations": 13373,
+      "mean_error_px": 0.7436003260549231
+    },
+    {
+      "id": 81,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01059.jpeg",
+      "observations": 14849,
+      "mean_error_px": 0.8166920708881932
+    },
+    {
+      "id": 82,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01077.jpeg",
+      "observations": 15003,
+      "mean_error_px": 0.8143097337419871
+    },
+    {
+      "id": 83,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01090.jpeg",
+      "observations": 14538,
+      "mean_error_px": 0.8214239488392931
+    },
+    {
+      "id": 84,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01105.jpeg",
+      "observations": 14765,
+      "mean_error_px": 0.8503802597436202
+    },
+    {
+      "id": 85,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01115.jpeg",
+      "observations": 11131,
+      "mean_error_px": 0.9467338577168202
+    },
+    {
+      "id": 86,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01130.jpeg",
+      "observations": 7597,
+      "mean_error_px": 0.97138771283552
+    },
+    {
+      "id": 87,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01140.jpeg",
+      "observations": 5456,
+      "mean_error_px": 1.0874474303688564
+    },
+    {
+      "id": 88,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01159.jpeg",
+      "observations": 2013,
+      "mean_error_px": 1.0877361570719493
+    },
+    {
+      "id": 89,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01169.jpeg",
+      "observations": 3139,
+      "mean_error_px": 1.1370809352744524
+    },
+    {
+      "id": 90,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01182.jpeg",
+      "observations": 2994,
+      "mean_error_px": 1.214985602649904
+    },
+    {
+      "id": 91,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01202.jpeg",
+      "observations": 4707,
+      "mean_error_px": 0.9408280935935752
+    },
+    {
+      "id": 92,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01212.jpeg",
+      "observations": 3982,
+      "mean_error_px": 0.9863112951731681
+    },
+    {
+      "id": 93,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01227.jpeg",
+      "observations": 5532,
+      "mean_error_px": 0.9435032442947278
+    },
+    {
+      "id": 94,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01238.jpeg",
+      "observations": 5279,
+      "mean_error_px": 0.9803643507986372
+    },
+    {
+      "id": 95,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01248.jpeg",
+      "observations": 4689,
+      "mean_error_px": 0.9637977412760009
+    },
+    {
+      "id": 96,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01260.jpeg",
+      "observations": 2620,
+      "mean_error_px": 1.1384553532177848
+    },
+    {
+      "id": 97,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01282.jpeg",
+      "observations": 2034,
+      "mean_error_px": 1.3829765731606374
+    },
+    {
+      "id": 98,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01298.jpeg",
+      "observations": 3148,
+      "mean_error_px": 1.050028093180915
+    },
+    {
+      "id": 99,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01308.jpeg",
+      "observations": 4567,
+      "mean_error_px": 1.1276533635091357
+    },
+    {
+      "id": 100,
+      "camera_id": 1,
+      "name": "DJI/Necto_DJI_Floor1/frame_01327.jpeg",
+      "observations": 6899,
+      "mean_error_px": 1.0108091512549122
+    },
+    {
+      "id": 101,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00006.jpeg",
+      "observations": 9110,
+      "mean_error_px": 0.8433073843822565
+    },
+    {
+      "id": 102,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00016.jpeg",
+      "observations": 9877,
+      "mean_error_px": 0.8358905537187489
+    },
+    {
+      "id": 103,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00026.jpeg",
+      "observations": 10467,
+      "mean_error_px": 0.7898899620825933
+    },
+    {
+      "id": 104,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00041.jpeg",
+      "observations": 12739,
+      "mean_error_px": 0.786474563059259
+    },
+    {
+      "id": 105,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00051.jpeg",
+      "observations": 12024,
+      "mean_error_px": 0.7755272064774661
+    },
+    {
+      "id": 106,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00062.jpeg",
+      "observations": 10905,
+      "mean_error_px": 0.8205735382379071
+    },
+    {
+      "id": 107,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00080.jpeg",
+      "observations": 11808,
+      "mean_error_px": 0.7817090924509195
+    },
+    {
+      "id": 108,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00090.jpeg",
+      "observations": 10308,
+      "mean_error_px": 0.7601346063722558
+    },
+    {
+      "id": 109,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00107.jpeg",
+      "observations": 11086,
+      "mean_error_px": 0.7844141533329613
+    },
+    {
+      "id": 110,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00123.jpeg",
+      "observations": 14379,
+      "mean_error_px": 0.7573100626691468
+    },
+    {
+      "id": 111,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00134.jpeg",
+      "observations": 13123,
+      "mean_error_px": 0.8209559196375849
+    },
+    {
+      "id": 112,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00149.jpeg",
+      "observations": 13541,
+      "mean_error_px": 0.8116340592531248
+    },
+    {
+      "id": 113,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00161.jpeg",
+      "observations": 13754,
+      "mean_error_px": 0.8064665922119492
+    },
+    {
+      "id": 114,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00175.jpeg",
+      "observations": 13399,
+      "mean_error_px": 0.8001768940352013
+    },
+    {
+      "id": 115,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00188.jpeg",
+      "observations": 13373,
+      "mean_error_px": 0.8460414863119805
+    },
+    {
+      "id": 116,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00206.jpeg",
+      "observations": 14171,
+      "mean_error_px": 0.8949301169006811
+    },
+    {
+      "id": 117,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00224.jpeg",
+      "observations": 14206,
+      "mean_error_px": 0.8702491092093044
+    },
+    {
+      "id": 118,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00242.jpeg",
+      "observations": 14764,
+      "mean_error_px": 0.9633867371339264
+    },
+    {
+      "id": 119,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00252.jpeg",
+      "observations": 13582,
+      "mean_error_px": 1.0581820712534162
+    },
+    {
+      "id": 120,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00268.jpeg",
+      "observations": 12422,
+      "mean_error_px": 0.8735596581955444
+    },
+    {
+      "id": 121,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00278.jpeg",
+      "observations": 13923,
+      "mean_error_px": 1.155543857027261
+    },
+    {
+      "id": 122,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00288.jpeg",
+      "observations": 13676,
+      "mean_error_px": 1.3267713564402779
+    },
+    {
+      "id": 123,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00298.jpeg",
+      "observations": 8470,
+      "mean_error_px": 0.908930572515062
+    },
+    {
+      "id": 124,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00313.jpeg",
+      "observations": 9631,
+      "mean_error_px": 1.1775952704612245
+    },
+    {
+      "id": 125,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00323.jpeg",
+      "observations": 12572,
+      "mean_error_px": 1.0393636324669748
+    },
+    {
+      "id": 126,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00337.jpeg",
+      "observations": 13539,
+      "mean_error_px": 0.9636887630952606
+    },
+    {
+      "id": 127,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00347.jpeg",
+      "observations": 13319,
+      "mean_error_px": 0.9051347069220067
+    },
+    {
+      "id": 128,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00359.jpeg",
+      "observations": 12843,
+      "mean_error_px": 0.9493745044774076
+    },
+    {
+      "id": 129,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00377.jpeg",
+      "observations": 12384,
+      "mean_error_px": 1.0263467301560947
+    },
+    {
+      "id": 130,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00390.jpeg",
+      "observations": 10639,
+      "mean_error_px": 1.0748645743093028
+    },
+    {
+      "id": 131,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00404.jpeg",
+      "observations": 8860,
+      "mean_error_px": 0.988401897713155
+    },
+    {
+      "id": 132,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00417.jpeg",
+      "observations": 8179,
+      "mean_error_px": 0.9693676378627337
+    },
+    {
+      "id": 133,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00430.jpeg",
+      "observations": 7344,
+      "mean_error_px": 1.045512459140669
+    },
+    {
+      "id": 134,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00440.jpeg",
+      "observations": 8353,
+      "mean_error_px": 1.2528562918500492
+    },
+    {
+      "id": 135,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00450.jpeg",
+      "observations": 11008,
+      "mean_error_px": 0.8342755647074435
+    },
+    {
+      "id": 136,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00463.jpeg",
+      "observations": 10970,
+      "mean_error_px": 0.8005231531168336
+    },
+    {
+      "id": 137,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00473.jpeg",
+      "observations": 9412,
+      "mean_error_px": 0.7233513212165127
+    },
+    {
+      "id": 138,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00484.jpeg",
+      "observations": 9985,
+      "mean_error_px": 0.7655338610782959
+    },
+    {
+      "id": 139,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00494.jpeg",
+      "observations": 9569,
+      "mean_error_px": 0.7872620873493126
+    },
+    {
+      "id": 140,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00504.jpeg",
+      "observations": 10370,
+      "mean_error_px": 1.0221309109172803
+    },
+    {
+      "id": 141,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00521.jpeg",
+      "observations": 10028,
+      "mean_error_px": 0.9195533065556918
+    },
+    {
+      "id": 142,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00537.jpeg",
+      "observations": 6768,
+      "mean_error_px": 0.9792156043578276
+    },
+    {
+      "id": 143,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00548.jpeg",
+      "observations": 5791,
+      "mean_error_px": 0.9651220472063734
+    },
+    {
+      "id": 144,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00559.jpeg",
+      "observations": 4851,
+      "mean_error_px": 0.9345161270888804
+    },
+    {
+      "id": 145,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00570.jpeg",
+      "observations": 5519,
+      "mean_error_px": 0.9478581694534224
+    },
+    {
+      "id": 146,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00580.jpeg",
+      "observations": 7567,
+      "mean_error_px": 0.908153268871899
+    },
+    {
+      "id": 147,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00590.jpeg",
+      "observations": 9027,
+      "mean_error_px": 0.8700648444013532
+    },
+    {
+      "id": 148,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00600.jpeg",
+      "observations": 7343,
+      "mean_error_px": 0.8770558234236824
+    },
+    {
+      "id": 149,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00610.jpeg",
+      "observations": 8240,
+      "mean_error_px": 0.7860284923919895
+    },
+    {
+      "id": 150,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00620.jpeg",
+      "observations": 7655,
+      "mean_error_px": 0.8872940143576652
+    },
+    {
+      "id": 151,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00638.jpeg",
+      "observations": 1266,
+      "mean_error_px": 0.6380048268776303
+    },
+    {
+      "id": 152,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00655.jpeg",
+      "observations": 3276,
+      "mean_error_px": 0.6420560852315348
+    },
+    {
+      "id": 153,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00665.jpeg",
+      "observations": 3615,
+      "mean_error_px": 0.6255496053607472
+    },
+    {
+      "id": 154,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00675.jpeg",
+      "observations": 3323,
+      "mean_error_px": 0.8156374330461945
+    },
+    {
+      "id": 155,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00690.jpeg",
+      "observations": 3177,
+      "mean_error_px": 0.8895710252974914
+    },
+    {
+      "id": 156,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00701.jpeg",
+      "observations": 4574,
+      "mean_error_px": 0.9660021535491183
+    },
+    {
+      "id": 157,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00719.jpeg",
+      "observations": 2295,
+      "mean_error_px": 0.9690584909825455
+    },
+    {
+      "id": 158,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00729.jpeg",
+      "observations": 5334,
+      "mean_error_px": 0.8010130697065649
+    },
+    {
+      "id": 159,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00739.jpeg",
+      "observations": 7920,
+      "mean_error_px": 0.7868358631073534
+    },
+    {
+      "id": 160,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00750.jpeg",
+      "observations": 7561,
+      "mean_error_px": 0.8005564415937582
+    },
+    {
+      "id": 161,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00763.jpeg",
+      "observations": 8014,
+      "mean_error_px": 0.7940187648613853
+    },
+    {
+      "id": 162,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00773.jpeg",
+      "observations": 8266,
+      "mean_error_px": 0.8837021389615962
+    },
+    {
+      "id": 163,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00783.jpeg",
+      "observations": 10425,
+      "mean_error_px": 0.8768292422624336
+    },
+    {
+      "id": 164,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00794.jpeg",
+      "observations": 12010,
+      "mean_error_px": 0.8094128812170703
+    },
+    {
+      "id": 165,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00804.jpeg",
+      "observations": 10889,
+      "mean_error_px": 0.9136428358343146
+    },
+    {
+      "id": 166,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00818.jpeg",
+      "observations": 10134,
+      "mean_error_px": 0.9761741917549738
+    },
+    {
+      "id": 167,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00828.jpeg",
+      "observations": 10417,
+      "mean_error_px": 0.8143926835013258
+    },
+    {
+      "id": 168,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00840.jpeg",
+      "observations": 9065,
+      "mean_error_px": 0.8456938577263844
+    },
+    {
+      "id": 169,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00850.jpeg",
+      "observations": 11665,
+      "mean_error_px": 1.0530463908530163
+    },
+    {
+      "id": 170,
+      "camera_id": 2,
+      "name": "DJI/Necto_DJI_Floor2/frame_00863.jpeg",
+      "observations": 11878,
+      "mean_error_px": 0.814014659328401
+    },
+    {
+      "id": 171,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1290.jpg",
+      "observations": 7533,
+      "mean_error_px": 1.1305173520287923
+    },
+    {
+      "id": 172,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1291.jpg",
+      "observations": 6634,
+      "mean_error_px": 1.1023094349762295
+    },
+    {
+      "id": 173,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1292.jpg",
+      "observations": 8444,
+      "mean_error_px": 1.069177279331008
+    },
+    {
+      "id": 174,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1293.jpg",
+      "observations": 6933,
+      "mean_error_px": 0.9903321774734359
+    },
+    {
+      "id": 175,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1294.jpg",
+      "observations": 9871,
+      "mean_error_px": 1.1139036170642334
+    },
+    {
+      "id": 176,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1295.jpg",
+      "observations": 9619,
+      "mean_error_px": 1.1642913154605594
+    },
+    {
+      "id": 177,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1296.jpg",
+      "observations": 7771,
+      "mean_error_px": 1.1072571440480288
+    },
+    {
+      "id": 178,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1297.jpg",
+      "observations": 8719,
+      "mean_error_px": 1.0576666731084094
+    },
+    {
+      "id": 179,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1298.jpg",
+      "observations": 8351,
+      "mean_error_px": 1.0745393522772144
+    },
+    {
+      "id": 180,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1299.jpg",
+      "observations": 6367,
+      "mean_error_px": 1.0270082934452476
+    },
+    {
+      "id": 181,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1300.jpg",
+      "observations": 8437,
+      "mean_error_px": 1.4717360589563186
+    },
+    {
+      "id": 182,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1301.jpg",
+      "observations": 8561,
+      "mean_error_px": 1.4093822495325738
+    },
+    {
+      "id": 183,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1302.jpg",
+      "observations": 6984,
+      "mean_error_px": 1.1084993978972228
+    },
+    {
+      "id": 184,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1303.jpg",
+      "observations": 4717,
+      "mean_error_px": 0.9153792518368217
+    },
+    {
+      "id": 185,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1304.jpg",
+      "observations": 5183,
+      "mean_error_px": 1.0956723332572191
+    },
+    {
+      "id": 186,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1305.jpg",
+      "observations": 4085,
+      "mean_error_px": 1.2233556820499787
+    },
+    {
+      "id": 187,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1306.jpg",
+      "observations": 5511,
+      "mean_error_px": 1.029781052493777
+    },
+    {
+      "id": 188,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1307.jpg",
+      "observations": 6833,
+      "mean_error_px": 0.9940712296864964
+    },
+    {
+      "id": 189,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1308.jpg",
+      "observations": 4920,
+      "mean_error_px": 0.9839323914677677
+    },
+    {
+      "id": 190,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1309.jpg",
+      "observations": 1630,
+      "mean_error_px": 0.9327400309997629
+    },
+    {
+      "id": 191,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1310.jpg",
+      "observations": 3313,
+      "mean_error_px": 1.190161853986058
+    },
+    {
+      "id": 192,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1311.jpg",
+      "observations": 3170,
+      "mean_error_px": 0.8621324060887565
+    },
+    {
+      "id": 193,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1312.jpg",
+      "observations": 4020,
+      "mean_error_px": 0.8080057309584661
+    },
+    {
+      "id": 194,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1313.jpg",
+      "observations": 2539,
+      "mean_error_px": 0.8010560030575599
+    },
+    {
+      "id": 195,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1314.jpg",
+      "observations": 3632,
+      "mean_error_px": 0.9381956166632257
+    },
+    {
+      "id": 196,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1315.jpg",
+      "observations": 5497,
+      "mean_error_px": 0.8683030532727537
+    },
+    {
+      "id": 197,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1316.jpg",
+      "observations": 6244,
+      "mean_error_px": 1.0211389748011013
+    },
+    {
+      "id": 198,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1317.jpg",
+      "observations": 1587,
+      "mean_error_px": 0.8693212430961325
+    },
+    {
+      "id": 199,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1318.jpg",
+      "observations": 4393,
+      "mean_error_px": 1.3302783952208288
+    },
+    {
+      "id": 200,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1319.jpg",
+      "observations": 3634,
+      "mean_error_px": 1.344913029996134
+    },
+    {
+      "id": 201,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1320.jpg",
+      "observations": 3849,
+      "mean_error_px": 1.1803119744347594
+    },
+    {
+      "id": 202,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1321.jpg",
+      "observations": 816,
+      "mean_error_px": 0.8316450519404622
+    },
+    {
+      "id": 203,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1322.jpg",
+      "observations": 890,
+      "mean_error_px": 0.4924965558089167
+    },
+    {
+      "id": 204,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1323.jpg",
+      "observations": 5096,
+      "mean_error_px": 1.084038140678453
+    },
+    {
+      "id": 205,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1324.jpg",
+      "observations": 596,
+      "mean_error_px": 1.2065715340683383
+    },
+    {
+      "id": 206,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1325.jpg",
+      "observations": 2276,
+      "mean_error_px": 0.9905270250340465
+    },
+    {
+      "id": 207,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1326.jpg",
+      "observations": 1638,
+      "mean_error_px": 1.3055871326369182
+    },
+    {
+      "id": 208,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1327.jpg",
+      "observations": 4711,
+      "mean_error_px": 1.0471555192942497
+    },
+    {
+      "id": 209,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1328.jpg",
+      "observations": 1457,
+      "mean_error_px": 0.7986033175683832
+    },
+    {
+      "id": 210,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1329.jpg",
+      "observations": 1250,
+      "mean_error_px": 0.9086962986699431
+    },
+    {
+      "id": 211,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1330.jpg",
+      "observations": 213,
+      "mean_error_px": 0.9944015668227264
+    },
+    {
+      "id": 212,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1331.jpg",
+      "observations": 211,
+      "mean_error_px": 1.0768503219114947
+    },
+    {
+      "id": 213,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1332.jpg",
+      "observations": 894,
+      "mean_error_px": 0.8699185885052586
+    },
+    {
+      "id": 214,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1333.jpg",
+      "observations": 50,
+      "mean_error_px": 1.4797510987680935
+    },
+    {
+      "id": 215,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1334.jpg",
+      "observations": 424,
+      "mean_error_px": 0.5670015244878485
+    },
+    {
+      "id": 216,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1335.jpg",
+      "observations": 1233,
+      "mean_error_px": 0.5707203396369401
+    },
+    {
+      "id": 217,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1336.jpg",
+      "observations": 1558,
+      "mean_error_px": 0.5243618927037677
+    },
+    {
+      "id": 218,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1337.jpg",
+      "observations": 767,
+      "mean_error_px": 0.8385833230140568
+    },
+    {
+      "id": 219,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1338.jpg",
+      "observations": 3808,
+      "mean_error_px": 0.6548593523940507
+    },
+    {
+      "id": 220,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1339.jpg",
+      "observations": 3471,
+      "mean_error_px": 0.498162354200264
+    },
+    {
+      "id": 221,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1340.jpg",
+      "observations": 5001,
+      "mean_error_px": 0.7275852352788806
+    },
+    {
+      "id": 222,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1341.jpg",
+      "observations": 4946,
+      "mean_error_px": 0.6750949010368434
+    },
+    {
+      "id": 223,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1342.jpg",
+      "observations": 4619,
+      "mean_error_px": 0.5674336543585411
+    },
+    {
+      "id": 224,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1344.jpg",
+      "observations": 2322,
+      "mean_error_px": 0.8527539953554694
+    },
+    {
+      "id": 225,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1345.jpg",
+      "observations": 66,
+      "mean_error_px": 0.5941926722416077
+    },
+    {
+      "id": 226,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1346.jpg",
+      "observations": 2261,
+      "mean_error_px": 0.5961191498743413
+    },
+    {
+      "id": 227,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1347.jpg",
+      "observations": 4793,
+      "mean_error_px": 0.7769121579538569
+    },
+    {
+      "id": 228,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1348.jpg",
+      "observations": 3488,
+      "mean_error_px": 0.7302900376479464
+    },
+    {
+      "id": 229,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1349.jpg",
+      "observations": 4981,
+      "mean_error_px": 0.6375622368718088
+    },
+    {
+      "id": 230,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1350.jpg",
+      "observations": 2016,
+      "mean_error_px": 0.6928834987992338
+    },
+    {
+      "id": 231,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1351.jpg",
+      "observations": 1754,
+      "mean_error_px": 0.5876717440019517
+    },
+    {
+      "id": 232,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1354.jpg",
+      "observations": 735,
+      "mean_error_px": 0.8654647128565671
+    },
+    {
+      "id": 233,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1355.jpg",
+      "observations": 747,
+      "mean_error_px": 1.060044129879299
+    },
+    {
+      "id": 234,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1356.jpg",
+      "observations": 287,
+      "mean_error_px": 0.7531167631595387
+    },
+    {
+      "id": 235,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1357.jpg",
+      "observations": 2450,
+      "mean_error_px": 0.8061298331471342
+    },
+    {
+      "id": 236,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1358.jpg",
+      "observations": 2595,
+      "mean_error_px": 0.8846324363234905
+    },
+    {
+      "id": 237,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1359.jpg",
+      "observations": 2859,
+      "mean_error_px": 0.8502587788256295
+    },
+    {
+      "id": 238,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1360.jpg",
+      "observations": 426,
+      "mean_error_px": 0.6874488134495376
+    },
+    {
+      "id": 241,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1363.jpg",
+      "observations": 1407,
+      "mean_error_px": 0.7632436343095773
+    },
+    {
+      "id": 242,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1364.jpg",
+      "observations": 1510,
+      "mean_error_px": 0.6739758666420305
+    },
+    {
+      "id": 243,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1366.jpg",
+      "observations": 2151,
+      "mean_error_px": 0.7907852568686087
+    },
+    {
+      "id": 244,
+      "camera_id": 3,
+      "name": "Fuji/landscape/DSCF1367.jpg",
+      "observations": 1405,
+      "mean_error_px": 0.6455121931291089
+    },
+    {
+      "id": 245,
+      "camera_id": 7,
+      "name": "Iphone/frame_00082.jpeg",
+      "observations": 11258,
+      "mean_error_px": 0.8433762975367919
+    },
+    {
+      "id": 246,
+      "camera_id": 7,
+      "name": "Iphone/frame_00055.jpeg",
+      "observations": 11538,
+      "mean_error_px": 0.876169232040081
+    },
+    {
+      "id": 247,
+      "camera_id": 7,
+      "name": "Iphone/frame_00006.jpeg",
+      "observations": 7232,
+      "mean_error_px": 1.0321094807547633
+    },
+    {
+      "id": 248,
+      "camera_id": 7,
+      "name": "Iphone/frame_00028.jpeg",
+      "observations": 8935,
+      "mean_error_px": 0.961316461548646
+    },
+    {
+      "id": 249,
+      "camera_id": 7,
+      "name": "Iphone/frame_00132.jpeg",
+      "observations": 8204,
+      "mean_error_px": 0.7702966026110312
+    },
+    {
+      "id": 250,
+      "camera_id": 7,
+      "name": "Iphone/frame_00149.jpeg",
+      "observations": 7981,
+      "mean_error_px": 0.8052630625180941
+    },
+    {
+      "id": 251,
+      "camera_id": 7,
+      "name": "Iphone/frame_00211.jpeg",
+      "observations": 10812,
+      "mean_error_px": 0.8358223292664453
+    },
+    {
+      "id": 252,
+      "camera_id": 7,
+      "name": "Iphone/frame_00240.jpeg",
+      "observations": 10016,
+      "mean_error_px": 0.8839219655465421
+    },
+    {
+      "id": 253,
+      "camera_id": 7,
+      "name": "Iphone/frame_00188.jpeg",
+      "observations": 10838,
+      "mean_error_px": 0.8032859228468701
+    },
+    {
+      "id": 254,
+      "camera_id": 7,
+      "name": "Iphone/frame_00261.jpeg",
+      "observations": 7925,
+      "mean_error_px": 0.8812679858460356
+    },
+    {
+      "id": 255,
+      "camera_id": 7,
+      "name": "Iphone/frame_00319.jpeg",
+      "observations": 8619,
+      "mean_error_px": 0.764810731060806
+    },
+    {
+      "id": 256,
+      "camera_id": 7,
+      "name": "Iphone/frame_00377.jpeg",
+      "observations": 11362,
+      "mean_error_px": 0.7979642146461134
+    },
+    {
+      "id": 257,
+      "camera_id": 7,
+      "name": "Iphone/frame_00290.jpeg",
+      "observations": 7950,
+      "mean_error_px": 0.831775296397905
+    },
+    {
+      "id": 258,
+      "camera_id": 7,
+      "name": "Iphone/frame_00348.jpeg",
+      "observations": 7947,
+      "mean_error_px": 0.7110970720915437
+    },
+    {
+      "id": 259,
+      "camera_id": 7,
+      "name": "Iphone/frame_00401.jpeg",
+      "observations": 9539,
+      "mean_error_px": 0.7527523434125163
+    },
+    {
+      "id": 260,
+      "camera_id": 7,
+      "name": "Iphone/frame_00418.jpeg",
+      "observations": 9187,
+      "mean_error_px": 0.8096032262280747
+    },
+    {
+      "id": 261,
+      "camera_id": 7,
+      "name": "Iphone/frame_00435.jpeg",
+      "observations": 11357,
+      "mean_error_px": 0.8500881249241172
+    },
+    {
+      "id": 262,
+      "camera_id": 7,
+      "name": "Iphone/frame_00464.jpeg",
+      "observations": 6614,
+      "mean_error_px": 0.8114265206995896
+    },
+    {
+      "id": 263,
+      "camera_id": 7,
+      "name": "Iphone/frame_00493.jpeg",
+      "observations": 4872,
+      "mean_error_px": 0.9473922828281993
+    },
+    {
+      "id": 264,
+      "camera_id": 7,
+      "name": "Iphone/frame_00522.jpeg",
+      "observations": 4081,
+      "mean_error_px": 0.9951656116046844
+    },
+    {
+      "id": 265,
+      "camera_id": 7,
+      "name": "Iphone/frame_00551.jpeg",
+      "observations": 3851,
+      "mean_error_px": 0.964576189169474
+    },
+    {
+      "id": 266,
+      "camera_id": 7,
+      "name": "Iphone/frame_00580.jpeg",
+      "observations": 6556,
+      "mean_error_px": 0.8852613535966829
+    },
+    {
+      "id": 267,
+      "camera_id": 7,
+      "name": "Iphone/frame_00609.jpeg",
+      "observations": 6345,
+      "mean_error_px": 0.6825100324165141
+    },
+    {
+      "id": 268,
+      "camera_id": 7,
+      "name": "Iphone/frame_00654.jpeg",
+      "observations": 9831,
+      "mean_error_px": 0.7942411623370177
+    },
+    {
+      "id": 269,
+      "camera_id": 7,
+      "name": "Iphone/frame_00638.jpeg",
+      "observations": 8035,
+      "mean_error_px": 0.7707703464749396
+    },
+    {
+      "id": 270,
+      "camera_id": 7,
+      "name": "Iphone/frame_00675.jpeg",
+      "observations": 8744,
+      "mean_error_px": 0.7586381998277825
+    },
+    {
+      "id": 271,
+      "camera_id": 7,
+      "name": "Iphone/frame_00691.jpeg",
+      "observations": 9177,
+      "mean_error_px": 0.7500964703972097
+    },
+    {
+      "id": 272,
+      "camera_id": 7,
+      "name": "Iphone/frame_00754.jpeg",
+      "observations": 7380,
+      "mean_error_px": 0.9899846184523023
+    },
+    {
+      "id": 273,
+      "camera_id": 7,
+      "name": "Iphone/frame_00782.jpeg",
+      "observations": 7605,
+      "mean_error_px": 0.9921059398852369
+    },
+    {
+      "id": 274,
+      "camera_id": 7,
+      "name": "Iphone/frame_00708.jpeg",
+      "observations": 9285,
+      "mean_error_px": 0.7691676459736249
+    },
+    {
+      "id": 275,
+      "camera_id": 7,
+      "name": "Iphone/frame_00797.jpeg",
+      "observations": 7005,
+      "mean_error_px": 0.978524689359401
+    },
+    {
+      "id": 276,
+      "camera_id": 7,
+      "name": "Iphone/frame_00812.jpeg",
+      "observations": 6472,
+      "mean_error_px": 1.0896341641873992
+    },
+    {
+      "id": 277,
+      "camera_id": 7,
+      "name": "Iphone/frame_00841.jpeg",
+      "observations": 4888,
+      "mean_error_px": 1.1352022681400236
+    },
+    {
+      "id": 278,
+      "camera_id": 7,
+      "name": "Iphone/frame_00870.jpeg",
+      "observations": 2120,
+      "mean_error_px": 1.25123736501481
+    },
+    {
+      "id": 279,
+      "camera_id": 7,
+      "name": "Iphone/frame_00917.jpeg",
+      "observations": 3350,
+      "mean_error_px": 1.030158108267475
+    },
+    {
+      "id": 280,
+      "camera_id": 7,
+      "name": "Iphone/frame_00944.jpeg",
+      "observations": 2483,
+      "mean_error_px": 0.994435975030296
+    },
+    {
+      "id": 281,
+      "camera_id": 7,
+      "name": "Iphone/frame_00986.jpeg",
+      "observations": 1848,
+      "mean_error_px": 1.0079242925225573
+    },
+    {
+      "id": 282,
+      "camera_id": 7,
+      "name": "Iphone/frame_00969.jpeg",
+      "observations": 1303,
+      "mean_error_px": 1.0002577613436703
+    },
+    {
+      "id": 283,
+      "camera_id": 7,
+      "name": "Iphone/frame_01002.jpeg",
+      "observations": 4946,
+      "mean_error_px": 1.0626851233623749
+    },
+    {
+      "id": 284,
+      "camera_id": 7,
+      "name": "Iphone/frame_01052.jpeg",
+      "observations": 4199,
+      "mean_error_px": 1.1048995764970497
+    },
+    {
+      "id": 285,
+      "camera_id": 7,
+      "name": "Iphone/frame_01073.jpeg",
+      "observations": 4249,
+      "mean_error_px": 1.1621476895844964
+    },
+    {
+      "id": 286,
+      "camera_id": 7,
+      "name": "Iphone/frame_01102.jpeg",
+      "observations": 3747,
+      "mean_error_px": 1.0690492093601225
+    },
+    {
+      "id": 287,
+      "camera_id": 7,
+      "name": "Iphone/frame_01122.jpeg",
+      "observations": 3417,
+      "mean_error_px": 1.0404436072979455
+    },
+    {
+      "id": 288,
+      "camera_id": 7,
+      "name": "Iphone/frame_01160.jpeg",
+      "observations": 3840,
+      "mean_error_px": 1.1016776289779773
+    },
+    {
+      "id": 289,
+      "camera_id": 7,
+      "name": "Iphone/frame_01176.jpeg",
+      "observations": 3739,
+      "mean_error_px": 1.10664782029288
+    },
+    {
+      "id": 290,
+      "camera_id": 7,
+      "name": "Iphone/frame_01213.jpeg",
+      "observations": 2758,
+      "mean_error_px": 1.134977345037247
+    },
+    {
+      "id": 291,
+      "camera_id": 7,
+      "name": "Iphone/frame_01230.jpeg",
+      "observations": 1272,
+      "mean_error_px": 1.2314869957331385
+    },
+    {
+      "id": 292,
+      "camera_id": 7,
+      "name": "Iphone/frame_01247.jpeg",
+      "observations": 745,
+      "mean_error_px": 1.1850362988139043
+    },
+    {
+      "id": 293,
+      "camera_id": 7,
+      "name": "Iphone/frame_01288.jpeg",
+      "observations": 1871,
+      "mean_error_px": 1.0429902269242093
+    },
+    {
+      "id": 294,
+      "camera_id": 7,
+      "name": "Iphone/frame_01305.jpeg",
+      "observations": 1921,
+      "mean_error_px": 1.0235567092055948
+    },
+    {
+      "id": 297,
+      "camera_id": 6,
+      "name": "Fuji/portrait/DSCF1343.jpg",
+      "observations": 2097,
+      "mean_error_px": 0.47924001060580923
+    },
+    {
+      "id": 298,
+      "camera_id": 6,
+      "name": "Fuji/portrait/DSCF1365.jpg",
+      "observations": 1381,
+      "mean_error_px": 0.8498722155196065
+    }
+  ]
+}

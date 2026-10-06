@@ -1,0 +1,18 @@
+[
+    {
+        "original":  "Fuji/DSCF1352.jpg",
+        "sfm_input":  "Fuji/portrait/DSCF1352.jpg"
+    },
+    {
+        "original":  "Fuji/DSCF1353.jpg",
+        "sfm_input":  "Fuji/portrait/DSCF1353.jpg"
+    },
+    {
+        "original":  "Fuji/DSCF1361.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1361.jpg"
+    },
+    {
+        "original":  "Fuji/DSCF1362.jpg",
+        "sfm_input":  "Fuji/landscape/DSCF1362.jpg"
+    }
+]

@@ -10,8 +10,11 @@ The user accepted the scope and requested the installation guide, saved as
 `INSTALLATION.md`. Miniconda, CUDA, COLMAP and FFmpeg are installed and their
 software checks passed. LichtFeld is built and installed; synthetic training,
 checkpoint resume, PLY export and viewer/model loading passed. Reconstruction
-quality with the user's footage remains to be validated. Research dependencies
-will follow the dynamic backend selection.
+quality has been evaluated on the user's desk and multi-camera Necto captures;
+reports record both results and limitations. The CPU multi-camera timing and
+selected-point analysis foundation is implemented. Real dynamic recordings,
+4D trainer integration and physical-accuracy validation remain pending.
+Research GPU dependencies will follow the dynamic backend selection.
 Implementation details and the dynamic backend will be selected and tested as
 the relevant phase begins.
 
@@ -166,7 +169,10 @@ Do not store credentials or authentication material in project documentation.
 
 The clean `INSTALLATION.md` requested after scope review is saved in this
 folder. The approved static software installation and functional checks are
-complete, with no restart required. Next, capture a static scene, reconstruct
-it with COLMAP and train/inspect a splat in LichtFeld to establish the quality
-baseline. Add the dynamic research stack when its implementation has been
-chosen.
+complete, with no restart required. Desk and multi-camera Necto static tests
+are trained, inspected and documented. The next phase has a working CPU
+foundation for timestamp synchronization, frame extraction and selected-point
+maps/trails, with a clearly labeled synthetic preview. See
+`docs/DYNAMIC_FOUNDATION.md` and `docs/CAPTURE_CHECKLIST.md`. Add the dynamic GPU
+research stack after a compatible implementation is chosen and benchmarked;
+do not interpret the point preview as completed 4D reconstruction.

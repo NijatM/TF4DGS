@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "session_id": "dynamic_001",
+  "world": {
+    "units": "unscaled",
+    "metres_per_unit": null
+  },
+  "baseline": {
+    "start_s": 0.0,
+    "end_s": 2.0
+  },
+  "timeline": {
+    "reference_camera": "dji",
+    "start_s": 0.0,
+    "end_s": 10.0,
+    "sample_fps": 10.0,
+    "max_skew_s": 0.035
+  },
+  "cameras": [
+    {
+      "id": "dji",
+      "device": "DJI Osmo Action 6",
+      "video": "raw/dji/capture.mp4",
+      "fixed_pose": true,
+      "calibration": null,
+      "capture": {
+        "lens_and_zoom_fixed": null,
+        "stabilization": "unknown",
+        "exposure_locked": null,
+        "white_balance_locked": null
+      },
+      "sync_points": [],
+      "sync_uncertainty_s": null
+    },
+    {
+      "id": "fuji",
+      "device": "Fujifilm X-T5",
+      "video": "raw/fuji/capture.mp4",
+      "fixed_pose": true,
+      "calibration": null,
+      "capture": {
+        "lens_and_zoom_fixed": null,
+        "stabilization": "unknown",
+        "exposure_locked": null,
+        "white_balance_locked": null
+      },
+      "sync_points": [],
+      "sync_uncertainty_s": null
+    },
+    {
+      "id": "iphone",
+      "device": "iPhone 15 Pro / Blackmagic Camera",
+      "video": "raw/iphone/capture.mp4",
+      "fixed_pose": true,
+      "calibration": null,
+      "capture": {
+        "lens_and_zoom_fixed": null,
+        "stabilization": "unknown",
+        "exposure_locked": null,
+        "white_balance_locked": null
+      },
+      "sync_points": [],
+      "sync_uncertainty_s": null
+    }
+  ]
+}

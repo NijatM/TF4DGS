@@ -1,0 +1,20 @@
+{
+    "iteration":  15000,
+    "reference_pair":  "eval_step_7000/9.png",
+    "matched_pair":  "eval_step_15000/1.png",
+    "method":  "Lowest RGB RMSE between identically generated 128x72 GT thumbnails",
+    "gt_thumbnail_rmse_8bit":  0.07955860581520556,
+    "next_candidate_rmse_8bit":  64.534397062532,
+    "crop_xy":  [
+                    3000,
+                    2300
+                ],
+    "crop_size":  [
+                      768,
+                      768
+                  ],
+    "native_pair_size":  [
+                             15452,
+                             4341
+                         ]
+}

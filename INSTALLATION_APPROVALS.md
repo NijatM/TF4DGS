@@ -7,6 +7,11 @@ functional validation completed on 2026-10-03, with no restart required.
 Approval authorizes the actions below; completed installations are recorded
 separately in PROJECT_MEMORY.md.
 
+The starting-state list below is historical. On 2026-10-05, the user authorized
+building the dynamic foundation; `tf4dgs` now includes Python 3.11 and the local
+CPU capture/analysis package. This did not alter the installed static tools or
+authorize a particular GPU research backend. See `docs/DYNAMIC_FOUNDATION.md`.
+
 ## Outcome for this installation pass
 
 Set up the free native Windows static workflow: video frame extraction with

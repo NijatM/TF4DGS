@@ -1,0 +1,23 @@
+{
+  "source_model": "outputs/static_multi-camera_Necto_001/run_01/splat_30000.ply",
+  "cleaned_model": "outputs/static_multi-camera_Necto_001/run_01/necto_room_clean_01.ply",
+  "source_gaussians": 3000000,
+  "removed_gaussians": 5031,
+  "remaining_gaussians": 2994969,
+  "cleaned_ply_bytes": 742753844,
+  "cleaned_ply_sha256": "877aa5aa390d9605f2db85ca033a01ce10009ad3f74217591e746020582bdbdf",
+  "all_retained_attributes_byte_identical_to_source": true,
+  "retained_body_bytes_compared": 742752312,
+  "appearance_companion_matches_original": true,
+  "crop_baked": false,
+  "brightness_baked": false,
+  "verification_scope": "Complete retained binary PLY body comparison after removing recorded indices; matching appearance companion. Visual preservation checked separately; not a guarantee that every artifact is removed.",
+  "gui_reload_verified": true,
+  "gui_reload_gaussians": 2994969,
+  "gui_reload_sh_degree": 3,
+  "gui_reload_ppisp_loaded": {
+    "cameras": 5,
+    "frames": 257
+  },
+  "gui_reload_screenshot": "47_cleaned_export_reopened_gui.png"
+}

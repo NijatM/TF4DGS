@@ -1,0 +1,52 @@
+{
+  "status": "finished",
+  "timestamp_utc": "2026-10-05T04:32:36.9460228Z",
+  "iteration": 30000,
+  "planned_iterations": 30000,
+  "gaussians": 3000000,
+  "elapsed_seconds": 8025.3,
+  "sampled_peak_gpu_used_mib": 9815,
+  "resize_factor": 1,
+  "max_width": 0,
+  "training_views": 257,
+  "validation_views": 37,
+  "metrics": [
+    {
+      "iteration": "7000",
+      "psnr": "19.814346",
+      "ssim": "0.755788",
+      "time_per_image": "1.657128",
+      "num_gaussians": "3000000"
+    },
+    {
+      "iteration": "15000",
+      "psnr": "20.256014",
+      "ssim": "0.771705",
+      "time_per_image": "1.625171",
+      "num_gaussians": "3000000"
+    },
+    {
+      "iteration": "30000",
+      "psnr": "20.342001",
+      "ssim": "0.775352",
+      "time_per_image": "1.749084",
+      "num_gaussians": "3000000"
+    }
+  ],
+  "model_files": [
+    {
+      "path": "outputs/static_multi-camera_Necto_001/run_01/splat_30000.ply",
+      "bytes": 744001532,
+      "vertices": 3000000
+    }
+  ],
+  "visual_review": {
+    "status": "completed",
+    "held_out_comparison": "Matched native Fuji reference reviewed at 7k, 15k and 30k; pavilion outline and seams recovered, fine yarn softer and canonical color cooler than photograph.",
+    "gui_views": "Fuji overview/detail and DJI room viewpoints inspected; useful weave in training views, softer/background reflection limitations remain.",
+    "metric_scope": "Canonical raw rendering without PPISP; image similarity, not metric geometry or deformation accuracy."
+  },
+  "elapsed_seconds_source": "Native training_manager.cpp completion log; runtime.job.describe resets elapsed time to zero after completion.",
+  "completed_local": "2026-10-05T00:32:13-04:00",
+  "cleanup_report": "cleanup_recipe.json"
+}

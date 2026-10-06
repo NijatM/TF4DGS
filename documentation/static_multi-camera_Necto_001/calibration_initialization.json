@@ -1,0 +1,147 @@
+[
+  {
+    "camera_id": 1,
+    "images": 100,
+    "example": "DJI/Necto_DJI_Floor1/frame_00002.jpeg",
+    "model": "OPENCV",
+    "width": 3840,
+    "height": 2160,
+    "original_params": [
+      4608.0,
+      4608.0,
+      1920.0,
+      1080.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "initial_params": [
+      1520.0,
+      1520.0,
+      1920.0,
+      1080.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "initialization_source": "Initial estimate from prior same-camera 4K standard-view desk calibration; refine for this recording"
+  },
+  {
+    "camera_id": 2,
+    "images": 70,
+    "example": "DJI/Necto_DJI_Floor2/frame_00006.jpeg",
+    "model": "OPENCV",
+    "width": 3840,
+    "height": 2160,
+    "original_params": [
+      4608.0,
+      4608.0,
+      1920.0,
+      1080.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "initial_params": [
+      1520.0,
+      1520.0,
+      1920.0,
+      1080.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "initialization_source": "Initial estimate from prior same-camera 4K standard-view desk calibration; refine for this recording"
+  },
+  {
+    "camera_id": 3,
+    "images": 74,
+    "example": "Fuji/landscape/DSCF1290.jpg",
+    "model": "OPENCV",
+    "width": 7728,
+    "height": 4344,
+    "original_params": [
+      9273.6,
+      9273.6,
+      3864.0,
+      2172.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "initial_params": [
+      10852.08510638298,
+      10852.08510638298,
+      3864.0,
+      2172.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "initialization_source": "33 mm / 23.5 mm sensor width * 7728 px; initial estimate, not fixed calibration"
+  },
+  {
+    "camera_id": 6,
+    "images": 4,
+    "example": "Fuji/portrait/DSCF1343.jpg",
+    "model": "OPENCV",
+    "width": 4344,
+    "height": 7728,
+    "original_params": [
+      9273.6,
+      9273.6,
+      2172.0,
+      3864.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "initial_params": [
+      10852.08510638298,
+      10852.08510638298,
+      2172.0,
+      3864.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "initialization_source": "33 mm / 23.5 mm sensor width * 7728 px; initial estimate, not fixed calibration"
+  },
+  {
+    "camera_id": 7,
+    "images": 50,
+    "example": "Iphone/frame_00006.jpeg",
+    "model": "OPENCV",
+    "width": 2160,
+    "height": 3840,
+    "original_params": [
+      4608.0,
+      4608.0,
+      1080.0,
+      1920.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "initial_params": [
+      2560.0,
+      2560.0,
+      1080.0,
+      1920.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "initialization_source": "Approximate 24 mm equivalent at 3840 px long side; lens not metadata-verified, refine freely"
+  }
+]

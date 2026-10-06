@@ -1,5 +1,10 @@
 # Temporal Fields 4D Gaussian Splatting (TF4DGS)
-# Named bootstrap environment; Python/research dependencies will be added
-# after choosing and validating the dynamic reconstruction implementation.
+# CPU capture/analysis foundation. GPU research packages remain unselected.
 name: tf4dgs
-dependencies: []
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11
+  - pip
+  - setuptools>=68
