@@ -1,0 +1,8 @@
+# Optional PDF generation / rendered-target verification tools.
+# Install in an isolated venv; the CPU capture foundation needs none of these.
+opencv-python-headless==4.13.0.92
+reportlab==5.0.1
+PyMuPDF==1.28.2
+numpy==2.4.6
+pillow==12.3.0
+charset-normalizer==3.5.2

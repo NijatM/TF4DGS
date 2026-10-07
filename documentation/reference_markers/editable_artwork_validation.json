@@ -1,0 +1,39 @@
+{
+  "svg_validation": [
+    {
+      "file": "TF4DGS_ChArUco_US_Letter_8x6_30mm.svg",
+      "sha256": "44b36514a6ae4be998b613719c0c93b4495d22601868fe92937afcfbd3bb722d",
+      "status": "passed",
+      "markers_detected": 24,
+      "charuco_corners_detected": 35,
+      "max_corner_position_error_px": 0.16943611511506074,
+      "dpi": 240,
+      "groups": [
+        "Paper",
+        "Checkerboard",
+        "Markers",
+        "Measurements",
+        "Labels"
+      ]
+    },
+    {
+      "file": "TF4DGS_ChArUco_US_Tabloid_10x6_35mm.svg",
+      "sha256": "0e4403d174ff077b480996bf51b3fcfb329a345136b7851d6851d80504591dfe",
+      "status": "passed",
+      "markers_detected": 30,
+      "charuco_corners_detected": 45,
+      "max_corner_position_error_px": 0.16897544008486967,
+      "dpi": 240,
+      "groups": [
+        "Paper",
+        "Checkerboard",
+        "Markers",
+        "Measurements",
+        "Labels"
+      ]
+    }
+  ],
+  "illustrator_builder": "Create-Native-Illustrator-Boards.jsx",
+  "illustrator_runtime_tested": false,
+  "note": "SVG geometry and rendered detection passed. Native .ai files are created by Illustrator when the JSX is run; Illustrator was not available here."
+}

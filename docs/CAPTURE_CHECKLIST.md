@@ -1,5 +1,9 @@
 # First controlled three-camera recording
 
+Verified [Letter and Tabloid ChArUco PDFs](../documentation/reference_markers/README.md)
+are ready to print for calibration and the white-desk reference base. Print at
+actual size and measure the scale checks before using their nominal dimensions.
+
 Start with a 5–10 second event plus a quiet period before and after. Use a
 rigid matte target with slow opaque color change, or a patterned balloon with
 slow inflation. Keep water/glossy slime for later tests. These are initial

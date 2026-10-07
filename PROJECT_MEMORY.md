@@ -1,6 +1,6 @@
 # Temporal Fields 4D Gaussian Splatting (TF4DGS): Project memory
 
-Last updated: 2026-10-05 (America/New_York)
+Last updated: 2026-10-06 (America/New_York)
 
 ## Project identity
 
@@ -1503,3 +1503,76 @@ The assistant has performed no commits or pushes.
   AND appearance backend in isolation (native Windows or later WSL fallback),
   then connect validated point tracks and temporal Gaussian rendering. Preserve
   classic static GUI training throughout; do not restart Necto training.
+
+### Printable ChArUco base targets (2026-10-06)
+
+- User proposed a first yogurt-container translation test using a thin rope
+  over the white desk and requested research on a printable marker base.
+  Recommended ChArUco, with official OpenCV/ArUco references. User requested
+  directly printable PDFs; created both US Letter and US Tabloid/Ledger.
+- Final PDFs and matching target JSON are in documentation/reference_markers:
+  TF4DGS_ChArUco_US_Letter_8x6_30mm.pdf (11x8.5 inch landscape, 8x6 squares,
+  square30mm/marker22mm, 240x180mm pattern); and
+  TF4DGS_ChArUco_US_Tabloid_10x6_35mm.pdf (17x11 inch landscape, 10x6,
+  square35mm/marker25mm, 350x210mm pattern). Tabloid recommended if supported.
+- PDFs use exact-size vector fills, no embedded raster images, seamless black
+  modules, print-scaling None preference, and horizontal/vertical 100mm checks.
+  Dictionary DICT_5X5_100, borderBits1, legacyPattern=false, top-left black.
+  IDs0-23/0-29 overlap: use one chosen board at a time. JSON records geometry,
+  dictionary/PDF hashes, package versions and target coordinate convention.
+- Delivered PDFs rendered at 240DPI; OpenCV detected all 24/30 markers and
+  35/45 ChArUco corners. Maximum expected-coordinate disagreement ~0.17 pixels.
+  Page sizes verified within0.001mm, square sizes/counts checked; final previews
+  visually inspected under ignored .local/workflows/calibration_boards.
+- Reusable generator scripts/Create-CalibrationBoards.py and optional pinned
+  configs/board_print_requirements.txt retained. Printing tools installed only
+  in ignored .local/tools/board-print-env: OpenCVheadless4.13.0.92,
+  reportlab5.0.1, PyMuPDF1.28.2, numpy2.4.6, pillow12.3.0,
+  charset-normalizer3.5.2. Main tf4dgs and static native tools unchanged.
+- Printing README includes citations, regeneration and user's commit commands;
+  root README/capture checklist link the targets. No commits/pushes/restart.
+  NEXT: user selects matching paper, prints100%/ActualSize without fitting,
+  measures BOTH100mm checks and square intervals, mounts flat/matte/secure.
+  Physical print dimensions remain unverified. This is a target definition,
+  not camera calibration or proof of metric reconstruction accuracy. Real
+  recordings/calibration and 4D GPU backend remain pending.
+
+### Illustrator-editable ChArUco artwork (2026-10-06)
+
+- User requested editable Illustrator files. Illustrator was not found in
+  Adobe installation directories, running processes, App Paths, COM or
+  uninstall entries. No native .ai file was fabricated or saved locally.
+- Added exact-size Letter and Tabloid SVGs beside the verified PDFs, with
+  Paper, Checkerboard, Markers, Measurements and Labels groups, named marker
+  IDs and live text. SVGs contain vector geometry only. Rendered at 240DPI,
+  all24/30 markers and35/45 corners passed; maximum position error ~0.17px.
+  Checks/hashes are recorded in editable_artwork_validation.json.
+- Create-Native-Illustrator-Boards.jsx contains the original board geometry
+  and creates genuine native AI files when run INSIDE Illustrator via
+  File > Scripts > Other Script. Five named layers, per-ID marker groups,
+  CMYK black fills, live text, locked Paper layer and PDF-compatible saving.
+  Refuses existing AI files. Illustrator runtime/export remains untested;
+  inspect generated documents and rulers before printing. It recreates the
+  originals, not edits made to SVGs. SVGs can instead be opened and saved as
+  AI directly in Illustrator.
+- Reusable scripts/Create-EditableCalibrationBoards.py and
+  scripts/Illustrator-Boards.template.jsx retained. Original PDFs/target JSON
+  preserved. Board README explains editing, regeneration and user Git commands.
+  Marker bits must remain intact; altered geometry requires updated target
+  definition and validation. No main-environment/static-tool changes,
+  installations, commits, pushes or restart during this editable-artwork step.
+
+### Reference marker folder organization (2026-10-06)
+
+- User requested a descriptive folder for the PDF/SVG targets and current-stage
+  commit/push commands. Renamed documentation/calibration_boards to
+  documentation/reference_markers, keeping both PDFs, both SVGs, matching
+  target JSON, validation report, Illustrator JSX and instructions together.
+- All nine files moved intact with SHA256 checked before/after. Updated root
+  README, capture checklist, both generator output defaults and board README
+  Git commands. Ignored local preview/tool paths remain unchanged.
+- Only the portable reference files, sources, requirements and documentation
+  belong in this commit. Data, training results, local tools, environments and
+  previews remain ignored. No staging, commits, pushes or source-pin changes
+  performed. Native Illustrator runtime remains untested; physical print
+  dimensions and camera calibration remain pending.

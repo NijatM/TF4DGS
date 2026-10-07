@@ -20,6 +20,7 @@ dynamic reconstruction and change-analysis pipeline.
 - [Conda environment definition](environment.yml)
 - [Multi-camera dynamic foundation and preview](docs/DYNAMIC_FOUNDATION.md)
 - [First dynamic recording checklist](docs/CAPTURE_CHECKLIST.md)
+- [Reference markers: printable and Illustrator-editable ChArUco boards](documentation/reference_markers/README.md)
 - [Dynamic backend research and integration plan](docs/DYNAMIC_BACKEND_NOTES.md)
 - [Submodules, fork and first-push commands](GIT_SETUP.md)
 
