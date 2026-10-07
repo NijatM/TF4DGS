@@ -14,6 +14,42 @@ from tf4dgs.sync import make_plan
 
 
 class MediaIntegrationTests(unittest.TestCase):
+    def test_long_sparse_selection_extracts_the_correct_source_frames(self):
+        try:
+            ffmpeg, ffprobe = executable("ffmpeg"), executable("ffprobe")
+        except ValueError as exc:
+            self.skipTest(str(exc))
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp) / "long_capture"
+            value = initialize(root, "long_capture")
+            value["cameras"] = value["cameras"][:2]
+            value["timeline"].update(end_s=10, sample_fps=20, max_skew_s=.001, max_sample_offset_s=.017)
+            for camera in value["cameras"]:
+                camera["sync_points"] = [{"camera_time_s": 0, "session_time_s": 0}]
+                subprocess.run([ffmpeg, "-hide_banner", "-loglevel", "error", "-n", "-f", "lavfi",
+                                "-i", "testsrc2=size=64x48:rate=30:duration=10", "-c:v", "libx264",
+                                "-pix_fmt", "yuv420p", str(root / camera["video"])], check=True)
+            session_path = root / "session.json"
+            write_json(session_path, value, overwrite=True)
+            probes = probe_session(session_path, ffprobe)
+            plan = make_plan(value, probes)
+            self.assertEqual(len(plan["bundles"]), 200)
+            plan_path = root / "manifests/sync-plan.json"
+            write_json(plan_path, plan)
+            result = extract_session(session_path, plan_path, ffmpeg)
+            self.assertEqual(result["status"], "complete")
+            for camera in value["cameras"]:
+                files = sorted((root / "frames" / camera["id"]).glob("*.png"))
+                self.assertEqual(len(files), 200)
+                for sample in (0, 100, 199):
+                    index = plan["bundles"][sample]["views"][camera["id"]]["source_index"]
+                    check = root / f"{camera['id']}_{sample}_verification.png"
+                    subprocess.run([ffmpeg, "-hide_banner", "-loglevel", "error", "-n", "-noautorotate",
+                                    "-i", str(root / camera["video"]), "-vf", f"select=eq(n\\,{index})",
+                                    "-frames:v", "1", "-pix_fmt", "rgb24", "-update", "1", str(check)], check=True)
+                    self.assertEqual(hashlib.sha256(files[sample].read_bytes()).digest(),
+                                     hashlib.sha256(check.read_bytes()).digest())
+
     def test_three_different_frame_rates_extract_native_frames(self):
         try:
             ffmpeg, ffprobe = executable("ffmpeg"), executable("ffprobe")

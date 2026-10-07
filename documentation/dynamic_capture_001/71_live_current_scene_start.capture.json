@@ -1,0 +1,13 @@
+{
+    "captured_utc":  "2026-10-07T08:45:57.8240930Z",
+    "page_state":  {
+                       "model":  "outputs/dynamic_yogurt_001/gaussian_pilot_06_measured_solid/canonical_actor.npz",
+                       "time":  "7.207 s",
+                       "mode":  "rgb",
+                       "trails":  false
+                   },
+    "kind":  "Live local preview browser screenshot",
+    "expression":  "(async()=\u003e{while(!window.tf4dgsMeta) await new Promise(r=\u003esetTimeout(r,100));document.getElementById(\u0027camera\u0027).value=\u0027iphone\u0027;document.getElementById(\u0027time\u0027).value=0;document.getElementById(\u0027follow\u0027).checked=false;document.getElementById(\u0027mode\u0027).value=\u0027rgb\u0027;await window.tf4dgsUpdate();return document.getElementById(\u0027status\u0027).textContent})()",
+    "filename":  "71_live_current_scene_start.png",
+    "url":  "http://127.0.0.1:8100/"
+}

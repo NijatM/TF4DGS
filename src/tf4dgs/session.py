@@ -88,6 +88,8 @@ def load(path):
         raise ValueError("Timeline start must precede end")
     fps = number(timeline["sample_fps"], "sample fps", positive=True)
     number(timeline["max_skew_s"], "max skew", positive=True)
+    if "max_sample_offset_s" in timeline:
+        number(timeline["max_sample_offset_s"], "max sample offset", positive=True)
     if (end - start) * fps > 100000:
         raise ValueError("Timeline exceeds the foundation's 100,000-sample limit")
     baseline = value["baseline"]

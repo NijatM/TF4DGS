@@ -1,0 +1,7 @@
+{
+  "captured_utc": "2026-10-07T06:28:27.3445901Z",
+  "url": "http://127.0.0.1:8100/",
+  "expression": "(async()=>{document.getElementById(\"time\").value=frames.length-1;document.getElementById(\"mode\").value=\"displacement\";document.getElementById(\"trails\").checked=true;document.getElementById(\"follow\").checked=false;distance=.55;await window.tf4dgsUpdate();return document.getElementById(\"status\").textContent;})()",
+  "filename": "38_live_gaussian_displacement_trails.png",
+  "kind": "Live local preview browser screenshot"
+}

@@ -1,0 +1,13 @@
+{
+    "captured_utc":  "2026-10-07T06:34:04.2396120Z",
+    "page_state":  {
+                       "frame_index":  130,
+                       "time_s":  13.013,
+                       "mode":  "recent",
+                       "history_s":  3
+                   },
+    "kind":  "Live local preview browser screenshot",
+    "expression":  "(async()=\u003e{document.getElementById(\"scrub\").value=130;document.getElementById(\"view\").value=\"combined\";document.getElementById(\"mode\").value=\"recent\";document.getElementById(\"history\").value=3;document.getElementById(\"gmax\").value=.20;document.getElementById(\"cmax\").value=.4;selected=\"lid_feature_005\";zoom=2;refreshButtons();await update();if(state.frame_index!==130)throw Error(\"Wrong point frame\");return true;})()",
+    "filename":  "41_live_point_appearance_geometry.png",
+    "url":  "http://127.0.0.1:8096/"
+}

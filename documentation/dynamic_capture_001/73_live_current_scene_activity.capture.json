@@ -1,0 +1,13 @@
+{
+    "captured_utc":  "2026-10-07T08:45:59.5031171Z",
+    "page_state":  {
+                       "model":  "outputs/dynamic_yogurt_001/gaussian_pilot_06_measured_solid/canonical_actor.npz",
+                       "time":  "13.013 s",
+                       "mode":  "recent",
+                       "trails":  true
+                   },
+    "kind":  "Live local preview browser screenshot",
+    "expression":  "(async()=\u003e{document.getElementById(\u0027time\u0027).value=frames.findIndex(f=\u003ef.index===130);document.getElementById(\u0027mode\u0027).value=\u0027recent\u0027;document.getElementById(\u0027history\u0027).value=3;document.getElementById(\u0027trails\u0027).checked=true;await window.tf4dgsUpdate();return document.getElementById(\u0027status\u0027).textContent})()",
+    "filename":  "73_live_current_scene_activity.png",
+    "url":  "http://127.0.0.1:8100/"
+}

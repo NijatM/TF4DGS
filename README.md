@@ -22,12 +22,14 @@ dynamic reconstruction and change-analysis pipeline.
 - [First dynamic recording checklist](docs/CAPTURE_CHECKLIST.md)
 - [Reference markers: printable and Illustrator-editable ChArUco boards](documentation/reference_markers/README.md)
 - [Dynamic backend research and integration plan](docs/DYNAMIC_BACKEND_NOTES.md)
+- [First real dynamic recordings: chronological evidence and screenshots](documentation/dynamic_capture_001/README.md)
 - [Submodules, fork and first-push commands](GIT_SETUP.md)
 
 The `tf4dgs` Conda environment contains Python 3.11 and the CPU capture/analysis
 foundation. Its portable recipe and tested Windows package lock are tracked.
-Research GPU dependencies remain pending backend selection. LichtFeld's static
-build manages its own runtime through vcpkg.
+The isolated `tf4dgs-dynamic` environment adds a verified Windows gsplat CUDA
+renderer for the first moving rigid-container prototype. LichtFeld's static
+build manages its own runtime through vcpkg. The two runtimes are independent.
 
 Current setup: CUDA 13.2.2, COLMAP 4.2.1 and FFmpeg 9.0.2 are installed and their
 GPU/media checks passed. LichtFeld v0.5.3 is built and installed with a documented
@@ -44,8 +46,34 @@ The daylight `static_desk_002` capture is reconstructed and trained: all 300
 4K images registered, 30,000 MRNF iterations, three million Gaussians, and
 held-out PSNR 25.86 dB / SSIM 0.876. The report above contains GUI screenshots,
 original/brighter previews and reopening instructions. Source images and models
-remain local and excluded from Git. The 4D GPU backend and Gaussian analysis
-viewer remain later phases; the selected-point preview is available now.
+remain local and excluded from Git. A real rigid yogurt Gaussian pilot is now
+trained, with an interactive renderer for RGB, displacement and fading motion
+activity/trails. Full non-rigid textile training and temporal Gaussian appearance
+remain unfinished. The real selected-point appearance/geometry preview is
+available separately; see the chronological dynamic report.
+
+The current yogurt preview uses the measured 58 mm height and 95 mm lid
+diameter, with 51,913 persistent Gaussians and 53 supported pose samples.
+The viewer on <http://127.0.0.1:8100/> now joins the actor with 498,531 static
+surroundings Gaussians reconstructed from this capture's clean empty frames.
+It defaults to a fixed whole-scene iPhone view; earlier desk/Necto scenes are
+excluded. Free orbit, camera presets, motion fields and trails remain available.
+The measured tabletop is anchored; off-table depth and hidden geometry remain
+provisional. Earlier run 04 is retained on <http://127.0.0.1:8101/>.
+Reopen the current Gaussian viewer with:
+
+```powershell
+conda run --no-capture-output -n tf4dgs-dynamic python scripts/Serve-RigidGaussianPreview.py
+```
+
+The report documents the controlled quality
+comparison and all failed trials; missing times and unseen surfaces remain
+unverified.
+
+Textile processing resumed after the yogurt visual/motion checks passed.
+Measured-calibration tracking now supports 28 samples through 2.9029 seconds.
+A RAFT comparison on the same initial IDs did not extend coverage in that
+trial. Dense non-rigid textile Gaussian replay remains unfinished.
 
 The multi-camera Necto pavilion test is reconstructed and trained from 294
 registered views at native resolution, including the approximately 7K Fuji
@@ -69,7 +97,11 @@ python scripts/TF4DGS.py serve-preview
 Open <http://127.0.0.1:8094>. This is a synthetic analysis demonstration, not a
 trained 4D Gaussian model. The real recording folders are prepared under
 `data/dynamic_001/raw/{dji,fuji,iphone}` and remain ignored by Git. Follow the
-foundation guide above before extracting a real capture.
+foundation guide above before extracting a real capture. The supplied real
+recordings are now copied to `data/dynamic_yogurt_001/raw` and
+`data/dynamic_textile_001/raw`, with separate camera folders, verified hashes,
+native-resolution 10 Hz extraction and provisional measured-board calibration.
+The chronological report above records each success and failed attempt.
 
 LichtFeld and vcpkg are pinned Git submodules under `.local/src`. TF4DGS tracks
 their commit references; future trainer/viewer changes belong in your LichtFeld

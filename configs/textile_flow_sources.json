@@ -1,0 +1,10 @@
+{
+  "implementation": "torchvision 0.19.0",
+  "model": "raft_large",
+  "weights": "Raft_Large_Weights.C_T_SKHT_V2",
+  "url": "https://download.pytorch.org/models/raft_large_C_T_SKHT_V2-ff5fadd5.pth",
+  "sha256": "ff5fadd56d26b40647388883af1547351ea17868b765c05b27231e72dd16a322",
+  "reference": "https://docs.pytorch.org/vision/0.19/models/generated/torchvision.models.optical_flow.raft_large.html",
+  "geometry_policy": "Observed initial IDs, forward/backward checks, calibrated triangulation; no reidentification after loss",
+  "claim_limit": "Optical flow does not certify material identity or dense deformation through occlusion"
+}

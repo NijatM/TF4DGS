@@ -1,0 +1,688 @@
+[
+    {
+        "captured_utc":  "2026-10-07T05:57:53.7015651Z",
+        "stage":  1,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "01_copy_recordings_report.png",
+        "status":  "Passed",
+        "retrospective":  true,
+        "previous_capture_times_utc":  [
+                                           "2026-10-07T05:25:29.7376992Z"
+                                       ]
+    },
+    {
+        "captured_utc":  "2026-10-07T05:57:53.9604029Z",
+        "stage":  2,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "02_inspect_yogurt_report.png",
+        "status":  "Passed",
+        "retrospective":  true,
+        "previous_capture_times_utc":  [
+                                           "2026-10-07T05:25:30.0024563Z"
+                                       ]
+    },
+    {
+        "captured_utc":  "2026-10-07T05:57:54.1852165Z",
+        "stage":  3,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "03_inspect_textile_report.png",
+        "status":  "Passed",
+        "retrospective":  true,
+        "previous_capture_times_utc":  [
+                                           "2026-10-07T05:25:30.2407446Z"
+                                       ]
+    },
+    {
+        "captured_utc":  "2026-10-07T05:57:54.4054635Z",
+        "stage":  4,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "04_first_frame_markers_report.png",
+        "status":  "Passed",
+        "retrospective":  true,
+        "previous_capture_times_utc":  [
+                                           "2026-10-07T05:25:30.4633941Z"
+                                       ]
+    },
+    {
+        "captured_utc":  "2026-10-07T05:57:54.4866608Z",
+        "stage":  5,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "05_decoded_timestamps_report.png",
+        "status":  "Passed",
+        "retrospective":  true,
+        "previous_capture_times_utc":  [
+                                           "2026-10-07T05:25:30.5460408Z"
+                                       ]
+    },
+    {
+        "captured_utc":  "2026-10-07T05:57:54.5880935Z",
+        "stage":  6,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "06_visibility_stability_audit_report.png",
+        "status":  "Completed",
+        "retrospective":  true,
+        "previous_capture_times_utc":  [
+                                           "2026-10-07T05:25:30.6449481Z"
+                                       ]
+    },
+    {
+        "captured_utc":  "2026-10-07T05:57:54.6795186Z",
+        "stage":  7,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "07_dynamic_environment_attempt_1_report.png",
+        "status":  "Failed",
+        "retrospective":  true,
+        "previous_capture_times_utc":  [
+                                           "2026-10-07T05:25:30.7359475Z"
+                                       ]
+    },
+    {
+        "captured_utc":  "2026-10-07T05:57:54.7706978Z",
+        "stage":  8,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "08_isolated_environment_retry_report.png",
+        "status":  "Passed",
+        "retrospective":  true,
+        "previous_capture_times_utc":  [
+                                           "2026-10-07T05:25:30.8390008Z"
+                                       ]
+    },
+    {
+        "captured_utc":  "2026-10-07T05:57:54.8668122Z",
+        "stage":  9,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "09_calibration_preparation_report.png",
+        "status":  "Completed",
+        "retrospective":  true,
+        "previous_capture_times_utc":  [
+                                           "2026-10-07T05:25:30.9384139Z"
+                                       ]
+    },
+    {
+        "captured_utc":  "2026-10-07T05:57:54.9653025Z",
+        "stage":  10,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "10_calibration_command_attempt_1_report.png",
+        "status":  "Failed",
+        "retrospective":  true,
+        "previous_capture_times_utc":  [
+                                           "2026-10-07T05:25:31.0327370Z"
+                                       ]
+    },
+    {
+        "captured_utc":  "2026-10-07T05:57:55.0593527Z",
+        "stage":  11,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "11_gpu_render_backward_report.png",
+        "status":  "Passed",
+        "retrospective":  true,
+        "previous_capture_times_utc":  [
+                                           "2026-10-07T05:25:31.1256855Z"
+                                       ]
+    },
+    {
+        "captured_utc":  "2026-10-07T05:57:55.1689233Z",
+        "stage":  12,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "12_automatic_colmap_initialization_report.png",
+        "status":  "Failed",
+        "retrospective":  true,
+        "previous_capture_times_utc":  [
+                                           "2026-10-07T05:25:31.2225656Z"
+                                       ]
+    },
+    {
+        "captured_utc":  "2026-10-07T05:57:55.2612563Z",
+        "stage":  13,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "13_first_extraction_pilot_report.png",
+        "status":  "Rejected as undersampled",
+        "retrospective":  true,
+        "previous_capture_times_utc":  [
+                                           "2026-10-07T05:25:31.3138433Z"
+                                       ]
+    },
+    {
+        "captured_utc":  "2026-10-07T05:57:55.3598061Z",
+        "stage":  14,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "14_timing_correction_report.png",
+        "status":  "Passed",
+        "retrospective":  true,
+        "previous_capture_times_utc":  [
+                                           "2026-10-07T05:25:31.4189706Z"
+                                       ]
+    },
+    {
+        "captured_utc":  "2026-10-07T05:57:55.4626204Z",
+        "stage":  15,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "15_full_size_selection_attempt_report.png",
+        "status":  "Failed",
+        "retrospective":  true,
+        "previous_capture_times_utc":  [
+                                           "2026-10-07T05:25:31.5219721Z"
+                                       ]
+    },
+    {
+        "captured_utc":  "2026-10-07T05:57:55.5643544Z",
+        "stage":  16,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "16_extraction_scalability_correction_report.png",
+        "status":  "Passed",
+        "retrospective":  true,
+        "previous_capture_times_utc":  [
+                                           "2026-10-07T05:25:31.6151673Z"
+                                       ]
+    },
+    {
+        "captured_utc":  "2026-10-07T05:57:55.6526335Z",
+        "stage":  17,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "17_board_bootstrap_attempt_1_report.png",
+        "status":  "Failed",
+        "retrospective":  true,
+        "previous_capture_times_utc":  [
+                                           "2026-10-07T05:25:31.7102291Z"
+                                       ]
+    },
+    {
+        "captured_utc":  "2026-10-07T05:57:55.7583077Z",
+        "stage":  18,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "18_visual_report_encoding_attempt_report.png",
+        "status":  "Failed then corrected",
+        "retrospective":  true,
+        "previous_capture_times_utc":  [
+                                           "2026-10-07T05:25:31.8084648Z"
+                                       ]
+    },
+    {
+        "captured_utc":  "2026-10-07T05:56:56.2515097Z",
+        "stage":  19,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "19_corrected_native_extraction_report.png",
+        "status":  "Passed",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T05:56:56.3472813Z",
+        "stage":  20,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "20_marker_aware_match_diagnostic_report.png",
+        "status":  "Completed",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T05:56:56.5645509Z",
+        "stage":  21,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "21_rectified_lid_matching_report.png",
+        "status":  "Completed",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T05:56:56.6627512Z",
+        "stage":  22,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "22_joint_board_lid_refinement_report.png",
+        "status":  "Provisional success",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T05:56:56.7660640Z",
+        "stage":  23,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "23_shared_calibration_transfer_report.png",
+        "status":  "Failed for DJI",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T05:56:56.8786816Z",
+        "stage":  24,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "24_export_crop_correction_report.png",
+        "status":  "Provisional success",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T05:56:56.9863601Z",
+        "stage":  25,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "25_rigid_material_tracking_report.png",
+        "status":  "Partial success",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T05:57:55.8609396Z",
+        "stage":  26,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "26_screenshot_manifest_correction_report.png",
+        "status":  "Failed then corrected",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T06:04:39.8513790Z",
+        "stage":  27,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "27_gaussian_pilot_preparation_attempt_1_report.png",
+        "status":  "Failed",
+        "retrospective":  true
+    },
+    {
+        "stage":  28,
+        "retrospective":  true,
+        "filename":  "28_first_moving_gaussian_training_report.png",
+        "recapture_reason":  "Corrected current report footer; original outcome/evidence unchanged.",
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "status":  "Trained, quality limited",
+        "captured_utc":  "2026-10-07T07:00:01.7507816Z",
+        "previous_capture_times_utc":  [
+                                           "2026-10-07T06:07:45.8984334Z"
+                                       ]
+    },
+    {
+        "stage":  29,
+        "retrospective":  true,
+        "filename":  "29_evaluation_scope_correction_report.png",
+        "recapture_reason":  "Corrected current report footer; original outcome/evidence unchanged.",
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "status":  "Failed then corrected",
+        "captured_utc":  "2026-10-07T07:00:01.8843900Z",
+        "previous_capture_times_utc":  [
+                                           "2026-10-07T06:07:46.0093643Z"
+                                       ]
+    },
+    {
+        "captured_utc":  "2026-10-07T07:00:02.1000918Z",
+        "stage":  30,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "30_denser_constrained_yogurt_pilot_report.png",
+        "status":  "Trained, quality limited",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:00:02.3315881Z",
+        "stage":  31,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "31_textile_stereo_initialization_attempt_1_report.png",
+        "status":  "Failed",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:00:02.5683336Z",
+        "stage":  32,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "32_rectified_textile_initialization_attempt_2_report.png",
+        "status":  "Failed after matching",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:00:02.8103707Z",
+        "stage":  33,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "33_rectified_textile_material_tracks_report.png",
+        "status":  "Partial success",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:00:02.9151826Z",
+        "stage":  34,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "34_native_rate_textile_tracking_retry_report.png",
+        "status":  "No substantial improvement",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:00:03.0072004Z",
+        "stage":  35,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "35_live_preview_screenshot_attempt_1_report.png",
+        "status":  "Failed then corrected",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:00:03.1554949Z",
+        "stage":  36,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "36_live_rigid_gaussian_viewer_report.png",
+        "status":  "Passed",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:00:03.3619987Z",
+        "stage":  37,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "37_tighter_final_quality_comparison_report.png",
+        "status":  "Trained, cleaner edges",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:00:03.5039257Z",
+        "stage":  38,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "38_gaussian_displacement_and_trails_report.png",
+        "status":  "Passed",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:00:03.6210559Z",
+        "stage":  39,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "39_independent_native_pixel_verification_report.png",
+        "status":  "Passed",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:00:03.7593297Z",
+        "stage":  40,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "40_selected_feature_preview_capture_report.png",
+        "status":  "Captured, timing correction needed",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:00:03.8964211Z",
+        "stage":  41,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "41_selected_feature_preview_correction_report.png",
+        "status":  "Passed",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:00:04.0650194Z",
+        "stage":  42,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "42_cleaner_gaussian_preview_report.png",
+        "status":  "Passed",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:00:04.1692850Z",
+        "stage":  43,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "43_processing_checkpoint_verification_report.png",
+        "status":  "Passed",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:00:04.2910531Z",
+        "stage":  44,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "44_yogurt_visibility_mask_retry_report.png",
+        "status":  "Failed to improve coverage",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:00:04.3920593Z",
+        "stage":  45,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "45_visibility_union_correction_report.png",
+        "status":  "Failed to improve reliable poses",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:00:04.4792269Z",
+        "stage":  46,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "46_report_tab_recovery_report.png",
+        "status":  "Failed then corrected",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:13:48.2804340Z",
+        "stage":  47,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "47_explicit_motion_inlier_refinement_report.png",
+        "status":  "Partial, not selected",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:28:36.3876624Z",
+        "stage":  48,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "48_measured_container_dimensions_report.png",
+        "status":  "Recorded",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:28:36.6433007Z",
+        "stage":  49,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "49_measured_height_camera_refinement_report.png",
+        "status":  "Converged, provisional",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:28:36.7496161Z",
+        "stage":  50,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "50_measured_calibration_crop_transfer_check_report.png",
+        "status":  "Passed, candidate only",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:28:36.8476247Z",
+        "stage":  51,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "51_documentation_capture_timeout_report.png",
+        "status":  "Failed, recovery attempted",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:34:52.6019753Z",
+        "stage":  52,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "52_measured_unconstrained_motion_comparison_report.png",
+        "status":  "Partial; implausible fit rejected",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:34:52.7270359Z",
+        "stage":  53,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "53_upright_tabletop_constraint_trial_report.png",
+        "status":  "Failed to improve coverage",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:42:31.4054986Z",
+        "stage":  54,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "54_measured_dimension_gaussian_pilot_report.png",
+        "status":  "Trained, comparison retained",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:42:31.6080204Z",
+        "stage":  55,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "55_opacity_quality_diagnosis_report.png",
+        "status":  "Quality issue identified",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:53:34.3840015Z",
+        "stage":  56,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "56_stronger_opacity_trial_report.png",
+        "status":  "Trained, cleaner opaque surface",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:53:34.6201299Z",
+        "stage":  57,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "57_shared_crop_quality_comparison_report.png",
+        "status":  "Passed; run 06 selected",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:53:34.7685320Z",
+        "stage":  58,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "58_measured_actor_live_rgb_report.png",
+        "status":  "Passed",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:53:34.9197027Z",
+        "stage":  59,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "59_measured_actor_activity_and_trails_report.png",
+        "status":  "Passed",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T07:53:35.0231984Z",
+        "stage":  60,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "60_measured_checkpoint_verification_report.png",
+        "status":  "Passed",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T08:26:14.8274426Z",
+        "stage":  61,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "61_earlier_scene_registration_experiment_report.png",
+        "status":  "Failed; abandoned",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T08:26:15.0727696Z",
+        "stage":  62,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "62_current_capture_background_source_report.png",
+        "status":  "Selected",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T08:26:15.1896404Z",
+        "stage":  63,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "63_current_background_depth_tool_report.png",
+        "status":  "Installed and verified",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T08:30:46.7535033Z",
+        "stage":  64,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "64_background_empty_interval_diagnosis_report.png",
+        "status":  "Failed visual check",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T08:43:56.4931448Z",
+        "stage":  65,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "65_clean_current_background_initialization_report.png",
+        "status":  "Provisional success",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T08:43:56.6179054Z",
+        "stage":  66,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "66_unconstrained_background_fitting_report.png",
+        "status":  "Failed to improve",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T08:43:56.8142328Z",
+        "stage":  67,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "67_conservative_background_appearance_fit_report.png",
+        "status":  "Improved slightly",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T08:43:57.0064296Z",
+        "stage":  68,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "68_combined_scene_visual_check_report.png",
+        "status":  "Rendered; cleanup needed",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T08:49:51.6922855Z",
+        "stage":  69,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "69_conflicting_depth_layer_cleanup_report.png",
+        "status":  "Improved",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T08:49:51.9098393Z",
+        "stage":  70,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "70_cleaned_background_appearance_fit_report.png",
+        "status":  "Selected",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T08:49:52.1243438Z",
+        "stage":  71,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "71_whole_scene_motion_start_report.png",
+        "status":  "Visually checked",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T08:49:52.3346496Z",
+        "stage":  72,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "72_whole_scene_motion_end_report.png",
+        "status":  "Visually checked",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T08:49:52.5148610Z",
+        "stage":  73,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "73_whole_scene_fading_activity_report.png",
+        "status":  "Passed",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T08:49:52.6182613Z",
+        "stage":  74,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "74_scene_validation_mask_diagnosis_report.png",
+        "status":  "Failed then corrected",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T08:49:52.8357900Z",
+        "stage":  75,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "75_current_scene_motion_verification_report.png",
+        "status":  "Passed",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T15:14:03.6689471Z",
+        "stage":  78,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "78_textile_raft_coverage_comparison_report.png",
+        "status":  "No improvement; retained",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T15:14:03.4335152Z",
+        "stage":  77,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "77_measured_textile_material_tracking_report.png",
+        "status":  "Partial improvement",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T15:14:03.1885803Z",
+        "stage":  76,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "76_textile_measured_retry_launch_report.png",
+        "status":  "Failed then corrected",
+        "retrospective":  true
+    }
+]

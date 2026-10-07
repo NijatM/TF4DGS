@@ -4,10 +4,13 @@ The first CPU foundation is implemented. It prepares fixed-camera recordings
 using measured timestamps and previews temporal analysis on selected point
 tracks. The existing COLMAP/LichtFeld static workflow remains available.
 
-**There is no integrated 4D Gaussian trainer yet.** The browser demonstration
-uses synthetic points, not your pavilion, trained Gaussians or measured motion.
-Real-data calibration, reconstruction quality and physical accuracy remain
-unvalidated until recordings and a compatible backend are available.
+The CPU browser demonstration defaults to synthetic selected points. An
+isolated GPU environment now trains and renders a **provisional real rigid
+yogurt Gaussian pilot**; it has its own live viewer. The real textile point
+tracks are partial, and full non-rigid training/temporal Gaussian appearance
+remain unfinished. Physical accuracy is unverified. See the
+[chronological report and screenshots](../documentation/dynamic_capture_001/README.md)
+and [GPU environment/backend notes](DYNAMIC_BACKEND_NOTES.md).
 
 ## What works now
 
@@ -34,7 +37,12 @@ python scripts/TF4DGS.py serve-preview
 
 Open <http://127.0.0.1:8094>. Stop that terminal's server with Ctrl+C. If the
 assistant-started preview already occupies 8094, use `--port 8096` for a new
-instance. It listens only on localhost and serves a read-only API.
+instance. It listens only on localhost and serves a read-only API. On this
+machine, 8096 currently serves the real yogurt selected features, 8097 the
+processing report, 8100 the measured rigid Gaussian renderer and 8101 the
+earlier run 04 comparison. The measured pilot uses user dimensions 58 mm
+height/95 mm lid diameter and retains 53 supported samples with gaps. The synthetic
+demonstration remains available on 8094.
 
 For a new machine, choose one environment recipe, then install the local code:
 
@@ -128,6 +136,14 @@ reference camera's actual nearest timestamp; its other views retain their own
 timestamps and deltas. `max_skew_s` limits the span between all views. A source
 frame is never reused. Missing coverage or excessive skew produces a recorded
 rejection rather than an invented/interpolated image.
+
+`max_sample_offset_s` optionally separates reference-camera sampling rounding
+from cross-camera `max_skew_s`. For example, native 29.97 FPS exports sampled
+at 10 Hz need up to about 16.7 ms of rounding, even when all cameras have
+identical exported timestamps. Use 0.017 seconds for sampling offset while
+keeping a tighter camera-pairing tolerance if appropriate. When omitted,
+sampling retains the original `max_skew_s` tolerance. Neither value proves
+sensor synchronization; user-aligned exports still retain cue uncertainty.
 
 Extraction preserves coded pixel dimensions, disables autorotation and does
 not relight images. Calibration must match that pixel orientation. This first

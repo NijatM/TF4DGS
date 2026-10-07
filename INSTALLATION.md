@@ -915,7 +915,7 @@ Alternatively, replace the environment-create command with
 `conda create -n tf4dgs --file environments/tf4dgs-win-64.explicit.txt` for the
 exact tested Windows package builds. Package downloads are needed unless they
 are already cached. The explicit file does not include the editable project
-or native GUI tools. PyTorch/CUDA-extension pins will follow backend selection.
+or native GUI tools. The first isolated GPU prototype is now documented below.
 
 Use the developer-shell setup in Section 2 for the native LichtFeld build.
 Activate `tf4dgs` for the project's capture and point-analysis tools.
@@ -929,4 +929,20 @@ Conda environments can include native libraries and CUDA toolkit components.
 Recreating an environment still requires a compatible NVIDIA driver and, for
 this source-build workflow, the documented MSVC/native build setup. A YAML
 file does not replace the full machine preparation in Sections 1-6.
+
+## 11. Isolated dynamic Gaussian pilot (2026-10-07)
+
+Keep the working `tf4dgs` CPU environment and LichtFeld static build. The first
+real rigid-container prototype uses a separate **`tf4dgs-dynamic`** environment,
+Python 3.10.22, torch 2.4.0+cu124 and the official precompiled
+gsplat 1.5.3+pt24cu124 Windows wheel. Its packaged CUDA runtime does not replace
+system CUDA 13.2.2. No compiler change or restart was needed on this machine.
+
+The tested installation commands, wheel URL/checksum and portable locks are
+in [DYNAMIC_BACKEND_NOTES.md](docs/DYNAMIC_BACKEND_NOTES.md). Actual renderer
+forward/backward and real-model checks passed on the RTX A4000. This is a
+provisional rigid Gaussian prototype; full textile deformation and temporal
+Gaussian appearance are not yet implemented. See the
+[real processing report](documentation/dynamic_capture_001/README.md) for
+datasets, outputs, GUI previews, failures and remaining limits.
 

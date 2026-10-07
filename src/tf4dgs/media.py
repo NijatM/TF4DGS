@@ -12,6 +12,17 @@ from .sync import make_plan
 PROJECT = Path(__file__).resolve().parents[2]
 
 
+def select_expression(indices):
+    """Balance membership tests to avoid FFmpeg's expression depth limit."""
+    terms = [f"eq(n,{index})" for index in indices]
+    if not terms:
+        raise ValueError("Frame selection must not be empty")
+    while len(terms) > 1:
+        terms = [f"({terms[i]}+{terms[i+1]})" if i+1 < len(terms) else terms[i]
+                 for i in range(0, len(terms), 2)]
+    return terms[0]
+
+
 def executable(name, explicit=None):
     if explicit:
         path = Path(explicit).resolve()
@@ -130,7 +141,7 @@ def extract_session(path, plan_path, ffmpeg=None):
         destination.mkdir(parents=True, exist_ok=True)
         filter_path = root / f"manifests/{cid}.select-filter.txt"
         # FFmpeg 9 reads the filter argument from a file with -/filter:v.
-        filter_path.write_text("select='" + "+".join(f"eq(n,{i})" for i in indices) + "'", encoding="utf-8")
+        filter_path.write_text("select='" + select_expression(indices) + "'", encoding="utf-8")
         command = [executable("ffmpeg", ffmpeg), "-hide_banner", "-loglevel", "error", "-n",
                    "-noautorotate", "-i", str(video), "-map", "0:v:0", "-/filter:v", str(filter_path),
                    "-fps_mode", "passthrough", "-pix_fmt", "rgb24", "-start_number", "0",

@@ -1,0 +1,1937 @@
+[
+  {
+    "number": 1,
+    "title": "01 Copy recordings",
+    "status": "Passed",
+    "detail": "Six copies verified with SHA-256. Separate `data/dynamic_yogurt_001/raw` and matching textile folder, each organized by camera.",
+    "retrospective": true
+  },
+  {
+    "number": 2,
+    "title": "02 Inspect yogurt",
+    "status": "Passed",
+    "detail": "467 frames, 15.582 s, 29.97 FPS; empty board, container placement, pause and translation.",
+    "retrospective": true,
+    "image": "yogurt_preview.jpg"
+  },
+  {
+    "number": 3,
+    "title": "03 Inspect textile",
+    "status": "Passed",
+    "detail": "1,277 frames, 42.609 s, 29.97 FPS; initial textile, in-plane manipulation, lifts/folds and return.",
+    "retrospective": true,
+    "image": "textile_preview.jpg"
+  },
+  {
+    "number": 4,
+    "title": "04 First-frame markers",
+    "status": "Passed",
+    "detail": "Yogurt: all 30 IDs in every native view. Textile: 13/13/14 IDs; material hides the others.",
+    "retrospective": true,
+    "image": "first_markers.jpg"
+  },
+  {
+    "number": 5,
+    "title": "05 Decoded timestamps",
+    "status": "Passed",
+    "detail": "Actual PTS/fingerprints recorded for all six videos. Matching exported timestamps are distinct from sensor synchronization.",
+    "retrospective": true
+  },
+  {
+    "number": 6,
+    "title": "06 Visibility/stability audit",
+    "status": "Completed",
+    "detail": "78 samples/camera for yogurt, 213 for textile. Sparse visible markers during textile manipulation make homography extrapolation unreliable.",
+    "retrospective": true,
+    "details": {
+      "yogurt": {
+        "session_id": "dynamic_yogurt_001",
+        "board_definition": "TF4DGS_ChArUco_US_Tabloid_10x6_35mm.json",
+        "physical_print_verified": false,
+        "full_calibration_solved": false,
+        "summaries": [
+          {
+            "camera_id": "dji",
+            "samples": 78,
+            "marker_counts": {
+              "min": 16.0,
+              "median": 22.0,
+              "p95": 30.0,
+              "max": 30.0
+            },
+            "homography_rms_px": {
+              "min": 0.9958823494135987,
+              "median": 1.3992120001459516,
+              "p95": 2.3542418432279812,
+              "max": 3.3084564211281506
+            },
+            "board_drift_px": {
+              "min": 0.0,
+              "median": 0.5026491464574838,
+              "p95": 1.131330899105627,
+              "max": 1.3155503920218452
+            },
+            "blue_track_samples": 75
+          },
+          {
+            "camera_id": "fuji",
+            "samples": 78,
+            "marker_counts": {
+              "min": 11.0,
+              "median": 22.5,
+              "p95": 27.14999999999999,
+              "max": 30.0
+            },
+            "homography_rms_px": {
+              "min": 1.3938380272077695,
+              "median": 1.8185108410183881,
+              "p95": 2.985722865207525,
+              "max": 4.987842164558196
+            },
+            "board_drift_px": {
+              "min": 0.0,
+              "median": 0.8061432483100842,
+              "p95": 2.297687435420178,
+              "max": 2.928390092392575
+            },
+            "blue_track_samples": 72
+          },
+          {
+            "camera_id": "iphone",
+            "samples": 78,
+            "marker_counts": {
+              "min": 18.0,
+              "median": 22.0,
+              "p95": 29.0,
+              "max": 29.0
+            },
+            "homography_rms_px": {
+              "min": 0.8500339189796776,
+              "median": 1.2240759805917518,
+              "p95": 1.9266897229935318,
+              "max": 2.163666637698217
+            },
+            "board_drift_px": {
+              "min": 0.0,
+              "median": 0.32775153976386745,
+              "p95": 0.9970083968981538,
+              "max": 1.1603764119155529
+            },
+            "blue_track_samples": 75
+          }
+        ]
+      },
+      "textile": {
+        "session_id": "dynamic_textile_001",
+        "board_definition": "TF4DGS_ChArUco_US_Tabloid_10x6_35mm.json",
+        "physical_print_verified": false,
+        "full_calibration_solved": false,
+        "summaries": [
+          {
+            "camera_id": "dji",
+            "samples": 213,
+            "marker_counts": {
+              "min": 0.0,
+              "median": 3.0,
+              "p95": 10.399999999999977,
+              "max": 13.0
+            },
+            "homography_rms_px": {
+              "min": 0.7559850712875316,
+              "median": 1.3414635268136375,
+              "p95": 4.84784719227126,
+              "max": 7.610035495822368
+            },
+            "board_drift_px": {
+              "min": 0.0,
+              "median": 2.6682144149672276,
+              "p95": 7.731845946453151,
+              "max": 11.145776708322952
+            },
+            "blue_track_samples": 0
+          },
+          {
+            "camera_id": "fuji",
+            "samples": 213,
+            "marker_counts": {
+              "min": 0.0,
+              "median": 4.0,
+              "p95": 9.399999999999977,
+              "max": 13.0
+            },
+            "homography_rms_px": {
+              "min": 0.8352314366614055,
+              "median": 2.3461341784553253,
+              "p95": 6.224626422720187,
+              "max": 13.858587002569978
+            },
+            "board_drift_px": {
+              "min": 0.0,
+              "median": 3.020248734505222,
+              "p95": 12.79087526114623,
+              "max": 45.56928409162034
+            },
+            "blue_track_samples": 0
+          },
+          {
+            "camera_id": "iphone",
+            "samples": 213,
+            "marker_counts": {
+              "min": 0.0,
+              "median": 2.0,
+              "p95": 17.399999999999977,
+              "max": 27.0
+            },
+            "homography_rms_px": {
+              "min": 0.7226305166431114,
+              "median": 1.902718807698396,
+              "p95": 3.6003522447553236,
+              "max": 4.8213441799095875
+            },
+            "board_drift_px": {
+              "min": 0.0,
+              "median": 1.709089401700975,
+              "p95": 5.254567834377701,
+              "max": 9.707305937781264
+            },
+            "blue_track_samples": 0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "number": 7,
+    "title": "07 Dynamic environment attempt 1",
+    "status": "Failed",
+    "detail": "Conda scanned unaccepted Anaconda default-channel terms despite environment recipe. No terms accepted; used explicit conda-forge channels instead.",
+    "retrospective": true,
+    "details": {
+      "exception": "CondaToSNonInteractiveError",
+      "reason": "Terms of Service have not been accepted for the following channels. Please accept or remove them before proceeding:\n    - https://repo.anaconda.com/pkgs/main\n    - https://repo.anaconda.com/pkgs/r\n    - https://repo.anaconda.com/pkgs/msys2\n\n"
+    }
+  },
+  {
+    "number": 8,
+    "title": "08 Isolated environment retry",
+    "status": "Passed",
+    "detail": "Python 3.10.22, torch 2.4.0+cu124, official gsplat 1.5.3+pt24cu124 Windows wheel. Main CPU/static setup preserved.",
+    "retrospective": true
+  },
+  {
+    "number": 9,
+    "title": "09 Calibration preparation",
+    "status": "Completed",
+    "detail": "Native matched frame 360 from three cameras. Centered focal estimates consistent for Fuji/iPhone; inconsistent for cropped DJI. Initial values are not solved calibration.",
+    "retrospective": true
+  },
+  {
+    "number": 10,
+    "title": "10 Calibration command attempt 1",
+    "status": "Failed",
+    "detail": "PowerShell round-trip formatting on integer parameters caused invalid camera arguments. Corrected by casting numbers to double; retained error logs.",
+    "retrospective": true
+  },
+  {
+    "number": 11,
+    "title": "11 GPU render/backward",
+    "status": "Passed",
+    "detail": "Real one-Gaussian CUDA rasterization and position/color gradients; 0.612 s on RTX A4000. Package consistency check passed.",
+    "retrospective": true,
+    "details": {
+      "status": "passed",
+      "torch": "2.4.0+cu124",
+      "torch_cuda": "12.4",
+      "gsplat": "1.5.3+pt24cu124",
+      "device": "NVIDIA RTX A4000",
+      "forward_backward_seconds": 0.6123283000197262,
+      "position_gradient_norm": 47.31243896484375,
+      "color_gradient_norm": 41.54773712158203,
+      "cuda_peak_allocated_bytes": 158720,
+      "note": "Real one-Gaussian CUDA render/backward; not a reconstruction-quality benchmark."
+    }
+  },
+  {
+    "number": 12,
+    "title": "12 Automatic COLMAP initialization",
+    "status": "Failed",
+    "detail": "Three verified pairs (195/163/81 matches), all classified planar. Repeated unsuitable initial pair; no sparse model created. Reused feature DB for board-based attempts.",
+    "retrospective": true
+  },
+  {
+    "number": 13,
+    "title": "13 First extraction pilot",
+    "status": "Rejected as undersampled",
+    "detail": "1 ms limit also restricted sampling rounding: only 11 yogurt / 31 textile bundles. Valid sparse images retained as `frames_sampling_attempt_01`.",
+    "retrospective": true
+  },
+  {
+    "number": 14,
+    "title": "14 Timing correction",
+    "status": "Passed",
+    "detail": "Separate sampling offset 17 ms from cross-camera skew 1 ms; 156/426 bundles, zero rejections. 25 tests passed.",
+    "retrospective": true
+  },
+  {
+    "number": 15,
+    "title": "15 Full-size selection attempt",
+    "status": "Failed",
+    "detail": "Long left-associated FFmpeg selection expression exceeded parser depth; reported Cannot allocate memory before output. This was a filter-parser failure, not GPU OOM.",
+    "retrospective": true
+  },
+  {
+    "number": 16,
+    "title": "16 Extraction scalability correction",
+    "status": "Passed",
+    "detail": "Balanced expression tree; 26 tests pass, including real 200-frame sparse selection and independently decoded first/middle/last frame hashes.",
+    "retrospective": true
+  },
+  {
+    "number": 17,
+    "title": "17 Board bootstrap attempt 1",
+    "status": "Failed",
+    "detail": "Only 3 accepted triangulated matches and 0 off-plane triple matches under provisional uncropped-view assumptions. Cropped-DJI solve refused insufficient support.",
+    "retrospective": true
+  },
+  {
+    "number": 18,
+    "title": "18 Visual-report encoding attempt",
+    "status": "Failed then corrected",
+    "detail": "Windows PowerShell redirected the Conda JSON as UTF-16; initial UTF-8 reader failed. Added BOM-aware decoding for retained logs.",
+    "retrospective": true
+  },
+  {
+    "number": 19,
+    "title": "19 Corrected native extraction",
+    "status": "Passed",
+    "detail": "156 yogurt and 426 textile bundles, three native PNGs each (468/1278 images); no rejected samples, no resize or relighting.",
+    "retrospective": true
+  },
+  {
+    "number": 20,
+    "title": "20 Marker-aware match diagnostic",
+    "status": "Completed",
+    "detail": "COLMAP's verified Fuji/iPhone matches disagreed with known board mapping by hundreds of pixels. Repeated-pattern aliases rejected. First read-only SQLite diagnostic required a sandbox-safe retry.",
+    "retrospective": true
+  },
+  {
+    "number": 21,
+    "title": "21 Rectified lid matching",
+    "status": "Completed",
+    "detail": "Real lid texture matched after provisional plane rectification: 22-30 Fuji/iPhone and 20-45 Fuji/DJI homography inliers across tested heights. Initial native reprojection residual around 12 pixels failed the strict 3-pixel gate.",
+    "retrospective": true,
+    "image": "rectified_lid_matches.jpg"
+  },
+  {
+    "number": 22,
+    "title": "22 Joint board/lid refinement",
+    "status": "Provisional success",
+    "detail": "Fitted all three square-pixel pinhole cameras, 46 material tracks and a flat lid plane; 7 tracks seen in all three views. Held-out board RMS 1.67/1.15/1.14 px (Fuji/iPhone/DJI). Held-out lid predictions 7.45/3.85 px (iPhone/DJI). Estimated lid height 56.7 mm; not independently verified.",
+    "retrospective": true,
+    "details": {
+      "status": "provisional",
+      "optimizer_success": true,
+      "message": "`ftol` termination condition is satisfied.",
+      "initial_rms_component_px": 12.748760564061193,
+      "final_rms_component_px": 1.3608800782317874,
+      "estimated_lid_height_m": 0.05670108244576332,
+      "lid_tracks": 46,
+      "triple_tracks": 7,
+      "holdout_tracks": 10,
+      "intrinsic_accuracy_verified": false,
+      "independent_metric_accuracy_verified": false,
+      "cameras": [
+        {
+          "schema_version": 1,
+          "camera_id": "fuji",
+          "image_size": [
+            3840,
+            2160
+          ],
+          "model": "PINHOLE",
+          "params": [
+            6443.3136935363,
+            6443.3136935363,
+            1964.3368424480739,
+            1856.6496486195592
+          ],
+          "world_to_camera": {
+            "R": [
+              [
+                0.45120322552009906,
+                0.8918604696624279,
+                0.03163150223703809
+              ],
+              [
+                -0.5578396928565559,
+                0.25419694218985944,
+                0.7900625238897416
+              ],
+              [
+                0.6965849024734616,
+                -0.3741240666341026,
+                0.6122096507008032
+              ]
+            ],
+            "t": [
+              -0.1866735530009737,
+              -0.05108933534972624,
+              0.6635480111420836
+            ]
+          },
+          "world_units": "metres",
+          "status": "provisional_joint_board_and_lid",
+          "intrinsic_accuracy_verified": false,
+          "sensor_sync_accuracy_verified": false,
+          "independent_metric_accuracy_verified": false,
+          "board_fit_rms_px": 1.4731145065294982,
+          "board_heldout_rms_px": 1.6662114931726475,
+          "lid_fit_rms_px": 3.7032751253486573,
+          "lid_heldout_rms_px": null,
+          "assumptions": [
+            "Square pixels and zero lens distortion",
+            "Flat circular container lid",
+            "Weak centered principal-point priors in uncropped views",
+            "Manual 33.37 ms synchronization uncertainty"
+          ]
+        },
+        {
+          "schema_version": 1,
+          "camera_id": "iphone",
+          "image_size": [
+            3840,
+            2160
+          ],
+          "model": "PINHOLE",
+          "params": [
+            1508.5069154501132,
+            1508.5069154501132,
+            1923.2052421042265,
+            1373.728432581805
+          ],
+          "world_to_camera": {
+            "R": [
+              [
+                0.9991655292433924,
+                -0.037625533154052766,
+                0.015892275691193128
+              ],
+              [
+                0.010334351116315416,
+                0.6093208173275166,
+                0.7928564452398251
+              ],
+              [
+                -0.03951514088012748,
+                -0.7920305933650545,
+                0.6092011923946171
+              ]
+            ],
+            "t": [
+              -0.1320029760408388,
+              -0.08312777371157783,
+              0.3998452867194302
+            ]
+          },
+          "world_units": "metres",
+          "status": "provisional_joint_board_and_lid",
+          "intrinsic_accuracy_verified": false,
+          "sensor_sync_accuracy_verified": false,
+          "independent_metric_accuracy_verified": false,
+          "board_fit_rms_px": 0.9243806470408067,
+          "board_heldout_rms_px": 1.1523332159787745,
+          "lid_fit_rms_px": 3.370164838922553,
+          "lid_heldout_rms_px": 7.452856420660362,
+          "assumptions": [
+            "Square pixels and zero lens distortion",
+            "Flat circular container lid",
+            "Weak centered principal-point priors in uncropped views",
+            "Manual 33.37 ms synchronization uncertainty"
+          ]
+        },
+        {
+          "schema_version": 1,
+          "camera_id": "dji",
+          "image_size": [
+            1536,
+            2304
+          ],
+          "model": "PINHOLE",
+          "params": [
+            2378.7658427488864,
+            2378.7658427488864,
+            429.0899208772808,
+            325.80836560250515
+          ],
+          "world_to_camera": {
+            "R": [
+              [
+                0.11964677768246107,
+                -0.9927117432189885,
+                0.014423711912019188
+              ],
+              [
+                0.322073378659074,
+                0.05255214120769153,
+                0.9452549979839385
+              ],
+              [
+                -0.9391237337802365,
+                -0.1084512209687104,
+                0.3260137195288925
+              ]
+            ],
+            "t": [
+              0.11674613836638018,
+              0.1348682931220423,
+              0.657323479029823
+            ]
+          },
+          "world_units": "metres",
+          "status": "provisional_joint_board_and_lid",
+          "intrinsic_accuracy_verified": false,
+          "sensor_sync_accuracy_verified": false,
+          "independent_metric_accuracy_verified": false,
+          "board_fit_rms_px": 1.0753214922459513,
+          "board_heldout_rms_px": 1.1439746387250243,
+          "lid_fit_rms_px": 3.1865104882597963,
+          "lid_heldout_rms_px": 3.8479617514486284,
+          "assumptions": [
+            "Square pixels and zero lens distortion",
+            "Flat circular container lid",
+            "Weak centered principal-point priors in uncropped views",
+            "Manual 33.37 ms synchronization uncertainty"
+          ]
+        }
+      ],
+      "holdout_note": "Held-out lid XYs initialized from Fuji only; reprojection validation is in iPhone/DJI."
+    }
+  },
+  {
+    "number": 23,
+    "title": "23 Shared-calibration transfer",
+    "status": "Failed for DJI",
+    "detail": "Unchanged physical rig did not mean unchanged exported framing. Textile DJI board error was 90.34 px; Fuji 2.65 px and iPhone 0.98 px. Original transfer retained.",
+    "retrospective": true
+  },
+  {
+    "number": 24,
+    "title": "24 Export-crop correction",
+    "status": "Provisional success",
+    "detail": "Principal-point-only corrections preserve physical poses. DJI shift +90.13/-4.77 px reduces board RMS to 1.00 px; Fuji/iPhone corrected RMS 1.51/0.92 px. Textile uses separate corrected calibration files.",
+    "retrospective": true,
+    "details": {
+      "status": "provisional",
+      "results": [
+        {
+          "camera_id": "dji",
+          "dx_px": 90.12933921755865,
+          "dy_px": -4.768424934149834,
+          "before_board_rms_px": 90.3420181136725,
+          "after_board_rms_px": 0.9994019252812517,
+          "physical_camera_pose_preserved": true,
+          "validation": "Visible marker corners; independently calibrated intrinsics unavailable"
+        },
+        {
+          "camera_id": "fuji",
+          "dx_px": -0.43077039622892244,
+          "dy_px": -2.0382407176797415,
+          "before_board_rms_px": 2.647121679647941,
+          "after_board_rms_px": 1.5070270889520978,
+          "physical_camera_pose_preserved": true,
+          "validation": "Visible marker corners; independently calibrated intrinsics unavailable"
+        },
+        {
+          "camera_id": "iphone",
+          "dx_px": 0.27321181282923135,
+          "dy_px": -0.1666581382772847,
+          "before_board_rms_px": 0.9804215447332829,
+          "after_board_rms_px": 0.9222748681105061,
+          "physical_camera_pose_preserved": true,
+          "validation": "Visible marker corners; independently calibrated intrinsics unavailable"
+        }
+      ]
+    }
+  },
+  {
+    "number": 25,
+    "title": "25 Rigid material tracking",
+    "status": "Partial success",
+    "detail": "Native-image optical flow of 46 observed lid features, with forward/backward checks and no bridging of failures. 46/156 frames support multi-view poses, 9.3093-14.014 s, median fit residual 2.89 px. Earlier/later unsupported frames are retained as missing, not invented.",
+    "retrospective": true,
+    "details": {
+      "status": "provisional",
+      "assigned_points": 46,
+      "valid_pose_frames": 46,
+      "total_frames": 156,
+      "first_valid_time_s": 9.3093,
+      "last_valid_time_s": 14.014,
+      "reference_time_s": 9.3093,
+      "median_fit_error_px": 2.885141358862429,
+      "metric_accuracy_verified": false
+    }
+  },
+  {
+    "number": 26,
+    "title": "26 Screenshot manifest correction",
+    "status": "Failed then corrected",
+    "detail": "PowerShell wrapped the previous JSON array as one entry when adding stages. Flattened the manifest and corrected the reader; original screenshot files and capture timestamps preserved, sorted by stage number.",
+    "retrospective": true
+  },
+  {
+    "number": 27,
+    "title": "27 Gaussian pilot preparation attempt 1",
+    "status": "Failed",
+    "detail": "Native crop/mask preparation completed, but NumPy int32 crop dimensions could not be serialized to JSON. Converted dimensions to ordinary integers. Failed output folder and traceback retained as gaussian_pilot_01.",
+    "retrospective": true,
+    "image": "yogurt_mask_diagnostic.jpg"
+  },
+  {
+    "number": 28,
+    "title": "28 First moving Gaussian training",
+    "status": "Trained, quality limited",
+    "detail": "gaussian_pilot_02: 15,077 persistent Gaussians, 3,000 steps, best step 2,000, 117 training/21 held-out-time views. Full held-out foreground PSNR 20.83 dB from 16.05 dB initial. Label text remains blurred and edge streaks visible; not accepted as a finished crisp model.",
+    "retrospective": true,
+    "image": "yogurt_pilot_02_comparison.jpg"
+  },
+  {
+    "number": 29,
+    "title": "29 Evaluation scope correction",
+    "status": "Failed then corrected",
+    "detail": "Run-02 summary accidentally reported the three screenshot views (19.90 dB) instead of all 21 held-out views (20.83 dB in history). Corrected evaluation to keep the full split when saving panels; the original summary/log remain preserved.",
+    "retrospective": true
+  },
+  {
+    "number": 30,
+    "title": "30 Denser constrained yogurt pilot",
+    "status": "Trained, quality limited",
+    "detail": "gaussian_pilot_03: 51,469 persistent Gaussians, fixed surface orientations, bounded scales, 10,000 steps; held-out foreground PSNR 21.37 dB from 15.74 dB initialization. Native crop pixels retained. Edges/text still imperfect; metric accuracy and unseen geometry unverified.",
+    "retrospective": true,
+    "image": "yogurt_pilot_03_comparison.jpg"
+  },
+  {
+    "number": 31,
+    "title": "31 Textile stereo initialization attempt 1",
+    "status": "Failed",
+    "detail": "Raw-perspective SIFT yielded 7 Fuji/DJI and 20 Fuji/iPhone accepted pairs, but 0 consistent triple-view points. Tracking refused insufficient support. Native masks, initialization and traceback retained; mask also included some board content. Retry uses plane rectification and visible-marker exclusion.",
+    "retrospective": true,
+    "image": "textile_stereo_attempt_01.jpg"
+  },
+  {
+    "number": 32,
+    "title": "32 Rectified textile initialization attempt 2",
+    "status": "Failed after matching",
+    "detail": "Rectification produced observed material correspondences, including two-view points. Saving the native observations failed because NumPy arrays were not JSON serializable. Converted only the observation arrays to lists; preserved the failed folder, rectifications and diagnostic.",
+    "retrospective": true,
+    "image": "textile_stereo_attempt_02.jpg"
+  },
+  {
+    "number": 33,
+    "title": "33 Rectified textile material tracks",
+    "status": "Partial success",
+    "detail": "39 two-view material candidates initialized; 18/426 frames retain at least 12 triangulated tracks, 0-1.7017 s. Occlusion and knit ambiguity prevent dense deformation during later manipulation. This is observed point analysis, not a completed non-rigid Gaussian model.",
+    "retrospective": true,
+    "image": "textile_stereo_diagnostic.jpg"
+  },
+  {
+    "number": 34,
+    "title": "34 Native-rate textile tracking retry",
+    "status": "No substantial improvement",
+    "detail": "Used consecutive original 29.97 Hz frames until tracks were lost, then sampled the native 10 Hz plan. Same 18 well-supported bundles; some isolated features survive longer, but do not support a dense field. Native PNG training frames preserved.",
+    "retrospective": true,
+    "details": {
+      "status": "provisional_observed_material_tracks",
+      "initial_points": 39,
+      "frames": 426,
+      "native_flow": true,
+      "frames_with_12_points": 18,
+      "first_supported_time_s": 0.0,
+      "last_supported_time_s": 1.7017,
+      "metric_accuracy_verified": false,
+      "gaussian_training_complete": false,
+      "limitations": [
+        "Optical flow can still follow a similar stitch; no independently validated material identity",
+        "Hands/folds cause gaps; no bridging/reidentification",
+        "Only visible tracked surface is supported"
+      ]
+    }
+  },
+  {
+    "number": 35,
+    "title": "35 Live-preview screenshot attempt 1",
+    "status": "Failed then corrected",
+    "detail": "Capture readiness used image.complete, which is also true before an image source is loaded. Browser image decoding raised EncodingError. Readiness now waits for actual rendered image pixels (naturalWidth > 0).",
+    "retrospective": true
+  },
+  {
+    "number": 36,
+    "title": "36 Live rigid Gaussian viewer",
+    "status": "Passed",
+    "detail": "Actual CUDA-rendered yogurt model in a browser with time selection, orbit and zoom. RGB capture uses run 03; later cleaner preview uses run 04. This is a Gaussian renderer, separate from the selected-point viewer.",
+    "retrospective": true,
+    "image": "36_live_gaussian_rgb.png"
+  },
+  {
+    "number": 37,
+    "title": "37 Tighter final quality comparison",
+    "status": "Trained, cleaner edges",
+    "detail": "gaussian_pilot_04: 51,469 Gaussians, 30,000 steps, 1.5 mm bounded position offsets, 0.9 mm maximum scale. Held-out foreground PSNR 20.82 dB; lower than run 03's 21.37 dB, but visibly fewer loose edge splats. Retain both; select run 04 for the cleaner preview.",
+    "retrospective": true,
+    "image": "yogurt_pilot_04_comparison.jpg"
+  },
+  {
+    "number": 38,
+    "title": "38 Gaussian displacement and trails",
+    "status": "Passed",
+    "detail": "All persistent Gaussian centers receive reference displacement or fading motion activity; 35 representative IDs show trails. Uses observed valid poses and true sample times; gaps are not interpolated. Rigid displacement is not material strain.",
+    "retrospective": true,
+    "image": "38_live_gaussian_displacement_trails.png"
+  },
+  {
+    "number": 39,
+    "title": "39 Independent native-pixel verification",
+    "status": "Passed",
+    "detail": "Independently decoded one middle frame per original copied stream: all six match the extracted PNG RGB bytes exactly. Fuji/iPhone stay 3840 x 2160; DJI 1536 x 2304. All extraction counts/dimensions separately checked.",
+    "retrospective": true,
+    "details": {
+      "status": "passed",
+      "checks": [
+        {
+          "session": "dynamic_yogurt_001",
+          "camera": "dji",
+          "source_index": 234,
+          "extracted_image": "frames/dji/frame_000078.png",
+          "size": [
+            1536,
+            2304
+          ],
+          "rgb_sha256": "e33da49b5e62e197e0078a0ec4b6e6c9fc08050d498b7a9551249fc71736d580",
+          "equal": true
+        },
+        {
+          "session": "dynamic_yogurt_001",
+          "camera": "fuji",
+          "source_index": 234,
+          "extracted_image": "frames/fuji/frame_000078.png",
+          "size": [
+            3840,
+            2160
+          ],
+          "rgb_sha256": "077ebba5dfaaf167c59d6171f138a683b1842edc27d3880c302958e113410336",
+          "equal": true
+        },
+        {
+          "session": "dynamic_yogurt_001",
+          "camera": "iphone",
+          "source_index": 234,
+          "extracted_image": "frames/iphone/frame_000078.png",
+          "size": [
+            3840,
+            2160
+          ],
+          "rgb_sha256": "ef7920b9e019a9935202a0448f5ea8f880bfdad788e6b1a4a19f7fedc288639b",
+          "equal": true
+        },
+        {
+          "session": "dynamic_textile_001",
+          "camera": "dji",
+          "source_index": 638,
+          "extracted_image": "frames/dji/frame_000213.png",
+          "size": [
+            1536,
+            2304
+          ],
+          "rgb_sha256": "a1de694e284cc0e878382f109442b1c664fdd06104e6ca4d546197c7b8fa6d70",
+          "equal": true
+        },
+        {
+          "session": "dynamic_textile_001",
+          "camera": "fuji",
+          "source_index": 638,
+          "extracted_image": "frames/fuji/frame_000213.png",
+          "size": [
+            3840,
+            2160
+          ],
+          "rgb_sha256": "0768fd7c48fce6b454e1785623012ac1023c2b854c42101ad8b3b989a1b2677d",
+          "equal": true
+        },
+        {
+          "session": "dynamic_textile_001",
+          "camera": "iphone",
+          "source_index": 638,
+          "extracted_image": "frames/iphone/frame_000213.png",
+          "size": [
+            3840,
+            2160
+          ],
+          "rgb_sha256": "8ee076c486866b88e10e03518c9018684ae90677691b4636df3d90d853e48482",
+          "equal": true
+        }
+      ],
+      "scope": "One middle frame per real stream; extractor separately checks all frame counts/dimensions."
+    }
+  },
+  {
+    "number": 40,
+    "title": "40 Selected-feature preview capture",
+    "status": "Captured, timing correction needed",
+    "detail": "Both geometry and observed appearance maps displayed for real yogurt features. Initial screenshot requested frame 130 before the data set the slider maximum, so it captured frame 100 instead. Screenshot preserves its actual 10.01 s label; readiness corrected to wait for loaded tracks/state.",
+    "retrospective": true,
+    "image": "40_live_point_appearance_geometry.png"
+  },
+  {
+    "number": 41,
+    "title": "41 Selected-feature preview correction",
+    "status": "Passed",
+    "detail": "Capture waits for loaded tracks, selects frame 130 (13.013 s) and a 3-second activity window. Actual frame/time stored in screenshot metadata. No Gaussian temporal color or pigment change is claimed from this selected-feature video appearance.",
+    "retrospective": true,
+    "image": "41_live_point_appearance_geometry.png"
+  },
+  {
+    "number": 42,
+    "title": "42 Cleaner Gaussian preview",
+    "status": "Passed",
+    "detail": "Run 04 loaded in the real Gaussian viewer. RGB and scalar fields remain available with the same persistent IDs. Recent activity is gray when no contiguous history exists; unsupported poses return an error rather than an invented time sample.",
+    "retrospective": true,
+    "image": "42_live_cleaner_gaussian_rgb.png"
+  },
+  {
+    "number": 43,
+    "title": "43 Processing/checkpoint verification",
+    "status": "Passed",
+    "detail": "Native-pixel checks, Gaussian parameter/export checks, live RGB/displacement/activity rendering and missing-history/unsupported-frame checks passed. CPU foundation: 26 tests pass. Static source pins preserved; footage/models remain ignored.",
+    "retrospective": true,
+    "details": {
+      "status": "passed",
+      "gaussians": 51469,
+      "ply_matches_canonical_model": true,
+      "persistent_ids_and_pose_validity": true,
+      "live_render_checks": [
+        {
+          "frame": 93,
+          "mode": "rgb",
+          "image_size": [
+            900,
+            650
+          ],
+          "field_status": "supported",
+          "bytes": 50320
+        },
+        {
+          "frame": 93,
+          "mode": "displacement",
+          "image_size": [
+            900,
+            650
+          ],
+          "field_status": "supported",
+          "bytes": 21475
+        },
+        {
+          "frame": 93,
+          "mode": "recent",
+          "image_size": [
+            900,
+            650
+          ],
+          "field_status": "no contiguous motion history",
+          "bytes": 16559
+        },
+        {
+          "frame": 140,
+          "mode": "rgb",
+          "image_size": [
+            900,
+            650
+          ],
+          "field_status": "supported",
+          "bytes": 30156
+        },
+        {
+          "frame": 140,
+          "mode": "displacement",
+          "image_size": [
+            900,
+            650
+          ],
+          "field_status": "supported",
+          "bytes": 13674
+        },
+        {
+          "frame": 140,
+          "mode": "recent",
+          "image_size": [
+            900,
+            650
+          ],
+          "field_status": "supported",
+          "bytes": 18820
+        }
+      ],
+      "rejected_queries": [
+        {
+          "query": "frame=0",
+          "http_status": 400
+        },
+        {
+          "query": "frame=93&mode=unknown",
+          "http_status": 400
+        },
+        {
+          "query": "frame=93&history=0",
+          "http_status": 400
+        }
+      ],
+      "python_sources_parsed": 30,
+      "foundation_tests": 26,
+      "independent_native_pixel_checks": 6,
+      "static_submodule_pins": [
+        "b4e26dc929d23ad8c4cc266e61eb8bf7334ede36 .local/src/LichtFeld-Studio (v0.5.3-1-gb4e26dc9)",
+        " 930ecc42b512b564571d767f70775d284a6fa307 .local/src/vcpkg (2026.06.01-289-g930ecc42b5)"
+      ],
+      "git_diff_check": "passed",
+      "data_models_logs_tracked": false,
+      "scope": "Software/export checks, not a physical-accuracy certificate or completed textile reconstruction."
+    }
+  },
+  {
+    "number": 44,
+    "title": "44 Yogurt visibility-mask retry",
+    "status": "Failed to improve coverage",
+    "detail": "Filled-rim masking increased DJI observations from 247 to 2,438 but selected a disconnected blue component in iPhone views, dropping other valid blue features. Only 34 valid poses, 11.011-14.5145 s; original 46-frame result retained.",
+    "retrospective": true,
+    "details": {
+      "status": "provisional",
+      "assigned_points": 46,
+      "whole_lid_mask": true,
+      "valid_pose_frames": 34,
+      "total_frames": 156,
+      "first_valid_time_s": 11.011,
+      "last_valid_time_s": 14.5145,
+      "reference_time_s": 11.011,
+      "median_fit_error_px": 4.696960217578749,
+      "metric_accuracy_verified": false
+    }
+  },
+  {
+    "number": 45,
+    "title": "45 Visibility union correction",
+    "status": "Failed to improve reliable poses",
+    "detail": "Union mask retains original blue pixels and expands DJI observations to 2,683; iPhone retains 4,131. Only 28 frames pass the unchanged full-observation pose thresholds, median residual 4.92 px. Additional observations include inconsistent tracks; keep the original stronger 46-frame result.",
+    "retrospective": true,
+    "details": {
+      "status": "provisional",
+      "assigned_points": 46,
+      "whole_lid_mask": true,
+      "valid_pose_frames": 28,
+      "total_frames": 156,
+      "first_valid_time_s": 11.011,
+      "last_valid_time_s": 14.5145,
+      "reference_time_s": 11.011,
+      "median_fit_error_px": 4.92348113659536,
+      "metric_accuracy_verified": false
+    }
+  },
+  {
+    "number": 46,
+    "title": "46 Report-tab recovery",
+    "status": "Failed then corrected",
+    "detail": "The dedicated report tab was no longer present during capture. Screenshot helper now reopens only the local 8097 report in the existing dedicated browser. No user browser windows were closed.",
+    "retrospective": true
+  },
+  {
+    "number": 47,
+    "title": "47 Explicit motion-inlier refinement",
+    "status": "Partial, not selected",
+    "detail": "Single-view planar hypotheses initialize a joint fit; accepted poses retain at least four features in each of two cameras and twelve total after 8 px rejection. 40 supported frames, 10.6106-15.2152 s, median inlier residual 2.94 px. Later reach improved, total coverage did not; original 46-frame trajectory remains selected. Raw and retained counts preserved; gaps remain missing.",
+    "retrospective": true,
+    "details": {
+      "status": "provisional",
+      "valid_pose_frames": 40,
+      "total_frames": 156,
+      "assigned_points": 46,
+      "first_valid_time_s": 10.6106,
+      "last_valid_time_s": 15.2152,
+      "reference_time_s": 10.6106,
+      "median_inlier_fit_error_px": 2.9431061960477876,
+      "pixel_outlier_threshold": 8,
+      "metric_accuracy_verified": false,
+      "no_missing_frame_interpolation": true
+    }
+  },
+  {
+    "number": 48,
+    "title": "48 Measured container dimensions",
+    "status": "Recorded",
+    "detail": "User measured table-to-lid height 58 mm and outer lid diameter 95 mm. Measurement uncertainty was not supplied. Earlier estimates were 56.7 mm high and 95.5 mm across. Portable measurement record saved; earlier calibration and models retained.",
+    "retrospective": true,
+    "details": {
+      "recorded_date": "2026-10-07",
+      "source": "User measurements supplied in the project conversation",
+      "subject": "Yogurt container in dynamic_yogurt_001",
+      "table_to_lid_height_mm": 58.0,
+      "outer_lid_diameter_mm": 95.0,
+      "measurement_uncertainty_mm": null,
+      "calibration_use": {
+        "height": "Fixed constraint in a new joint board/lid camera fit",
+        "diameter": "Contour cross-check excluded from camera fitting; measured actor initialization"
+      },
+      "previous_provisional_estimates_mm": {
+        "height": 56.70108244576332,
+        "diameter": 95.51
+      },
+      "independent_camera_accuracy_verified": false
+    }
+  },
+  {
+    "number": 49,
+    "title": "49 Measured-height camera refinement",
+    "status": "Converged, provisional",
+    "detail": "Joint fit fixes lid height at 58 mm. The 95 mm diameter is excluded from camera fitting and checked against blue-rim contours: Fuji 96.64 mm, iPhone 96.98 mm, DJI 94.70 mm. Held-out lid prediction RMS iPhone/DJI 6.80/3.96 px; held-out board RMS Fuji/iPhone/DJI 1.79/1.17/1.37 px. Measurement improves the constraint; residuals do not establish millimetre accuracy.",
+    "retrospective": true,
+    "image": "measured_rim_checks.jpg",
+    "details": {
+      "status": "provisional",
+      "optimizer_success": true,
+      "message": "`ftol` termination condition is satisfied.",
+      "initial_rms_component_px": 11.808160327983561,
+      "final_rms_component_px": 1.35430383325678,
+      "estimated_lid_height_m": 0.058,
+      "lid_tracks": 46,
+      "triple_tracks": 7,
+      "holdout_tracks": 10,
+      "lid_height_source": "user measurement, fixed during fitting",
+      "measured_lid_diameter_mm": 95.0,
+      "diameter_used_in_camera_fit": false,
+      "diameter_cross_checks": [
+        {
+          "camera_id": "fuji",
+          "contour_diameter_mm": 96.64443645939835,
+          "center_xy_m": [
+            0.12557726140627865,
+            0.12517053698528002
+          ],
+          "radial_rms_mm": 3.743273808308753,
+          "measured_diameter_mm": 95.0,
+          "difference_mm": 1.6444364593983494
+        },
+        {
+          "camera_id": "iphone",
+          "contour_diameter_mm": 96.98051508369102,
+          "center_xy_m": [
+            0.1286095476479377,
+            0.12558832932443598
+          ],
+          "radial_rms_mm": 2.749623761871182,
+          "measured_diameter_mm": 95.0,
+          "difference_mm": 1.9805150836910173
+        },
+        {
+          "camera_id": "dji",
+          "contour_diameter_mm": 94.6961796913944,
+          "center_xy_m": [
+            0.12911199601605858,
+            0.12319449121995506
+          ],
+          "radial_rms_mm": 2.2118959326618106,
+          "measured_diameter_mm": 95.0,
+          "difference_mm": -0.3038203086055944
+        }
+      ],
+      "diameter_check_note": "Approximate blue-rim segmentation; not an independent calibration or physical accuracy certificate.",
+      "intrinsic_accuracy_verified": false,
+      "independent_metric_accuracy_verified": false
+    }
+  },
+  {
+    "number": 50,
+    "title": "50 Measured calibration crop-transfer check",
+    "status": "Passed, candidate only",
+    "detail": "Reused physical camera poses and fitted export principal-point translations for the textile clips. Candidate cameras saved separately; existing textile calibration and tracking remain unchanged pending review.",
+    "retrospective": true,
+    "details": {
+      "status": "provisional",
+      "results": [
+        {
+          "camera_id": "dji",
+          "dx_px": 90.31057861665539,
+          "dy_px": -4.7829732764198525,
+          "before_board_rms_px": 90.4484210807105,
+          "after_board_rms_px": 1.1286936058759212,
+          "physical_camera_pose_preserved": true,
+          "validation": "Visible marker corners; independently calibrated intrinsics unavailable"
+        },
+        {
+          "camera_id": "fuji",
+          "dx_px": -0.37895360301729397,
+          "dy_px": -2.066132065015154,
+          "before_board_rms_px": 2.6979003631069536,
+          "after_board_rms_px": 1.5511238695061027,
+          "physical_camera_pose_preserved": true,
+          "validation": "Visible marker corners; independently calibrated intrinsics unavailable"
+        },
+        {
+          "camera_id": "iphone",
+          "dx_px": 0.24312741600397203,
+          "dy_px": -0.22755795574960302,
+          "before_board_rms_px": 1.0038724675124437,
+          "after_board_rms_px": 0.9495061166523153,
+          "physical_camera_pose_preserved": true,
+          "validation": "Visible marker corners; independently calibrated intrinsics unavailable"
+        }
+      ]
+    }
+  },
+  {
+    "number": 51,
+    "title": "51 Documentation capture timeout",
+    "status": "Failed, recovery attempted",
+    "detail": "Browser screenshot capture timed out before saving the new report stages. The helper now brings its report tab to the foreground before waiting for animation frames and checkpoints the manifest after every screenshot. This failed capture is retained in the chronology; calibration and motion processing were unaffected.",
+    "retrospective": true,
+    "details": {
+      "failure": "PowerShell ClientWebSocket.ReceiveAsync canceled after 15 seconds",
+      "recovery": "Bring report tab to foreground before paint-cycle waits; save screenshot manifest incrementally"
+    }
+  },
+  {
+    "number": 52,
+    "title": "52 Measured unconstrained motion comparison",
+    "status": "Partial; implausible fit rejected",
+    "detail": "Original blue-feature observations give 45 supported frames, median retained error 2.11 px, but one fitted lid orientation flips about 126 degrees. The expanded observed set gives 53 frames, 7.2072-15.5155 s, median 2.84 px and at most 7.87 degrees tilt. Low pixel residual alone is insufficient for accepting physical motion. Neither result silently replaces the original preview.",
+    "retrospective": true,
+    "details": {
+      "rigid_tracking_05_measured": {
+        "status": "provisional",
+        "valid_pose_frames": 45,
+        "total_frames": 156,
+        "assigned_points": 46,
+        "first_valid_time_s": 9.3093,
+        "last_valid_time_s": 15.015,
+        "reference_time_s": 9.3093,
+        "median_inlier_fit_error_px": 2.11449490341689,
+        "pixel_outlier_threshold": 8,
+        "metric_accuracy_verified": false,
+        "no_missing_frame_interpolation": true,
+        "session": "data/dynamic_yogurt_001/session_measured_candidate.json",
+        "canonical_calibration": "data/dynamic_yogurt_001/calibration/board_lid_refinement_02_measured",
+        "source_observations": "outputs/dynamic_yogurt_001/rigid_tracking_01"
+      },
+      "rigid_tracking_06_measured": {
+        "status": "provisional",
+        "valid_pose_frames": 53,
+        "total_frames": 156,
+        "assigned_points": 46,
+        "first_valid_time_s": 7.2072,
+        "last_valid_time_s": 15.5155,
+        "reference_time_s": 7.2072,
+        "median_inlier_fit_error_px": 2.8423553443313896,
+        "pixel_outlier_threshold": 8,
+        "metric_accuracy_verified": false,
+        "no_missing_frame_interpolation": true,
+        "session": "data/dynamic_yogurt_001/session_measured_candidate.json",
+        "canonical_calibration": "data/dynamic_yogurt_001/calibration/board_lid_refinement_02_measured",
+        "source_observations": "outputs/dynamic_yogurt_001/rigid_tracking_03"
+      }
+    }
+  },
+  {
+    "number": 53,
+    "title": "53 Upright tabletop constraint trial",
+    "status": "Failed to improve coverage",
+    "detail": "Fixing motion to yaw and XY sliding removes tilt/lift ambiguity but only 43/156 frames pass the same pixel thresholds, 9.4094-15.015 s, median inlier error 3.21 px. This assumption does not resolve the remaining calibration/tracking inconsistencies. Retain the trial; use the non-flipped measured 53-frame fit for a separate appearance-model comparison, with its physical limits explicit.",
+    "retrospective": true,
+    "details": {
+      "status": "provisional",
+      "valid_pose_frames": 43,
+      "total_frames": 156,
+      "assigned_points": 46,
+      "first_valid_time_s": 9.4094,
+      "last_valid_time_s": 15.015,
+      "reference_time_s": 9.4094,
+      "median_inlier_fit_error_px": 3.2063452593983173,
+      "pixel_outlier_threshold": 8,
+      "metric_accuracy_verified": false,
+      "no_missing_frame_interpolation": true,
+      "session": "data/dynamic_yogurt_001/session_measured_candidate.json",
+      "canonical_calibration": "data/dynamic_yogurt_001/calibration/board_lid_refinement_02_measured",
+      "source_observations": "outputs/dynamic_yogurt_001/rigid_tracking_03",
+      "motion_assumption": "Upright planar sliding: yaw and XY translation; no tilt or lift"
+    }
+  },
+  {
+    "number": 54,
+    "title": "54 Measured-dimension Gaussian pilot",
+    "status": "Trained, comparison retained",
+    "detail": "Run 05: 51,913 persistent Gaussians, 30,000 steps, initialized at measured height 58 mm and lid radius 47.5 mm. 53 supported poses, 135 training and 24 held-out native crops; foreground PSNR 20.82 dB. This split differs from run 04, so their rounded scores are not a controlled quality comparison. Earlier models remain intact.",
+    "retrospective": true,
+    "image": "yogurt_pilot_05_comparison.jpg",
+    "details": {
+      "status": "trained_provisional_rigid_pilot",
+      "steps": 30000,
+      "best_step": 30000,
+      "gaussians": 51913,
+      "canonical_calibration": "data/dynamic_yogurt_001/calibration/board_lid_refinement_02_measured",
+      "poses": "outputs/dynamic_yogurt_001/rigid_tracking_06_measured/rigid_poses.json",
+      "supported_pose_frames": 53,
+      "training_views": 135,
+      "heldout_views": 24,
+      "initial_heldout_foreground_psnr_db": 16.492966794499708,
+      "best_heldout_foreground_psnr_db": 20.816722976216955,
+      "elapsed_s": 192.10425460000988,
+      "peak_cuda_bytes": 210633216,
+      "metric_accuracy_verified": false,
+      "time_varying_appearance_trained": false,
+      "nonrigid_deformation_trained": false,
+      "limitations": [
+        "Provisional calibration and manually synchronized video",
+        "Automatic masks can include shadows/rope",
+        "Unseen container geometry follows initialization prior",
+        "Validation uses the same three cameras at held-out times"
+      ]
+    }
+  },
+  {
+    "number": 55,
+    "title": "55 Opacity quality diagnosis",
+    "status": "Quality issue identified",
+    "detail": "Real held-out renders show unwanted partial transparency and fine loose structure in the lid/body. Training's low silhouette weight allows alpha to compensate for mismatched appearance. A separate trial raises silhouette weight from 0.035 to 0.2 and reduces bounded position offsets from 1.5 mm to 0.65 mm; compare on identical crops/masks and pose samples before selection.",
+    "retrospective": true,
+    "image": "yogurt_pilot_05_comparison.jpg"
+  },
+  {
+    "number": 56,
+    "title": "56 Stronger opacity trial",
+    "status": "Trained, cleaner opaque surface",
+    "detail": "Measured run 06: 51,913 Gaussians, 30,000 steps, 0.65 mm position bounds, 0.9 mm maximum scale and silhouette weight 0.2. Uses the same 53 poses and native view split as measured run 05. Full RGB/detail and hidden geometry remain imperfect; do not label the result pristine or metrically certified.",
+    "retrospective": true,
+    "image": "yogurt_pilot_06_comparison.jpg",
+    "details": {
+      "status": "trained_provisional_rigid_pilot",
+      "steps": 30000,
+      "best_step": 30000,
+      "gaussians": 51913,
+      "canonical_calibration": "data/dynamic_yogurt_001/calibration/board_lid_refinement_02_measured",
+      "poses": "outputs/dynamic_yogurt_001/rigid_tracking_06_measured/rigid_poses.json",
+      "supported_pose_frames": 53,
+      "training_views": 135,
+      "heldout_views": 24,
+      "initial_heldout_foreground_psnr_db": 16.492966794499708,
+      "best_heldout_foreground_psnr_db": 20.199696198133164,
+      "heldout_alpha_mae": 0.04421015060506761,
+      "elapsed_s": 196.10860590002267,
+      "peak_cuda_bytes": 211008512,
+      "metric_accuracy_verified": false,
+      "time_varying_appearance_trained": false,
+      "nonrigid_deformation_trained": false,
+      "limitations": [
+        "Provisional calibration and manually synchronized video",
+        "Automatic masks can include shadows/rope",
+        "Unseen container geometry follows initialization prior",
+        "Validation uses the same three cameras at held-out times"
+      ]
+    }
+  },
+  {
+    "number": 57,
+    "title": "57 Shared-crop quality comparison",
+    "status": "Passed; run 06 selected",
+    "detail": "Identical 24 held-out crops and masks: alpha MAE improves 0.06395 to 0.04421 (about 31% lower), mean foreground alpha increases 0.9435 to 0.9654. Foreground RGB PSNR decreases 20.82 to 20.20 dB. Select the more solid measured run 06 for demonstration, retain run 05 and original run 04. This is a selection split, not an untouched test.",
+    "retrospective": true,
+    "image": "measured_model_comparison.jpg",
+    "details": {
+      "status": "passed",
+      "identical_native_crops_and_masks": true,
+      "heldout_views": 24,
+      "heldout_indices": [
+        72,
+        105,
+        115,
+        122,
+        129,
+        137,
+        145,
+        152
+      ],
+      "models": [
+        {
+          "model": "outputs/dynamic_yogurt_001/gaussian_pilot_05_measured",
+          "gaussians": 51913,
+          "foreground_psnr_db": 20.816722976216955,
+          "alpha_mae": 0.06394534635667999,
+          "mean_foreground_alpha": 0.9435097401340803
+        },
+        {
+          "model": "outputs/dynamic_yogurt_001/gaussian_pilot_06_measured_solid",
+          "gaussians": 51913,
+          "foreground_psnr_db": 20.199696198133164,
+          "alpha_mae": 0.04421015060506761,
+          "mean_foreground_alpha": 0.9654265368978182
+        }
+      ],
+      "scope": "Shared held-out-time comparison, used for checkpoint/model selection; not an untouched independent test or metric certificate."
+    }
+  },
+  {
+    "number": 58,
+    "title": "58 Measured actor live RGB",
+    "status": "Passed",
+    "detail": "Genuine visible browser screenshot at 12.012 s shows run 06 with 51,913 persistent IDs. Viewer reads its matching pose file from motion.json and rejects an explicit incompatible trajectory. Previous run 04 remains available on local port 8101.",
+    "retrospective": true,
+    "image": "58_live_measured_gaussian_rgb.png"
+  },
+  {
+    "number": 59,
+    "title": "59 Measured actor activity and trails",
+    "status": "Passed",
+    "detail": "Genuine browser screenshot at 13.013 s, 3-second fading window, all-Gaussian activity field and 35 representative trails. Reference is the first supported time, not an invented frame-zero pose; gaps remain unsupported. This field includes rigid motion, not material strain or calibrated pigment change.",
+    "retrospective": true,
+    "image": "59_live_measured_gaussian_activity.png"
+  },
+  {
+    "number": 60,
+    "title": "60 Measured checkpoint verification",
+    "status": "Passed",
+    "detail": "Height/diameter initialization and canonical camera/pose provenance agree; Gaussian export, persistent IDs, six live renders, invalid/missing-history behavior, native pixel checks, 26 foundation tests and static pins pass. Raw footage/models/logs remain ignored. All chronological evidence is retained.",
+    "retrospective": true,
+    "details": {
+      "status": "passed",
+      "gaussians": 51913,
+      "ply_matches_canonical_model": true,
+      "persistent_ids_and_pose_validity": true,
+      "live_render_checks": [
+        {
+          "frame": 72,
+          "mode": "rgb",
+          "image_size": [
+            900,
+            650
+          ],
+          "field_status": "supported",
+          "bytes": 48118
+        },
+        {
+          "frame": 72,
+          "mode": "displacement",
+          "image_size": [
+            900,
+            650
+          ],
+          "field_status": "supported",
+          "bytes": 14033
+        },
+        {
+          "frame": 72,
+          "mode": "recent",
+          "image_size": [
+            900,
+            650
+          ],
+          "field_status": "no contiguous motion history",
+          "bytes": 11302
+        },
+        {
+          "frame": 155,
+          "mode": "rgb",
+          "image_size": [
+            900,
+            650
+          ],
+          "field_status": "supported",
+          "bytes": 24780
+        },
+        {
+          "frame": 155,
+          "mode": "displacement",
+          "image_size": [
+            900,
+            650
+          ],
+          "field_status": "supported",
+          "bytes": 8994
+        },
+        {
+          "frame": 155,
+          "mode": "recent",
+          "image_size": [
+            900,
+            650
+          ],
+          "field_status": "supported",
+          "bytes": 12821
+        }
+      ],
+      "rejected_queries": [
+        {
+          "query": "frame=0",
+          "http_status": 400
+        },
+        {
+          "query": "frame=72&mode=unknown",
+          "http_status": 400
+        },
+        {
+          "query": "frame=72&history=0",
+          "http_status": 400
+        }
+      ],
+      "python_sources_parsed": 32,
+      "foundation_tests": 26,
+      "independent_native_pixel_checks": 6,
+      "static_submodule_pins": [
+        "b4e26dc929d23ad8c4cc266e61eb8bf7334ede36 .local/src/LichtFeld-Studio (v0.5.3-1-gb4e26dc9)",
+        " 930ecc42b512b564571d767f70775d284a6fa307 .local/src/vcpkg (2026.06.01-289-g930ecc42b5)"
+      ],
+      "git_diff_check": "passed",
+      "data_models_logs_tracked": false,
+      "scope": "Software/export checks, not a physical-accuracy certificate or completed textile reconstruction."
+    }
+  },
+  {
+    "number": 61,
+    "title": "61 Earlier-scene registration experiment",
+    "status": "Failed; abandoned",
+    "detail": "Three current empty views produced no verified registrations to the earlier static model. No scenes were merged and old inputs were untouched. The user then explicitly excluded all earlier scenes from this workflow; the attempt and helper were moved into the ignored abandoned archive. It will not supply the current surroundings.",
+    "retrospective": true,
+    "details": {
+      "registered_current_views": 0,
+      "scene_merged": false,
+      "constraint": "Current capture only; do not use earlier static scenes",
+      "archive": ".local/workflows/dynamic_setup/abandoned_static_room_registration_01"
+    }
+  },
+  {
+    "number": 62,
+    "title": "62 Current-capture background source",
+    "status": "Selected",
+    "detail": "Surroundings must be actual static Gaussians from the current recordings, in the measured marker coordinate system. The current empty frames show the tabletop, board, monitor stand, cables, divider, outlets and chairs. Three fixed views provide limited off-table stereo; unobserved surfaces remain unsupported. Finish and visually verify yogurt before resuming textile.",
+    "retrospective": true,
+    "image": "current_empty_views.jpg"
+  },
+  {
+    "number": 63,
+    "title": "63 Current-background depth tool",
+    "status": "Installed and verified",
+    "detail": "Official Depth Anything V2 Small indoor checkpoint downloaded with its published SHA-256 checked. Matching torchvision 0.19.0+cu124 added to the isolated dynamic environment. Depth is an initialization prior for weakly observed surrounding geometry; the measured board supplies tabletop scale. Old static reconstruction and installations remain separate.",
+    "retrospective": true,
+    "details": {
+      "repo": "depth-anything/Depth-Anything-V2-Metric-Hypersim-Small",
+      "revision": "3bc65d4e14a6786a61acec16453c50e12bf5f338",
+      "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Metric-Hypersim-Small/resolve/3bc65d4e14a6786a61acec16453c50e12bf5f338/depth_anything_v2_metric_hypersim_vits.pth",
+      "filename": "depth_anything_v2_metric_hypersim_vits.pth",
+      "sha256": "b782898d8a3e8be1f639de33837ed85e9b4b73e40f8f5e5cd99067588d722545",
+      "bytes": 99222290,
+      "license": "Apache-2.0 (Small checkpoint, official model card)",
+      "usage": "Single-view depth initialization; metric geometry unverified outside measured board"
+    }
+  },
+  {
+    "number": 64,
+    "title": "64 Background empty-interval diagnosis",
+    "status": "Failed visual check",
+    "detail": "First-eight-frame median retained a transient cue hand in the Fuji view and rejected many changing pixels. It is not an acceptable static background. Run 01 and its depth/mask diagnostic are preserved; no trained background selected. Retry uses the individually inspected clean frame zero in each current stream.",
+    "retrospective": true,
+    "image": "background_01_failed_interval.jpg"
+  },
+  {
+    "number": 65,
+    "title": "65 Clean current-background initialization",
+    "status": "Provisional success",
+    "detail": "Run 02 uses the clean first frame in each current stream. 370,081 static Gaussians, including 239,770 on the measured tabletop plane. No earlier scene or photographic backdrop is imported. Off-table depth remains a monocular prior, with limited three-camera support.",
+    "retrospective": true,
+    "image": "background_02_clean_interval.jpg"
+  },
+  {
+    "number": 66,
+    "title": "66 Unconstrained background fitting",
+    "status": "Failed to improve",
+    "detail": "3,000 native-patch iterations worsened input-view fit; selection retained step zero. The export arrays correctly contain 370,081 points, but the first summary counter was also inconsistent and was corrected in the helper for later runs. This trial is preserved and rejected as the final background.",
+    "retrospective": true,
+    "details": {
+      "initial": {
+        "step": 0,
+        "mean_input_fit_mse": 0.007082869376366337,
+        "cameras": [
+          {
+            "camera": "iphone",
+            "input_fit_psnr_db": 20.439528414276108,
+            "input_fit_mse": 0.009037476032972336,
+            "mean_alpha": 0.9423112869262695
+          },
+          {
+            "camera": "fuji",
+            "input_fit_psnr_db": 25.10044791172767,
+            "input_fit_mse": 0.003089976729825139,
+            "mean_alpha": 0.955492377281189
+          },
+          {
+            "camera": "dji",
+            "input_fit_psnr_db": 20.399501466026443,
+            "input_fit_mse": 0.009121155366301537,
+            "mean_alpha": 0.9474124312400818
+          }
+        ],
+        "elapsed_s": 0.6796458999742754,
+        "independent_validation": false
+      },
+      "last_training": {
+        "step": 3000,
+        "mean_input_fit_mse": 0.0826059306661288,
+        "cameras": [
+          {
+            "camera": "iphone",
+            "input_fit_psnr_db": 10.96235570054738,
+            "input_fit_mse": 0.08012433350086212,
+            "mean_alpha": 0.9423614144325256
+          },
+          {
+            "camera": "fuji",
+            "input_fit_psnr_db": 10.165110675317559,
+            "input_fit_mse": 0.09626954793930054,
+            "mean_alpha": 0.9697239995002747
+          },
+          {
+            "camera": "dji",
+            "input_fit_psnr_db": 11.461563752666784,
+            "input_fit_mse": 0.07142391055822372,
+            "mean_alpha": 0.948805034160614
+          }
+        ],
+        "elapsed_s": 29.565416599973105,
+        "independent_validation": false
+      },
+      "selected": {
+        "step": 0,
+        "mean_input_fit_mse": 0.007082869376366337,
+        "cameras": [
+          {
+            "camera": "iphone",
+            "input_fit_psnr_db": 20.439528414276108,
+            "input_fit_mse": 0.009037476032972336,
+            "mean_alpha": 0.9423112869262695
+          },
+          {
+            "camera": "fuji",
+            "input_fit_psnr_db": 25.10044791172767,
+            "input_fit_mse": 0.003089976729825139,
+            "mean_alpha": 0.955492377281189
+          },
+          {
+            "camera": "dji",
+            "input_fit_psnr_db": 20.399501466026443,
+            "input_fit_mse": 0.009121155366301537,
+            "mean_alpha": 0.9474124312400818
+          }
+        ],
+        "elapsed_s": 29.71432749996893,
+        "independent_validation": false
+      },
+      "actual_export_points": 370081,
+      "selected_for_final_scene": false
+    }
+  },
+  {
+    "number": 67,
+    "title": "67 Conservative background appearance fit",
+    "status": "Improved slightly",
+    "detail": "Run 02/trained_02 fixes geometry and opacity and refines colors. Selected step 500 of 3,000; mean three-input-view MSE improves 0.007083 to 0.006946. These are training-camera scores, not independent validation. All 370,081 static points remain separate from the 51,913 moving actor IDs.",
+    "retrospective": true,
+    "image": "background_02_conservative_fit.jpg",
+    "details": {
+      "status": "trained_current_capture_static_background",
+      "initial_gaussians": 370081,
+      "gaussians": 370081,
+      "plane_gaussians": 239770,
+      "steps": 3000,
+      "selected_step": 500,
+      "colors_only": true,
+      "initialization": "outputs/dynamic_yogurt_001/static_background_02",
+      "session": "data/dynamic_yogurt_001/session_measured_candidate.json",
+      "source_policy": "current capture only",
+      "calibration_dir": "data/dynamic_yogurt_001/calibration/board_lid_refinement_02_measured",
+      "world_units": "metres",
+      "world_frame": "measured marker pattern; z into tabletop",
+      "native_pixel_training": true,
+      "patch_size": 640,
+      "static_in_time": true,
+      "metric_accuracy_verified": false,
+      "independent_validation": false,
+      "input_fit": {
+        "step": 500,
+        "mean_input_fit_mse": 0.006945963793744643,
+        "cameras": [
+          {
+            "camera": "iphone",
+            "input_fit_psnr_db": 20.53509793685945,
+            "input_fit_mse": 0.008840772323310375,
+            "mean_alpha": 0.9423112869262695
+          },
+          {
+            "camera": "fuji",
+            "input_fit_psnr_db": 25.13276026606045,
+            "input_fit_mse": 0.0030670720152556896,
+            "mean_alpha": 0.955492377281189
+          },
+          {
+            "camera": "dji",
+            "input_fit_psnr_db": 20.491462532819735,
+            "input_fit_mse": 0.008930047042667866,
+            "mean_alpha": 0.9474124312400818
+          }
+        ],
+        "elapsed_s": 22.41311439999845,
+        "independent_validation": false
+      },
+      "elapsed_s": 23.109579300042242,
+      "peak_cuda_bytes": 529378816,
+      "limitations": [
+        "Flat tabletop extends the measured board plane within reviewed polygons",
+        "Off-table surface depth is a monocular prior; unseen backsides are not reconstructed",
+        "Median of first empty frames removes sensor noise, not a new geometric viewpoint",
+        "Three input cameras; this score is training-view fit, not unseen-view validation"
+      ]
+    }
+  },
+  {
+    "number": 68,
+    "title": "68 Combined scene visual check",
+    "status": "Rendered; cleanup needed",
+    "detail": "Genuine browser screenshot at 12.012 s shows current-capture surroundings and yogurt in one depth-ordered Gaussian rasterization. World-fixed iPhone view, room toggle, camera presets and actor-only fields work. Conflicting off-table depth priors cause ghosting at the monitor/stand; this preview is not accepted as the final cleanup.",
+    "retrospective": true,
+    "image": "68_live_current_scene_initial.png"
+  },
+  {
+    "number": 69,
+    "title": "69 Conflicting depth-layer cleanup",
+    "status": "Improved",
+    "detail": "Run 03 preserves the measured plane and removes unverified Fuji/DJI off-table seeds inside the wide iPhone view. Current native pixel stride reduced to four and initial opacity raised to 0.97. 498,531 static Gaussians remain, including 250,261 tabletop points. This reduces ghosting without importing another scene or claiming hidden-room accuracy.",
+    "retrospective": true,
+    "details": {
+      "session": "data/dynamic_yogurt_001/session_measured_candidate.json",
+      "source_root": "data/dynamic_yogurt_001",
+      "source_policy": "current capture only",
+      "calibration_dir": "data/dynamic_yogurt_001/calibration/board_lid_refinement_02_measured",
+      "gaussians": 498531,
+      "plane_gaussians": 250261,
+      "cameras": {
+        "iphone": {
+          "camera_file": "data/dynamic_yogurt_001/calibration/board_lid_refinement_02_measured/iphone.json",
+          "empty_frame_indices": [
+            0
+          ],
+          "native_size": [
+            3840,
+            2160
+          ],
+          "depth_alignment": {
+            "method": "affine_inverse_depth",
+            "scale": 0.22628839462787215,
+            "inverse_affine": [
+              4.9227852395713025,
+              -0.3546351552375896
+            ],
+            "board_holdout_scale_median_abs_m": 0.0045076028552880065,
+            "board_holdout_affine_median_abs_m": 0.001861763791460025,
+            "metric_accuracy_verified": false
+          },
+          "off_plane_seeds": 225478,
+          "rejected_unverified_depth_overlap": 0,
+          "stable_fraction": 1.0,
+          "rgb_gain_to_iphone": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "fuji": {
+          "camera_file": "data/dynamic_yogurt_001/calibration/board_lid_refinement_02_measured/fuji.json",
+          "empty_frame_indices": [
+            0
+          ],
+          "native_size": [
+            3840,
+            2160
+          ],
+          "depth_alignment": {
+            "method": "affine_inverse_depth",
+            "scale": 0.5281800748799395,
+            "inverse_affine": [
+              1.0672014842564463,
+              0.5546054163635366
+            ],
+            "board_holdout_scale_median_abs_m": 0.0435368434299408,
+            "board_holdout_affine_median_abs_m": 0.0049995923403919895,
+            "metric_accuracy_verified": false
+          },
+          "off_plane_seeds": 2734,
+          "rejected_unverified_depth_overlap": 6665,
+          "stable_fraction": 1.0,
+          "rgb_gain_to_iphone": [
+            1.0964467005076142,
+            1.0964467005076142,
+            1.0913705583756346
+          ]
+        },
+        "dji": {
+          "camera_file": "data/dynamic_yogurt_001/calibration/board_lid_refinement_02_measured/dji.json",
+          "empty_frame_indices": [
+            0
+          ],
+          "native_size": [
+            1536,
+            2304
+          ],
+          "depth_alignment": {
+            "method": "affine_inverse_depth",
+            "scale": 0.22860161502643067,
+            "inverse_affine": [
+              5.322235036267938,
+              -0.5518420262650787
+            ],
+            "board_holdout_scale_median_abs_m": 0.00990804094172576,
+            "board_holdout_affine_median_abs_m": 0.0037850469542648757,
+            "metric_accuracy_verified": false
+          },
+          "off_plane_seeds": 20058,
+          "rejected_unverified_depth_overlap": 38145,
+          "stable_fraction": 1.0,
+          "rgb_gain_to_iphone": [
+            0.9863013698630138,
+            0.9818181818181817,
+            0.9817351598173517
+          ]
+        }
+      },
+      "board_dimensions_m": [
+        0.35,
+        0.21
+      ],
+      "fine_spacing_m": 0.00065,
+      "coarse_spacing_m": 0.0025,
+      "off_plane_native_stride": 4,
+      "depth_overlap_reference": "iphone",
+      "static_layer": true,
+      "metric_accuracy_verified": false,
+      "assumptions": [
+        "Flat tabletop extends the measured board plane within reviewed polygons",
+        "Off-table surface depth is a monocular prior; unseen backsides are not reconstructed",
+        "Only a reviewed empty interval is used; additional frames are not new geometric viewpoints",
+        "Unverified overlapping monocular surfaces are removed in favor of the widest reference camera"
+      ],
+      "depth_tool": {
+        "depth_code_url": "https://github.com/DepthAnything/Depth-Anything-V2.git",
+        "depth_code_commit": "a561b849ebae10a6f5ef49e26c83cbbcd36c71bf",
+        "depth_model_url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Metric-Hypersim-Small/resolve/3bc65d4e14a6786a61acec16453c50e12bf5f338/depth_anything_v2_metric_hypersim_vits.pth",
+        "depth_model_sha256": "b782898d8a3e8be1f639de33837ed85e9b4b73e40f8f5e5cd99067588d722545",
+        "depth_model_license": "Apache-2.0, Small model",
+        "source_policy": "Only images from the selected current dynamic session; no previous scene models",
+        "geometry_policy": "Measured board plane; provisional monocular depth for surrounding objects. No metric certification."
+      }
+    }
+  },
+  {
+    "number": 70,
+    "title": "70 Cleaned background appearance fit",
+    "status": "Selected",
+    "detail": "Conservative 3,000-step native-patch fit selects step 500. Wide iPhone input-fit PSNR 24.13 dB, Fuji 24.68 dB, DJI 17.36 dB. The widest view improves visually; reduced conflicting geometry sacrifices some side-view fit. These are training-view scores. Current static layer is run03/trained_01; actor run06 and all earlier trials remain separate.",
+    "retrospective": true,
+    "image": "background_03_clean_fit.jpg",
+    "details": {
+      "status": "trained_current_capture_static_background",
+      "initial_gaussians": 498531,
+      "gaussians": 498531,
+      "plane_gaussians": 250261,
+      "steps": 3000,
+      "selected_step": 500,
+      "colors_only": true,
+      "initialization": "outputs/dynamic_yogurt_001/static_background_03",
+      "session": "data/dynamic_yogurt_001/session_measured_candidate.json",
+      "source_policy": "current capture only",
+      "calibration_dir": "data/dynamic_yogurt_001/calibration/board_lid_refinement_02_measured",
+      "world_units": "metres",
+      "world_frame": "measured marker pattern; z into tabletop",
+      "native_pixel_training": true,
+      "patch_size": 640,
+      "static_in_time": true,
+      "metric_accuracy_verified": false,
+      "independent_validation": false,
+      "input_fit": {
+        "step": 500,
+        "mean_input_fit_mse": 0.00854071966993312,
+        "cameras": [
+          {
+            "camera": "iphone",
+            "input_fit_psnr_db": 24.12974099270807,
+            "input_fit_mse": 0.003863900201395154,
+            "mean_alpha": 0.9704148769378662
+          },
+          {
+            "camera": "fuji",
+            "input_fit_psnr_db": 24.68224934939038,
+            "input_fit_mse": 0.003402319271117449,
+            "mean_alpha": 0.969656229019165
+          },
+          {
+            "camera": "dji",
+            "input_fit_psnr_db": 17.362233814996035,
+            "input_fit_mse": 0.01835593953728676,
+            "mean_alpha": 0.9318377375602722
+          }
+        ],
+        "elapsed_s": 23.341563599999063,
+        "independent_validation": false
+      },
+      "elapsed_s": 24.161691699991934,
+      "peak_cuda_bytes": 562628096,
+      "limitations": [
+        "Flat tabletop extends the measured board plane within reviewed polygons",
+        "Off-table surface depth is a monocular prior; unseen backsides are not reconstructed",
+        "Only a reviewed empty interval is used; additional frames are not new geometric viewpoints",
+        "Unverified overlapping monocular surfaces are removed in favor of the widest reference camera",
+        "Three input cameras; this score is training-view fit, not unseen-view validation"
+      ]
+    }
+  },
+  {
+    "number": 71,
+    "title": "71 Whole-scene motion start",
+    "status": "Visually checked",
+    "detail": "Genuine GUI capture at the first supported sample, 7.2072 s. Yogurt and current table/room are rendered as Gaussians in one world. Camera stays fixed, so movement is visible against the board and surroundings. No static desk or Necto scene is used.",
+    "retrospective": true,
+    "image": "71_live_current_scene_start.png"
+  },
+  {
+    "number": 72,
+    "title": "72 Whole-scene motion end",
+    "status": "Visually checked",
+    "detail": "Genuine GUI capture at 15.5155 s confirms the container moves across the same fixed background. Hidden surfaces, lid/body detail and physical calibration remain provisional. Supported motion is accepted as a demonstration; missing samples are not filled.",
+    "retrospective": true,
+    "image": "72_live_current_scene_end.png"
+  },
+  {
+    "number": 73,
+    "title": "73 Whole-scene fading activity",
+    "status": "Passed",
+    "detail": "Genuine GUI capture at 13.013 s shows all-actor activity and representative trails over unchanged static Gaussian surroundings. Static RGB is not remapped by actor displacement/activity colors.",
+    "retrospective": true,
+    "image": "73_live_current_scene_activity.png"
+  },
+  {
+    "number": 74,
+    "title": "74 Scene-validation mask diagnosis",
+    "status": "Failed then corrected",
+    "detail": "Initial automated field check inferred actor coverage from RGB differences. White actor pixels can equal white tabletop RGB while occupying geometry, so that mask incorrectly treated some actor pixels as static. Corrected verification to use calibrated projected Gaussian bounds; renderer geometry and images were unchanged.",
+    "retrospective": true,
+    "details": {
+      "failed_check": "Static RGB unchanged outside color-difference mask",
+      "cause": "White actor pixels may equal white background RGB",
+      "correction": "Mask the calibrated projected Gaussian bounds plus a support margin"
+    }
+  },
+  {
+    "number": 75,
+    "title": "75 Current-scene motion verification",
+    "status": "Passed",
+    "detail": "All 53 supported renders pass. Static-only first/last images are byte-identical under the fixed camera; measured plane z remains exactly zero, model/export counts and calibration provenance agree, actor movement is visible, static RGB stays outside actor fields, all camera presets render, and unsupported time/camera/mode requests are rejected. Yogurt visual/motion gate completed before resuming textile work.",
+    "retrospective": true,
+    "details": {
+      "status": "passed",
+      "actor_gaussians": 51913,
+      "background_gaussians": 498531,
+      "source_policy": "current capture only",
+      "background_source": "outputs/dynamic_yogurt_001/static_background_03/trained_01/static_background.npz",
+      "model_source": "outputs/dynamic_yogurt_001/gaussian_pilot_06_measured_solid/canonical_actor.npz",
+      "measured_table_plane_preserved": true,
+      "static_only_first_last_png_sha256": "b5dd3a26475c83a0b5e63dba6b49d1edcb3b66ad236810aa96a38b0e3484812b",
+      "static_rgb_unchanged_by_actor_fields": true,
+      "supported_renders": 53,
+      "unsupported_samples_rejected": true,
+      "all_camera_presets_rendered": true,
+      "metric_accuracy_verified": false,
+      "limits": "Checks show the renderer works; monocular room depth and motion calibration are still provisional."
+    },
+    "image": "current_scene_motion_check.jpg"
+  },
+  {
+    "number": 76,
+    "title": "76 Textile measured retry launch",
+    "status": "Failed then corrected",
+    "detail": "First launcher selected the CPU capture environment, where OpenCV is unavailable. No dataset/model output was created; traceback retained. Relaunched with existing tf4dgs-dynamic OpenCV installation. No package or static-tool changes were needed.",
+    "retrospective": true,
+    "details": {
+      "environment": "tf4dgs",
+      "error": "ModuleNotFoundError: No module named cv2",
+      "recovery": "Use the existing tf4dgs-dynamic OpenCV installation",
+      "dataset_output_created": false
+    }
+  },
+  {
+    "number": 77,
+    "title": "77 Measured textile material tracking",
+    "status": "Partial improvement",
+    "detail": "Separate measured crop-transfer session gives 45 observed two-view IDs (0 triple-view IDs). Native-rate LK tracking supports 28 samples, 0-2.9029 s, compared with the earlier 18 samples through 1.7017 s. Later hand occlusion/folding remains unsupported; this is not a completed non-rigid Gaussian replay.",
+    "retrospective": true,
+    "image": "textile_measured_stereo.jpg",
+    "details": {
+      "status": "provisional_observed_material_tracks",
+      "initial_points": 45,
+      "frames": 426,
+      "native_flow": true,
+      "frames_with_12_points": 28,
+      "first_supported_time_s": 0.0,
+      "last_supported_time_s": 2.9029,
+      "metric_accuracy_verified": false,
+      "gaussian_training_complete": false,
+      "limitations": [
+        "Optical flow can still follow a similar stitch; no independently validated material identity",
+        "Hands/folds cause gaps; no bridging/reidentification",
+        "Only visible tracked surface is supported"
+      ]
+    }
+  },
+  {
+    "number": 78,
+    "title": "78 Textile RAFT coverage comparison",
+    "status": "No improvement; retained",
+    "detail": "Official RAFT Large weights verified by SHA-256. Same 45 observed initial IDs, consecutive native-rate frames, 1280-pixel flow previews, forward/backward and unchanged stereo rejection checks. Supports 24 samples through 2.5025 s; measured LK run05 remains selected. LK used 1920-pixel flow, so this is not an equal-resolution benchmark. Missing tracks are not bridged or reidentified. The first documentation update hit an approval-review usage limit; evidence is now recorded.",
+    "retrospective": true,
+    "image": "textile_raft_stereo.jpg",
+    "details": {
+      "material_tracking_05_measured": {
+        "status": "provisional_observed_material_tracks",
+        "initial_points": 45,
+        "frames": 426,
+        "native_flow": true,
+        "frames_with_12_points": 28,
+        "first_supported_time_s": 0.0,
+        "last_supported_time_s": 2.9029,
+        "metric_accuracy_verified": false,
+        "gaussian_training_complete": false,
+        "limitations": [
+          "Optical flow can still follow a similar stitch; no independently validated material identity",
+          "Hands/folds cause gaps; no bridging/reidentification",
+          "Only visible tracked surface is supported"
+        ]
+      },
+      "material_tracking_06_raft": {
+        "status": "provisional_observed_material_tracks",
+        "initial_points": 45,
+        "frames": 426,
+        "native_flow": true,
+        "frames_with_12_points": 24,
+        "flow_backend": "raft",
+        "tracking_long_side": 1280,
+        "session": "data/dynamic_textile_001/session_measured_candidate.json",
+        "first_supported_time_s": 0.0,
+        "last_supported_time_s": 2.5025,
+        "metric_accuracy_verified": false,
+        "gaussian_training_complete": false,
+        "limitations": [
+          "Optical flow can still follow a similar stitch; no independently validated material identity",
+          "Hands/folds cause gaps; no bridging/reidentification",
+          "Only visible tracked surface is supported"
+        ]
+      }
+    }
+  }
+]

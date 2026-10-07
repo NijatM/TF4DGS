@@ -1,0 +1,9 @@
+name: tf4dgs-dynamic
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  # gsplat's available Windows CUDA wheel targets CPython 3.10/PyTorch 2.4.
+  # GPU packages are installed separately from the official wheel indexes.
+  - python=3.10
+  - pip

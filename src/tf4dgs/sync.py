@@ -67,6 +67,7 @@ def make_plan(session, probes):
         if clocks[cid]["fit_residual_max_s"] > timeline["max_skew_s"]:
             raise ValueError(f"{cid}: sync-cue residual exceeds allowed frame skew")
     start, end, fps, tolerance = (timeline[k] for k in ("start_s", "end_s", "sample_fps", "max_skew_s"))
+    sample_tolerance = number(timeline.get("max_sample_offset_s", tolerance), "max sample offset", positive=True)
     used = {cid: set() for cid in frames}
     bundles, rejected = [], []
     for step in range(math.ceil((end-start)*fps)):
@@ -75,7 +76,7 @@ def make_plan(session, probes):
             break
         ri = nearest(frames[reference], times[reference], target)
         rt = times[reference][ri]
-        if abs(rt-target) > tolerance or not start <= rt < end:
+        if abs(rt-target) > sample_tolerance or not start <= rt < end:
             rejected.append({"requested_time_s": target, "reason": "reference coverage/skew"})
             continue
         selected = {cid: nearest(frames[cid], times[cid], rt) for cid in frames}

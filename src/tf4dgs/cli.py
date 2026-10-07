@@ -12,7 +12,7 @@ from .sync import make_plan
 
 
 def main(argv=None):
-    parser = argparse.ArgumentParser(prog="tf4dgs", description="TF4DGS capture and analysis foundation (GPU trainer pending)")
+    parser = argparse.ArgumentParser(prog="tf4dgs", description="TF4DGS capture and selected-point analysis foundation")
     sub = parser.add_subparsers(dest="command", required=True)
     init = sub.add_parser("init-session", help="Create ignored capture folders and an incomplete session template")
     init.add_argument("path", type=Path)

@@ -1,6 +1,6 @@
 # Temporal Fields 4D Gaussian Splatting (TF4DGS): Project memory
 
-Last updated: 2026-10-06 (America/New_York)
+Last updated: 2026-10-07 (America/New_York)
 
 ## Project identity
 
@@ -16,6 +16,47 @@ Last updated: 2026-10-06 (America/New_York)
 
 ## Current stage
 
+Active request (2026-10-07): reconstruct the yogurt capture's surrounding
+table/room as real static Gaussians in the same calibrated world as its moving
+actor. Use only these current recordings. The user explicitly forbids merging
+any earlier desk/Necto scene; an unsuccessful old-scene registration experiment
+(zero registered query views) was abandoned and moved into ignored
+`.local/workflows/dynamic_setup/abandoned_static_room_registration_01/`.
+No old scene was merged or changed. Keep the camera fixed in world space by
+default so the container's movement is visible against the surroundings.
+Finish and visually verify yogurt first; only then resume textile reconstruction.
+Every major stage, including failures, needs chronological screenshot evidence.
+Yogurt whole-scene provisional replay is now visually checked and verified:
+`outputs/dynamic_yogurt_001/static_background_03/trained_01` contains 498,531
+current-capture static Gaussians (250,261 on the measured z=0 tabletop), joined
+with the unchanged 51,913 moving actor IDs in a single CUDA rasterization.
+Viewer port 8100 defaults to world-fixed whole-scene iPhone camera; presets,
+free orbit/pan/zoom, room visibility, actor fields and trails work. All 53
+supported poses rendered; static-only first/last PNGs are byte-identical.
+`scripts/Validate-CurrentGaussianScene.py` passed. Documentation through stage
+75 includes genuine beginning/end/activity screenshots. Off-table depth uses
+the official Depth Anything V2 Small indoor prior; single-view geometry and
+hidden surfaces are not a measured room survey. Run02/trained_01 failed to
+improve, run02/trained_02 retained ghosting; all trials remain preserved.
+The visual/motion gate is satisfied for this supported-frame pilot, so textile
+processing may now resume. Keep unsupported yogurt samples as gaps.
+Textile retries are now complete: measured session
+`data/dynamic_textile_001/session_measured_candidate.json` uses
+`calibration/cameras_crop_adjusted_02_measured/`. Run
+`outputs/dynamic_textile_001/material_tracking_05_measured` initializes 45
+two-view IDs and supports 28 samples, 0-2.9029 s. Run06_RAFT uses the same
+observed initial IDs and supports 24 samples, 0-2.5025 s at 1280-pixel flow
+resolution; retain it as an unsuccessful coverage comparison. Run05 uses
+1920-pixel flow, so this is not a controlled equal-resolution benchmark.
+Neither is a complete non-rigid Gaussian reconstruction. Original session
+and run04 remain untouched. An initial wrong-environment launch lacked cv2;
+relaunching in existing tf4dgs-dynamic resolved it without package changes.
+Official RAFT weight source/SHA is tracked in configs/textile_flow_sources.json;
+weights stay ignored. No processing worker remains; only existing local
+preview/report servers. Latest chronological report: stages 01-78.
+`torchvision 0.19.0+cu124` was added only to `tf4dgs-dynamic`; static tools are
+untouched. Official source/checkpoint are in ignored `.local/tools`.
+
 Git preparation is complete: the local repository is initialized on `main`,
 with LichtFeld and vcpkg registered as pinned submodules at their existing
 paths. The user created private `NijatM/TF4DGS` and their LichtFeld fork,
@@ -25,9 +66,21 @@ commit `8e826bd113158a71ed8ab3d15e31335572ed91be` to private `NijatM/TF4DGS`;
 local `main` tracks `origin/main`. Git setup/publication is complete. The desk
 and multi-camera Necto static captures are trained, evaluated and documented;
 Necto room cleanup is exported and reopened. The user now requested the
-multi-camera dynamic foundation while recordings are pending. CPU timing,
-extraction and selected-point analysis are implemented and tested, with a
-synthetic local preview. The real 4D GPU backend is not installed or integrated.
+multi-camera dynamic processing of the supplied yogurt and textile recordings.
+Verified copies are in `data/dynamic_yogurt_001` and
+`data/dynamic_textile_001`. Native 10 Hz pilot extraction is complete (156 and
+426 synchronized three-view bundles). The isolated `tf4dgs-dynamic` environment
+has Python 3.10.22, torch 2.4.0+cu124 and gsplat 1.5.3+pt24cu124; actual CUDA
+rendering and gradients passed. Calibration is provisional, using the measured
+35 mm board plus matched lid texture and the user-measured 58 mm container
+height. Current measured motion supports 53 samples from 7.2072 to 15.5155
+seconds, with gaps. Real rigid Gaussian pilots are trained; the current more
+solid measured run06 has 51,913 persistent IDs and uses the measured 95 mm
+diameter at initialization. Earlier run04 remains available for comparison.
+Full non-rigid textile reconstruction
+and time-varying Gaussian appearance remain incomplete.
+The chronological record is `documentation/dynamic_capture_001/README.md`;
+include numbered actual report screenshots of successes and failed attempts.
 Read the latest dynamic checkpoint before repeating setup or processing data.
 The user handles all commits/pushes; provide VS Code terminal commands and
 commit messages, including for source forks. See `GIT_SETUP.md` and the latest
@@ -54,8 +107,10 @@ to make setup on another machine easier. Section 10 of `INSTALLATION.md` now
 records that requirement. Miniconda is recommended over full Anaconda; the
 assistant has now completed the Miniconda installation.
 Next, follow `docs/CAPTURE_CHECKLIST.md` for the first controlled dynamic
-recording and `docs/DYNAMIC_FOUNDATION.md` for preparation. The 4D backend has
-not been selected or installed. Update this file before any required restart.
+recording and `docs/DYNAMIC_FOUNDATION.md` for preparation. An isolated gsplat
+backend is installed for a rigid moving-container pilot; the non-rigid textile
+trainer is still under development. No restart is needed. Update this file
+before any required restart.
 The earlier requested
 `grill-me` / `grilling` skill installation is complete.
 
@@ -1576,3 +1631,158 @@ The assistant has performed no commits or pushes.
   previews remain ignored. No staging, commits, pushes or source-pin changes
   performed. Native Illustrator runtime remains untested; physical print
   dimensions and camera calibration remain pending.
+
+### First real yogurt/textile processing checkpoint (2026-10-07)
+
+- User supplied D:/Yogurt and D:/Textile, three Premiere-exported videos each.
+  Copied all six into ignored data/dynamic_yogurt_001/raw/{dji,fuji,iphone}
+  and data/dynamic_textile_001/raw/{dji,fuji,iphone}; SHA-256 copies verified.
+  Originals untouched. Both session.json files, source-copy manifests, decoded
+  PTS/fingerprints, extraction plans and all failed attempts are retained locally.
+- User aligned a dropped-box impact in Premiere at 30 FPS, trimmed/exported
+  each camera from one timeline. No originals/calibration capture available.
+  Fuji XF33 mm fixed; DJI Natural additionally cropped. Cameras fixed, exposure/
+  WB manual, stabilization probably off (unverified). User measured 35 mm board
+  squares and confirmed unchanged physical camera/board positions between tests.
+  Equal exported timestamps do not certify sensor timing: retain 33.37 ms
+  uncertainty. Sources are H.264 High, 8-bit SDR BT.709, 30000/1001 FPS;
+  Fuji/iPhone 3840x2160, DJI 1536x2304. Yogurt 467 frames/15.582 s;
+  textile 1277/42.609 s. These are exported video inputs, not sensor RAW.
+- Native 10 Hz extraction completed: 156 yogurt/426 textile bundles, 468/1278
+  PNGs, no resize/exposure change/frame reuse. Independent middle-frame RGB
+  comparisons passed for all six streams. Original full-rate videos remain.
+  Fixed reference-sampling tolerance (17 ms) separately from camera skew (1 ms).
+  Fixed FFmpeg long-selection parser depth with balanced expressions. Earlier
+  sparse selection and failed expression outputs were preserved, not deleted.
+- Added isolated tf4dgs-dynamic: Python3.10.22, torch2.4.0+cu124,
+  gsplat1.5.3+pt24cu124 precompiled official CP310 Windows wheel. GPU render/
+  backward and pip check passed. System CUDA13.2.2, main tf4dgs/Python3.11 and
+  static native installation remain unchanged; no restart required.
+  First Conda recipe attempt hit the default-channel ToS plugin; accepted no
+  terms, succeeded using --override-channels --channel conda-forge. Portable
+  recipes/locks: environments/tf4dgs-dynamic.yml,
+  environments/tf4dgs-dynamic-win-64.explicit.txt,
+  configs/dynamic_gpu_win64.lock.txt. Build-machine packaging URL sanitized.
+  Official wheel SHA256:
+  62fae62e2cf233233527ba890fd322825476118edd4bd27a4e6cb36b1723003e.
+- Automatic COLMAP baseline failed: planar verified pairs included repeated-
+  marker aliases. Preserved DB/logs; no sparse model fabricated. Centered-crop
+  board bootstrap rejected insufficient off-plane support. Rectified actual
+  lid texture plus measured board jointly fit provisional square-pixel pinhole
+  cameras (zero distortion), 46 material candidates/7 triple-view candidates.
+  Held-out board RMS Fuji/iPhone/DJI=1.67/1.15/1.14 px; held-out lid predictions
+  in iPhone/DJI=7.45/3.85 px. Estimated lid height56.7 mm; not independently
+  verified. Provisional calibration is not a physical accuracy certificate.
+- Yogurt calibration: data/dynamic_yogurt_001/calibration/cameras/{id}.json.
+  Textile direct transfer failed for DJI (90.34 px board error); corrected only
+  export principal-point shifts while preserving physical poses. Textile uses
+  calibration/cameras_crop_adjusted/{id}.json. DJI shift(+90.13,-4.77)px;
+  corrected board RMS DJI/Fuji/iPhone=1.00/1.51/.92 px. Keep failed transfer.
+- Original strict yogurt tracking: outputs/dynamic_yogurt_001/rigid_tracking_01,
+  46 assigned features, 46 valid poses/156 samples,9.3093-14.014 s, median
+  residual2.89 px. No gap interpolation. Filled-rim tracking attempts02/03 added
+  observations but reduced valid poses (34/28); preserve them, do not replace
+  the stronger original result. Explicit pixel-outlier pose refinement04
+  finished:40 valid frames10.6106-15.2152 s, median inlier residual2.94px.
+  Later reach improved but overall coverage did not; keep original01 selected.
+  User supplied measured table-to-lid height58 mm and lid diameter95 mm.
+  Portable provenance:documentation/dynamic_capture_001/container_measurements.json.
+  New board_lid_refinement_02_measured fixes58 mm during fitting;95 mm is an
+  excluded-from-fit contour check (Fuji/iPhone/DJI96.64/96.98/94.70 mm).
+  Candidate session: data/dynamic_yogurt_001/session_measured_candidate.json.
+  Original session/calibration/models are preserved; never mix old canonical
+  coordinates or transforms with the new cameras. Measured refit05 was rejected
+  for a126-degree lid flip despite low residual. Refit06 from expanded observed
+  pixels gives53 supported frames7.2072-15.5155 s,median2.84px,tilt<=7.87deg.
+  Tabletop-only trial07 removes tilt/lift but passes only43 frames; retain trial.
+  Measured Gaussian05 trained51,913 GS/30k steps,20.82dB on24 held-out crops
+  (different split from original04). Visible opacity holes motivated measured
+  solid retry06 completed with silhouette0.2/offset0.65mm and is selected.
+  outputs/dynamic_yogurt_001/measured_comparison_01 independently renders the
+  same24 held-out native crops/masks: alphaMAE0.06395->0.04421(31%lower),
+  meanforegroundalpha0.9435->0.9654; PSNR20.82->20.20dB. Keep both models.
+  This selection split is not an untouched test or metric-accuracy certificate.
+  Textile transfer candidate saved under
+  calibration/cameras_crop_adjusted_02_measured; existing session not updated.
+- Real rigid Gaussian actor trained, one canonical model with persistent IDs
+  and time-dependent rigid transforms. Not independent static PLYs per frame.
+  Run02:15,077 Gaussians/3k steps; fixed evaluation screenshot-subset reporting
+  error while preserving original summary. Run03:51,469/10k steps, held-out-time
+  foreground PSNR21.37dB. Run04:51,469/30k steps, tighter1.5mm offsets/.9mm
+  scales,20.82dB; cleaner edges, earlier selected preview. Current preview is
+  measured run06; original04 stays as comparison. Models/text remain imperfect.
+  Runs: outputs/dynamic_yogurt_001/gaussian_pilot_02,03,04. Best checkpoint,
+  canonical_actor.ply/npz, motion.json, comparison images and per-time renders
+  saved. PLY is a static snapshot; animation requires NPZ+poses. Training uses
+  encoded video RGB, constant Gaussian colors, an unmeasured frustum prior for
+  hidden geometry, and approximate automatic masks. No temporal Gaussian color
+  or physical strain is claimed. Validation times use the same three cameras
+  and select checkpoints; there is no untouched independent test.
+- Textile: raw-perspective stereo initialization failed; rectification plus
+  marker exclusion initialized39 two-view material candidates. Tracking03/04
+  retain>=12 triangulated points only for0-1.7017 s (18/426 samples). Native29.97Hz
+  tracking did not materially improve support through hand occlusions/folds.
+  outputs/dynamic_textile_001/material_tracking_04 holds the latest partial
+  point tracks; full non-rigid Gaussian training remains incomplete. Do not
+  turn missing/ambiguous correspondence into a validated dense field.
+- Live local GUIs:8100 actual Gaussian renderer (measured solid run06),8101
+  earlier run04 comparison,8096 real
+  yogurt selected-feature maps,8097 chronological report,8094 earlier synthetic
+  point demonstration. Own server/browser PID files/logs in ignored
+  .local/workflows/dynamic_setup. Only stop verified task-owned processes.
+  scripts/Serve-RigidGaussianPreview.py reopens the actual model; scripts/
+  TF4DGS.py serve-preview --tracks outputs/dynamic_yogurt_001/rigid_tracking_01/
+  point_tracks.json --port8096 reopens real point analysis. Gaussian viewer:
+  RGB/orbit/time, all-Gaussian displacement/activity,35 sampled fading trails;
+  no interpolation, gray unsupported recent history. Point viewer alone has
+  observed appearance/geometry combined maps. These are different tools.
+- Documentation: documentation/dynamic_capture_001/README.md,index.html,
+  numbered report screenshots, genuine live-view screenshots and capture
+  metadata. Preserve chronological numbering and every failed attempt.
+  Retrospective report screenshots are labeled, not fabricated original
+  terminal/GUI captures. Actual diagnostic source images are distinguished.
+  Fixed UTF16 log decoding, PowerShell manifest array nesting, screenshot image/
+  slider readiness and report-tab recovery; failures recorded in the journal.
+- Validation at stage43 passed: six independent real-stream pixel comparisons;
+  51,469 finite/unit-quaternion/positive-scale Gaussian parameters; PLY matches
+  NPZ; stable IDs/pose validity; six live RGB/displacement/activity renders;
+  unsupported-frame/invalid-query rejection and missing-history semantics;
+  26 CPU foundation tests; git diff --check; no data/models/logs tracked.
+  Static pins unchanged: LichtFeldb4e26dc929d23ad8c4cc266e61eb8bf7334ede36,
+  vcpkg930ecc42b512b564571d767f70775d284a6fa307. Full validation JSON/logs ignored
+  under .local/workflows/dynamic_setup/current_stage_validation.*.
+- Measured stage60 verification passed: canonical camera/pose provenance,
+  measured actor initialization58/95mm,51,913 finite Gaussian parameters,
+  PLY/NPZ agreement,53 supported poses,6 live renders, invalid-frame rejection,
+  missing recent-history behavior,26 foundation tests and6 native-pixel checks.
+  Result/logs:.local/workflows/dynamic_setup/measured_stage_validation.*.
+  Documentation now has60 chronological report screenshots plus7 genuine live
+  previews; stage58RGB12.012s and stage59activity13.013s record measured run06.
+  Viewer automatically reads matching motion.json and rejects an explicit
+  different pose file. No processing worker remains; only own local servers.
+- No staging, commits, pushes or Windows restart performed. User owns Git.
+  NEXT: measured rigid pass is complete; review current previews and improve
+  material correspondence before textile
+  deformation and temporal Gaussian appearance. Do not repeat installations.
+
+### Whole-scene yogurt and textile retry checkpoint (2026-10-07)
+
+- Yogurt: current actor06 plus current-capture background03/trained_01;
+  51,913 moving and 498,531 static Gaussians. World-fixed iPhone camera default.
+  `Validate-CurrentGaussianScene.py` passed all 53 supported time samples,
+  static-only first/last identity, measured z=0 plane, fields and camera presets.
+- User explicitly forbids merging earlier static scenes. None was merged.
+  Rejected registration test/helper live only in the ignored abandoned archive.
+- Current-view RGB, motion start/end/activity and all background failures are
+  documented chronologically. Depth prior outside the measured plane and
+  hidden geometry are not independently metrically verified.
+- Textile measured LK run05 is the latest partial track set: 45 initial IDs,
+  28 supported samples through 2.9029 s. RAFT run06 (24 through 2.5025 s)
+  did not improve coverage in this configuration. Dense textile training and
+  Gaussian temporal appearance remain outstanding; never fill occlusion gaps
+  as observed deformation.
+- All training/tracking workers have completed. Static submodule pins remain
+  unchanged. Data, models, weights and logs remain excluded from Git.
+- The previous documentation update could not run when automatic approval
+  review hit a usage limit; this checkpoint records the completed trials.
+- No staging, commit or push performed. User owns Git publication.

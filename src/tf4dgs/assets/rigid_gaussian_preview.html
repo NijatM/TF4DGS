@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>TF4DGS | moving Gaussian scene</title><style>
+body{margin:0;background:#121a23;color:#edf4fa;font:16px Arial,sans-serif}main{max-width:1320px;margin:22px auto;padding:0 20px}h1{font-size:27px;margin-bottom:10px}.note{color:#bdcbda;line-height:1.5}section{display:grid;grid-template-columns:1fr 290px;gap:24px}img{width:100%;background:#ebebeb;border-radius:8px;cursor:grab;touch-action:none}aside{background:#1e2b39;border-radius:8px;padding:17px}label{display:block;margin:14px 0 6px}input[type=range],select{width:100%}select,button{background:#30455b;color:white;padding:8px;border:1px solid #547493;border-radius:5px;font-size:14px}button{cursor:pointer}small{display:block;line-height:1.5;color:#bbcbda}.legend{height:13px;background:linear-gradient(90deg,#0000ff,#806680,#ff0000);margin:10px 0}#status{min-height:25px;margin:10px 0;color:#bfe8cd}a{color:#8ecaff}@media(max-width:900px){section{grid-template-columns:1fr}}
+</style></head><body><main><h1>TF4DGS — yogurt moving in its captured surroundings</h1>
+<p class="note">Loading Gaussian scene…</p>
+<section><div><img id="render" alt="Actual CUDA Gaussian scene render"><div id="status">Loading model…</div><small id="sceneNote"></small><p><small>Drag to orbit; Shift + drag to pan; scroll to zoom. Movement uses supported poses and keeps missing samples as gaps. Displacement includes rigid movement; it is not material strain.</small></p></div>
+<aside><label for="time">Time: <span id="timeLabel"></span></label><input id="time" type="range" min="0" value="0" step="1"><button id="play">Play supported frames</button>
+<label for="camera">Camera</label><select id="camera"><option value="orbit">Free orbit</option></select><p><button id="reset">Reset to whole scene</button></p>
+<label><input id="background" type="checkbox" checked> Show reconstructed surroundings</label><label><input id="follow" type="checkbox"> Follow object</label>
+<label for="mode">Appearance / motion</label><select id="mode"><option value="rgb">Trained RGB</option><option value="displacement">Displacement from first supported frame</option><option value="recent">Fading motion activity</option></select>
+<label for="history">Trail/activity window: <span id="historyLabel">5 s</span></label><input id="history" type="range" min="0.5" max="10" step="0.5" value="5">
+<label for="maximum">Field scale maximum: <span id="maximumLabel">100 mm</span></label><input id="maximum" type="range" min="5" max="300" step="5" value="100"><div class="legend"></div><small>Blue: zero · red: scale maximum. Model-based estimates.</small>
+<label><input id="trails" type="checkbox"> Show fading trails (35 sample IDs)</label>
+<small>Fields apply to every moving Gaussian; static surroundings keep their RGB. Gaussian RGB is constant over time in this pilot.</small></aside></section></main>
+<script>
+const $=id=>document.getElementById(id);
+let frames=[],azimuth=30,elevation=35,distance=.35,panX=0,panY=0,busy=false,requested=false,playing=false,timer=null,meta=null;
+function stop(){playing=false;clearTimeout(timer);$('play').textContent='Play supported frames'}
+async function update(){
+  if(!frames.length)return;
+  if(busy){requested=true;return}busy=true;requested=false;
+  const frame=frames[Number($('time').value)];
+  $('timeLabel').textContent=frame.time_s.toFixed(3)+' s';$('historyLabel').textContent=$('history').value+' s';$('maximumLabel').textContent=$('maximum').value+' mm';
+  const q=new URLSearchParams({frame:frame.index,azimuth,elevation,distance,pan_x:panX,pan_y:panY,camera:$('camera').value,background:$('background').checked?'1':'0',mode:$('mode').value,history:$('history').value,maximum:Number($('maximum').value)/1000,trails:$('trails').checked?'1':'0',follow:$('follow').checked?'1':'0'});
+  try{
+    const response=await fetch('/api/render?'+q);if(!response.ok)throw Error((await response.json()).error);
+    const fieldStatus=response.headers.get('X-TF4DGS-Field-Status'),blob=await response.blob(),old=$('render').src,source=URL.createObjectURL(blob);
+    await new Promise((resolve,reject)=>{$('render').onload=resolve;$('render').onerror=reject;$('render').src=source});if(old.startsWith('blob:'))URL.revokeObjectURL(old);
+    const previous=Number($('time').value)>0?frames[Number($('time').value)-1]:null;
+    const gap=previous&&frame.index!==previous.index+1?' | jump over unsupported samples':'';
+    $('status').textContent=`t = ${frame.time_s.toFixed(3)} s | frame ${frame.index} | ${$('camera').value} | Gaussian render${gap}${fieldStatus&&fieldStatus!=="supported"?" | "+fieldStatus:""}`;
+  }catch(error){$('status').textContent=error.message;stop()}
+  finally{busy=false;if(requested)update();else if(playing)timer=setTimeout(()=>{if(Number($('time').value)>=frames.length-1){stop();return}$('time').value=Number($('time').value)+1;update()},150)}
+}
+for(const id of ['time','camera','background','mode','history','maximum','trails','follow'])$(id).addEventListener('input',()=>{stop();update()});
+$('play').onclick=()=>{if(playing){stop();return}if(Number($('time').value)>=frames.length-1)$('time').value=0;playing=true;$('play').textContent='Pause';update()};
+$('reset').onclick=()=>{stop();$('camera').value=meta.default_camera;$('follow').checked=false;$('background').checked=Boolean(meta.background_gaussians);distance=meta.default_distance;azimuth=30;elevation=35;panX=panY=0;update()};
+let last=null;
+$('render').onpointerdown=e=>{stop();last=[e.clientX,e.clientY];$('render').setPointerCapture(e.pointerId)};
+$('render').onpointermove=e=>{if(!last)return;$('camera').value='orbit';if(e.shiftKey){panX=Math.max(-2,Math.min(2,panX-(e.clientX-last[0])*distance*.002));panY=Math.max(-2,Math.min(2,panY+(e.clientY-last[1])*distance*.002))}else{azimuth=((azimuth+(e.clientX-last[0])*.4+540)%360)-180;elevation=Math.max(5,Math.min(85,elevation-(e.clientY-last[1])*.3))}last=[e.clientX,e.clientY];update()};
+$('render').onpointerup=()=>last=null;$('render').onpointercancel=()=>last=null;
+$('render').onwheel=e=>{e.preventDefault();$('camera').value='orbit';distance=Math.max(.13,Math.min(4,distance*Math.exp(e.deltaY*.001)));update()};
+fetch('/api/meta').then(r=>r.json()).then(data=>{
+  meta=data;frames=meta.frames;$('time').max=frames.length-1;distance=meta.default_distance;
+  for(const name of meta.camera_views){const option=document.createElement('option');option.value=name;option.textContent=name==='iphone'?'iPhone — whole captured scene':name==='fuji'?'Fuji — marker / object close view':'DJI — desk side view';$('camera').append(option)}
+  $('camera').value=meta.default_camera;$('follow').checked=meta.default_follow;$('background').checked=Boolean(meta.background_gaussians);$('background').disabled=!meta.background_gaussians;
+  document.querySelector('main > p.note').textContent=meta.gaussians.toLocaleString()+' moving Gaussians + '+meta.background_gaussians.toLocaleString()+' static surroundings Gaussians | current capture only | fixed world camera by default';
+  $('sceneNote').textContent=meta.background_gaussians?'Both object and surroundings are rendered as 3D Gaussians in the measured marker coordinates. The board/table plane is anchored; off-table depth and unseen surfaces remain uncertain. No earlier scene is used.':'Separate trained actor comparison. Hidden surfaces and metric calibration remain provisional.';
+  window.tf4dgsMeta=meta;window.tf4dgsUpdate=update;update();
+}).catch(e=>$('status').textContent=e.message);
+</script></body></html>

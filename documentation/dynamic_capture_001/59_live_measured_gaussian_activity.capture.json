@@ -1,0 +1,13 @@
+{
+    "captured_utc":  "2026-10-07T07:49:28.7247255Z",
+    "page_state":  {
+                       "model":  "outputs/dynamic_yogurt_001/gaussian_pilot_06_measured_solid/canonical_actor.npz",
+                       "time":  "13.013 s",
+                       "mode":  "recent",
+                       "trails":  true
+                   },
+    "kind":  "Live local preview browser screenshot",
+    "expression":  "(async()=\u003e{document.getElementById(\"time\").value=window.tf4dgsMeta.frames.findIndex(f=\u003ef.index===130);document.getElementById(\"mode\").value=\"recent\";document.getElementById(\"trails\").checked=true;document.getElementById(\"history\").value=\"3\";document.getElementById(\"maximum\").value=\"100\";await window.tf4dgsUpdate();for(let i=0;i\u003c100;i++){if(!busy\u0026\u0026!requested\u0026\u0026document.getElementById(\"status\").textContent.includes(\"frame 130\"))return true;await new Promise(r=\u003esetTimeout(r,100));}throw Error(\"Requested motion field not ready\");})()",
+    "filename":  "59_live_measured_gaussian_activity.png",
+    "url":  "http://127.0.0.1:8100/"
+}

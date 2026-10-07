@@ -77,6 +77,24 @@ class SynchronizationTests(unittest.TestCase):
         self.assertEqual([b["views"]["dji"]["source_index"] for b in result["bundles"]], [0, 1, 2])
         self.assertTrue(any(r["reason"] == "would reuse a source frame" for r in result["rejected_samples"]))
 
+    def test_sampling_rounding_is_separate_from_camera_skew(self):
+        times = [i * 1001 / 30000 for i in range(467)]
+        value = session(15.55, 10, .001)
+        value["timeline"]["max_sample_offset_s"] = .017
+        result = make_plan(value, {"dji": probe(times), "fuji": probe(times)})
+        self.assertEqual(len(result["bundles"]), 156)
+        self.assertEqual(result["rejected_samples"], [])
+        self.assertGreater(max(abs(b["time_s"]-b["requested_time_s"]) for b in result["bundles"]), .001)
+        self.assertTrue(all(b["views"]["fuji"]["delta_to_reference_s"] == 0 for b in result["bundles"]))
+
+    def test_sampling_tolerance_does_not_relax_camera_pairing(self):
+        value = session(1, 10, .001)
+        value["timeline"]["max_sample_offset_s"] = .017
+        times = [i * 1001 / 30000 for i in range(30)]
+        result = make_plan(value, {"dji": probe(times), "fuji": probe([t+.003 for t in times])})
+        self.assertEqual(result["bundles"], [])
+        self.assertTrue(all(r["reason"] == "cross-camera skew" for r in result["rejected_samples"]))
+
     def test_nonmonotonic_and_nonfinite_pts(self):
         for times in ([0, 0], [0, -1], [0, float("nan")]):
             with self.assertRaises(ValueError):

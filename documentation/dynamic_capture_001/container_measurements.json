@@ -1,0 +1,17 @@
+{
+  "recorded_date": "2026-10-07",
+  "source": "User measurements supplied in the project conversation",
+  "subject": "Yogurt container in dynamic_yogurt_001",
+  "table_to_lid_height_mm": 58.0,
+  "outer_lid_diameter_mm": 95.0,
+  "measurement_uncertainty_mm": null,
+  "calibration_use": {
+    "height": "Fixed constraint in a new joint board/lid camera fit",
+    "diameter": "Contour cross-check excluded from camera fitting; measured actor initialization"
+  },
+  "previous_provisional_estimates_mm": {
+    "height": 56.70108244576332,
+    "diameter": 95.51
+  },
+  "independent_camera_accuracy_verified": false
+}

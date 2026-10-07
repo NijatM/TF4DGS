@@ -1,0 +1,13 @@
+{
+    "captured_utc":  "2026-10-07T06:50:33.1240734Z",
+    "page_state":  {
+                       "model":  "outputs/dynamic_yogurt_001/gaussian_pilot_04/canonical_actor.npz",
+                       "time":  "12.012 s",
+                       "mode":  "rgb",
+                       "trails":  false
+                   },
+    "kind":  "Live local preview browser screenshot",
+    "expression":  "(async()=\u003e{document.getElementById(\"time\").value=frames.findIndex(f=\u003ef.index===120);document.getElementById(\"mode\").value=\"rgb\";document.getElementById(\"trails\").checked=false;document.getElementById(\"follow\").checked=true;distance=.25;await window.tf4dgsUpdate();return true;})()",
+    "filename":  "42_live_cleaner_gaussian_rgb.png",
+    "url":  "http://127.0.0.1:8100/"
+}
