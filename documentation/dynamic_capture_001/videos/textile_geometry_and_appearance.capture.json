@@ -1,0 +1,390 @@
+{
+  "filename": "textile_geometry_and_appearance.mp4",
+  "poster": "textile_geometry_and_appearance.jpg",
+  "method": "CDP Page.startScreencast actual browser PNG paint frames",
+  "viewer_url": "http://127.0.0.1:8102/",
+  "codec": "h264",
+  "pixel_format": "yuv420p",
+  "width": 1500,
+  "height": 1000,
+  "frame_rate": "30/1",
+  "duration_s": 15.9,
+  "bytes": 829479,
+  "sha256": "4e8fa69f5df69dc24c57ecd6ac394c782dc894a845c119787918f76a55f4c612",
+  "capture_frames": 83,
+  "capture_start_timestamp_s": 1791387636.660712,
+  "capture_end_timestamp_s": 1791387651.769997,
+  "expected_duration_s": 15.9092848777771,
+  "duration_error_s": -0.009284877777099965,
+  "encoder": "libx264",
+  "preset": "slow",
+  "crf": 18,
+  "faststart": true,
+  "audio": false,
+  "paint_event_ordering": {
+    "negative_adjacent_pairs": 0,
+    "largest_reversal_s": 0.0,
+    "presentation_order": "Stable sort by browser paint timestamp; no frames removed"
+  },
+  "quality": "Visually high quality H.264; not mathematical losslessness",
+  "representative_checks": [
+    {
+      "capture_frame": 0,
+      "video_time_s": 0.025,
+      "rgb_psnr_db": 34.592745386431666,
+      "comparison_scope": "Representative decoded video frame vs actual PNG; timing can select an adjacent paint frame"
+    },
+    {
+      "capture_frame": 41,
+      "video_time_s": 8.599002027511597,
+      "rgb_psnr_db": 34.58526837887022,
+      "comparison_scope": "Representative decoded video frame vs actual PNG; timing can select an adjacent paint frame"
+    },
+    {
+      "capture_frame": 82,
+      "video_time_s": 15.1342848777771,
+      "rgb_psnr_db": 34.591564100798195,
+      "comparison_scope": "Representative decoded video frame vs actual PNG; timing can select an adjacent paint frame"
+    }
+  ],
+  "initial_state": {
+    "viewer_kind": "observed_point_geometry_and_appearance",
+    "dataset": "textile",
+    "source": "Actual textile SIFT + optical flow + calibrated multi-view triangulation",
+    "reference_frame": 0,
+    "reference_time_s": 0,
+    "start_frame": 0,
+    "end_frame": 29,
+    "color_space": "linear_rgb",
+    "appearance_note": "Fixed Fuji camera sampled video appearance, inverse BT.709 transfer; not pigment change.",
+    "synthetic": false,
+    "gaussian_temporal_color": false,
+    "metric_accuracy_verified": false
+  },
+  "playback_state": {
+    "phases": [
+      {
+        "mode": "since_start",
+        "history_s": 3,
+        "geometry_max": 0.025,
+        "appearance_max": 0.35,
+        "source_samples": [
+          {
+            "index": 0,
+            "time_s": 0,
+            "supported_positions": 45
+          },
+          {
+            "index": 1,
+            "time_s": 0.1001,
+            "supported_positions": 45
+          },
+          {
+            "index": 2,
+            "time_s": 0.2002,
+            "supported_positions": 45
+          },
+          {
+            "index": 3,
+            "time_s": 0.3003,
+            "supported_positions": 45
+          },
+          {
+            "index": 4,
+            "time_s": 0.4004,
+            "supported_positions": 45
+          },
+          {
+            "index": 5,
+            "time_s": 0.5005,
+            "supported_positions": 45
+          },
+          {
+            "index": 6,
+            "time_s": 0.6006,
+            "supported_positions": 45
+          },
+          {
+            "index": 7,
+            "time_s": 0.7007,
+            "supported_positions": 45
+          },
+          {
+            "index": 8,
+            "time_s": 0.8008,
+            "supported_positions": 45
+          },
+          {
+            "index": 9,
+            "time_s": 0.9009,
+            "supported_positions": 38
+          },
+          {
+            "index": 10,
+            "time_s": 1.001,
+            "supported_positions": 36
+          },
+          {
+            "index": 11,
+            "time_s": 1.1011,
+            "supported_positions": 35
+          },
+          {
+            "index": 12,
+            "time_s": 1.2012,
+            "supported_positions": 33
+          },
+          {
+            "index": 13,
+            "time_s": 1.3013,
+            "supported_positions": 32
+          },
+          {
+            "index": 14,
+            "time_s": 1.4014,
+            "supported_positions": 32
+          },
+          {
+            "index": 15,
+            "time_s": 1.5015,
+            "supported_positions": 31
+          },
+          {
+            "index": 16,
+            "time_s": 1.6016,
+            "supported_positions": 28
+          },
+          {
+            "index": 17,
+            "time_s": 1.7017,
+            "supported_positions": 24
+          },
+          {
+            "index": 18,
+            "time_s": 1.8018,
+            "supported_positions": 10
+          },
+          {
+            "index": 19,
+            "time_s": 1.9019,
+            "supported_positions": 14
+          },
+          {
+            "index": 20,
+            "time_s": 2.002,
+            "supported_positions": 16
+          },
+          {
+            "index": 21,
+            "time_s": 2.1021,
+            "supported_positions": 15
+          },
+          {
+            "index": 22,
+            "time_s": 2.2022,
+            "supported_positions": 13
+          },
+          {
+            "index": 23,
+            "time_s": 2.3023,
+            "supported_positions": 14
+          },
+          {
+            "index": 24,
+            "time_s": 2.4024,
+            "supported_positions": 13
+          },
+          {
+            "index": 25,
+            "time_s": 2.5025,
+            "supported_positions": 11
+          },
+          {
+            "index": 26,
+            "time_s": 2.6026,
+            "supported_positions": 14
+          },
+          {
+            "index": 27,
+            "time_s": 2.7027,
+            "supported_positions": 14
+          },
+          {
+            "index": 28,
+            "time_s": 2.8028,
+            "supported_positions": 12
+          },
+          {
+            "index": 29,
+            "time_s": 2.9029,
+            "supported_positions": 12
+          }
+        ],
+        "point_map_orbit_arc_deg": 45
+      },
+      {
+        "mode": "recent",
+        "history_s": 3,
+        "geometry_max": 0.025,
+        "appearance_max": 1,
+        "source_samples": [
+          {
+            "index": 0,
+            "time_s": 0,
+            "supported_positions": 45
+          },
+          {
+            "index": 1,
+            "time_s": 0.1001,
+            "supported_positions": 45
+          },
+          {
+            "index": 2,
+            "time_s": 0.2002,
+            "supported_positions": 45
+          },
+          {
+            "index": 3,
+            "time_s": 0.3003,
+            "supported_positions": 45
+          },
+          {
+            "index": 4,
+            "time_s": 0.4004,
+            "supported_positions": 45
+          },
+          {
+            "index": 5,
+            "time_s": 0.5005,
+            "supported_positions": 45
+          },
+          {
+            "index": 6,
+            "time_s": 0.6006,
+            "supported_positions": 45
+          },
+          {
+            "index": 7,
+            "time_s": 0.7007,
+            "supported_positions": 45
+          },
+          {
+            "index": 8,
+            "time_s": 0.8008,
+            "supported_positions": 45
+          },
+          {
+            "index": 9,
+            "time_s": 0.9009,
+            "supported_positions": 38
+          },
+          {
+            "index": 10,
+            "time_s": 1.001,
+            "supported_positions": 36
+          },
+          {
+            "index": 11,
+            "time_s": 1.1011,
+            "supported_positions": 35
+          },
+          {
+            "index": 12,
+            "time_s": 1.2012,
+            "supported_positions": 33
+          },
+          {
+            "index": 13,
+            "time_s": 1.3013,
+            "supported_positions": 32
+          },
+          {
+            "index": 14,
+            "time_s": 1.4014,
+            "supported_positions": 32
+          },
+          {
+            "index": 15,
+            "time_s": 1.5015,
+            "supported_positions": 31
+          },
+          {
+            "index": 16,
+            "time_s": 1.6016,
+            "supported_positions": 28
+          },
+          {
+            "index": 17,
+            "time_s": 1.7017,
+            "supported_positions": 24
+          },
+          {
+            "index": 18,
+            "time_s": 1.8018,
+            "supported_positions": 10
+          },
+          {
+            "index": 19,
+            "time_s": 1.9019,
+            "supported_positions": 14
+          },
+          {
+            "index": 20,
+            "time_s": 2.002,
+            "supported_positions": 16
+          },
+          {
+            "index": 21,
+            "time_s": 2.1021,
+            "supported_positions": 15
+          },
+          {
+            "index": 22,
+            "time_s": 2.2022,
+            "supported_positions": 13
+          },
+          {
+            "index": 23,
+            "time_s": 2.3023,
+            "supported_positions": 14
+          },
+          {
+            "index": 24,
+            "time_s": 2.4024,
+            "supported_positions": 13
+          },
+          {
+            "index": 25,
+            "time_s": 2.5025,
+            "supported_positions": 11
+          },
+          {
+            "index": 26,
+            "time_s": 2.6026,
+            "supported_positions": 14
+          },
+          {
+            "index": 27,
+            "time_s": 2.7027,
+            "supported_positions": 14
+          },
+          {
+            "index": 28,
+            "time_s": 2.8028,
+            "supported_positions": 12
+          },
+          {
+            "index": 29,
+            "time_s": 2.9029,
+            "supported_positions": 12
+          }
+        ],
+        "point_map_orbit_arc_deg": 45
+      }
+    ],
+    "appearance": "Observed fixed-camera linear RGB change; not trained temporal Gaussian color or calibrated pigment change",
+    "geometry": "Observed point movement; not independently verified material strain",
+    "timing": "Actual browser wall-clock capture; source timestamps remain visible"
+  },
+  "timing": "Actual browser wall-clock playback. Source time remains visible; missing model samples are not interpolated."
+}

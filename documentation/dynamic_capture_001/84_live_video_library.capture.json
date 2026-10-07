@@ -1,0 +1,58 @@
+{
+    "captured_utc":  "2026-10-07T15:54:33.5660307Z",
+    "page_state":  {
+                       "videos":  [
+                                      {
+                                          "file":  "yogurt_gaussian_orbit.mp4",
+                                          "duration_s":  55.1,
+                                          "width":  1500,
+                                          "height":  1000,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      },
+                                      {
+                                          "file":  "yogurt_geometry_and_appearance.mp4",
+                                          "duration_s":  23.866667,
+                                          "width":  1500,
+                                          "height":  1000,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      },
+                                      {
+                                          "file":  "textile_geometry_and_appearance.mp4",
+                                          "duration_s":  15.9,
+                                          "width":  1500,
+                                          "height":  1000,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      }
+                                  ],
+                       "playback_check":  {
+                                              "status":  "passed",
+                                              "clips":  [
+                                                            {
+                                                                "file":  "yogurt_gaussian_orbit.mp4",
+                                                                "duration_s":  55.1,
+                                                                "advanced_s":  0.405565,
+                                                                "decode_error":  false
+                                                            },
+                                                            {
+                                                                "file":  "yogurt_geometry_and_appearance.mp4",
+                                                                "duration_s":  23.866667,
+                                                                "advanced_s":  0.403571,
+                                                                "decode_error":  false
+                                                            },
+                                                            {
+                                                                "file":  "textile_geometry_and_appearance.mp4",
+                                                                "duration_s":  15.9,
+                                                                "advanced_s":  0.413809,
+                                                                "decode_error":  false
+                                                            }
+                                                        ]
+                                          }
+                   },
+    "kind":  "Live local preview browser screenshot",
+    "expression":  "true",
+    "filename":  "84_live_video_library.png",
+    "url":  "http://127.0.0.1:8097/videos/"
+}

@@ -75,6 +75,11 @@ Measured-calibration tracking now supports 28 samples through 2.9029 seconds.
 A RAFT comparison on the same initial IDs did not extend coverage in that
 trial. Dense non-rigid textile Gaussian replay remains unfinished.
 
+[Recorded Gaussian orbit and geometry/color maps](documentation/dynamic_capture_001/videos/README.md)
+are saved as three compact MP4s (12.95 MB total), with an offline video page.
+The yogurt arc is elevated near the iPhone view and sweeps +/-45 degrees;
+the textile clip remains explicitly labeled partial observed-point tracking.
+
 The multi-camera Necto pavilion test is reconstructed and trained from 294
 registered views at native resolution, including the approximately 7K Fuji
 photos. The completed 30,000-iteration run has three million Gaussians;

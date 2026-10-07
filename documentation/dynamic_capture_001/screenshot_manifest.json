@@ -662,11 +662,11 @@
         "retrospective":  true
     },
     {
-        "captured_utc":  "2026-10-07T15:14:03.6689471Z",
-        "stage":  78,
+        "captured_utc":  "2026-10-07T15:14:03.1885803Z",
+        "stage":  76,
         "kind":  "Actual browser screenshot of preserved processing report",
-        "filename":  "78_textile_raft_coverage_comparison_report.png",
-        "status":  "No improvement; retained",
+        "filename":  "76_textile_measured_retry_launch_report.png",
+        "status":  "Failed then corrected",
         "retrospective":  true
     },
     {
@@ -678,11 +678,67 @@
         "retrospective":  true
     },
     {
-        "captured_utc":  "2026-10-07T15:14:03.1885803Z",
-        "stage":  76,
+        "captured_utc":  "2026-10-07T15:14:03.6689471Z",
+        "stage":  78,
         "kind":  "Actual browser screenshot of preserved processing report",
-        "filename":  "76_textile_measured_retry_launch_report.png",
+        "filename":  "78_textile_raft_coverage_comparison_report.png",
+        "status":  "No improvement; retained",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T15:45:45.8605476Z",
+        "stage":  79,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "79_initial_browser_recording_report.png",
+        "status":  "Superseded by requested orbit",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T15:45:45.9663698Z",
+        "stage":  80,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "80_screencast_encoding_diagnostics_report.png",
         "status":  "Failed then corrected",
         "retrospective":  true
+    },
+    {
+        "stage":  81,
+        "retrospective":  true,
+        "filename":  "81_elevated_yogurt_gaussian_orbit_report.png",
+        "recapture_reason":  "Updated the fully visible orbit to 0.91 m radius, 55.1 seconds and 10.63 MB.",
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "status":  "Passed",
+        "captured_utc":  "2026-10-07T15:54:31.4588094Z",
+        "previous_capture_times_utc":  [
+                                           "2026-10-07T15:45:46.2177306Z"
+                                       ]
+    },
+    {
+        "captured_utc":  "2026-10-07T15:45:46.3976251Z",
+        "stage":  82,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "82_yogurt_geometry_and_appearance_recording_report.png",
+        "status":  "Passed",
+        "retrospective":  true
+    },
+    {
+        "captured_utc":  "2026-10-07T15:45:46.5880660Z",
+        "stage":  83,
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "filename":  "83_textile_geometry_and_appearance_recording_report.png",
+        "status":  "Partial result recorded",
+        "retrospective":  true
+    },
+    {
+        "stage":  84,
+        "retrospective":  true,
+        "filename":  "84_video_verification_and_publication_files_report.png",
+        "recapture_reason":  "Added final actor-visibility and browser-playback checks for the revised clip.",
+        "kind":  "Actual browser screenshot of preserved processing report",
+        "status":  "Passed after check correction",
+        "captured_utc":  "2026-10-07T15:54:32.3209262Z",
+        "previous_capture_times_utc":  [
+                                           "2026-10-07T15:49:07.9898354Z"
+                                       ]
     }
 ]

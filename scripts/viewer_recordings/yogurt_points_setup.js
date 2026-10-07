@@ -1,0 +1,14 @@
+(async()=>{
+const pause=ms=>new Promise(r=>setTimeout(r,ms));const paint=()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));
+playing=false;document.getElementById('play').textContent='Play';
+document.querySelector('h1').textContent="Yogurt | geometric movement and observed color change";document.querySelector('header p.note').textContent="Observed lid-point maps from the original provisional calibration; appearance is sampled video RGB, not trained Gaussian color or pigment change.";
+const style=document.createElement('style');style.textContent='#points{max-height:38px;overflow:hidden;margin:12px 0}canvas{height:430px}header{padding-top:18px;padding-bottom:18px}';document.head.append(style);
+const label=document.createElement('p');label.id='captureCaption';label.className='note';document.querySelector('main').insertBefore(label,document.querySelector('.controls'));
+const positions=tracks.frames.slice(93,140+1).flatMap(f=>f.points.filter(p=>p.position&&p.status==='tracked').map(p=>p.position));let lo=[Infinity,Infinity,Infinity],hi=[-Infinity,-Infinity,-Infinity];for(const p of positions)for(let k=0;k<3;k++){lo[k]=Math.min(lo[k],p[k]);hi[k]=Math.max(hi[k],p[k])}center=lo.map((v,k)=>(v+hi[k])/2);radius=Math.max(.001,...hi.map((v,k)=>(v-lo[k])/2));yaw=.25;pitch=.65;zoom=1;
+// Fit every recorded point over the full arc, then keep a fixed scene scale.
+const rect=document.getElementById('left').getBoundingClientRect();let fitZoom=3;
+for(let a=-20;a<=20;a++){yaw=.25+(Math.PI/4)*(a/20);for(const p of positions){const q=project(p,rect.width,rect.height),dx=Math.abs(q[0]-rect.width/2),dy=Math.abs(q[1]-rect.height*.52);if(dx>0)fitZoom=Math.min(fitZoom,rect.width*.44/dx);if(dy>0)fitZoom=Math.min(fitZoom,rect.height*.42/dy)}}
+yaw=.25;zoom=fitZoom*.92;
+document.getElementById('view').value='combined';document.getElementById('mode').value='since_start';document.getElementById('history').value=3;document.getElementById('gmax').value=0.26;document.getElementById('cmax').value=0.6;document.getElementById('trails').checked=true;document.getElementById('scrub').value=93;
+await update();label.textContent='Reference comparison | '+state.points.filter(p=>p.status==='tracked'&&p.position).length+' supported positions | source clock shown below';await paint();
+return {viewer_kind:'observed_point_geometry_and_appearance',dataset:"yogurt",source:tracks.source,reference_frame:tracks.reference_frame,reference_time_s:tracks.frames[tracks.reference_frame].time_s,start_frame:93,end_frame:140,color_space:tracks.color_space,appearance_note:tracks.color_note||'Fixed-camera sampled appearance; not pigment change',synthetic:Boolean(tracks.synthetic),gaussian_temporal_color:false,metric_accuracy_verified:false};})()

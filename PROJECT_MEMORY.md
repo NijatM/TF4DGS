@@ -16,7 +16,33 @@ Last updated: 2026-10-07 (America/New_York)
 
 ## Current stage
 
-Active request (2026-10-07): reconstruct the yogurt capture's surrounding
+Latest completed request (2026-10-07): record actual web-viewer videos with a
+raised iPhone-side orbit center -> +45 -> center -> -45 -> center, and separate
+geometry/observed-color maps. Final documentation is
+`documentation/dynamic_capture_001/videos/`: yogurt Gaussian RGB/displacement/
+activity (55.1 s, 10.63 MB), yogurt original-calibration point maps (23.9 s,
+1.49 MB), measured textile run05 point maps (15.9 s, 0.83 MB). Total MP4s
+12.95 MB / 12.35 MiB, H.264 CRF18, 1500x1000 at 30 fps, fast-start, no audio.
+Only camera viewpoint is smoothly animated; supported object samples stay
+uninterpolated. Textile is 30 early source frames, 28 with >=12 points and two
+sparse frames (10/11 points); no dense textile GS or temporal Gaussian color.
+`scripts/Validate-WebViewerRecordings.py` passes full decoding, provenance,
+SHA, duration, arc/pose coverage and actor visibility. First closer orbit cropped
+the final actor position; its capture stays ignored, and the fitted radius
+is 0.91 m across all 53 pose bounds and 181 tested arc angles. Browser playback is also checked through
+local video page; final evidence is captured in chronological stages 79-84.
+Reusable drivers: `scripts/viewer_recordings/`; recorder and encoder scripts
+are tracked. Raw screencasts, rejected encoding trials and older presentation
+attempts stay ignored in `.local/workflows/dynamic_setup/web_recording_01/`.
+Encoding diagnostics: one 5.389 ms paint-event timestamp reversal corrected
+by stable presentation sorting; extra EOF hold corrected by output duration.
+A textile verification assertion used nonempty frames instead of the stored
+>=12-point criterion and was corrected. Models/static installation unchanged.
+No recording/encoding worker remains when this checkpoint is complete; own
+preview/report servers remain available. No Git publication was performed.
+
+
+Previous completed request (2026-10-07): reconstruct the yogurt capture's surrounding
 table/room as real static Gaussians in the same calibrated world as its moving
 actor. Use only these current recordings. The user explicitly forbids merging
 any earlier desk/Necto scene; an unsuccessful old-scene registration experiment

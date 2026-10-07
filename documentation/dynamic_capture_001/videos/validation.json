@@ -1,0 +1,134 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-07T15:52:10.869673+00:00",
+  "clips": [
+    {
+      "filename": "yogurt_gaussian_orbit.mp4",
+      "duration_s": 55.1,
+      "bytes": 10630560,
+      "complete_decode": "passed",
+      "faststart": true,
+      "source_samples": "matched",
+      "supported_samples": 53,
+      "scope": "Actual yogurt Gaussian RGB and motion; all 53 supported poses in each camera arc",
+      "representative_png_comparisons": [
+        {
+          "capture_frame": 0,
+          "video_time_s": 0.025,
+          "rgb_psnr_db": 33.37071225741687,
+          "comparison_scope": "Representative decoded video frame vs actual PNG; timing can select an adjacent paint frame"
+        },
+        {
+          "capture_frame": 532,
+          "video_time_s": 30.255411052703856,
+          "rgb_psnr_db": 30.509150545147975,
+          "comparison_scope": "Representative decoded video frame vs actual PNG; timing can select an adjacent paint frame"
+        },
+        {
+          "capture_frame": 1064,
+          "video_time_s": 54.334525966644286,
+          "rgb_psnr_db": 33.29180731426813,
+          "comparison_scope": "Representative decoded video frame vs actual PNG; timing can select an adjacent paint frame"
+        }
+      ]
+    },
+    {
+      "filename": "yogurt_geometry_and_appearance.mp4",
+      "duration_s": 23.866667,
+      "bytes": 1486791,
+      "complete_decode": "passed",
+      "faststart": true,
+      "source_samples": "matched",
+      "supported_samples": 46,
+      "scope": "Yogurt observed point maps; not a temporal Gaussian color reconstruction",
+      "representative_png_comparisons": [
+        {
+          "capture_frame": 0,
+          "video_time_s": 0.025,
+          "rgb_psnr_db": 34.5059522204996,
+          "comparison_scope": "Representative decoded video frame vs actual PNG; timing can select an adjacent paint frame"
+        },
+        {
+          "capture_frame": 72,
+          "video_time_s": 12.623780870437622,
+          "rgb_psnr_db": 25.946036915722726,
+          "comparison_scope": "Representative decoded video frame vs actual PNG; timing can select an adjacent paint frame"
+        },
+        {
+          "capture_frame": 143,
+          "video_time_s": 23.10083689689636,
+          "rgb_psnr_db": 34.4034814476683,
+          "comparison_scope": "Representative decoded video frame vs actual PNG; timing can select an adjacent paint frame"
+        }
+      ]
+    },
+    {
+      "filename": "textile_geometry_and_appearance.mp4",
+      "duration_s": 15.9,
+      "bytes": 829479,
+      "complete_decode": "passed",
+      "faststart": true,
+      "source_samples": "matched",
+      "supported_samples": 28,
+      "scope": "Textile observed point maps; not a temporal Gaussian color reconstruction",
+      "representative_png_comparisons": [
+        {
+          "capture_frame": 0,
+          "video_time_s": 0.025,
+          "rgb_psnr_db": 34.592745386431666,
+          "comparison_scope": "Representative decoded video frame vs actual PNG; timing can select an adjacent paint frame"
+        },
+        {
+          "capture_frame": 41,
+          "video_time_s": 8.599002027511597,
+          "rgb_psnr_db": 34.58526837887022,
+          "comparison_scope": "Representative decoded video frame vs actual PNG; timing can select an adjacent paint frame"
+        },
+        {
+          "capture_frame": 82,
+          "video_time_s": 15.1342848777771,
+          "rgb_psnr_db": 34.591564100798195,
+          "comparison_scope": "Representative decoded video frame vs actual PNG; timing can select an adjacent paint frame"
+        }
+      ]
+    }
+  ],
+  "total_video_bytes": 12946830,
+  "total_video_mib": 12.34705924987793,
+  "metric_accuracy_verified": false,
+  "dense_textile_gaussian_replay": false,
+  "temporal_gaussian_color_fitted": false,
+  "compression": "1500 x 1000, H.264 CRF18, 30 fps; visually high quality, not mathematical losslessness",
+  "visual_review": "Decoded beginning, middle and end reviewed; Gaussian RGB arc extremes also inspected",
+  "actor_visibility": "Every displayed Gaussian actor bounding box stays inside the orbit render with margins",
+  "validation_diagnosis": "Initial textile coverage assertion counted all nonempty frames; corrected to the recorded >=12-point criterion: 28 sufficiently populated frames, plus two sparse frames with 10 and 11 genuine points",
+  "scope": "Recording integrity, sample provenance and readable playback; no independent physical accuracy certification",
+  "presentation_diagnosis": "First closer Gaussian orbit cropped the actor near the final source pose; fit radius 0.91 m across all 53 pose bounds and 181 arc angles. Final recorded samples pass actor visibility with margins.",
+  "report_capture_diagnosis": "Report recapture initially selected the video-library tab on the same port and timed out; corrected root/index-only tab selection and numeric manifest ordering.",
+  "verification_launcher_note": "Initial syntax-check command passed a PowerShell file to Python; corrected to the PowerShell AST parser.",
+  "browser_playback": {
+    "status": "passed",
+    "captured_utc": "2026-10-07T15:52:53.8681288Z",
+    "clips": [
+      {
+        "file": "yogurt_gaussian_orbit.mp4",
+        "duration_s": 55.1,
+        "advanced_s": 0.405565,
+        "decode_error": false
+      },
+      {
+        "file": "yogurt_geometry_and_appearance.mp4",
+        "duration_s": 23.866667,
+        "advanced_s": 0.403571,
+        "decode_error": false
+      },
+      {
+        "file": "textile_geometry_and_appearance.mp4",
+        "duration_s": 15.9,
+        "advanced_s": 0.413809,
+        "decode_error": false
+      }
+    ],
+    "evidence": "../84_live_video_library.capture.json"
+  }
+}

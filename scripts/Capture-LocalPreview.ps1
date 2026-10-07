@@ -6,7 +6,7 @@ param(
     [switch]$Reload
 )
 $ErrorActionPreference = 'Stop'
-if ($Url -notmatch '^http://127\.0\.0\.1:(8096|8097|8100|8101)/') { throw 'Only dedicated local TF4DGS preview pages may be captured.' }
+if ($Url -notmatch '^http://127\.0\.0\.1:(8096|8097|8100|8101|8102)/') { throw 'Only dedicated local TF4DGS preview pages may be captured.' }
 $Socket = [System.Net.WebSockets.ClientWebSocket]::new()
 $script:MessageId = 0
 function Invoke-Cdp([string]$Method, $Parameters) {
@@ -45,7 +45,7 @@ try {
     Invoke-Cdp 'Page.bringToFront' @{} | Out-Null
     Invoke-Cdp 'Emulation.setDeviceMetricsOverride' @{width=1500;height=1150;deviceScaleFactor=1;mobile=$false} | Out-Null
     if ($Reload) { Invoke-Cdp 'Page.reload' @{ignoreCache=$true} | Out-Null; Start-Sleep -Milliseconds 250 }
-    Invoke-Js '(async()=>{for(let i=0;i<120;i++){if(document.readyState==="complete"&&((window.tf4dgsMeta&&document.getElementById("render").naturalWidth>0)||(document.getElementById("scrub")&&typeof tracks!=="undefined"&&tracks&&state)))return true;await new Promise(r=>setTimeout(r,100));}throw Error("Preview did not load");})()' | Out-Null
+    Invoke-Js '(async()=>{for(let i=0;i<120;i++){if(document.readyState==="complete"&&((window.tf4dgsMeta&&document.getElementById("render").naturalWidth>0)||(document.getElementById("scrub")&&typeof tracks!=="undefined"&&tracks&&state)||(document.querySelector("video")&&[...document.querySelectorAll("video")].every(v=>v.readyState>=1))))return true;await new Promise(r=>setTimeout(r,100));}throw Error("Preview did not load");})()' | Out-Null
     Invoke-Js $Expression | Out-Null
     Invoke-Js '(async()=>{await Promise.all([...document.images].map(i=>i.decode()));await new Promise(r=>setTimeout(r,400));await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));return true;})()' | Out-Null
     $Capture = Invoke-Cdp 'Page.captureScreenshot' @{format='png';captureBeyondViewport=$false}
@@ -53,7 +53,7 @@ try {
     $Docs = [System.IO.Path]::GetFullPath((Join-Path (Get-Location).Path 'documentation'))
     if (-not $Absolute.StartsWith($Docs+[System.IO.Path]::DirectorySeparatorChar,[StringComparison]::OrdinalIgnoreCase)) { throw 'Screenshot output must stay inside project documentation.' }
     [System.IO.File]::WriteAllBytes($Absolute,[Convert]::FromBase64String($Capture.data))
-    $State = Invoke-Js '(()=>{if(window.tf4dgsMeta)return {model:window.tf4dgsMeta.source,time:document.getElementById("timeLabel").textContent,mode:document.getElementById("mode").value,trails:document.getElementById("trails").checked};return {frame_index:state.frame_index,time_s:state.time_s,mode:state.mode,history_s:state.history_s};})()'
+    $State = Invoke-Js '(()=>{if(window.tf4dgsMeta)return {model:window.tf4dgsMeta.source,time:document.getElementById("timeLabel").textContent,mode:document.getElementById("mode").value,trails:document.getElementById("trails").checked};if(document.querySelector("video"))return {videos:[...document.querySelectorAll("video")].map(v=>({file:v.currentSrc.split("/").at(-1),duration_s:v.duration,width:v.videoWidth,height:v.videoHeight,ready_state:v.readyState,error:v.error?v.error.message:null})),playback_check:window.tf4dgsVideoPlaybackCheck||null};return {frame_index:state.frame_index,time_s:state.time_s,mode:state.mode,history_s:state.history_s};})()'
     $Record = @{filename=[System.IO.Path]::GetFileName($Absolute);kind='Live local preview browser screenshot';url=$Url;captured_utc=[DateTime]::UtcNow.ToString('o');expression=$Expression;page_state=$State}
     [System.IO.File]::WriteAllText([System.IO.Path]::ChangeExtension($Absolute,'.capture.json'),($Record|ConvertTo-Json -Depth 8),[System.Text.UTF8Encoding]::new($false))
     'Screenshot: '+$Absolute

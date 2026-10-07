@@ -1,7 +1,8 @@
 param(
     [int]$DebugPort = 8098,
     [string]$Output = 'documentation/dynamic_capture_001',
-    [int[]]$RecaptureStages = @()
+    [int[]]$RecaptureStages = @(),
+    [string]$RecaptureReason = 'Updated stage evidence'
 )
 $ErrorActionPreference = 'Stop'
 $Socket = [System.Net.WebSockets.ClientWebSocket]::new()
@@ -36,7 +37,8 @@ function Invoke-Js([string]$Expression) {
 }
 try {
     $Pages = Invoke-RestMethod ('http://127.0.0.1:' + $DebugPort + '/json')
-    $Page = $Pages | Where-Object { $_.type -eq 'page' -and $_.url -like '*127.0.0.1:8097*' } | Select-Object -First 1
+    # The video library shares this port; select only the report root/index.
+    $Page = $Pages | Where-Object { $_.type -eq 'page' -and $_.url -match '^http://127\.0\.0\.1:8097/(index\.html)?(\?|$)' } | Select-Object -First 1
     if (-not $Page) {
         $Page = Invoke-RestMethod -Method Put ('http://127.0.0.1:'+$DebugPort+'/json/new?'+[Uri]::EscapeDataString('http://127.0.0.1:8097/'))
     }
@@ -68,16 +70,16 @@ try {
         $Record = @{stage=$Stage.number;filename=$Filename;status=$Stage.status;kind='Actual browser screenshot of preserved processing report';retrospective=$true;captured_utc=[DateTime]::UtcNow.ToString('o')}
         if ($Existing.Count -gt 0) {
             $Record.previous_capture_times_utc = @($Existing | ForEach-Object { $_.captured_utc })
-            $Record.recapture_reason = 'Corrected current report footer; original outcome/evidence unchanged.'
+            $Record.recapture_reason = $RecaptureReason
             $Records = @($Records | Where-Object { $_.stage -ne $Stage.number })
         }
         $Records += $Record
         $NewCount++
-        $CheckpointJson = $Records | Sort-Object stage | ConvertTo-Json -Depth 5
+        $CheckpointJson = $Records | Sort-Object { [int]$_.stage } | ConvertTo-Json -Depth 5
         [System.IO.File]::WriteAllText($ManifestPath,$CheckpointJson,[System.Text.UTF8Encoding]::new($false))
     }
     Invoke-Js 'document.getElementById("stage").value=window.tf4dgsStages.at(-1).number;document.getElementById("stage").dispatchEvent(new Event("change"));true' | Out-Null
-    $Json = $Records | Sort-Object stage | ConvertTo-Json -Depth 5
+    $Json = $Records | Sort-Object { [int]$_.stage } | ConvertTo-Json -Depth 5
     [System.IO.File]::WriteAllText($ManifestPath,$Json,[System.Text.UTF8Encoding]::new($false))
     Write-Output ('Captured/updated ' + $NewCount + ' screenshots. Total unique chronological stages: ' + $Records.Count + '.')
 } finally { $Socket.Dispose() }
