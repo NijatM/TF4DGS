@@ -3,7 +3,9 @@
 Research inspected on 2026-10-05; native Windows pilot added 2026-10-07.
 An isolated gsplat renderer is installed and its CUDA forward/backward check
 passed. The first real rigid-container trainer is implemented in TF4DGS;
-non-rigid textile and time-varying Gaussian appearance remain later work.
+the revised textile backend now fits independent-time RGB Gaussian surfaces
+across 214 samples of the full recording. Persistent nonrigid material identity,
+strain and independently reconstructed 30 Hz motion remain later work.
 The working Windows static tools and their source pins are preserved.
 
 The current rigid pilot uses measured 58 mm height and 95 mm lid diameter at
@@ -158,3 +160,22 @@ an accuracy claim.
 Export queryable temporal parameters and stable track IDs before connecting
 real data to the maps/trails. A CPU synthetic point preview validates the
 analysis semantics, not a learned Gaussian trajectory or physical strain.
+
+## Textile RGB reconstruction revision, 2026-10-08
+
+The [revised textile implementation and journal](../documentation/dynamic_textile_001/README.md)
+replace the failed sparse point replay with native-resolution, multiview-fitted
+RGB Gaussian keyframes. Segmented dense stereo and an explicitly inferred,
+stereo-anchored shape prior recover much more surface than the earlier 45 IDs.
+The real local renderer supports RGB, free orbit, first/recent reference-surface
+distance and recorded-pixel appearance contrast. Its static context comes only
+from the current textile recording.
+
+This is the reconstruction baseline, not the persistent-identity backend above.
+CoTracker3's 700-node trial loses calibrated long-term support after 20.587 s;
+material trajectories and strain are therefore still unverified. Surface maps
+use nearest-reference association and approximate visibility, with unknown
+color samples marked gray. Independent Gaussian component colors are not used
+as observed material color; overlapping components can fit the same RGB image
+with different individual colors. The journal records all rejected fitting,
+context-layer and cleanup trials.

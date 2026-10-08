@@ -1,0 +1,37 @@
+{
+  "status": "archive restoration validated",
+  "recorded_utc": "2026-10-08T23:00:00.727973+00:00",
+  "archive_paths_do_not_collide": true,
+  "textile_restore": {
+    "status": "restored and validated",
+    "timeline_frames": 1277,
+    "unique_reconstructed_times": 214,
+    "fps": 30,
+    "hardlinked": 1277,
+    "copied": 0,
+    "existing": 0
+  },
+  "textile_repeat_restore": {
+    "status": "restored and validated",
+    "timeline_frames": 1277,
+    "unique_reconstructed_times": 214,
+    "fps": 30,
+    "hardlinked": 0,
+    "copied": 0,
+    "existing": 1277
+  },
+  "yogurt_models": {
+    "outputs/dynamic_yogurt_001/gaussian_pilot_06_measured_solid/canonical_actor.npz": {
+      "gaussians": 51913,
+      "all_attributes_finite": true,
+      "matches_original_bytes": true
+    },
+    "outputs/dynamic_yogurt_001/static_background_03/trained_01/static_background.npz": {
+      "gaussians": 498531,
+      "all_attributes_finite": true,
+      "matches_original_bytes": true
+    }
+  },
+  "source_files_changed": false,
+  "original_footage_required_for_replay": false
+}

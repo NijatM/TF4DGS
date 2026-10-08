@@ -23,6 +23,7 @@ dynamic reconstruction and change-analysis pipeline.
 - [Reference markers: printable and Illustrator-editable ChArUco boards](documentation/reference_markers/README.md)
 - [Dynamic backend research and integration plan](docs/DYNAMIC_BACKEND_NOTES.md)
 - [First real dynamic recordings: chronological evidence and screenshots](documentation/dynamic_capture_001/README.md)
+- [Revised textile RGB Gaussian replay, research and chronological evidence](documentation/dynamic_textile_001/README.md)
 - [Submodules, fork and first-push commands](GIT_SETUP.md)
 
 The `tf4dgs` Conda environment contains Python 3.11 and the CPU capture/analysis
@@ -48,9 +49,15 @@ held-out PSNR 25.86 dB / SSIM 0.876. The report above contains GUI screenshots,
 original/brighter previews and reopening instructions. Source images and models
 remain local and excluded from Git. A real rigid yogurt Gaussian pilot is now
 trained, with an interactive renderer for RGB, displacement and fading motion
-activity/trails. Full non-rigid textile training and temporal Gaussian appearance
-remain unfinished. The real selected-point appearance/geometry preview is
-available separately; see the chronological dynamic report.
+activity/trails. The revised textile reconstruction fits actual RGB Gaussian
+surfaces independently through time; all 214 keyframes through 42.509 seconds
+are complete and validated at approximately five reconstructed times per second.
+Its separate renderer on <http://127.0.0.1:8104/> provides realistic RGB, free
+orbit and reference-surface shape/appearance maps. Follow the revised textile
+guide above. Its [RGB/map orbit videos](documentation/dynamic_textile_001/videos/README.md)
+show the revised result. The [SuperSplat export guide](documentation/dynamic_textile_001/SUPERSPLAT.md)
+describes the saved 30 fps PLY timeline, held fitted states and measured browser
+throughput. Persistent material identity and strain remain unverified.
 
 The current yogurt preview uses the measured 58 mm height and 95 mm lid
 diameter, with 51,913 persistent Gaussians and 53 supported pose samples.
@@ -70,10 +77,11 @@ The report documents the controlled quality
 comparison and all failed trials; missing times and unseen surfaces remain
 unverified.
 
-Textile processing resumed after the yogurt visual/motion checks passed.
-Measured-calibration tracking now supports 28 samples through 2.9029 seconds.
-A RAFT comparison on the same initial IDs did not extend coverage in that
-trial. Dense non-rigid textile Gaussian replay remains unfinished.
+The earlier textile LK/RAFT attempts only supported sparse points for about
+three seconds and did not reconstruct realistic RGB. They are retained as
+failed trials. The revision uses cloth segmentation, dense calibrated matching,
+an explicitly inferred depth prior and native-resolution RGB Gaussian fitting.
+Its static marker-board/table layer comes exclusively from the textile capture.
 
 [Recorded Gaussian orbit and geometry/color maps](documentation/dynamic_capture_001/videos/README.md)
 are saved as three compact MP4s (12.95 MB total), with an offline video page.
@@ -111,10 +119,17 @@ The chronological report above records each success and failed attempt.
 LichtFeld and vcpkg are pinned Git submodules under `.local/src`. TF4DGS tracks
 their commit references; future trainer/viewer changes belong in your LichtFeld
 fork. The packaging fix is published in `NijatM/LichtFeld-Studio` on `tf4dgs`.
-The main project is published to private `NijatM/TF4DGS`. See GIT_SETUP.md for
+The main project repository is `NijatM/TF4DGS`. See GIT_SETUP.md for
 the completed setup and recursive-clone instructions.
 
 Actual versions, paths and resumable stages are recorded in PROJECT_MEMORY.md
 and local installation JSON records. Generated tools, builds, caches, data and
 machine-specific JSON snapshots are ignored by Git. The resolved native package
 inventory is retained in `native-dependencies.json`.
+
+Selected yogurt and textile playback models are prepared as downloadable
+[GitHub Release packages](docs/BASELINE_RELEASE.md), separate from Git history
+and Git LFS. The textile bundle preserves every selected compressed keyframe;
+its timeline helper restores repeated files without bundling duplicate states.
+The yogurt bundle includes its full-precision actor, current surroundings and
+supported rigid poses. A continuous textile deformation backend remains pending.

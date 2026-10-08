@@ -1,0 +1,1785 @@
+{
+  "filename": "textile_rgb_orbit.mp4",
+  "poster": "textile_rgb_orbit.jpg",
+  "method": "CDP Page.startScreencast actual browser PNG paint frames",
+  "viewer_url": "http://127.0.0.1:8104/",
+  "codec": "h264",
+  "pixel_format": "yuv420p",
+  "width": 1500,
+  "height": 1150,
+  "frame_rate": "30/1",
+  "duration_s": 43.466667,
+  "bytes": 5446646,
+  "sha256": "e6c6207047232902bdbc8d499eddbca11d5366f1d5a264ba635286b2f81c6cb3",
+  "capture_frames": 959,
+  "capture_start_timestamp_s": 1791497194.657518,
+  "capture_end_timestamp_s": 1791497237.314493,
+  "expected_duration_s": 43.456975030899045,
+  "duration_error_s": 0.009691969100956044,
+  "encoder": "libx264",
+  "preset": "slow",
+  "crf": 20,
+  "faststart": true,
+  "audio": false,
+  "paint_event_ordering": {
+    "negative_adjacent_pairs": 0,
+    "largest_reversal_s": 0.0,
+    "presentation_order": "Stable sort by browser paint timestamp; no frames removed"
+  },
+  "quality": "Visually high quality H.264; not mathematical losslessness",
+  "representative_checks": [
+    {
+      "capture_frame": 0,
+      "video_time_s": 0.025,
+      "rgb_psnr_db": 12.647433766741202,
+      "comparison_scope": "Representative decoded video frame vs actual PNG; timing can select an adjacent paint frame"
+    },
+    {
+      "capture_frame": 479,
+      "video_time_s": 22.38961305618286,
+      "rgb_psnr_db": 24.094409571249415,
+      "comparison_scope": "Representative decoded video frame vs actual PNG; timing can select an adjacent paint frame"
+    },
+    {
+      "capture_frame": 958,
+      "video_time_s": 42.681975030899046,
+      "rgb_psnr_db": 34.283753005659875,
+      "comparison_scope": "Representative decoded video frame vs actual PNG; timing can select an adjacent paint frame"
+    }
+  ],
+  "initial_state": {
+    "model": "outputs/dynamic_textile_001/gaussian_sequence_04/sequence.json",
+    "representation": "Multiview-fitted RGB Gaussian keyframe sequence",
+    "keyframes": 214,
+    "mode": "rgb",
+    "source_duration_s": 42.509133,
+    "orbit": "Elevated iPhone-side view; azimuth 95 +/-45 degrees, back and forth",
+    "time_interpolation": false,
+    "persistent_material_ids": false
+  },
+  "playback_state": {
+    "source_first_s": 0,
+    "source_last_s": 42.509133,
+    "wall_elapsed_s": 42.63539999999851,
+    "keyframes_displayed": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64,
+      66,
+      68,
+      70,
+      72,
+      74,
+      76,
+      78,
+      80,
+      82,
+      84,
+      86,
+      88,
+      90,
+      92,
+      94,
+      96,
+      98,
+      100,
+      102,
+      104,
+      106,
+      108,
+      110,
+      112,
+      114,
+      116,
+      118,
+      120,
+      122,
+      124,
+      126,
+      128,
+      130,
+      132,
+      134,
+      136,
+      138,
+      140,
+      142,
+      144,
+      146,
+      148,
+      150,
+      152,
+      154,
+      156,
+      158,
+      160,
+      162,
+      164,
+      166,
+      168,
+      170,
+      172,
+      174,
+      176,
+      178,
+      180,
+      182,
+      184,
+      186,
+      188,
+      190,
+      192,
+      194,
+      196,
+      198,
+      200,
+      202,
+      204,
+      206,
+      208,
+      210,
+      212,
+      214,
+      216,
+      218,
+      220,
+      222,
+      224,
+      226,
+      228,
+      230,
+      232,
+      234,
+      236,
+      238,
+      240,
+      242,
+      244,
+      246,
+      248,
+      250,
+      252,
+      254,
+      256,
+      258,
+      260,
+      262,
+      264,
+      266,
+      268,
+      270,
+      272,
+      274,
+      276,
+      278,
+      280,
+      282,
+      284,
+      286,
+      288,
+      290,
+      292,
+      294,
+      296,
+      298,
+      300,
+      302,
+      304,
+      306,
+      308,
+      310,
+      312,
+      314,
+      316,
+      318,
+      320,
+      322,
+      324,
+      326,
+      328,
+      330,
+      332,
+      334,
+      336,
+      338,
+      340,
+      342,
+      344,
+      346,
+      348,
+      350,
+      352,
+      354,
+      356,
+      358,
+      360,
+      362,
+      364,
+      366,
+      368,
+      370,
+      372,
+      374,
+      376,
+      378,
+      380,
+      382,
+      384,
+      386,
+      388,
+      390,
+      392,
+      394,
+      396,
+      398,
+      400,
+      402,
+      404,
+      406,
+      408,
+      410,
+      412,
+      414,
+      416,
+      418,
+      420,
+      422,
+      424,
+      425
+    ],
+    "source_samples": [
+      {
+        "index": 0,
+        "time_s": 0,
+        "azimuth_deg": 95,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 2,
+        "time_s": 0.2002,
+        "azimuth_deg": 96.76814004574466,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 4,
+        "time_s": 0.4004,
+        "azimuth_deg": 97.90329395508665,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 6,
+        "time_s": 0.6006,
+        "azimuth_deg": 99.50736871005164,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 8,
+        "time_s": 0.8008,
+        "azimuth_deg": 100.58995470901573,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 10,
+        "time_s": 1.001,
+        "azimuth_deg": 101.7481884891161,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 12,
+        "time_s": 1.2012,
+        "azimuth_deg": 103.37744090158195,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 14,
+        "time_s": 1.4014,
+        "azimuth_deg": 104.42776772461796,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 16,
+        "time_s": 1.6016,
+        "azimuth_deg": 106.10105109893021,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 18,
+        "time_s": 1.8018,
+        "azimuth_deg": 107.1797700766885,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 20,
+        "time_s": 2.002,
+        "azimuth_deg": 108.20648594525548,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 22,
+        "time_s": 2.2022,
+        "azimuth_deg": 109.72766098727318,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 24,
+        "time_s": 2.4024,
+        "azimuth_deg": 110.74712688683994,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 26,
+        "time_s": 2.6026,
+        "azimuth_deg": 112.31767144130033,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 28,
+        "time_s": 2.8028,
+        "azimuth_deg": 113.3113989905697,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 30,
+        "time_s": 3.003,
+        "azimuth_deg": 114.77986629082508,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 32,
+        "time_s": 3.2032,
+        "azimuth_deg": 115.73840814807049,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 34,
+        "time_s": 3.4034,
+        "azimuth_deg": 117.17128971134176,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 36,
+        "time_s": 3.6036,
+        "azimuth_deg": 118.14758055435868,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 38,
+        "time_s": 3.8038,
+        "azimuth_deg": 119.05477245903077,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 40,
+        "time_s": 4.004,
+        "azimuth_deg": 120.52613443620014,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 42,
+        "time_s": 4.2042,
+        "azimuth_deg": 121.42442900860019,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 44,
+        "time_s": 4.4044,
+        "azimuth_deg": 122.28789492237883,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 46,
+        "time_s": 4.6046,
+        "azimuth_deg": 123.58143142454944,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 48,
+        "time_s": 4.8048,
+        "azimuth_deg": 124.42103385459475,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 50,
+        "time_s": 5.005,
+        "azimuth_deg": 125.61698202245374,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 52,
+        "time_s": 5.2052,
+        "azimuth_deg": 126.72021627766995,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 54,
+        "time_s": 5.4054,
+        "azimuth_deg": 127.46752042898947,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 56,
+        "time_s": 5.6056,
+        "azimuth_deg": 128.1992927640004,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 58,
+        "time_s": 5.8058,
+        "azimuth_deg": 129.27864614135498,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 60,
+        "time_s": 6.006,
+        "azimuth_deg": 129.96391874012545,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 62,
+        "time_s": 6.2062,
+        "azimuth_deg": 130.9594462257787,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 64,
+        "time_s": 6.4064,
+        "azimuth_deg": 131.6401786426195,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 66,
+        "time_s": 6.6066,
+        "azimuth_deg": 132.5495418270581,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 68,
+        "time_s": 6.8068,
+        "azimuth_deg": 133.1417295675344,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 70,
+        "time_s": 7.007,
+        "azimuth_deg": 133.97095859387437,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 72,
+        "time_s": 7.2072,
+        "azimuth_deg": 134.51506291126253,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 74,
+        "time_s": 7.4074,
+        "azimuth_deg": 135.014057797597,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 76,
+        "time_s": 7.6076,
+        "azimuth_deg": 135.72162306030495,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 78,
+        "time_s": 7.8078,
+        "azimuth_deg": 136.16551221136433,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 80,
+        "time_s": 8.008,
+        "azimuth_deg": 136.81089888060424,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 82,
+        "time_s": 8.2082,
+        "azimuth_deg": 137.19081496961164,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 84,
+        "time_s": 8.4084,
+        "azimuth_deg": 137.7182902476542,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 86,
+        "time_s": 8.6086,
+        "azimuth_deg": 138.0463199099459,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 88,
+        "time_s": 8.8088,
+        "azimuth_deg": 138.4896973062002,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 90,
+        "time_s": 9.009,
+        "azimuth_deg": 138.72258438672264,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 92,
+        "time_s": 9.2092,
+        "azimuth_deg": 139.07466407540434,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 94,
+        "time_s": 9.4094,
+        "azimuth_deg": 139.27678802695007,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 96,
+        "time_s": 9.6096,
+        "azimuth_deg": 139.53591863446894,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 98,
+        "time_s": 9.8098,
+        "azimuth_deg": 139.67685137710953,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 100,
+        "time_s": 10.01,
+        "azimuth_deg": 139.84056339403435,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 102,
+        "time_s": 10.2102,
+        "azimuth_deg": 139.9184445718809,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 104,
+        "time_s": 10.4104,
+        "azimuth_deg": 139.9862778704395,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 106,
+        "time_s": 10.6106,
+        "azimuth_deg": 139.99998240245716,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 108,
+        "time_s": 10.8108,
+        "azimuth_deg": 139.97280616212302,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 110,
+        "time_s": 11.011,
+        "azimuth_deg": 139.9232417718718,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 112,
+        "time_s": 11.2112,
+        "azimuth_deg": 139.8020498408485,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 114,
+        "time_s": 11.4114,
+        "azimuth_deg": 139.68989907248684,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 116,
+        "time_s": 11.6116,
+        "azimuth_deg": 139.47281335697465,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 118,
+        "time_s": 11.8118,
+        "azimuth_deg": 139.29750214767137,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 120,
+        "time_s": 12.012,
+        "azimuth_deg": 138.98578118238038,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 122,
+        "time_s": 12.2122,
+        "azimuth_deg": 138.74836573757148,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 124,
+        "time_s": 12.4124,
+        "azimuth_deg": 138.34579391479002,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 126,
+        "time_s": 12.6126,
+        "azimuth_deg": 138.04373399986383,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 128,
+        "time_s": 12.8128,
+        "azimuth_deg": 137.52189334342367,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 130,
+        "time_s": 13.013,
+        "azimuth_deg": 137.16174942963497,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 132,
+        "time_s": 13.2132,
+        "azimuth_deg": 136.5781519170003,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 134,
+        "time_s": 13.4134,
+        "azimuth_deg": 136.1565511238555,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 136,
+        "time_s": 13.6136,
+        "azimuth_deg": 135.67896836119792,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 138,
+        "time_s": 13.8138,
+        "azimuth_deg": 134.94342640165144,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 140,
+        "time_s": 14.014,
+        "azimuth_deg": 134.4389708915063,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 142,
+        "time_s": 14.2142,
+        "azimuth_deg": 133.63811904669626,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 144,
+        "time_s": 14.4144,
+        "azimuth_deg": 133.08326057492258,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 146,
+        "time_s": 14.6146,
+        "azimuth_deg": 132.20460362664522,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 148,
+        "time_s": 14.8148,
+        "azimuth_deg": 131.5944283952144,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 150,
+        "time_s": 15.015,
+        "azimuth_deg": 130.57100370277914,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 152,
+        "time_s": 15.2152,
+        "azimuth_deg": 129.9071809578971,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 154,
+        "time_s": 15.4154,
+        "azimuth_deg": 129.1895721861781,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 156,
+        "time_s": 15.6156,
+        "azimuth_deg": 128.07854767840246,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 158,
+        "time_s": 15.8158,
+        "azimuth_deg": 127.3432214849242,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 160,
+        "time_s": 16.016,
+        "azimuth_deg": 126.21177448697986,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 162,
+        "time_s": 16.2162,
+        "azimuth_deg": 125.43894292982631,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 164,
+        "time_s": 16.4164,
+        "azimuth_deg": 124.22864698898158,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 166,
+        "time_s": 16.6166,
+        "azimuth_deg": 123.40674027801023,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 168,
+        "time_s": 16.783433,
+        "azimuth_deg": 122.12453674739571,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 170,
+        "time_s": 16.983633,
+        "azimuth_deg": 121.26733441436417,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 172,
+        "time_s": 17.183833,
+        "azimuth_deg": 120.39322697344275,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 174,
+        "time_s": 17.384033,
+        "azimuth_deg": 119.05964312094423,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 176,
+        "time_s": 17.584233,
+        "azimuth_deg": 118.14681907799535,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 178,
+        "time_s": 17.784433,
+        "azimuth_deg": 116.7612606083964,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 180,
+        "time_s": 17.984633,
+        "azimuth_deg": 115.82080702526704,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 182,
+        "time_s": 18.184833,
+        "azimuth_deg": 114.3856230772825,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 184,
+        "time_s": 18.385033,
+        "azimuth_deg": 113.42534937743385,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 186,
+        "time_s": 18.585233,
+        "azimuth_deg": 111.88619228088794,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 188,
+        "time_s": 18.785433,
+        "azimuth_deg": 110.88577976185024,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 190,
+        "time_s": 18.985633,
+        "azimuth_deg": 109.36553220948926,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 192,
+        "time_s": 19.185833,
+        "azimuth_deg": 108.34164286498772,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 194,
+        "time_s": 19.386033,
+        "azimuth_deg": 106.81415097141519,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 196,
+        "time_s": 19.586233,
+        "azimuth_deg": 105.77824497917412,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 198,
+        "time_s": 19.786433,
+        "azimuth_deg": 104.20369991485646,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 200,
+        "time_s": 19.986633,
+        "azimuth_deg": 103.15492423392143,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 202,
+        "time_s": 20.186833,
+        "azimuth_deg": 101.87223087821961,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 204,
+        "time_s": 20.387033,
+        "azimuth_deg": 100.27874813759237,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 206,
+        "time_s": 20.587233,
+        "azimuth_deg": 99.21520356059061,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 208,
+        "time_s": 20.787433,
+        "azimuth_deg": 97.63088247445042,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 210,
+        "time_s": 20.987633,
+        "azimuth_deg": 96.55521937396658,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 212,
+        "time_s": 21.187833,
+        "azimuth_deg": 94.95654337816076,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 214,
+        "time_s": 21.388033,
+        "azimuth_deg": 93.86118677790553,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 216,
+        "time_s": 21.588233,
+        "azimuth_deg": 92.25646540923546,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 218,
+        "time_s": 21.788433,
+        "azimuth_deg": 91.19244347773845,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 220,
+        "time_s": 21.988633,
+        "azimuth_deg": 90.10741923248668,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 222,
+        "time_s": 22.188833,
+        "azimuth_deg": 88.15691019005783,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 224,
+        "time_s": 22.389033,
+        "azimuth_deg": 87.09922410260772,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 226,
+        "time_s": 22.589233,
+        "azimuth_deg": 86.05188973880689,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 228,
+        "time_s": 22.789433,
+        "azimuth_deg": 84.48305212429538,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 230,
+        "time_s": 22.989633,
+        "azimuth_deg": 83.44684470824495,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 232,
+        "time_s": 23.189833,
+        "azimuth_deg": 81.90016377509144,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 234,
+        "time_s": 23.390033,
+        "azimuth_deg": 80.8845326890739,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 236,
+        "time_s": 23.590233,
+        "azimuth_deg": 79.3736065151666,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 238,
+        "time_s": 23.790433,
+        "azimuth_deg": 78.37204194388335,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 240,
+        "time_s": 23.990633,
+        "azimuth_deg": 76.8142511917743,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 242,
+        "time_s": 24.190833,
+        "azimuth_deg": 75.8489948096236,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 244,
+        "time_s": 24.391033,
+        "azimuth_deg": 74.40082853687406,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 246,
+        "time_s": 24.591233,
+        "azimuth_deg": 73.45875517423984,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 248,
+        "time_s": 24.791433,
+        "azimuth_deg": 72.52531668966446,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 250,
+        "time_s": 24.991633,
+        "azimuth_deg": 71.150001190737,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 252,
+        "time_s": 25.191833,
+        "azimuth_deg": 70.2576344700207,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 254,
+        "time_s": 25.392033,
+        "azimuth_deg": 68.94227666850077,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 256,
+        "time_s": 25.592233,
+        "azimuth_deg": 68.07933954049489,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 258,
+        "time_s": 25.792433,
+        "azimuth_deg": 66.81219319350791,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 260,
+        "time_s": 25.992633,
+        "azimuth_deg": 65.56420501881959,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 262,
+        "time_s": 26.192833,
+        "azimuth_deg": 64.76410696953086,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 264,
+        "time_s": 26.393033,
+        "azimuth_deg": 63.98444021648448,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 266,
+        "time_s": 26.593233,
+        "azimuth_deg": 62.788553841749646,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 268,
+        "time_s": 26.793433,
+        "azimuth_deg": 62.04905659229412,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 270,
+        "time_s": 26.993633,
+        "azimuth_deg": 60.89070511603473,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 272,
+        "time_s": 27.193833,
+        "azimuth_deg": 60.20656999785523,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 274,
+        "time_s": 27.394033,
+        "azimuth_deg": 59.54064059926436,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 276,
+        "time_s": 27.594233,
+        "azimuth_deg": 58.547129878050214,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 278,
+        "time_s": 27.794433,
+        "azimuth_deg": 57.92923849133543,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 280,
+        "time_s": 27.994633,
+        "azimuth_deg": 57.04888487825665,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 282,
+        "time_s": 28.194833,
+        "azimuth_deg": 56.48734748350798,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 284,
+        "time_s": 28.395033,
+        "azimuth_deg": 55.68379203069618,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 286,
+        "time_s": 28.595233,
+        "azimuth_deg": 55.1761883652882,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 288,
+        "time_s": 28.795433,
+        "azimuth_deg": 54.440205044573304,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 290,
+        "time_s": 28.995633,
+        "azimuth_deg": 53.988722964949154,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 292,
+        "time_s": 29.195833,
+        "azimuth_deg": 53.35080115310504,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 294,
+        "time_s": 29.396033,
+        "azimuth_deg": 52.95714189365187,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 296,
+        "time_s": 29.596233,
+        "azimuth_deg": 52.41114374925583,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 298,
+        "time_s": 29.796433,
+        "azimuth_deg": 51.949352655071735,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 300,
+        "time_s": 29.996633,
+        "azimuth_deg": 51.6498008357846,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 302,
+        "time_s": 30.196833,
+        "azimuth_deg": 51.375286602657255,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 304,
+        "time_s": 30.397033,
+        "azimuth_deg": 51.0113184239262,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 306,
+        "time_s": 30.597233,
+        "azimuth_deg": 50.796794262286284,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 308,
+        "time_s": 30.797433,
+        "azimuth_deg": 50.525090427041924,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 310,
+        "time_s": 30.997633,
+        "azimuth_deg": 50.37159282522627,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 312,
+        "time_s": 31.197833,
+        "azimuth_deg": 50.1935705363007,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 314,
+        "time_s": 31.398033,
+        "azimuth_deg": 50.10681766819418,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 316,
+        "time_s": 31.598233,
+        "azimuth_deg": 50.02478352310518,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 318,
+        "time_s": 31.798433,
+        "azimuth_deg": 50.00192320607929,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 320,
+        "time_s": 31.998633,
+        "azimuth_deg": 50.01652396218681,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 322,
+        "time_s": 32.198833,
+        "azimuth_deg": 50.08138220503505,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 324,
+        "time_s": 32.399033,
+        "azimuth_deg": 50.15863598162204,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 326,
+        "time_s": 32.599233,
+        "azimuth_deg": 50.26087610934634,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 328,
+        "time_s": 32.799433,
+        "azimuth_deg": 50.46424049361277,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 330,
+        "time_s": 32.999633,
+        "azimuth_deg": 50.62959430815675,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 332,
+        "time_s": 33.199833,
+        "azimuth_deg": 50.92999412460682,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 334,
+        "time_s": 33.400033,
+        "azimuth_deg": 51.157837422304645,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 336,
+        "time_s": 33.600233,
+        "azimuth_deg": 51.54530161103076,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 338,
+        "time_s": 33.800433,
+        "azimuth_deg": 51.837116941848976,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 340,
+        "time_s": 34.000633,
+        "azimuth_deg": 52.320274188933084,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 342,
+        "time_s": 34.200833,
+        "azimuth_deg": 52.66813932083509,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 344,
+        "time_s": 34.401033,
+        "azimuth_deg": 53.23814106101722,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 346,
+        "time_s": 34.601233,
+        "azimuth_deg": 53.64827709454976,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 348,
+        "time_s": 34.801433,
+        "azimuth_deg": 54.30862181840251,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 350,
+        "time_s": 35.001633,
+        "azimuth_deg": 54.7806390219051,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 352,
+        "time_s": 35.201833,
+        "azimuth_deg": 55.524040139019824,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 354,
+        "time_s": 35.402033,
+        "azimuth_deg": 56.04690283149385,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 356,
+        "time_s": 35.602233,
+        "azimuth_deg": 56.872631841405045,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 358,
+        "time_s": 35.802433,
+        "azimuth_deg": 57.45436984745659,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 360,
+        "time_s": 36.002633,
+        "azimuth_deg": 58.37707834745573,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 362,
+        "time_s": 36.202833,
+        "azimuth_deg": 59.00965460568945,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 364,
+        "time_s": 36.403033,
+        "azimuth_deg": 59.989094327404146,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 366,
+        "time_s": 36.603233,
+        "azimuth_deg": 60.66998505996833,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 368,
+        "time_s": 36.803433,
+        "azimuth_deg": 61.72925909050017,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 370,
+        "time_s": 37.003633,
+        "azimuth_deg": 62.46102811057565,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 372,
+        "time_s": 37.203833,
+        "azimuth_deg": 63.23201291423328,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 374,
+        "time_s": 37.404033,
+        "azimuth_deg": 64.39163230736867,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 376,
+        "time_s": 37.604233,
+        "azimuth_deg": 65.23506569822615,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 378,
+        "time_s": 37.804433,
+        "azimuth_deg": 66.46106137513803,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 380,
+        "time_s": 38.004633,
+        "azimuth_deg": 67.31432736804767,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 382,
+        "time_s": 38.204833,
+        "azimuth_deg": 68.60339699315125,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 384,
+        "time_s": 38.405033,
+        "azimuth_deg": 69.51313860040506,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 386,
+        "time_s": 38.605233,
+        "azimuth_deg": 70.85404625456633,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 388,
+        "time_s": 38.805433,
+        "azimuth_deg": 71.76672979154611,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 390,
+        "time_s": 39.005633,
+        "azimuth_deg": 73.1551479160396,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 392,
+        "time_s": 39.205833,
+        "azimuth_deg": 74.09099284195372,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 394,
+        "time_s": 39.406033,
+        "azimuth_deg": 75.53837996035374,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 396,
+        "time_s": 39.606233,
+        "azimuth_deg": 76.51297867421107,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 398,
+        "time_s": 39.806433,
+        "azimuth_deg": 77.98400846148743,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 400,
+        "time_s": 40.006633,
+        "azimuth_deg": 78.9720102822085,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 402,
+        "time_s": 40.206833,
+        "azimuth_deg": 80.10694690871536,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 404,
+        "time_s": 40.407033,
+        "azimuth_deg": 81.63252791058834,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 406,
+        "time_s": 40.607233,
+        "azimuth_deg": 82.6574665683674,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 408,
+        "time_s": 40.807433,
+        "azimuth_deg": 84.21615946946962,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 410,
+        "time_s": 41.007633,
+        "azimuth_deg": 85.25553263564706,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 412,
+        "time_s": 41.207833,
+        "azimuth_deg": 86.83744554820049,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 414,
+        "time_s": 41.408033,
+        "azimuth_deg": 87.89998580858995,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 416,
+        "time_s": 41.608233,
+        "azimuth_deg": 89.49497545655373,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 418,
+        "time_s": 41.808433,
+        "azimuth_deg": 90.55528739092532,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 420,
+        "time_s": 42.008633,
+        "azimuth_deg": 92.15622701714055,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 422,
+        "time_s": 42.208833,
+        "azimuth_deg": 93.24626240069199,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 424,
+        "time_s": 42.409033,
+        "azimuth_deg": 94.77430051344636,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      },
+      {
+        "index": 425,
+        "time_s": 42.509133,
+        "azimuth_deg": 94.99999999999999,
+        "elevation_deg": 48,
+        "distance_m": 0.57
+      }
+    ],
+    "timing": "Actual source wall-clock replay; slow renders may skip discrete keyframes",
+    "orbit": "One elevated +/-45 degree arc back and forth",
+    "mode": "rgb"
+  },
+  "timing": "Actual browser wall-clock playback. Source time remains visible; missing model samples are not interpolated."
+}

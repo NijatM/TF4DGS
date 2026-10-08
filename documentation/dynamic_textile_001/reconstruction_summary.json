@@ -1,0 +1,99 @@
+{
+  "status": "complete and validated",
+  "recorded_utc": "2026-10-08T22:03:52.708112+00:00",
+  "sequence": "outputs/dynamic_textile_001/gaussian_sequence_04/sequence.json",
+  "representation": "Multiview-fitted RGB Gaussian keyframe sequence",
+  "keyframes": 214,
+  "first_time_s": 0.0,
+  "last_time_s": 42.509133,
+  "median_keyframe_interval_s": 0.20019999999999993,
+  "time_interpolation": false,
+  "persistent_material_ids": false,
+  "actual_rgb_gaussian_fit": true,
+  "native_camera_crop_pixels": true,
+  "gaussians_per_keyframe": {
+    "minimum": 28065.0,
+    "median": 80475.0,
+    "mean": 81583.34112149532,
+    "maximum": 124145.0
+  },
+  "static_context_gaussians": 164708,
+  "context_source_policy": "current textile capture only",
+  "source_views": [
+    "dji",
+    "fuji",
+    "iphone"
+  ],
+  "foreground_fitting_psnr_db": {
+    "dji": {
+      "minimum": 31.653650362517446,
+      "median": 35.64006391663961,
+      "mean": 35.642508076905344,
+      "maximum": 37.89863444671491
+    },
+    "fuji": {
+      "minimum": 20.69821980336,
+      "median": 33.2323336655372,
+      "mean": 33.30034549472236,
+      "maximum": 38.84024192631615
+    },
+    "iphone": {
+      "minimum": 18.529911616939202,
+      "median": 32.280109751096234,
+      "mean": 32.1048296247114,
+      "maximum": 35.00531619061612
+    }
+  },
+  "fitting_metric_scope": "Same three optimization cameras; not independent held-out novel-view or geometry validation",
+  "optimization_steps": {
+    "minimum": 4000.0,
+    "median": 6000.0,
+    "mean": 5766.355140186916,
+    "maximum": 6000.0
+  },
+  "summed_frame_optimization_s": 11019.552298545837,
+  "peak_process_cuda_bytes": 3414381568,
+  "observed_stereo_seeds_per_time": {
+    "minimum": 644.0,
+    "median": 5171.0,
+    "mean": 5064.813084112149,
+    "maximum": 11977.0
+  },
+  "inferred_neural_depth_seeds_per_time": {
+    "minimum": 5000.0,
+    "median": 13319.0,
+    "mean": 12377.789719626167,
+    "maximum": 15000.0
+  },
+  "recorded_appearance_coverage_fraction": {
+    "minimum": 0.6986247057365877,
+    "median": 0.8370626346641521,
+    "mean": 0.8384396203889661,
+    "maximum": 0.9317957605652579
+  },
+  "field_references": [
+    "first surface",
+    "existing earlier keyframe within adjustable recent window"
+  ],
+  "geometry_field": "Closest-reference surface distance in candidate calibrated metres; not material displacement or strain",
+  "appearance_field": "Visible balanced camera RGB at approximately visible centres, median across available views; unknown gray",
+  "metric_accuracy_verified": false,
+  "pigment_accuracy_verified": false,
+  "validation": {
+    "models_checked": 214,
+    "binary_ply_checked": true,
+    "appearance_arrays_checked": true,
+    "mode_time_renders": 16,
+    "recent_reference_renders": 2,
+    "invalid_query_rejections": 7
+  },
+  "limitations": [
+    "Provisional planar/known-object camera calibration and manual frame synchronization",
+    "Neural depth fills surfaces not independently triangulated",
+    "Hand occlusions and repeated knit leave unverified geometry and material correspondence",
+    "Discrete independent-time RGB Gaussian fitting can show temporal surface jitter",
+    "Closest-surface color contrast includes texture, viewpoint and illumination differences"
+  ],
+  "originals_and_failed_trials_preserved": true,
+  "footage_weights_and_models_excluded_from_git": true
+}

@@ -1,0 +1,41 @@
+{
+    "captured_utc":  "2026-10-08T22:16:27.9250202Z",
+    "page_state":  {
+                       "videos":  [
+                                      {
+                                          "file":  "textile_rgb_orbit.mp4",
+                                          "duration_s":  43.466667,
+                                          "width":  1500,
+                                          "height":  1150,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      },
+                                      {
+                                          "file":  "textile_shape_and_appearance.mp4",
+                                          "duration_s":  43.966667,
+                                          "width":  1500,
+                                          "height":  1150,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      }
+                                  ],
+                       "playback_check":  [
+                                              {
+                                                  "file":  "textile_rgb_orbit.mp4",
+                                                  "time_s":  0.260473,
+                                                  "decoded_frames":  14,
+                                                  "error":  null
+                                              },
+                                              {
+                                                  "file":  "textile_shape_and_appearance.mp4",
+                                                  "time_s":  0.252863,
+                                                  "decoded_frames":  9,
+                                                  "error":  null
+                                              }
+                                          ]
+                   },
+    "kind":  "Live local preview browser screenshot",
+    "expression":  "(async()=\u003e{const results=[];for(const v of document.querySelectorAll(\"video\")){v.muted=true;v.currentTime=5;await new Promise(r=\u003ev.addEventListener(\"seeked\",r,{once:true}));await v.play();await new Promise(r=\u003esetTimeout(r,250));v.pause();results.push({file:v.currentSrc.split(\"/\").at(-1),time_s:v.currentTime,decoded_frames:v.getVideoPlaybackQuality().totalVideoFrames,error:v.error?v.error.message:null});}window.tf4dgsVideoPlaybackCheck=results;return results})()",
+    "filename":  "33_final_video_page.png",
+    "url":  "http://127.0.0.1:8103/videos/"
+}

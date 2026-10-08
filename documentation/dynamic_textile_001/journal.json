@@ -1,0 +1,355 @@
+[
+  {
+    "stage": 1,
+    "title": "Rejected sparse textile result",
+    "text": "The previous textile viewer contains 45 initial tracked points and no RGB Gaussian model. Tracking loses support under folds and hands. The source recordings remain preserved; this revision replaces that failed route.",
+    "status": "failed previous approach",
+    "recorded_utc": "2026-10-08T15:10:31.911182+00:00",
+    "image": "01_diagnostic.jpg",
+    "image_kind": "Diagnostic from real source images or model renders; not a desktop screenshot",
+    "original_stage": 1
+  },
+  {
+    "stage": 2,
+    "title": "First-frame SAM2 masks reviewed",
+    "text": "Local pinned SAM2 inference separates the knitted textile from the printed marker board in all three first frames. Green shows the proposed cloth mask. Full-sequence propagation and hand exclusion are running; later frames require review.",
+    "status": "first-frame visual check passed",
+    "recorded_utc": "2026-10-08T15:10:32.068196+00:00",
+    "image": "02_diagnostic.jpg",
+    "image_kind": "Diagnostic from real source images or model renders; not a desktop screenshot",
+    "original_stage": 2
+  },
+  {
+    "stage": 3,
+    "title": "Full-sequence masks reviewed",
+    "text": "SAM2 propagated the cloth identity through 214 samples covering 0\u201342.586 seconds in each camera. Visual review of nine times shows separation of cloth from board and most hands during stretching, folding, lifting and return to the table. Conservative skin exclusions also produce occlusion masks. Masks remain automatic and can miss fine yarn edges.",
+    "status": "sampled visual review passed",
+    "recorded_utc": "2026-10-08T15:15:27.853894+00:00",
+    "image": "03_diagnostic.jpg",
+    "image_kind": "Diagnostic from real source images or model renders; not a desktop screenshot",
+    "original_stage": 3
+  },
+  {
+    "stage": 4,
+    "title": "Dense initialization and first actual RGB splat",
+    "text": "Dense calibrated matching provides 7,425 surface samples instead of 45 sparse tracks. The first frame now has 36,790 trained RGB Gaussians using native crops, including the 2,705-pixel-wide Fuji crop. The comparison is masked source, actual Gaussian render, and opacity. Fitting PSNR is 33.4/29.4/26.8 dB for DJI/Fuji/iPhone; these are training-view residuals, not independent validation. Temporal reconstruction is next. Initial integration errors (input shape tensor and descriptor-confidence threshold) were corrected before this result; source/attempt logs are retained.",
+    "status": "real RGB baseline visually reviewed",
+    "recorded_utc": "2026-10-08T15:22:42.463021+00:00",
+    "image": "04_diagnostic.jpg",
+    "image_kind": "Diagnostic from real source images or model renders; not a desktop screenshot",
+    "original_stage": 4
+  },
+  {
+    "stage": 5,
+    "title": "Long tracking test fails through large folds",
+    "text": "CoTracker3 initialized 700 spatially distributed nodes and improves early coverage substantially. Only 70 of 214 samples retain at least 100 multiview-supported nodes, and all triangulated support disappears after 20.587 seconds. Long-term knit identity still fails through hands and folding. This trial is retained and will not be used to invent full-sequence material deformation. Dense per-time multiview reconstruction is being tested for complete RGB shape replay; such frames do not prove persistent material identity.",
+    "status": "full-sequence material tracking rejected",
+    "recorded_utc": "2026-10-08T15:27:20.392931+00:00",
+    "image": "05_diagnostic.jpg",
+    "image_kind": "Diagnostic from real source images or model renders; not a desktop screenshot",
+    "original_stage": 5
+  },
+  {
+    "stage": 6,
+    "title": "Folded RGB retry: holes resolved by anchored shape prior",
+    "text": "The first independent folded frame had large holes and 13.2/17.6/18.8 dB fitting residuals. The retained diagnostic shows that rejected attempt. Registered neural depth fills singly observed textile, corrected by calibrated stereo anchors. The improved native fit reaches 34.9/35.8/27.3 dB with roughly 99.5% foreground opacity. These are fitting residuals, not an independent accuracy test.",
+    "status": "failed attempt preserved; subsequent retry improves coverage",
+    "recorded_utc": "2026-10-08T16:07:33.851019+00:00",
+    "image": "06_diagnostic.jpg",
+    "image_kind": "Diagnostic from real source images or model renders; not a desktop screenshot",
+    "original_stage": 6
+  },
+  {
+    "stage": 7,
+    "title": "Actual RGB Gaussian replay: free-orbit folded fabric",
+    "text": "Nine times spanning 0\u201342.509 seconds now have actual fitted RGB Gaussian models. This live browser render shows the folded fabric from a new elevated view. Geometry and encoded RGB are fitted per keyframe; long-term material identity is not asserted. Full 214-time native fitting is running.",
+    "status": "real free-orbit model reviewed",
+    "recorded_utc": "2026-10-08T16:07:34.024487+00:00",
+    "image": "07_live_rgb_fold_orbit.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata",
+    "original_stage": 7
+  },
+  {
+    "stage": 8,
+    "title": "Upright fabric and context-layer failures",
+    "text": "The upright fabric renders as a 3D Gaussian surface. The wider table02 falsely flattened off-table imagery, and narrower table03 still included a moving wrist/watch. This genuine live screenshot preserves the table03 problem before correction. Both rejected layers remain saved separately.",
+    "status": "fabric reviewed; table texture rejected",
+    "recorded_utc": "2026-10-08T16:07:34.194233+00:00",
+    "image": "08_live_rgb_upright_orbit.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata",
+    "original_stage": 8
+  },
+  {
+    "stage": 9,
+    "title": "Current-recording tabletop cleanup and full-sequence training",
+    "text": "Corrected table04 uses only the measured board and close tabletop. A larger hand/wrist exclusion prevents a watch becoming part of the static plane; each exported point has at least two unobstructed source observations. No older scene or footage is merged. Native RGB fitting is retained: a 12,000-step patch trial reduced texture quality relative to full-crop fitting and was rejected. The 214-time replay is training with saved checkpoints.",
+    "status": "cleaned context visually reviewed; full RGB training active",
+    "recorded_utc": "2026-10-08T16:07:34.364001+00:00",
+    "image": "09_live_rgb_context_cleaned.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata",
+    "original_stage": 9
+  },
+  {
+    "stage": 10,
+    "title": "Cleanup and appearance-model trials: preserve real knit detail",
+    "text": "Twelve native camera/time crops compare the original fits with three retained cleanup variants. Neutral-color pruning lowers mean foreground PSNR from 33.78 to 29.48 dB and erases legitimate thread detail. Two-view support pruning loses 4.28 dB on the upright DJI view; both are rejected. Opacity-only pruning changes all checked crops by less than 0.001 dB. The viewer retains the original fitted models. Degree-one spherical harmonics gave similar fitting residuals to the selected constant-RGB model, so the full sequence keeps one consistent appearance basis. Finite model/timeline and sixteen live renderer checks passed on completed samples; full-sequence validation is pending.",
+    "status": "failed cleanup trials preserved; original RGB fits retained",
+    "recorded_utc": "2026-10-08T16:53:04.853062+00:00",
+    "original_stage": 10
+  },
+  {
+    "stage": 11,
+    "title": "Separate shape and appearance maps on actual RGB Gaussians",
+    "text": "This genuine local-browser screenshot shows the folded frame at 15.816 seconds, rendered from an elevated novel viewpoint. Shape distance and encoded RGB contrast are separate maps. First-surface and adjustable earlier-window references both pass live API checks; the reference time is reported under the render. These nearest-surface comparisons are not persistent material displacement, strain or pigment measurements. Realistic fitted RGB remains separately selectable. The full RGB sequence continues processing; 66 completed models passed finite-parameter checks and sixteen mode/time renders plus two recent-reference renders.",
+    "status": "map/reference behavior verified; full training active",
+    "recorded_utc": "2026-10-08T17:00:01.424621+00:00",
+    "image": "11_live_shape_and_appearance.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata",
+    "original_stage": 11
+  },
+  {
+    "stage": 12,
+    "title": "Appearance fields revised to visible recorded-camera pixels",
+    "text": "The preceding component-color map was overly sensitive: overlapping Gaussian colors are not individually determined by their combined RGB image. Appearance now samples the actual balanced camera pixels at approximately visible cloth-surface centers, rejects skin/hand masks and locally occluded point depths, and takes the median across available views. Gray indicates no supported recorded color sample. The folded frame has recorded observations for 90.4% of its Gaussian centers. Closest-reference association, changing viewpoint, shadows and knit texture can still change this map without pigment change. A 30% encoded-RGB scale displays the observed range more legibly; the scale remains adjustable. The realistic RGB model is unchanged. All earlier map images and fitting trials remain preserved.",
+    "status": "recorded-pixel map visually reviewed; approximate visibility explicit",
+    "recorded_utc": "2026-10-08T17:10:51.236171+00:00",
+    "image": "12_live_recorded_appearance.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata",
+    "original_stage": 12
+  },
+  {
+    "stage": 13,
+    "title": "Stretched textile: actual RGB and remaining occlusion limits",
+    "text": "The real free-orbit RGB render at 10.611 seconds shows the knitted ridges and stretch. Regions hidden by hands remain incomplete rather than being presented as measured cloth. The measured board and nearby table remain in the same world coordinates. This is a fitted Gaussian surface with changing shape and actual camera-derived appearance, not the previous sparse point overlay. There are 86 completed time samples at this stage; full native RGB fitting continues.",
+    "status": "actual RGB visually reviewed; hidden fabric unverified",
+    "recorded_utc": "2026-10-08T17:19:17.421046+00:00",
+    "image": "13_live_rgb_stretched.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata",
+    "original_stage": 13
+  },
+  {
+    "stage": 14,
+    "title": "New middle-sequence fold beyond earlier tracking coverage",
+    "text": "This genuine elevated free-orbit RGB screenshot shows the newly fitted fold at 21.989 s. The previous calibrated tracker had lost all supported material nodes after 20.587 seconds; independent dense Gaussian fitting still reconstructs visible knit and folds here. The growing sequence has passed halfway. Surface colors and shape remain fitted per keyframe, and hidden cloth/material identity remain unverified.",
+    "status": "new late RGB frame visually reviewed; full processing continues",
+    "recorded_utc": "2026-10-08T17:45:13.744541+00:00",
+    "image": "14_live_rgb_later_fold.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata",
+    "original_stage": 14
+  },
+  {
+    "stage": 15,
+    "title": "Windows timeline file-lock interruption and automatic recovery",
+    "text": "At 171 completed keyframes, Windows denied an atomic replacement of sequence.json while a reader briefly held the timeline file. Frame336 had finished successfully; all completed NPZ, PLY, render comparisons and appearance samples were intact. The original traceback/failure record and this genuine interrupted-state screenshot are preserved. Atomic timeline publication now retries transient PermissionError without removing the previous valid manifest. The worker resumed with the same selected native fitting settings, skipped all 171 completed models and continued at frame338. The appearance watcher resumed separately. No footage or completed model was deleted or retrained.",
+    "status": "interruption preserved; completed-frame resume active",
+    "recorded_utc": "2026-10-08T18:39:05.682572+00:00",
+    "image": "15_windows_manifest_lock_interruption.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata",
+    "original_stage": 15
+  },
+  {
+    "stage": 16,
+    "title": "Completed full-recording RGB Gaussian fitting",
+    "text": "All 214/214 independent-time RGB Gaussian models and visible recorded-pixel appearance arrays are complete. Full validation checked finite parameters, quaternion norms, standard binary PLY files, 16 real renders across modes and times, two recent-reference renders and seven rejected invalid queries. Fitted times cover 0?42.509133 seconds at a median 0.2002-second interval. Native pixel scale retained; no held-out geometry accuracy claim. Initial RGB and combined browser recordings were captured and checked; their raw captures and context04 encodings remain in the ignored cache.",
+    "status": "completed",
+    "recorded_utc": "2026-10-08T21:39:33.9319796Z",
+    "image": "16_live_full_rgb_replay.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata",
+    "original_stage": 16
+  },
+  {
+    "stage": 17,
+    "title": "Official-editor automation diagnosis",
+    "text": "The first new-tab request lost its execution context during navigation. A second test looked for the editor in the hosted wrapper and timed out. The genuine screenshot shows the editor already running inside a same-origin iframe. The test helper now targets that frame. No model was uploaded or published.",
+    "status": "diagnosed",
+    "recorded_utc": "2026-10-08T21:48:20.0814018Z",
+    "image": "17_supersplat_initialization_diagnostic.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata",
+    "original_stage": 17
+  },
+  {
+    "stage": 18,
+    "title": "First actual RGB PLY import in online SuperSplat",
+    "text": "The full-quality folded-cloth PLY imports successfully with 193,734 Gaussians, including context04. It initially appears small because the default editor camera frames metre-scale scenes differently. This verifies actual importer compatibility; the following steps frame it for inspection.",
+    "status": "import passed",
+    "recorded_utc": "2026-10-08T21:49:50.3746878Z",
+    "image": "18_supersplat_rgb_import.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata",
+    "original_stage": 18
+  },
+  {
+    "stage": 19,
+    "title": "Rejected camera automation attempt",
+    "text": "An inspection-camera expression constructed plain objects incorrectly, producing non-finite camera parameters. This screenshot and capture metadata are preserved as a failed view setup; the exported Gaussian data is unchanged. The later expression uses explicit x/y/z coordinates.",
+    "status": "rejected",
+    "recorded_utc": "2026-10-08T21:50:55.1745723Z",
+    "image": "19_supersplat_rgb_framed.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata",
+    "original_stage": 19
+  },
+  {
+    "stage": 20,
+    "title": "Full PLY timeline recognized",
+    "text": "SuperSplat recognizes all 1,277 numbered PLY files with its timeline set to 30 fps. This screenshot precedes correction of the inspection camera, so it verifies sequence loading rather than visible reconstruction quality. The timeline holds 214 fitted states; it does not invent 30 independent reconstructions per second.",
+    "status": "timeline passed",
+    "recorded_utc": "2026-10-08T21:51:02.3888761Z",
+    "image": "20_supersplat_full_sequence_loaded.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata",
+    "original_stage": 20
+  },
+  {
+    "stage": 21,
+    "title": "Actual first-frame RGB and context inspection",
+    "text": "The corrected elevated iPhone-side camera shows textured cloth and this recording\u2019s board/table in the actual online editor. Context04 leaves transparent board areas, which appear black here and were less obvious against the local light background. These gaps motivate sampling more unobstructed times.",
+    "status": "reviewed; context gaps",
+    "recorded_utc": "2026-10-08T21:51:28.9781029Z",
+    "image": "21_supersplat_rgb_first_valid_view.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata",
+    "original_stage": 21
+  },
+  {
+    "stage": 22,
+    "title": "Actual folded RGB PLY sequence frame",
+    "text": "Scrubbing to timeline frame475 loads the fitted textile at15.815833 seconds with 193,734 combined Gaussians. The yarn/folds are visible. Table transparency remains a context04 limitation; original files remain available.",
+    "status": "reviewed",
+    "recorded_utc": "2026-10-08T21:51:51.3936716Z",
+    "image": "22_supersplat_rgb_fold.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata",
+    "original_stage": 22
+  },
+  {
+    "stage": 23,
+    "title": "Full-quality online playback throughput",
+    "text": "A five-second real SuperSplat playback test advances to frame150 at30 timeline fps, but observes71 actual Gaussian data swaps (14.16/s). Timeline speed is correct; sustained30 Gaussian swaps/s is not achieved. Preserve this trial and test compressed copies.",
+    "status": "performance shortfall",
+    "recorded_utc": "2026-10-08T21:53:42.0598667Z",
+    "image": "23_supersplat_playback_test.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata",
+    "original_stage": 23
+  },
+  {
+    "stage": 24,
+    "title": "Observed-context recovery and compressed PLY",
+    "text": "Using all214 available mask times, instead of nine, recovers164,708 observed board/table Gaussians and removes the prominent empty patch. No unobserved pixel is fabricated and no other scene is merged. The compressed PLY imports and displays actual knit detail. Full float32 archives are retained; quantization error is measured per frame.",
+    "status": "context05 selected",
+    "recorded_utc": "2026-10-08T21:58:20.7542955Z",
+    "image": "24_supersplat_context_and_compression_trial.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata",
+    "original_stage": 24
+  },
+  {
+    "stage": 25,
+    "title": "Combined compressed timeline performance trial",
+    "text": "The combined compressed context05 sequence uses858MB of unique viewer data, but five-second playback observes12.39 swaps/s. Compression alone does not achieve30/s because complete table data is still rebuilt for each frame. Keep this attempt and separate the fixed table layer from animated cloth.",
+    "status": "performance shortfall",
+    "recorded_utc": "2026-10-08T21:58:44.8686210Z",
+    "image": "25_supersplat_compressed_playback_test.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata",
+    "original_stage": 25
+  },
+  {
+    "stage": 26,
+    "title": "Static-context optimization in actual SuperSplat",
+    "text": "The official import handler keeps a single164,708-Gaussian table layer while playing only the changing cloth PLYs. All1,277 frames are recognized at30 timeline fps. Five-second playback advances to frame149 and observes118 actual swaps (23.57/s), improving on14.16/s. Unique compressed cloth data is284MB plus2.68MB context; float32 archives remain. This is a30 fps hold timeline, not30 Hz independently reconstructed motion or a guaranteed30/s renderer.",
+    "status": "selected; throughput qualified",
+    "recorded_utc": "2026-10-08T22:01:53.6650345Z",
+    "image": "26_supersplat_static_context_playback_test.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata",
+    "original_stage": 26
+  },
+  {
+    "stage": 27,
+    "title": "Final lifted RGB export and matching local viewer",
+    "text": "The selected compressed cloth-only animation with a fixed current_table05 layer shows the lifted textile in the actual online editor. The same fitted time is available in the corrected local RGB viewer. Table gaps are reduced using actual observations across all214 mask times; no older scene or hidden pixel is inserted.",
+    "status": "visually reviewed",
+    "recorded_utc": "2026-10-08T22:05:22.6372954Z",
+    "image": "27_supersplat_lifted_rgb_final_export.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata",
+    "original_stage": 27
+  },
+  {
+    "stage": 28,
+    "title": "Selected current-session context in local RGB replay",
+    "text": "The completed local viewer reports214 reconstructed times and164,708 table Gaussians. The elevated view at26.593 seconds shows real knit texture and the lifted surface. All modes and first/recent reference behavior passed the real API checks after the context change.",
+    "status": "validated",
+    "recorded_utc": "2026-10-08T22:05:23.6243546Z",
+    "image": "28_live_final_rgb_context05.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata",
+    "original_stage": 28
+  },
+  {
+    "stage": 29,
+    "title": "Actual compressed/uncompressed Gaussian render comparison",
+    "text": "All214 compressed cloth models and all1,277 timeline aliases pass file/count/hash/source-time checks. Position quantization is at most0.116mm and RGB-channel error at most0.00196. Four visible nonempty scene renders yield64.41?66.29dB against float32 originals. The first comparison attempt used an incompatible packed-background shape; the check was corrected to the viewer\u2019s dense antialiased mode and completed. These are compression errors, not geometry accuracy.",
+    "status": "compression validated",
+    "recorded_utc": "2026-10-08T22:07:50.446154+00:00",
+    "image": "29_compression_render_comparison.jpg",
+    "image_kind": "Diagnostic from real source images or model renders; not a desktop screenshot",
+    "original_stage": 29
+  },
+  {
+    "stage": 30,
+    "title": "Final compressed orbit videos and checkpoint",
+    "text": "The selected current_table05 RGB and combined-map clips are actual browser recordings with native source-time playback and a higher iPhone-side +/-45-degree arc. RGB displays all214 fitted times; combined maps display89/214 while keeping correct wall-clock speed. Full decode, SHA256, faststart, time provenance and orbit checks pass. Total video size8.25MB at1500x1150/H264CRF20. Source frames and all earlier failures remain preserved. See videos/index.html and SUPERSPLAT.md for playback/export instructions. No Git staging, commit, push or restart.",
+    "status": "completed",
+    "recorded_utc": "2026-10-08T22:10:59.721910+00:00",
+    "original_stage": 32
+  },
+  {
+    "stage": 31,
+    "title": "Last time in the actual SuperSplat sequence",
+    "text": "The online editor loads timeline frame1276 (last fitted source time42.509133 seconds), retaining the164,708-Gaussian context and122,590 textile Gaussians. The separate table and animation layers remain present; no source data was uploaded or published.",
+    "status": "full export reviewed",
+    "recorded_utc": "2026-10-08T22:11:35.7017715Z",
+    "image": "30_supersplat_last_frame_validated.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata",
+    "original_stage": 30
+  },
+  {
+    "stage": 32,
+    "title": "Remaining motion-blur and occlusion limitations",
+    "text": "Native camera comparison at frame356 (35.602 seconds) retains visible source motion blur in Fuji and mismatched/ghost surfaces in the fit. Fuji foreground fit is20.70dB here; iPhone frame214 reaches only18.53dB. These weak times remain in the full sequence and are explicitly identified. The improved RGB reconstruction is a reviewable independent-time baseline, not pristine measured geometry or verified material strain.",
+    "status": "limitation retained",
+    "recorded_utc": "2026-10-08T22:13:27.441968+00:00",
+    "image": "31_diagnostic.jpg",
+    "image_kind": "Diagnostic from real source images or model renders; not a desktop screenshot",
+    "original_stage": 31
+  },
+  {
+    "stage": 33,
+    "title": "Final offline videos play in the actual browser",
+    "text": "The offline documentation page opens both final MP4s, plays and pauses each without decoding errors. Screenshot metadata records video dimensions/duration, actual decoded frame counts and successful playback. A seek was attempted but playback restarted near zero through the simple local HTTP server; the subsequent check fully buffers the files before testing seek behavior. Final clips total 8.25 MB; source and failed attempts remain preserved in ignored storage.",
+    "status": "browser playback passed",
+    "recorded_utc": "2026-10-08T22:16:27.9250202Z",
+    "image": "33_final_video_page.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata",
+    "original_stage": 33
+  },
+  {
+    "stage": 34,
+    "title": "Simple documentation server seeking failure",
+    "text": "Both final videos decoded and played, but the original simple HTTP preview did not handle the browser\u2019s MP4 byte-range requests: seeking restarted near zero. A full-buffer retry exceeded the capture deadline. The actual failed-page state and a failure JSON are retained. The MP4 exports and source models are unchanged.",
+    "status": "diagnosed",
+    "recorded_utc": "2026-10-08T22:24:05.6670159Z",
+    "image": "34_video_seek_failure_context.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata"
+  },
+  {
+    "stage": 35,
+    "title": "Seekable documentation playback verified",
+    "text": "Added a loopback-only textile documentation server with exact206 byte-range responses. Three direct normal/suffix/open-ended range checks match the original MP4 bytes. In the actual browser, both clips seek to5.000s, play beyond5s and decode without errors. This completes the documentation playback check; videos remain8.25MB total.",
+    "status": "passed",
+    "recorded_utc": "2026-10-08T22:24:07.6124041Z",
+    "image": "35_final_video_seek_verified.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata"
+  },
+  {
+    "stage": 36,
+    "title": "Interactive RGB viewer ready for review",
+    "text": "Leave the completed viewer on realistic fitted RGB, first fitted time, current_table05, elevated iPhone-side free orbit. Press Play to review the full214-state sequence, or switch first/recent-reference surface/appearance maps. The selected SuperSplat animation and full-quality archives are saved locally; no Git action or source publication occurred.",
+    "status": "ready",
+    "recorded_utc": "2026-10-08T22:26:14.4226828Z",
+    "image": "36_final_interactive_rgb.png",
+    "image_kind": "Genuine local browser screenshot; see accompanying capture metadata"
+  }
+]

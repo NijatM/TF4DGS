@@ -1,0 +1,28 @@
+{
+  "status": "complete and archive-validated",
+  "recorded_utc": "2026-10-08T22:59:11.072663+00:00",
+  "distribution": "GitHub Release assets; no Git LFS tracking",
+  "local_output": "outputs/release_assets/baseline_2026-10-08",
+  "archives": [
+    {
+      "filename": "TF4DGS-textile-baseline.zip",
+      "bytes": 283093188,
+      "uncompressed_selected_bytes": 287589894,
+      "selected_files": 216,
+      "zip_crc_and_sha256_passed": true,
+      "sha256": "34ee2fb4ee61e0a3116f41172330b74bbe855609ae117edb680edf99f1f40d39"
+    },
+    {
+      "filename": "TF4DGS-yogurt-baseline.zip",
+      "bytes": 25835758,
+      "uncompressed_selected_bytes": 50696217,
+      "selected_files": 12,
+      "zip_crc_and_sha256_passed": true,
+      "sha256": "9a8fcb04428b2d112e893ff6a7b36c430470b02cb5a66c1153efb397b196c201"
+    }
+  ],
+  "total_archive_bytes": 308928946,
+  "uploaded": false,
+  "git_staging_or_commit_performed": false,
+  "continuous_textile_deformation_model": false
+}

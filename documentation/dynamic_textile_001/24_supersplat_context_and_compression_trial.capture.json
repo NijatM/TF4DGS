@@ -1,0 +1,16 @@
+{
+    "captured_utc":  "2026-10-08T21:58:20.7542955Z",
+    "local_files_imported":  1,
+    "method":  "Genuine CDP screenshot of official SuperSplat editor",
+    "state":  {
+                  "frames":  1,
+                  "loaded":  [
+                                 {
+                                     "name":  "textile_000158.compressed.ply",
+                                     "count":  221968
+                                 }
+                             ]
+              },
+    "url":  "https://superspl.at/editor/",
+    "published":  false
+}

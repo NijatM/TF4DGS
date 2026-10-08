@@ -1,0 +1,22 @@
+{
+    "captured_utc":  "2026-10-08T22:05:22.6372954Z",
+    "local_files_imported":  0,
+    "method":  "Genuine CDP screenshot of official SuperSplat editor",
+    "state":  {
+                  "frames":  1277,
+                  "fps":  30,
+                  "playhead":  798,
+                  "layers":  [
+                                 {
+                                     "name":  "current_table.compressed.ply",
+                                     "count":  164708
+                                 },
+                                 {
+                                     "name":  "textile_000798.compressed.ply",
+                                     "count":  50545
+                                 }
+                             ]
+              },
+    "url":  "https://superspl.at/editor/",
+    "published":  false
+}

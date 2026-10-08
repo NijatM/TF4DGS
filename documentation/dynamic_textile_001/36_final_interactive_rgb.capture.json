@@ -1,0 +1,13 @@
+{
+    "captured_utc":  "2026-10-08T22:26:14.4226828Z",
+    "page_state":  {
+                       "model":  "outputs/dynamic_textile_001/gaussian_sequence_04/sequence.json",
+                       "time":  "0.000 s",
+                       "mode":  "rgb",
+                       "trails":  false
+                   },
+    "kind":  "Live local preview browser screenshot",
+    "expression":  "(async()=\u003e{stop();await refresh();document.getElementById(\"mode\").value=\"rgb\";document.getElementById(\"camera\").value=\"orbit\";document.getElementById(\"reference\").value=\"first\";document.getElementById(\"time\").value=0;document.getElementById(\"table\").checked=true;azimuth=95;elevation=48;distance=.57;panX=0;panY=0;await window.tf4dgsUpdate();return {ready:true,keyframes:frames.length}})()",
+    "filename":  "36_final_interactive_rgb.png",
+    "url":  "http://127.0.0.1:8104/"
+}

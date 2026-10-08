@@ -1,0 +1,26 @@
+{
+    "captured_utc":  "2026-10-08T21:51:28.9781029Z",
+    "local_files_imported":  0,
+    "method":  "Genuine CDP screenshot of official SuperSplat editor",
+    "state":  {
+                  "frames":  1277,
+                  "fps":  30,
+                  "camera":  {
+                                 "focalPoint":  [
+                                                    -0.175,
+                                                    0.045,
+                                                    -0.1
+                                                ],
+                                 "azim":  175,
+                                 "elev":  -47.99999999999999,
+                                 "distance":  0.9113739818015072,
+                                 "fov":  55,
+                                 "tonemapping":  "linear"
+                             },
+                  "gaussians":  [
+                                    241609
+                                ]
+              },
+    "url":  "https://superspl.at/editor/",
+    "published":  false
+}

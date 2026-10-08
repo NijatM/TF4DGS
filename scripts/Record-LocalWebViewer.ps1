@@ -10,7 +10,7 @@ param(
 # Stream actual browser paint frames. Do not capture the desktop or other tabs.
 # Raw lossless frames remain in an ignored cache; encode only final small clips.
 $ErrorActionPreference = 'Stop'
-if ($Url -notmatch '^http://127\.0\.0\.1:(8096|8100|8101|8102)/$') { throw 'Only dedicated TF4DGS local viewers may be recorded.' }
+if ($Url -notmatch '^http://127\.0\.0\.1:(8096|8100|8101|8102|8104)/$') { throw 'Only dedicated TF4DGS local viewers may be recorded.' }
 $TaskRoot = (Get-Location).Path
 $CacheRoot = [IO.Path]::GetFullPath((Join-Path $TaskRoot '.local/workflows/dynamic_setup'))
 $TaskCache = [IO.Path]::GetFullPath((Join-Path $TaskRoot $CacheDirectory))

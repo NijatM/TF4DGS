@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-08T22:07:50.446154+00:00",
+  "export": "outputs/dynamic_textile_001/supersplat_export_03",
+  "format": "PlayCanvas compressed PLY sequence",
+  "timeline_fps": 30,
+  "timeline_frames": 1277,
+  "playback_duration_s": 42.56666666666667,
+  "distinct_reconstructed_times": 214,
+  "median_fitted_interval_s": 0.20019999999999993,
+  "presentation": "Hold latest fitted state at each output timestamp; no temporal interpolation",
+  "independently_reconstructed_30hz_motion": false,
+  "full_quality_keyframes_checked": 214,
+  "compressed_keyframes_checked": 214,
+  "timeline_aliases_checked": 1277,
+  "unique_compressed_cloth_bytes": 284405106,
+  "unique_compressed_context_bytes": 2682379,
+  "maximum_cloth_position_quantization_error_mm": 0.11564503802219406,
+  "maximum_cloth_rgb_channel_quantization_error": 0.0019594132900238037,
+  "maximum_cloth_opacity_quantization_error": 0.0019608139991760254,
+  "gaussian_count_preserved": true,
+  "full_float32_archive_retained": true,
+  "compression_render_comparisons": [
+    {
+      "source_index": 0,
+      "rgb_render_psnr_db": 66.14818506998236,
+      "view": "Elevated iPhone-side orbit, 1200x800",
+      "comparison": "Decoded compressed cloth+table vs retained uncompressed Gaussian scene"
+    },
+    {
+      "source_index": 158,
+      "rgb_render_psnr_db": 66.28236419838147,
+      "view": "Elevated iPhone-side orbit, 1200x800",
+      "comparison": "Decoded compressed cloth+table vs retained uncompressed Gaussian scene"
+    },
+    {
+      "source_index": 266,
+      "rgb_render_psnr_db": 64.40900902532535,
+      "view": "Elevated iPhone-side orbit, 1200x800",
+      "comparison": "Decoded compressed cloth+table vs retained uncompressed Gaussian scene"
+    },
+    {
+      "source_index": 425,
+      "rgb_render_psnr_db": 66.29429621765324,
+      "view": "Elevated iPhone-side orbit, 1200x800",
+      "comparison": "Decoded compressed cloth+table vs retained uncompressed Gaussian scene"
+    }
+  ],
+  "actual_online_editor": "SuperSplat 3.5.2",
+  "actual_online_playback_test": {
+    "timeline_frames": 1277,
+    "timeline_fps": 30,
+    "elapsed_s": 5.00709999999404,
+    "playhead": 149,
+    "actual_data_swaps": 118,
+    "observed_data_swaps_per_second": 23.566535519590275,
+    "first_loaded": "textile_000000.compressed.ply",
+    "last_loaded": "textile_000149.compressed.ply",
+    "layers": [
+      {
+        "name": "current_table.compressed.ply",
+        "count": 164708
+      },
+      {
+        "name": "textile_000149.compressed.ply",
+        "count": 91305
+      }
+    ]
+  },
+  "sustained_30_data_swaps_per_second_verified": false,
+  "online_playback_scope": "Five-second machine-specific test; timeline advances at source speed, data swaps can skip held duplicates",
+  "hidden_geometry_accuracy_verified": false,
+  "persistent_material_ids": false,
+  "published": false,
+  "source_policy": "Current textile capture only",
+  "files_ignored_by_git": true
+}

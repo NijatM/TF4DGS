@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TF4DGS textile RGB and surface-map replay</title>
+<style>
+body{font:17px/1.5 system-ui;background:#111923;color:#e6edf5;max-width:1500px;margin:auto;padding:24px}
+article{background:#1c2837;padding:20px;border-radius:12px;margin:24px 0}
+video{width:100%;max-height:85vh}a{color:#90caff}h1{font-size:28px}p{max-width:1100px}
+</style>
+<h1>Temporal Fields 4D Gaussian Splatting — textile revision</h1>
+<p>Real browser captures of the completed 214-keyframe RGB Gaussian reconstruction.
+Elevated iPhone-side orbit, ±45° back and forth. Playback follows source wall-clock
+time; slow map renders can skip discrete fitted states. The 30 fps video encoding
+does not create 30 Hz reconstructed motion.</p>
+<p><a href="../index.html">Chronological evidence</a> ·
+<a href="../SUPERSPLAT.md">Interactive SuperSplat PLY export</a> ·
+<a href="validation.json">Recording checks</a></p>
+<article>
+<h2>Realistic RGB Gaussian replay</h2>
+<video controls preload="auto" poster="textile_rgb_orbit.jpg" src="textile_rgb_orbit.mp4"></video>
+<p>Actual fitted RGB Gaussians and this recording’s observed marker-board/table context.</p>
+<p>43.47 seconds · 5.45 MB · 1500 × 1150 · H.264 CRF20 · 30 fps video</p>
+<p>214/214 fitted states actually displayed; source timeline 0–42.509 s.
+<a href="textile_rgb_orbit.capture.json">Capture provenance</a></p>
+</article>
+<article>
+<h2>Surface and recorded-appearance maps</h2>
+<video controls preload="auto" poster="textile_shape_and_appearance.jpg" src="textile_shape_and_appearance.mp4"></video>
+<p>Left: closest-reference surface distance. Right: visible recorded-camera RGB
+contrast; gray is unknown. These are not material strain or pigment measurements.</p>
+<p>43.97 seconds · 2.80 MB · 1500 × 1150 · H.264 CRF20 · 30 fps video</p>
+<p>89/214 fitted states actually displayed; source timeline 0–42.509 s.
+<a href="textile_shape_and_appearance.capture.json">Capture provenance</a></p>
+</article>
+<p>Total compressed video size: 8.25 MB. Earlier point-only textile recordings
+and failed attempts remain preserved separately.</p>
+</html>

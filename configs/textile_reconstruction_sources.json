@@ -1,0 +1,54 @@
+{
+  "purpose": "Local inference for textile masks, dense stereo and temporal constraints",
+  "torch_policy": "Keep working torch 2.4.0+cu124 / gsplat 1.5.3 Windows wheel",
+  "packages": [
+    "hydra-core==1.3.2",
+    "omegaconf==2.3.0",
+    "antlr4-python3-runtime==4.9.3",
+    "iopath==0.1.10",
+    "portalocker==3.2.0",
+    "einops==0.8.1",
+    "huggingface-hub==0.28.1",
+    "tqdm==4.67.1",
+    "roma==1.5.6"
+  ],
+  "sources": [
+    {
+      "name": "sam2",
+      "repository": "https://github.com/facebookresearch/sam2.git",
+      "revision": "0f6515ae853c40420ea8e3dd250f8031bbf03023",
+      "license": "Apache-2.0",
+      "weights": "sam2_hiera_tiny.pt",
+      "url": "https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_tiny.pt",
+      "sha256": "65b50056e05bcb13694174f51bb6da89c894b57b75ccdf0ba6352c597c5d1125",
+      "local": ".local/tools/sam2",
+      "checkpoint": ".local/tools/sam2/checkpoints/sam2_hiera_tiny.pt"
+    },
+    {
+      "name": "co-tracker",
+      "repository": "https://github.com/facebookresearch/co-tracker.git",
+      "revision": "82e02e8029753ad4ef13cf06be7f4fc5facdda4d",
+      "license": "CC BY-NC 4.0 (model); see upstream license",
+      "weights": "scaled_online.pth",
+      "url": "https://huggingface.co/facebook/cotracker3/resolve/main/scaled_online.pth",
+      "sha256": "205d34789f19699d64b22cf93f9b697f15f28d4025240e31532e504109837218",
+      "local": ".local/tools/co-tracker",
+      "checkpoint": ".local/tools/co-tracker/checkpoints/scaled_online.pth"
+    },
+    {
+      "name": "mast3r",
+      "repository": "https://github.com/naver/mast3r.git",
+      "revision": "f5209afc300cec36239a7ac992263f36847bbba0",
+      "license": "CC BY-NC-SA 4.0",
+      "weights": "MASt3R_ViTLarge_BaseDecoder_512_catmlpdpt_metric.pth",
+      "url": "https://download.europe.naverlabs.com/ComputerVision/MASt3R/MASt3R_ViTLarge_BaseDecoder_512_catmlpdpt_metric.pth",
+      "sha256": "e28f91b488554653e2b46ddae9c78c1143e0bcb2e27d3e26cdb0b717f1568eb2",
+      "local": ".local/tools/mast3r",
+      "checkpoint": ".local/tools/mast3r/checkpoints/MASt3R_ViTLarge_BaseDecoder_512_catmlpdpt_metric.pth",
+      "submodules": {
+        "dust3r": "3cc8c88c413bb9e34c41db0e0eef99c2ee010b12",
+        "dust3r/croco": "d7de0705845239092414480bd829228723bf20de"
+      }
+    }
+  ]
+}

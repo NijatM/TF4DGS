@@ -1,0 +1,10 @@
+{
+    "captured_utc":  "2026-10-08T15:27:21.5418700Z",
+    "page_state":  {
+                       "stage":  5
+                   },
+    "kind":  "Live local preview browser screenshot",
+    "expression":  "true",
+    "filename":  "05_report_screenshot.png",
+    "url":  "http://127.0.0.1:8103/stage_05.html"
+}

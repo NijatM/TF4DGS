@@ -1,0 +1,43 @@
+{
+    "captured_utc":  "2026-10-08T22:24:07.6124041Z",
+    "page_state":  {
+                       "videos":  [
+                                      {
+                                          "file":  "textile_rgb_orbit.mp4",
+                                          "duration_s":  43.466667,
+                                          "width":  1500,
+                                          "height":  1150,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      },
+                                      {
+                                          "file":  "textile_shape_and_appearance.mp4",
+                                          "duration_s":  43.966667,
+                                          "width":  1500,
+                                          "height":  1150,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      }
+                                  ],
+                       "playback_check":  [
+                                              {
+                                                  "file":  "textile_rgb_orbit.mp4",
+                                                  "seeked_s":  5,
+                                                  "played_time_s":  5.301228,
+                                                  "decoded_frames":  168,
+                                                  "error":  null
+                                              },
+                                              {
+                                                  "file":  "textile_shape_and_appearance.mp4",
+                                                  "seeked_s":  5,
+                                                  "played_time_s":  5.30455,
+                                                  "decoded_frames":  165,
+                                                  "error":  null
+                                              }
+                                          ]
+                   },
+    "kind":  "Live local preview browser screenshot",
+    "expression":  "(async()=\u003e{const out=[];for(const v of document.querySelectorAll(\"video\")){v.muted=true;v.pause();v.currentTime=5;await new Promise(r=\u003ev.addEventListener(\"seeked\",r,{once:true}));const seeked=v.currentTime;await v.play();await new Promise(r=\u003esetTimeout(r,300));v.pause();out.push({file:v.currentSrc.split(\"/\").at(-1),seeked_s:seeked,played_time_s:v.currentTime,decoded_frames:v.getVideoPlaybackQuality().totalVideoFrames,error:v.error?v.error.message:null});if(seeked\u003c4.9||v.currentTime\u003c5)throw Error(\"Video seek needs inspection\");}window.tf4dgsVideoPlaybackCheck=out;return out})()",
+    "filename":  "35_final_video_seek_verified.png",
+    "url":  "http://127.0.0.1:8105/videos/"
+}

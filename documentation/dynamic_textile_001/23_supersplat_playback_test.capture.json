@@ -1,0 +1,19 @@
+{
+    "captured_utc":  "2026-10-08T21:53:42.0598667Z",
+    "local_files_imported":  0,
+    "method":  "Genuine CDP screenshot of official SuperSplat editor",
+    "state":  {
+                  "timeline_frames":  1277,
+                  "timeline_fps":  30,
+                  "elapsed_s":  5.01330000000447,
+                  "playhead":  150,
+                  "actual_data_swaps":  71,
+                  "observed_data_swaps_per_second":  14.162328206956833,
+                  "first_loaded":  "textile_000000.ply",
+                  "last_loaded":  "textile_000147.ply",
+                  "persistent_material_ids":  false,
+                  "unique_motion_sample_rate_hz":  4.995
+              },
+    "url":  "https://superspl.at/editor/",
+    "published":  false
+}

@@ -1,0 +1,13 @@
+{
+    "captured_utc":  "2026-10-08T15:53:08.7656654Z",
+    "page_state":  {
+                       "model":  "outputs/dynamic_textile_001/gaussian_sequence_04/sequence.json",
+                       "time":  "26.593 s",
+                       "mode":  "rgb",
+                       "trails":  false
+                   },
+    "kind":  "Live local preview browser screenshot",
+    "expression":  "(async()=\u003e{document.getElementById(\"time\").value=window.tf4dgsMeta.frames.findIndex(f=\u003ef.index===266);azimuth=110;elevation=40;await window.tf4dgsUpdate();return true;})()",
+    "filename":  "08_live_rgb_upright_orbit.png",
+    "url":  "http://127.0.0.1:8104/"
+}

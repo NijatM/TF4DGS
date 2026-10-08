@@ -1,0 +1,13 @@
+{
+    "captured_utc":  "2026-10-08T18:37:58.9341306Z",
+    "page_state":  {
+                       "model":  "outputs/dynamic_textile_001/gaussian_sequence_04/sequence.json",
+                       "time":  "21.989 s",
+                       "mode":  "rgb",
+                       "trails":  false
+                   },
+    "kind":  "Live local preview browser screenshot",
+    "expression":  "(async()=\u003e{stop();await refresh();return true})()",
+    "filename":  "15_windows_manifest_lock_interruption.png",
+    "url":  "http://127.0.0.1:8104/"
+}

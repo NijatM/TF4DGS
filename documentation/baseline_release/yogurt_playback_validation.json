@@ -1,0 +1,21 @@
+{
+    "source_model_files_changed":  false,
+    "original_footage_present":  false,
+    "static_gaussians":  498531,
+    "supported_poses":  53,
+    "rendered_first_and_last":  [
+                                    {
+                                        "png_bytes":  412003,
+                                        "sha256":  "21661e38bb73d950481cb9a971ac128a574440394da506a04c02ef5ddfb98aa3",
+                                        "index":  72
+                                    },
+                                    {
+                                        "png_bytes":  416104,
+                                        "sha256":  "581d35269fe2c77748afd9f084f1600a466700fe7baeb7e54b7d2b3976b14e0d",
+                                        "index":  155
+                                    }
+                                ],
+    "recorded_utc":  "2026-10-08T23:00:34.2791050Z",
+    "status":  "restored yogurt CUDA playback passed",
+    "actor_gaussians":  51913
+}

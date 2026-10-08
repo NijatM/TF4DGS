@@ -1812,3 +1812,236 @@ The assistant has performed no commits or pushes.
 - The previous documentation update could not run when automatic approval
   review hit a usage limit; this checkpoint records the completed trials.
 - No staging, commit or push performed. User owns Git publication.
+
+### Textile reconstruction revision checkpoint (2026-10-08, active)
+
+- User rejected the sparse textile result and missing RGB reconstruction.
+  Actual nonrigid RGB Gaussian reconstruction is now the active task.
+- Reviewed original 42.6-second three-camera recordings and failures. Earlier
+  masks include board features; sparse point loss/occlusion is unresolved.
+- Research: 4C4D, TrackerSplat, Dynamic3DGaussians, SAM2, MASt3R, CoTracker3.
+  Local implementation will use existing Windows gsplat rather than replacing
+  the working static/PyTorch installation with untested upstream environments.
+- Official code clones pinned under ignored .local/tools: SAM2
+  0f6515ae853c40420ea8e3dd250f8031bbf03023; CoTracker
+  82e02e8029753ad4ef13cf06be7f4fc5facdda4d; MASt3R
+  f5209afc300cec36239a7ac992263f36847bbba0 with pinned dust3r/croco.
+- scripts/Setup-TextileReconstruction.py prepares official weights and SHA256
+  manifest without upgrading torch2.4.0+cu124/gsplat. Dependencies installed;
+  official model downloads complete. MASt3R is noncommercial research licensed.
+- scripts/Segment-Textile.py implements inspected first-frame prompts and
+  SAM2 propagation with a conservative colored-skin exclusion.
+- Full SAM2 masks:214 times, all3 cameras; nine times visually reviewed,
+  board/hands excluded. outputs/dynamic_textile_001/segmentation_03_video.
+- Dense stereo02:7,425 initial samples. Actual native RGB frame02:36,790GS,
+  visible yarn/ridges. Folded frame03 has holes and is rejected. Dense
+  stereo04_shape_prior adds explicitly inferred neural depth on calibrated
+  rays, anchored/corrected by stereo. Fold frame04 improves to57,260GS,
+  10ksteps, fittingPSNR34.94/35.80/27.28dB andforegroundalpha~.995.
+- CoTracker3 dense_tracking02:700nodes,70/214times>=100 supported; all
+  triangulated support lost after20.587s. Full material identity still rejected.
+- Selected direction: actual multiview RGB Gaussian keyframe sequence. No
+  persistent material-ID/strain claim. Fields compare nearest baseline surface;
+  sparse tracked trails remain partial. Color_balance02 uses corresponding
+  board pixels/reference Fuji; display alignment, not pigment calibration.
+- Nine-time proof completed (621.99s). Real free-orbit fold/upright views passed
+  visual review; actual screenshots06–09. Patch fitting trial05 rejected for
+  weaker RGB detail (158:31.43/30.62/28.67dB vs native35.6/36.0/30.4dB).
+- Active FULL worker PID26828 (verify command before stopping):all2145Hz times,
+  gaussian_sequence_04,6000steps cap/time,all-camera32dB early-stop>=3k,
+  upsample5,offset8mm,depthprior/colorbalance; native full crops. Reuses MASt3R
+  on GPU and trainer process; checkpoints/models/manifest are resumable.
+  Logs/PIDs:.local/workflows/dynamic_setup/textile_reconstruction_02.
+- Real textile renderer8104, own report8103, dedicated Edge CDP8098.
+  current_table02 rejected for off-table plane projection;03 still bakes a
+  moving wrist/watch into texture. Corrected04 excludes nearby skin/watches,
+  uses>=2 unobstructed samples and brighter observed texture:136,474GS.
+  Live8104 renderer and growing sequence use04; screenshot09 verifies cleanup.
+- Journal/screen evidence:documentation/dynamic_textile_001; stages01–05
+  reports plus06–09 genuine live screenshots. NEXT:document RGB/fold/table/
+  patch trials chronologically, monitor full worker to completion, cleanup
+  artifact GS if needed, fields/finite model validation, temporal browser video,
+  reproducible instructions and final Git hygiene. Do not stop with partial
+  training merely to save time. No Git actions. Latest observed12/214 complete.
+- Latest full worker still26828, observed20/214 completed. A separate SH1 RGB
+  trial PID24500 runs frame158 with 6k cap; do not select it automatically.
+  It currently gives similar RGB residuals; compare completed summary/visuals.
+  All current sequence04 models are DC RGB; do not mix appearance bases.
+- Added conservative cleanup and finite/timeline/render validator scripts.
+  Cleanup writes clean_model.npz beside originals; not selected in viewer yet.
+  Neutral-knit chroma pruning is specific to gray cloth, not future paint tests.
+- Player wall-clock scheduling corrected in HTML; current8104 server caches
+  earlier HTML until its next verified task-owned restart. Need final playback
+  check after reload/restart; keep true supported keyframes, no interpolation.
+- SH1 trial complete:158 fitting34.94/35.81/32.61dB, essentially similar to
+  DC native prototype35.30/35.71/32.47. Retain trial; do not change the selected
+  appearance model or mix bases. Both source data and geometry remain inferred.
+- Cleanup trial comparison on12 native camera/time crops: raw33.78dB mean,
+  neutral-chroma-pruned29.48dB (reject); support-pruned33.33dB with a4.28dB
+  loss onDJI266 (reject). Neither selected in live viewer. Original fits retained.
+  Try opacity-only export or retain raw if any real detail is lost; don't blindly
+  prune legitimate dark thread Gaussians. Latest full progress35/214.
+- Preserve all earlier attempts. No Git staging, commit, push or restart.
+
+- Active checkpoint at stage13: full worker26828 is healthy, observed86/214
+  completed. Continue until all214, not merely representative previews.
+- Opacity-only cleanup on12native views changes PSNR by<.001dB, but viewer
+  retains raw fitted models; aggressive color/support cleanup stays rejected.
+- Renderer now own PID11816 (verify its command before stopping),8104.
+  First/recent-reference surface maps supported; wall-clock player is reloaded.
+- New Sample-TextileAppearance.py samples balanced recorded pixels with cloth/
+  skin and approximate local depth visibility. Own watcherPID3084 follows the
+  full worker and writes observed_appearance.npz per completed frame. Gaussian
+  component colors were too noisy for meaningful maps; only the RGB renderer
+  uses those directly now. Gray map points have no visible recorded sample.
+- Genuine browser screenshots10(cleanup journal),11(original field display),
+  12(recorded-pixel field revision),13(stretched RGB). Journal now13stages.
+  Dedicated README has research, current-state limitations and reproduction.
+- Checks:26CPU tests,pip check,source parse,static pins unchanged;83completed
+  models plus16mode/time and2recent-reference renders passed observed-field
+  checks. Validator now also checks standard binary PLY exports; rerun at end.
+- Recording helper for finished textile: Record-TextileGaussianPreview.ps1,
+  records actual browser wall-clock paint frames from8104, iPhone-side elevated
+  +/-45deg arc. Needs full statuscomplete. Intended two clips: RGB and combined
+  maps,1500x1150/H264CRF20. New Validate-TextileGaussianRecordings.py checks
+  clips/times/arc/full decode. Clips not recorded yet.
+- NEXT: monitor full worker, verify all214/appearance watcher completes, finite/
+  PLY/live-render full validation, actual temporal/orbit recordings+compression,
+  final docs/summary/Git hygiene. No stage/commit/push/restart.
+
+- Latest mid-run progress115/214, screenshot14 verifies the newly fitted fold
+  at21.989s beyond failed tracker coverage. Full worker26828 remains healthy.
+  Appearance watcher3084 caught up. Renderer11816 uses recorded pixel maps.
+- Validator with standard PLY checks passed101completed models/16mode renders.
+  Added Summarize-TextileReconstruction.py to publish portable quality evidence
+  only after validation_final.json asserts all214completed andobserved arrays.
+  Selected coordinator defaults now match04/native6k/ups5/depthprior/balance02.
+- Final remaining: all214complete, final validator/summary, actual RGB+combined
+  browser orbit captures, encodeCRF20 and validateclips, completed README/memory
+  and final Git hygiene. Do not stop at the partial result. No Git publication.
+- Windows transient manifest replacement failed at171/214 after completed336;
+  no model loss. Screenshot15 and original traceback/failure JSON preserved.
+  Added bounded atomic replace retries; resumed at338 with same settings.
+  ACTIVE full worker4920; appearance watcher16520. Renderer11816 is unchanged.
+  Logs now full_sequence_resume_01.* andobserved_appearance_resume_01.*.
+  Preserve the original failed logs. Current PID files identify live processes.
+- A legacy Windows text decoder blocked one checkpoint append. Explicit UTF8
+  handling restores the committed memory prefix and retains this task's full
+  checkpoint history; the pre-repair file is backed up in the ignored cache.
+
+
+### Textile reconstruction revision completed (2026-10-08)
+
+- The previous sparse LK/RAFT textile preview had no trained realistic RGB.
+  New independent-time RGB Gaussian fitting is complete for all 214 times,
+  covering 0 to 42.509133 seconds; median interval 0.2002 s, approximately 5 Hz.
+  Native DJI/Fuji/iPhone crop pixels are retained. Selected models remain in
+  outputs/dynamic_textile_001/gaussian_sequence_04/frames/<index>/model.npz,
+  with standard snapshot.ply exports and recorded-pixel appearance samples.
+- All 214 finite models, binary PLYs and observed-appearance arrays passed full
+  validation; 16 real mode/time renders, two recent references and seven invalid
+  query rejections passed. Portable summary: documentation/dynamic_textile_001/
+  reconstruction_summary.json. Median camera fitting PSNR: DJI35.64/Fuji33.23/
+  iPhone32.28 dB; these are optimization-camera residuals, not held-out accuracy.
+- Final current-session table is current_table_05/table.npz: 164,708 Gaussians
+  from all 214 unobstructed mask times, replacing the gaps in context04. No old
+  scene merged and no hidden table pixel fabricated. Earlier contexts and
+  source sequence before the context update remain preserved in ignored storage.
+- Full sequence worker4920 and appearance watcher16520 finished successfully.
+  Original Windows lock failure, retry repair and failed logs remain preserved.
+  Current renderer is task-owned PID13976 at http://127.0.0.1:8104/; verify its
+  command before stopping. It now uses context05 and real fitted RGB. Reopen:
+  conda run --no-capture-output -n tf4dgs-dynamic python scripts/Serve-TextileGaussianPreview.py
+- Selected SuperSplat export: outputs/dynamic_textile_001/supersplat_export_03.
+  Import context/current_table.compressed.ply first, then all rgb_30fps PLYs.
+  Timeline30 fps,1277frames,42.566667s; the timeline holds214 reconstructed states.
+  It is NOT independently reconstructed30Hz motion and has no material IDs.
+  Unique compressed cloth284.41MB plus static context2.68MB; float32 archives
+  retained, no Gaussian-count decimation. Repeated files use NTFS hardlinks;
+  copying may expand the timeline to1.69GB. Original export01/02 trials retained.
+- Verified actual online SuperSplat3.5.2 local-file import, first/fold/lifted/last
+  times and both static/animated layers. No upload or publication performed.
+  Separating table improved five-second data-swap throughput14.16->23.57/s;
+  sustained30swaps/s NOT verified. Compression round-trip: <=0.116mm position,
+  <=0.00196 RGB-channel error; four real nonempty render comparisons64.41-66.29dB.
+  These are file-compression metrics, not geometric accuracy. All214compressed
+  models, float32 archives and1277source-time aliases checked; portable evidence
+  in documentation/dynamic_textile_001/supersplat_export_summary.json.
+- RGB and combined map videos: documentation/dynamic_textile_001/videos/, with
+  README and offline index.html. Final actual browser captures rgb_orbit_02 and
+  combined_orbit_02 are ignored. Final videos H264/1500x1150/30fps/CRF20 total
+  8.250756MB. RGB displays214/214 times; maps89/214 while retaining wall-clock
+  speed. SHA256, timing, full decode, faststart and +/-45degree arc passed.
+  Both final MP4s actually played in the browser without errors. Old context04
+  videos preserved in .local/workflows/dynamic_setup/textile_reconstruction_02/
+  documentation_videos_context04; old point-only capture documentation untouched.
+- Chronological journal: documentation/dynamic_textile_001/index.html, stages
+  01-33 including failed training/cleanup/context, Windows lock, online wrapper
+  targeting, camera-expression and playback-performance attempts. Real browser
+  screenshots and diagnostic renders are distinguished. Opening instructions:
+  documentation/dynamic_textile_001/README.md and SUPERSPLAT.md.
+- Surface maps compare closest earlier reconstructed surfaces (first or recent
+  adjustable time window); RGB maps use approximately visible source pixels,
+  with unknown gray. These are NOT validated material displacement, strain or
+  pigment change. CoTracker trails lose supported material association after
+  occlusion. Motion-blurred/occluded frames214/356 retain spikes/ghost geometry;
+  source comparison and low residual-quality examples are documented explicitly.
+- Existing Torch/gsplat and static installation retained. Research packages,
+  source/model hashes and licenses pinned; captures/models/weights/clones/logs
+  ignored by Git. No restart, Git staging, commit, push or publication performed.
+  Further work: temporal material correspondence, better off-plane calibration,
+  true30Hz independent motion fitting and sustained30Hz browser data swaps.
+
+- Final documentation playback correction: simple8103 HTTP preview did not
+  support reliable video seeking. Preserve its failure evidence; use new
+  loopback-only scripts/Serve-TextileDocumentation.py on8105 for videos/journal.
+  Own documentation processPID9056. Three exact byte-range checks pass, and
+  both clips actually seek to5s/play beyond5s/decode without errors. Reopen:
+  conda run --no-capture-output -n tf4dgs python scripts/Serve-TextileDocumentation.py
+  Video page http://127.0.0.1:8105/videos/. Journal now35strictly chronological
+  stages; original stage IDs retained as provenance after timestamp ordering.
+- Final checks: Python/PowerShell syntax valid,98local documentation links
+  resolved,all full model/export/video validations passed,diff whitespace clean,
+  no ignored data/outputs/tools/logs tracked, no staged files. Static submodule
+  pins remain LichtFeldb4e26dc9 andvcpkg930ecc42. No Git publication performed.
+
+- Final36-stage journal remains chronological. Interactive8104 viewer left on
+  realisticRGB, first time, corrected context05 and elevated free orbit; ready
+  for user review. Seekable documentation8105 also remains available.
+
+### Commit and downloadable baseline preparation (2026-10-08)
+
+- User wants to commit/push this checkpoint themselves before deciding the next
+  dynamic backend. No Git staging, commit, push, release creation or upload by
+  Codex. Current branch main, origin NijatM/TF4DGS; previous HEAD bdad39b.
+- Clarified that independent textile RGB states are a baseline, not the original
+  persistent/continuous deformation objective. Shared deformation, temporal RGB
+  and tracking regularization are the next candidate direction; no new trainer
+  selected, installed or claimed complete. Existing static pins are preserved.
+- Selected models are packaged as GitHub Release assets to avoid Git LFS quota
+  and source-history growth. No change to ignore rules or LFS attributes.
+  Documentation and the two new standard-library helpers belong in Git.
+- Local assets: outputs/release_assets/baseline_2026-10-08/.
+  Textile ZIP 283,093,188 bytes: all 214 unique compressed cloth states, the
+  selected static context05 and export timing manifest. Float32 textile archives
+  stay local. Restore-TextileTimeline.py recreates 1,277 aliases via hardlinks
+  or verified copies, without interpolating or inventing material identities.
+  Yogurt ZIP 25,835,758 bytes: full actor/background NPZ and PLY, selected run06
+  motion/53 supported poses, current-session session/calibration. Its motion
+  metadata path separator is normalized for portability; original files unchanged.
+- Both ZIP CRC and every selected member SHA-256 verified. Total assets
+  308,928,946 bytes; checksums in SHA256SUMS.txt. Tracked portable evidence:
+  documentation/baseline_release/package_summary.json. Upload/restore guide:
+  docs/BASELINE_RELEASE.md; user release notes in documentation/baseline_release/.
+- Models, recordings, environments and packages remain ignored under data/,
+  outputs/ and .local/. No LFS paths are configured in this repository. GitHub
+  Release uploads are a separate optional user command after source push.
+- Fresh extraction check passed with no cross-archive path collisions. Restored
+  all 1,277 textile aliases as hardlinks; repeat run validates without rewriting.
+  Both full-precision yogurt NPZs match the original source bytes. A temporary
+  CUDA viewer on port8106 rendered first/last supported poses from the unpacked
+  files without footage; actor51,913/static498,531/53 poses match. Task-owned
+  validation viewer stopped afterward; existing viewers remain untouched.
+  Evidence: restore_validation.json and yogurt_playback_validation.json in
+  documentation/baseline_release/. First metadata draft retained in ignored
+  outputs/release_assets/baseline_2026-10-08_metadata_draft/.

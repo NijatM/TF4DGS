@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-08T22:10:59.721910+00:00",
+  "clips": [
+    {
+      "filename": "textile_rgb_orbit.mp4",
+      "mode": "rgb",
+      "duration_s": 43.466667,
+      "bytes": 5446646,
+      "source_keyframes_displayed": 214,
+      "source_keyframes_available": 214,
+      "source_first_s": 0,
+      "source_last_s": 42.509133,
+      "complete_decode": "passed",
+      "sha256": "matched",
+      "faststart": true,
+      "source_timing": "matched",
+      "orbit_arc": "verified",
+      "compression": "H.264 CRF20; visually high quality, not mathematical losslessness"
+    },
+    {
+      "filename": "textile_shape_and_appearance.mp4",
+      "mode": "combined",
+      "duration_s": 43.966667,
+      "bytes": 2804110,
+      "source_keyframes_displayed": 89,
+      "source_keyframes_available": 214,
+      "source_first_s": 0,
+      "source_last_s": 42.509133,
+      "complete_decode": "passed",
+      "sha256": "matched",
+      "faststart": true,
+      "source_timing": "matched",
+      "orbit_arc": "verified",
+      "compression": "H.264 CRF20; visually high quality, not mathematical losslessness"
+    }
+  ],
+  "total_bytes": 8250756,
+  "metric_accuracy_verified": false,
+  "scope": "Actual browser recording integrity and displayed time provenance, not independent deformation accuracy."
+}

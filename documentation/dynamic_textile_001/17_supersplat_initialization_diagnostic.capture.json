@@ -1,0 +1,21 @@
+{
+    "captured_utc":  "2026-10-08T21:48:20.0814018Z",
+    "local_files_imported":  0,
+    "method":  "Genuine CDP screenshot of official SuperSplat editor",
+    "state":  {
+                  "url":  "https://superspl.at/editor/",
+                  "title":  "SuperSplat Editor",
+                  "ready":  "complete",
+                  "gpu":  true,
+                  "scene":  false,
+                  "text":  "",
+                  "fileInputs":  0,
+                  "globals":  [
+                                  "captureEvents",
+                                  "releaseEvents",
+                                  "__SUPER_SPLAT_SENTRY_CONFIG__"
+                              ]
+              },
+    "url":  "https://superspl.at/editor/",
+    "published":  false
+}

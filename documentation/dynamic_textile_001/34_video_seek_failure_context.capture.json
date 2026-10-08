@@ -1,0 +1,28 @@
+{
+    "captured_utc":  "2026-10-08T22:24:05.6670159Z",
+    "page_state":  {
+                       "videos":  [
+                                      {
+                                          "file":  "textile_rgb_orbit.mp4",
+                                          "duration_s":  43.466667,
+                                          "width":  1500,
+                                          "height":  1150,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      },
+                                      {
+                                          "file":  "textile_shape_and_appearance.mp4",
+                                          "duration_s":  43.966667,
+                                          "width":  1500,
+                                          "height":  1150,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      }
+                                  ],
+                       "playback_check":  null
+                   },
+    "kind":  "Live local preview browser screenshot",
+    "expression":  "true",
+    "filename":  "34_video_seek_failure_context.png",
+    "url":  "http://127.0.0.1:8103/videos/"
+}

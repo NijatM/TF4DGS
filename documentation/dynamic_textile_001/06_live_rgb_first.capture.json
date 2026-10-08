@@ -1,0 +1,13 @@
+{
+    "captured_utc":  "2026-10-08T15:44:02.8285095Z",
+    "page_state":  {
+                       "model":  "outputs/dynamic_textile_001/gaussian_sequence_04/sequence.json",
+                       "time":  "0.000 s",
+                       "mode":  "rgb",
+                       "trails":  false
+                   },
+    "kind":  "Live local preview browser screenshot",
+    "expression":  "(async()=\u003e{document.getElementById(\"mode\").value=\"rgb\";document.getElementById(\"time\").value=0;await window.tf4dgsUpdate();return true;})()",
+    "filename":  "06_live_rgb_first.png",
+    "url":  "http://127.0.0.1:8104/"
+}
