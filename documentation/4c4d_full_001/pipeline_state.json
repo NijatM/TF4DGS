@@ -1,0 +1,27 @@
+{
+  "dataset": "textile",
+  "attempt": "whole_1280",
+  "edge": 1280,
+  "stop": 60000,
+  "status": "running",
+  "command": [
+    "C:\\Users\\mnijat\\Desktop\\Git\\TF4DGS\\.local\\envs\\4c4d\\Scripts\\python.exe",
+    "scripts/Train-4C4DScene.py",
+    "--config",
+    "configs/4c4d_full_001.json",
+    "--dataset",
+    "textile",
+    "--attempt",
+    "whole_1280",
+    "--edge",
+    "1280",
+    "--variant",
+    "textile_selected",
+    "--preset",
+    "baseline",
+    "--stop",
+    "60000",
+    "--resume"
+  ],
+  "utc": "2026-10-09T18:46:48.470878+00:00"
+}

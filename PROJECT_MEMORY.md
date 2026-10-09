@@ -2124,3 +2124,219 @@ The assistant has performed no commits or pushes.
 - Gallery: http://127.0.0.1:8107/ (task PID 26676); Serve-Demos.py provides seekable
   loopback playback. No source-pin/environment changes, training, restart,
   Git staging, commit, push or upload. The user owns publication.
+
+### Matched continuous-model pilots (2026-10-08 local; journal timestamps UTC)
+
+- User authorized short action tests of both 4DGaussians and 4C4D for yogurt and
+  textile, then required textile hands to be reconstructed. All four 6000-update
+  pilot_01 runs completed. Textile masks include hands and arms with the same
+  foreground priority as cloth; the common first-frame seed was rebuilt before
+  both full textile runs. No old unrelated scene was merged.
+- Fixed source intervals: yogurt native source frames330-419 / PTS11.011000-
+  13.980633s; textile587-676 /19.586233-22.555867s. Native30000/1001fps,
+  90 frames, train local indices modulo6 other than5 / test modulo6=5.
+  Three cameras yield225 training/45 held-out images per run. Pixel-center
+  calibrated crops maxedge1280; iPhone1280x616, Fuji1280x736, DJI1096x1280.
+  Exact inputs/hashes/transformed cameras are documentation/temporal_benchmark_001/
+  pinned_inputs.json and ignored data/temporal_benchmark_001/*/manifest.json.
+- Official sources: .local/research/4DGaussians at843d5ac636c37e4b611242287754f3d4ed150144;
+  .local/research/4C4D ated6a3cb69782c4147151b3898944bc38132bae00. Isolated
+  Conda base .local/envs/temporal-base (Python3.10.22/Torch2.9.1+cu130), child
+  venvs .local/envs/4dgaussians and .local/envs/4c4d prevent incompatible rasterizer
+  extension name collisions. CUDA13.2, MSVC14.44.35207, SDK10.0.26100.0.
+  Existing tf4dgs/static and tf4dgs-dynamic are preserved; no reboot needed.
+- Windows patches: CUDA13 /Zc:preprocessor; tensor-only headers in CUDA translation
+  units avoid PyTorch/NVCC compiled-autograd header collisions; Windows optimization
+  flags; lazy unused pointops imports. Mathematical CUDA kernels unchanged.
+  Source patches, environment recipe/observed freeze and setup commands are tracked
+  candidates. Raw clones, compiled extensions, envs and logs stay ignored.
+- Common shared adapter Train-TemporalBenchmark.py uses official Gaussian model
+  classes/renderers with heterogeneous calibrated cameras. It avoids the upstream
+  square loader and Windows data-loader assumptions. Smaller 4DGS grids,
+  180000-Gaussian cap and first-frame XYZ/RGB initialization are explicit pilot
+  choices; this is not a reproduction of published paper evaluations.
+- Shared initial seeds: yogurt40000 points SHAecdbf2043da88bd9e54b1638c2192fb2d0191f1ab145d83e791dd715755fac4f;
+  textile35338 SHA384213743256162cf878c656593a5babef6fff501fcccd255a96ed7fac7dafb9.
+  Textile bundle196 is exactly source587/19.586233s, not raw source index196.
+  New hand/cloth dense seed has793 accepted stereo anchors and7930 registered
+  inferred neural-prior points before ROI clipping, combined with existing first
+  cloth cloud/current table. No subsequent poses/geometry supplied to training.
+  Yogurt uses canonical actor in first tracked pose/current table, same capture
+  positions confirmed by user. RGB mask transport is inferred2D flow, not motion
+  ground truth. Off-board calibration and one-frame physical sync remain unverified.
+- Optimization checkpoint timings and temporal-holdout scores:
+  yogurt4DGS542.5s/180000/28.19dB/.948SSIM/2.20GiB peak;
+  yogurt4C4D327.2s/179651/32.16dB/.962/1.57GiB;
+  textile4DGS453.2s/88647/22.94dB/.814/1.36GiB;
+  textile4C4D351.4s/180000/24.35dB/.826/1.54GiB.
+  Textile cloth+hand foregroundPSNR21.89/22.85. These are image scores, not
+  independently measured metric geometry. 4C4D is stronger within these pilots;
+  both textile results remain blurred/ghosted, and 4DGS novel-view orbit breaks
+  down severely. Do not label pristine or replace earlier selected demos.
+- Outputs: outputs/temporal_benchmark_001/<method>/<dataset>/pilot_01/checkpoint.pth
+  includes optimizer/RNG; continuous_model.pth includes inference weights/cameras.
+  Model sizes4DGS yogurt54,944,873B/textile33,294,057B;4C4D yogurt115,703,975B/
+  textile115,928,999B. All remain ignored, no LFS. Decoder Render-ContinuousTemporal.py
+  needs the matching child Python and native source/extension, not training footage.
+  All four decoded reference images match saved training render byte-for-byte.
+  Models support arbitrary time queries; not animated-PLY/SuperSplat-compatible.
+  Gaussian motion/lifetimes do not establish material identity or metric strain.
+- Compact evidence includes native29.97fps fixed/orbit/source-comparison clips
+  and directly queried exact30fps orbits,90 frames each. All16 fully decode,
+  presentation cadence error<1us, HTTP206 ranges match local bytes. Each of12
+  browser files passed individual in-view1.1s warm playback with zero drops.
+  Native duration3.003s vs30fps3.000s; encoded cadence is not CUDA throughput proof.
+- Full failed setup/export/capture history is chronological in
+  documentation/temporal_benchmark_001/README.md and journal.json. Failures include
+  MMCV build isolation/pkg_resources, CUDA/MSVC headers, AABB initialization,
+  mask-rate assumption, inactive headed-browser capture, live-panel punctuation,
+  BOM JSON video export, startup drops and offscreen callbacks. Original logs
+  ignored; actual browser screenshots/capture state retained, headless vs visible
+  clearly labeled. Final visible comparison screenshot033_visible_textile_comparison.png.
+- Documentation report/comparison local server loopback8108, PID26092. Restart:
+  tf4dgs Python scripts/Temporal-BenchmarkReport.py --serve; open
+  http://127.0.0.1:8108/comparison.html. Dedicated headed Edge CDP8098 and headless
+  report Edge8099 are task browsers. Earlier8104/8105/8107 services preserved.
+  New report reuses existing byte-range handler; no external content/CDN.
+- Static source pins unchanged: LichtFeldb4e26dc929d23ad8c4cc266e61eb8bf7334ede36;
+  vcpkg930ecc42b512b564571d767f70775d284a6fa307. Git commits/pushes/uploads,
+  staging and repository creation remain exclusively the user's responsibility.
+  No restart, Git mutation, upload or release in this task. Full-duration and
+  high-quality textile deformation analysis still require further work.
+
+
+### Whole-scene 4C4D refinement in progress (2026-10-09)
+
+- User approved all longer-training/parameter/resolution recommendations and requires
+  subject, hands, board, table and visible surroundings in one joint scene. No
+  separate/frozen base or previous actor/table is imported. New experiment
+  configs/4c4d_scene_001.json; data/outputs/documentation under 4c4d_scene_001.
+- Original reference intervals preserved: yogurt source330-419 /11.011-13.980633s,
+  textile587-676 /19.586233-22.555867s. Full frames, not the earlier crops.
+- Fresh initial120000-point clouds from first whole frames, calibrated SIFT/MASt3R
+  stereo plus explicitly registered inferred depth. Yogurt10277 stereo/109723 prior,
+  textile3289 stereo/116711 prior after filtering/sampling. No independent metric
+  accuracy is claimed. No previous actor/table or neural later-frame geometry supplied.
+- Camera sync +/-2-frame audit completed on training timestamps32/62. Textile Fuji
+  favors0; DJI is inconsistent. Yogurt Fuji favors -1/-2, but this correspondence
+  diagnostic alone does not certify physical timing; original timestamps retained.
+  Ordinary SIFT matches are sparse/repeated and unreliable for off-board calibration.
+- Planned30k horizon with10k/12k/20k/30k checkpoints,450k cap/growth until15k.
+  Three matched presets: baseline, slower time/rotation, gentler opacity decay.
+  Branches start from identical10k checkpoint/RNG and compare at12k; selected run
+  continues to30k. Then1920/3840 full-frame4000-update stages,600k cap, lower rates.
+  Native memory fallback2560 recorded if needed. Temporal holdouts used for
+  selection become validation, not an independent final test. All source/model files
+  remain ignored and existing pilot/demos/static tools preserved.
+- New report loopback8109 PID33932: Temporal-BenchmarkReport.py --docs
+  documentation/4c4d_scene_001 --port8109 --serve (arguments separated in commands).
+  Existing8108 comparison/8104/8105/8107 preserved. New report visible in dedicated
+  Edge8098; headless capture8099. First preparation screenshots saved.
+- Scripts: Prepare-4C4DScene.py, Initialize-4C4DScene.py, Audit-4C4DSceneSync.py,
+  Train-4C4DScene.py. Full training/resolution stages not completed yet.
+  User alone handles staging, commits, pushes and uploads. No reboot required.
+
+- Progress: textile baseline_01 completed12000 updates (30k schedule, full
+  frames),450000 Gaussians,23.5682dB whole-frame/22.6943dB motion-priority
+  validation,SSIM.833818,peak3.89153GiB. Its10000 checkpoint scores24.0060/
+  22.7743dB and is immutable for matched branches. The12000 result did not
+  consistently improve; retain all milestones and select by actual evidence.
+  Yogurt baseline is now training to12000 in the same sequential job.
+- Dedicated visible checkpoint gallery: http://127.0.0.1:8109/comparison.html.
+  Build-4C4DSceneReport.py collects actual checkpoints. Guide:
+  docs/4C4D_WHOLE_SCENE.md. Tuning runner: Run-4C4DSceneTuning.ps1 (matched
+  baseline10000 parent,2k continuation per alternative preset). Viewer8110
+  script exists but selected registry is not created and it is not running yet.
+  Native1920/3840 inputs are complete. Long continuations/refinement remain
+  outstanding; do not report final models ready.
+- Future training invocations record10k/20k checkpoints/screenshots themselves;
+  wrapper records each stop or failure. First textile process preceded this
+  addition, so its10k stage was documented manually. An initially mistyped
+  report score was corrected from saved metrics; the original screenshot and
+  corrected screenshot remain labeled in the journal.
+
+- Matched tuning finished: textile baseline23.568/22.694dB,slow22.947/22.581,
+  gentle23.662/22.680,extra fast_time23.162/22.219 (whole/motion). Baseline
+  selected; all textile views still streaked. Yogurt baseline30.318/26.694,
+  slow30.697/27.678,gentle31.179/26.865; slow selected for moving-object quality.
+  Exact choices/candidate metric hashes in documentation/4c4d_scene_001/selection.json.
+  Both selected runs now resume to30000 in exec session23945 via
+  scripts/Continue-4C4DScene.ps1, sequential textile then yogurt. At this update
+  textile is approximately14000. All final resolution stages remain pending.
+- Resolution checkpoints2000/4000 and CPU image cache5120MiB added. Measured
+  workstation RAM31.7GiB with15.67GiB free; cache is bounded by actual image
+  bytes and270 images. Uses the same pixels; no added dependency. No model
+  trajectory change from the cache. Earlier project GPU preview13976 on8104
+  was positively identified and paused; this freed approximately367MiB.
+  Restore with tf4dgs-dynamic Python scripts/Serve-TextileGaussianPreview.py
+  only when needed. CPU docs8103/8105/report8108/demos8107 remain running.
+- Inference export tool now accepts --crf (default17; new final clips planned15)
+  and explicitly encodes BT709 frame/container tags. Two-frame preflight passed;
+  initial missing transfer/primaries tags were corrected and documented. Exact
+  30fps/native4K final video generation and continuous-viewer8110 checks are
+  still outstanding. Validate-4C4DSceneEvidence.py will check real final files.
+
+## 2026-10-09 — confirmed recipes and full-recording training started
+
+- This entry supersedes the earlier statement that session23945 is running.
+  It failed at update20500 on Windows replacement of browser-read
+  live_progress.json. The immutable20k textile checkpoint remains safe:
+  whole/motion PSNR25.95274455/24.04601364dB. Short30k continuations are closed;
+  yogurt30k never started. Failure and closing-stage screenshots are retained.
+  Shared atomic JSON writes now use unique temp names and bounded retries.
+- User authorized finishing short experiments, testing5–10 hypotheses and
+  starting full training; explicitly reaffirmed full training on2026-10-09.
+  Eight hypotheses, nine screening trials, a900k follow-up and eight45-image
+  confirmations completed without a training failure. A seed-time SIFT pair
+  with fewer than8 matches failed; its log/screenshots are recorded. The
+  initializer now records insufficient SIFT support and continues with
+  calibrated MASt3R. All previous experiments and static tools are preserved.
+- Exact evidence/configuration: configs/4c4d_hypotheses_001.json and
+  documentation/4c4d_hypotheses_001/{HYPOTHESES.md,RESULTS.md,selection.json,
+  comparison.html,journal.json}. Each trial starts at the same immutable10k
+  whole-scene checkpoint/RNG and runs600updates. Screen uses9validation
+  images; confirmations use45. Do not compare scores across these scopes.
+- Textile winner: point_capacity,600000Gaussians,baseline motion/decay rates.
+  Confirmation whole/motion25.48057098/23.58763627dB versus control
+  23.60640466/22.77447014(+1.8742/+0.8132dB),SSIM.86276371. Combination
+  did not beat capacity alone;900k was worse. Yogurt winner: control450000,
+  slow_motion preset,timeLRfactor.5/rotation.7,whole/motion31.13026869/
+  27.15968030dB. Extra loss/SH/seed changes are not carried into full training.
+  Textile streaks/novel-view errors remain; no pristine result is claimed.
+- Full input probe: yogurt467frames/camera,15.582233s; textile1277frames/
+  camera,42.609233s. All6streams30000/1001fps. Common source index intervals
+  0–466/0–1276. Full frames at1280/1920/native3840 are completely extracted,
+  hashed and calibrated under ignored data/4c4d_full_001. DJI native1536x2304;
+  Fuji/iPhone3840x2160. Original videos and Premiere synchronization unchanged.
+- Selected reproducible config: configs/4c4d_full_001.json. Fresh single
+  whole-scene SIFT/MASt3R/inferred-depth clouds from training source330yogurt /
+  588textile,120kpoints each,uniform initial temporal centers. Physical sigma
+  retained from3s trial (1.328s); temporal-centerLR scaled by3s/full span.
+  All primitives/visible surroundings/hands stay jointly trainable. No old
+  model, separate base or frozen background is merged. Multi-time injection
+  was rejected; optional experimental code is not the selected recipe.
+- Both full models completed100-update finite-forward/backward smoke checks,
+  optimizer/RNG checkpoints and inference packets. Projection max errors
+  textile DJI.000134/Fuji.004303/iPhone.000151px; yogurt.000213/.002290/.000138px.
+  These test matrix consistency, not independent physical calibration accuracy.
+  Training-image counts3195textile/1170yogurt; temporal validation withheld.
+- Long worker STARTED2026-10-09T18:46:44.7383019Z,PID33372:
+  .local/envs/temporal-base/python.exe scripts/Run-4C4DFullTraining.py --stage train.
+  Hidden detached process, sequential textile then yogurt,60000updates each
+  at1280, checkpoints every1000, major scored/evidence milestones. Then8000
+  updates1920,8000native3840(with actualOOM fallback2560),4000all-frame
+  production fit per model. Final fitted scores are not held-out validation.
+  Process metadata ignored .local/workflows/4c4d_full_worker.json; parent logs
+  .local/workflows/4c4d_full_worker.{out,err}.log; child logs in4c4d_full_001/.
+- Active report server PID34640,port8109,documentation/4c4d_full_001.
+  Dedicated EdgeCDP8098visible/8099headless records chronological stage shots.
+  Live status/pipeline_state.json/journal.json are in that folder. This worker
+  runs independently of the chat. Check actual PID/command/current JSON/logs
+  before resuming; never launch another GPU worker against its output directory.
+- Recovery if worker is absent: run scripts/Run-4C4DFullTraining.py --stage train
+  using temporal-basePython from actual repo TF4DGS. Completed stages skip;
+  interrupted stages restore checkpoint optimizer/RNG. No Windows restart.
+  Final model registry and interactive8110launch remain pending; guide
+  docs/4C4D_FULL_TRAINING.md explains stages and quality-review limits.
+- No Git files were staged, committed or pushed. Data/models/cache/envs/logs
+  remain ignored; useful configs/scripts/documentation stay available to commit.

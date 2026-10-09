@@ -1,0 +1,10 @@
+{
+    "captured_utc":  "2026-10-09T05:06:21.8414165Z",
+    "page_state":  {
+                       "stage":  26
+                   },
+    "kind":  "Headless local report browser screenshot",
+    "expression":  "true",
+    "filename":  "027_encoder_preflight.png",
+    "url":  "http://127.0.0.1:8109/"
+}

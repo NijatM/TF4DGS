@@ -1,0 +1,40 @@
+{
+    "captured_utc":  "2026-10-09T03:30:41.2638584Z",
+    "page_state":  {
+                       "videos":  [
+                                      {
+                                          "file":  "4dgaussians_textile_pilot_01_rgb_orbit_30fps.mp4",
+                                          "duration_s":  3,
+                                          "width":  1280,
+                                          "height":  616,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      },
+                                      {
+                                          "file":  "4c4d_textile_pilot_01_rgb_orbit_30fps.mp4",
+                                          "duration_s":  3,
+                                          "width":  1280,
+                                          "height":  616,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      }
+                                  ],
+                       "playback_check":  null,
+                       "controls_check":  {
+                                              "pair_play_times":  [
+                                                                      1.606079,
+                                                                      1.605967
+                                                                  ],
+                                              "pair_scrub_times":  [
+                                                                       1.5,
+                                                                       1.5
+                                                                   ],
+                                              "pause":  true,
+                                              "reset":  true
+                                          }
+                   },
+    "kind":  "Headless local report browser screenshot",
+    "expression":  "(()=\u003e{if(!window.tf4dgsControlsCheck)throw Error(\"Expected controls check state missing\");return true;})()",
+    "filename":  "035_ui_controls_verified.png",
+    "url":  "http://127.0.0.1:8108/comparison.html"
+}

@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "frame": 18,
+      "source_frame": 348,
+      "points": 15000,
+      "motion_priority_points": 7500,
+      "sha256": "91c2ec4cc10134221052aaad5838cd24a1e2eba3376c05b99316a0674b82ee87"
+    },
+    {
+      "frame": 42,
+      "source_frame": 372,
+      "points": 15000,
+      "motion_priority_points": 7500,
+      "sha256": "edde632ce611c85d9ea568bee2d5347b3ee4a7c6d3d61aa74c9eb19a8ce40fcc"
+    },
+    {
+      "frame": 72,
+      "source_frame": 402,
+      "points": 15000,
+      "motion_priority_points": 7500,
+      "sha256": "36e19a724548e79c55d6de13708185b37d7cad7de4214ac4d89ea15ebb65bdf6"
+    }
+  ],
+  "points": 45000,
+  "initial_points_sha256": "dd5dfe18b56f99a12e3366b897555dc85da2f797df5c12f0de15dcd98d126f7a",
+  "scope": "One timestamped cloud to inject into the joint trainable model. Source timestamps are training-only. No pretrained base or old scene. Motion weighting also seeds the rest of the room."
+}

@@ -1,0 +1,28 @@
+{
+    "captured_utc":  "2026-10-09T03:24:42.8619486Z",
+    "page_state":  {
+                       "videos":  [
+                                      {
+                                          "file":  "4dgaussians_textile_pilot_01_rgb_fixed.mp4",
+                                          "duration_s":  3.003,
+                                          "width":  1280,
+                                          "height":  616,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      },
+                                      {
+                                          "file":  "4c4d_textile_pilot_01_rgb_fixed.mp4",
+                                          "duration_s":  3.003,
+                                          "width":  1280,
+                                          "height":  616,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      }
+                                  ],
+                       "playback_check":  null
+                   },
+    "kind":  "Live local preview browser screenshot",
+    "expression":  "(async()=\u003e{document.getElementById(\"dataset\").value=\"textile\";document.getElementById(\"mode\").value=\"fixed\";await window.tf4dgsLoadComparison();await window.tf4dgsSeekComparison(1.57);window.scrollTo(0,0);return true;})()",
+    "filename":  "033_visible_textile_comparison.png",
+    "url":  "http://127.0.0.1:8108/comparison.html"
+}

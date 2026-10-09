@@ -1,0 +1,12 @@
+{
+  "step": 1,
+  "total": 25,
+  "stage": "coarse",
+  "loss": 0.397630512714386,
+  "point_count": 40000,
+  "elapsed_s": 0.6973056999995606,
+  "peak_cuda_allocated_gib": 0.28160524368286133,
+  "selected_camera": "fuji",
+  "selected_source_frame": 394,
+  "status": "training"
+}

@@ -1,0 +1,61 @@
+{
+  "model": "outputs/4c4d_scene_001/textile/baseline_01/continuous_model.pth",
+  "model_sha256": "2c107093c0429916d81cafc15ea0ea5e9380416a668ffd0abf1e4f0b9bc621ea",
+  "dataset": "textile",
+  "step": 20000,
+  "edge": 1280,
+  "gaussians": 450000,
+  "sample_seed": 42,
+  "sampled_gaussians": 20000,
+  "official_rotation_function": "utils.general_utils.build_rotation_4d",
+  "source_commit": "ed6a3cb69782c4147151b3898944bc38132bae00",
+  "source_frame_duration_s": 0.03336666666666667,
+  "groups": {
+    "all_sampled": {
+      "samples": 20000,
+      "temporal_sigma_s_p10_p50_p90": [
+        0.010851133521646262,
+        0.042525000870227814,
+        0.2573986798524858
+      ],
+      "model_speed_m_s_p10_p50_p90": [
+        0.008402912132441999,
+        0.044303933158516884,
+        0.21849881857633607
+      ],
+      "fraction_sigma_below_source_frame_duration": 0.39125,
+      "fraction_sigma_above_0p25s": 0.1017
+    },
+    "workspace_opaque": {
+      "samples": 16265,
+      "temporal_sigma_s_p10_p50_p90": [
+        0.011527864821255207,
+        0.040731124579906464,
+        0.14328031539916994
+      ],
+      "model_speed_m_s_p10_p50_p90": [
+        0.010519478470087051,
+        0.04544708877801895,
+        0.18853037357330327
+      ],
+      "fraction_sigma_below_source_frame_duration": 0.40258223178604363,
+      "fraction_sigma_above_0p25s": 0.05779280664002459
+    },
+    "workspace_opaque_model_speed_above_20mm_s": {
+      "samples": 12752,
+      "temporal_sigma_s_p10_p50_p90": [
+        0.009989791922271252,
+        0.03599162399768829,
+        0.10265354737639425
+      ],
+      "model_speed_m_s_p10_p50_p90": [
+        0.02619200963526964,
+        0.05953490175306797,
+        0.22821633815765377
+      ],
+      "fraction_sigma_below_source_frame_duration": 0.46055520702634883,
+      "fraction_sigma_above_0p25s": 0.02987766624843162
+    }
+  },
+  "interpretation": "Temporal sigma is not a hard lifetime. The 0.05 marginal gate reaches about +/-2.45 sigma; visibility/opacity/occlusion also matter. Model speed comes from conditional 4D Gaussian means, not validated physical material motion. Broad support may struggle with nonlinear folds; narrow support may leave temporal interpolation gaps. These distributions alone do not prove either cause."
+}

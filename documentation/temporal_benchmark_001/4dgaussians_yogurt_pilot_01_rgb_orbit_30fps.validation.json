@@ -1,0 +1,8 @@
+{
+  "reference_image": "4dgaussians_yogurt_pilot_01_iphone_heldout.png",
+  "normalized_time": 0.5280898876404494,
+  "maximum_channel_error_8bit": 0,
+  "mean_channel_error_8bit": 0.0,
+  "matching_fraction": 1.0,
+  "independent_decoder": true
+}

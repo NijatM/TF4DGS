@@ -1,0 +1,39 @@
+{
+  "dataset": "textile",
+  "attempt": "confirm_control",
+  "step": 10600,
+  "edge": 1280,
+  "preset": "baseline",
+  "variant": "control",
+  "point_count": 450000,
+  "elapsed_s": 932.6190812999994,
+  "run_elapsed_s": 60.575583600002574,
+  "evaluation_image_count": 45,
+  "peak_cuda_allocated_gib": 1.923314094543457,
+  "validation_psnr_db": 23.60640466478136,
+  "motion_region_psnr_db": 22.774470138549805,
+  "validation_ssim_at_1280": 0.83714077340232,
+  "validation_psnr_common_1280": 23.60640466478136,
+  "motion_region_psnr_common_1280": 22.774470138549805,
+  "per_camera": {
+    "dji": {
+      "psnr_db": 23.2900208791097,
+      "motion_region_psnr_db": 22.506435775756835,
+      "ssim_at_1280": 0.8258810480435689
+    },
+    "fuji": {
+      "psnr_db": 25.576561737060548,
+      "motion_region_psnr_db": 25.117847442626953,
+      "ssim_at_1280": 0.8717112263043721
+    },
+    "iphone": {
+      "psnr_db": 21.952631378173827,
+      "motion_region_psnr_db": 20.699127197265625,
+      "ssim_at_1280": 0.813830045859019
+    }
+  },
+  "evaluation_role": "validation",
+  "fit_all_frames": false,
+  "scope": "Full frames and train-derived motion region. Holdouts used for parameter selection are validation, not an independent final test.",
+  "scene_policy": "Full frames, all pixels supervised, one jointly optimized temporal model; no separate or frozen background."
+}

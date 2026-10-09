@@ -1,0 +1,29 @@
+{
+  "method": "4dgaussians",
+  "dataset": "yogurt",
+  "attempt": "smoke_04",
+  "updates": 625,
+  "point_count": 43498,
+  "elapsed_s": 34.80436150000605,
+  "peak_cuda_allocated_gib": 0.7681331634521484,
+  "heldout_psnr_db": 18.090596792432997,
+  "heldout_ssim": 0.7957581692271762,
+  "per_camera": {
+    "dji": {
+      "psnr_db": 18.45518620808919,
+      "ssim": 0.7922181169191996
+    },
+    "fuji": {
+      "psnr_db": 17.408323605855305,
+      "ssim": 0.7894115209579468
+    },
+    "iphone": {
+      "psnr_db": 18.40828056335449,
+      "ssim": 0.8056448698043823
+    }
+  },
+  "scope": "Full cropped-image held-out timestamps; not independent novel-view geometry accuracy.",
+  "step": 625,
+  "total": 625,
+  "status": "complete"
+}

@@ -1,0 +1,14 @@
+{
+  "method": "4c4d",
+  "dataset": "textile",
+  "attempt": "whole_1280",
+  "step": 32000,
+  "total": 60000,
+  "loss": 0.08727034948766231,
+  "point_count": 599996,
+  "elapsed_s": 14671.242329299974,
+  "peak_cuda_allocated_gib": 14.810878276824951,
+  "status": "training",
+  "edge": 1280,
+  "preview": "textile_whole_1280_live_preview.png"
+}

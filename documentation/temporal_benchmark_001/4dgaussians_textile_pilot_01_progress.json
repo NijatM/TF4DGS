@@ -1,0 +1,30 @@
+{
+  "method": "4dgaussians",
+  "dataset": "textile",
+  "attempt": "pilot_01",
+  "updates": 6000,
+  "point_count": 88647,
+  "elapsed_s": 453.16380200001004,
+  "peak_cuda_allocated_gib": 1.362393856048584,
+  "heldout_psnr_db": 22.944026904635958,
+  "heldout_ssim": 0.8141273101170857,
+  "per_camera": {
+    "dji": {
+      "psnr_db": 22.309215037027993,
+      "ssim": 0.8022608955701193
+    },
+    "fuji": {
+      "psnr_db": 25.741350173950195,
+      "ssim": 0.8769236087799073
+    },
+    "iphone": {
+      "psnr_db": 20.781515502929686,
+      "ssim": 0.7631974260012309
+    }
+  },
+  "scope": "Full cropped-image held-out timestamps; not independent novel-view geometry accuracy.",
+  "heldout_foreground_psnr_db": 21.885271072387695,
+  "step": 6000,
+  "total": 6000,
+  "status": "complete"
+}

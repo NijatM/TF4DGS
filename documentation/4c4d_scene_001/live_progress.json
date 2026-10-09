@@ -1,0 +1,15 @@
+{
+  "method": "4c4d",
+  "dataset": "textile",
+  "attempt": "baseline_01",
+  "step": 20500,
+  "total": 30000,
+  "loss": 0.03474552741274237,
+  "point_count": 450000,
+  "elapsed_s": 1726.9096799000108,
+  "peak_cuda_allocated_gib": 2.8111867904663086,
+  "status": "closed after Windows status-file write failure",
+  "edge": 1280,
+  "preview": "textile_baseline_01_live_preview.png",
+  "last_saved_checkpoint_step": 20000
+}

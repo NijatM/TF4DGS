@@ -1,0 +1,24 @@
+{
+  "textile": {
+    "variant": "point_capacity",
+    "validation_psnr_common_1280": 25.480570983886718,
+    "motion_region_psnr_common_1280": 23.587636269463435,
+    "confirmation_images": 45,
+    "parameters": {
+      "max_points": 600000
+    },
+    "preset": "baseline",
+    "selection_scope": "Single-seed short-clip screening plus all-temporal-validation confirmation. Full-duration convergence is not yet measured."
+  },
+  "yogurt": {
+    "variant": "control",
+    "validation_psnr_common_1280": 31.13026869032118,
+    "motion_region_psnr_common_1280": 27.159680302937826,
+    "confirmation_images": 45,
+    "parameters": {
+      "max_points": 450000
+    },
+    "preset": "slow_motion",
+    "selection_scope": "Single-seed short-clip screening plus all-temporal-validation confirmation. Full-duration convergence is not yet measured."
+  }
+}

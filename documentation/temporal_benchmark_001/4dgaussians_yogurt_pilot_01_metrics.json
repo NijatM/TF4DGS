@@ -1,0 +1,26 @@
+{
+  "method": "4dgaussians",
+  "dataset": "yogurt",
+  "attempt": "pilot_01",
+  "updates": 6000,
+  "point_count": 180000,
+  "elapsed_s": 542.4751757000049,
+  "peak_cuda_allocated_gib": 2.198117256164551,
+  "heldout_psnr_db": 28.192842695448135,
+  "heldout_ssim": 0.9481653663847182,
+  "per_camera": {
+    "dji": {
+      "psnr_db": 28.78609987894694,
+      "ssim": 0.9532558639844259
+    },
+    "fuji": {
+      "psnr_db": 28.331231307983398,
+      "ssim": 0.9422809958457947
+    },
+    "iphone": {
+      "psnr_db": 27.461196899414062,
+      "ssim": 0.9489592393239339
+    }
+  },
+  "scope": "Full cropped-image held-out timestamps; not independent novel-view geometry accuracy."
+}

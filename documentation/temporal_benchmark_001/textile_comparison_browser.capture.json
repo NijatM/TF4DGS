@@ -1,0 +1,125 @@
+{
+    "captured_utc":  "2026-10-09T03:23:41.6066538Z",
+    "page_state":  {
+                       "videos":  [
+                                      {
+                                          "file":  "4dgaussians_textile_pilot_01_rgb_fixed.mp4",
+                                          "duration_s":  3.003,
+                                          "width":  1280,
+                                          "height":  616,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      },
+                                      {
+                                          "file":  "4c4d_textile_pilot_01_rgb_fixed.mp4",
+                                          "duration_s":  3.003,
+                                          "width":  1280,
+                                          "height":  616,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      }
+                                  ],
+                       "playback_check":  [
+                                              {
+                                                  "dataset":  "textile",
+                                                  "mode":  "fixed",
+                                                  "method":  "4dgaussians",
+                                                  "file":  "4dgaussians_textile_pilot_01_rgb_fixed.mp4",
+                                                  "width":  1280,
+                                                  "height":  616,
+                                                  "duration_s":  3.003,
+                                                  "played_from_s":  0.964642,
+                                                  "played_to_s":  2.078343,
+                                                  "presented_callbacks":  32,
+                                                  "decoded_frames":  33,
+                                                  "dropped_frames":  0,
+                                                  "document_hidden":  false,
+                                                  "error":  null
+                                              },
+                                              {
+                                                  "dataset":  "textile",
+                                                  "mode":  "fixed",
+                                                  "method":  "4c4d",
+                                                  "file":  "4c4d_textile_pilot_01_rgb_fixed.mp4",
+                                                  "width":  1280,
+                                                  "height":  616,
+                                                  "duration_s":  3.003,
+                                                  "played_from_s":  0.962447,
+                                                  "played_to_s":  2.068927,
+                                                  "presented_callbacks":  33,
+                                                  "decoded_frames":  34,
+                                                  "dropped_frames":  0,
+                                                  "document_hidden":  false,
+                                                  "error":  null
+                                              },
+                                              {
+                                                  "dataset":  "textile",
+                                                  "mode":  "comparison",
+                                                  "method":  "4dgaussians",
+                                                  "file":  "4dgaussians_textile_pilot_01_source_comparison.mp4",
+                                                  "width":  2560,
+                                                  "height":  656,
+                                                  "duration_s":  3.003,
+                                                  "played_from_s":  0.951055,
+                                                  "played_to_s":  2.060781,
+                                                  "presented_callbacks":  33,
+                                                  "decoded_frames":  33,
+                                                  "dropped_frames":  0,
+                                                  "document_hidden":  false,
+                                                  "error":  null
+                                              },
+                                              {
+                                                  "dataset":  "textile",
+                                                  "mode":  "comparison",
+                                                  "method":  "4c4d",
+                                                  "file":  "4c4d_textile_pilot_01_source_comparison.mp4",
+                                                  "width":  2560,
+                                                  "height":  656,
+                                                  "duration_s":  3.003,
+                                                  "played_from_s":  0.958519,
+                                                  "played_to_s":  2.065445,
+                                                  "presented_callbacks":  33,
+                                                  "decoded_frames":  33,
+                                                  "dropped_frames":  0,
+                                                  "document_hidden":  false,
+                                                  "error":  null
+                                              },
+                                              {
+                                                  "dataset":  "textile",
+                                                  "mode":  "orbit30",
+                                                  "method":  "4dgaussians",
+                                                  "file":  "4dgaussians_textile_pilot_01_rgb_orbit_30fps.mp4",
+                                                  "width":  1280,
+                                                  "height":  616,
+                                                  "duration_s":  3,
+                                                  "played_from_s":  0.965138,
+                                                  "played_to_s":  2.067726,
+                                                  "presented_callbacks":  33,
+                                                  "decoded_frames":  33,
+                                                  "dropped_frames":  0,
+                                                  "document_hidden":  false,
+                                                  "error":  null
+                                              },
+                                              {
+                                                  "dataset":  "textile",
+                                                  "mode":  "orbit30",
+                                                  "method":  "4c4d",
+                                                  "file":  "4c4d_textile_pilot_01_rgb_orbit_30fps.mp4",
+                                                  "width":  1280,
+                                                  "height":  616,
+                                                  "duration_s":  3,
+                                                  "played_from_s":  0.952851,
+                                                  "played_to_s":  2.054297,
+                                                  "presented_callbacks":  33,
+                                                  "decoded_frames":  33,
+                                                  "dropped_frames":  0,
+                                                  "document_hidden":  false,
+                                                  "error":  null
+                                              }
+                                          ]
+                   },
+    "kind":  "Headless local report browser screenshot",
+    "expression":  "(async()=\u003e{\n const dataset=document.getElementById(\u0027dataset\u0027),mode=document.getElementById(\u0027mode\u0027);\n dataset.value=\u0027textile\u0027;const results=[];\n for(const selected of [\u0027fixed\u0027,\u0027comparison\u0027,\u0027orbit30\u0027]){\n  mode.value=selected;await window.tf4dgsLoadComparison();\n  const videos=[...document.querySelectorAll(\u0027video\u0027)];\n  for(let i=0;i\u003cvideos.length;i++){\n   const v=videos[i];videos.forEach(other=\u003eother.pause());\n   await window.tf4dgsSeekComparison(.7);v.scrollIntoView({block:\u0027center\u0027});\n   await v.play();await new Promise(r=\u003esetTimeout(r,250));\n   const start={time:v.currentTime,quality:v.getVideoPlaybackQuality()};let presented=0,callback;\n   const paint=()=\u003e{presented++;callback=v.requestVideoFrameCallback(paint);};callback=v.requestVideoFrameCallback(paint);\n   await new Promise(r=\u003esetTimeout(r,1100));v.pause();v.cancelVideoFrameCallback(callback);\n   const quality=v.getVideoPlaybackQuality();\n   results.push({dataset:dataset.value,mode:selected,method:i===0?\u00274dgaussians\u0027:\u00274c4d\u0027,\n    file:v.currentSrc.split(\u0027/\u0027).at(-1),width:v.videoWidth,height:v.videoHeight,duration_s:v.duration,\n    played_from_s:start.time,played_to_s:v.currentTime,presented_callbacks:presented,\n    decoded_frames:quality.totalVideoFrames-start.quality.totalVideoFrames,\n    dropped_frames:quality.droppedVideoFrames-start.quality.droppedVideoFrames,\n    document_hidden:document.hidden,error:v.error?v.error.message:null});\n  }\n }\n window.tf4dgsVideoPlaybackCheck=results;\n if(results.some(r=\u003er.error||r.document_hidden||r.played_to_s-r.played_from_s\u003c.8||r.presented_callbacks\u003c25||r.dropped_frames\u003e0))throw Error(JSON.stringify(results));\n mode.value=\u0027fixed\u0027;await window.tf4dgsLoadComparison();await window.tf4dgsSeekComparison(1.57);window.scrollTo(0,0);\n return results;\n})()",
+    "filename":  "textile_comparison_browser.png",
+    "url":  "http://127.0.0.1:8108/comparison.html"
+}

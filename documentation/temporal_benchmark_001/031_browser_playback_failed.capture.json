@@ -1,0 +1,125 @@
+{
+    "captured_utc":  "2026-10-09T03:22:07.9100440Z",
+    "page_state":  {
+                       "videos":  [
+                                      {
+                                          "file":  "4dgaussians_yogurt_pilot_01_rgb_orbit_30fps.mp4",
+                                          "duration_s":  3,
+                                          "width":  1280,
+                                          "height":  616,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      },
+                                      {
+                                          "file":  "4c4d_yogurt_pilot_01_rgb_orbit_30fps.mp4",
+                                          "duration_s":  3,
+                                          "width":  1280,
+                                          "height":  616,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      }
+                                  ],
+                       "playback_check":  [
+                                              {
+                                                  "dataset":  "yogurt",
+                                                  "mode":  "fixed",
+                                                  "method":  "4dgaussians",
+                                                  "file":  "4dgaussians_yogurt_pilot_01_rgb_fixed.mp4",
+                                                  "width":  1280,
+                                                  "height":  616,
+                                                  "duration_s":  3.003,
+                                                  "played_from_s":  0.7,
+                                                  "played_to_s":  1.801843,
+                                                  "presented_callbacks":  29,
+                                                  "decoded_frames":  35,
+                                                  "dropped_frames":  0,
+                                                  "document_hidden":  false,
+                                                  "error":  null
+                                              },
+                                              {
+                                                  "dataset":  "yogurt",
+                                                  "mode":  "fixed",
+                                                  "method":  "4c4d",
+                                                  "file":  "4c4d_yogurt_pilot_01_rgb_fixed.mp4",
+                                                  "width":  1280,
+                                                  "height":  616,
+                                                  "duration_s":  3.003,
+                                                  "played_from_s":  0.7,
+                                                  "played_to_s":  1.80136,
+                                                  "presented_callbacks":  33,
+                                                  "decoded_frames":  34,
+                                                  "dropped_frames":  0,
+                                                  "document_hidden":  false,
+                                                  "error":  null
+                                              },
+                                              {
+                                                  "dataset":  "yogurt",
+                                                  "mode":  "comparison",
+                                                  "method":  "4dgaussians",
+                                                  "file":  "4dgaussians_yogurt_pilot_01_source_comparison.mp4",
+                                                  "width":  2560,
+                                                  "height":  656,
+                                                  "duration_s":  3.003,
+                                                  "played_from_s":  0.7,
+                                                  "played_to_s":  1.810571,
+                                                  "presented_callbacks":  31,
+                                                  "decoded_frames":  35,
+                                                  "dropped_frames":  2,
+                                                  "document_hidden":  false,
+                                                  "error":  null
+                                              },
+                                              {
+                                                  "dataset":  "yogurt",
+                                                  "mode":  "comparison",
+                                                  "method":  "4c4d",
+                                                  "file":  "4c4d_yogurt_pilot_01_source_comparison.mp4",
+                                                  "width":  2560,
+                                                  "height":  656,
+                                                  "duration_s":  3.003,
+                                                  "played_from_s":  0.7,
+                                                  "played_to_s":  1.810657,
+                                                  "presented_callbacks":  32,
+                                                  "decoded_frames":  35,
+                                                  "dropped_frames":  2,
+                                                  "document_hidden":  false,
+                                                  "error":  null
+                                              },
+                                              {
+                                                  "dataset":  "yogurt",
+                                                  "mode":  "orbit30",
+                                                  "method":  "4dgaussians",
+                                                  "file":  "4dgaussians_yogurt_pilot_01_rgb_orbit_30fps.mp4",
+                                                  "width":  1280,
+                                                  "height":  616,
+                                                  "duration_s":  3,
+                                                  "played_from_s":  0.7,
+                                                  "played_to_s":  1.80583,
+                                                  "presented_callbacks":  32,
+                                                  "decoded_frames":  33,
+                                                  "dropped_frames":  0,
+                                                  "document_hidden":  false,
+                                                  "error":  null
+                                              },
+                                              {
+                                                  "dataset":  "yogurt",
+                                                  "mode":  "orbit30",
+                                                  "method":  "4c4d",
+                                                  "file":  "4c4d_yogurt_pilot_01_rgb_orbit_30fps.mp4",
+                                                  "width":  1280,
+                                                  "height":  616,
+                                                  "duration_s":  3,
+                                                  "played_from_s":  0.7,
+                                                  "played_to_s":  1.805896,
+                                                  "presented_callbacks":  30,
+                                                  "decoded_frames":  34,
+                                                  "dropped_frames":  0,
+                                                  "document_hidden":  false,
+                                                  "error":  null
+                                              }
+                                          ]
+                   },
+    "kind":  "Headless local report browser screenshot",
+    "expression":  "(()=\u003e{document.querySelectorAll(\"video\").forEach(v=\u003ev.pause());window.scrollTo(0,0);return true;})()",
+    "filename":  "031_browser_playback_failed.png",
+    "url":  "http://127.0.0.1:8108/comparison.html"
+}

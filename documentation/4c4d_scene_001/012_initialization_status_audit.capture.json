@@ -1,0 +1,10 @@
+{
+    "captured_utc":  "2026-10-09T04:41:31.0140349Z",
+    "page_state":  {
+                       "stage":  12
+                   },
+    "kind":  "Headless local report browser screenshot",
+    "expression":  "true",
+    "filename":  "012_initialization_status_audit.png",
+    "url":  "http://127.0.0.1:8109/"
+}

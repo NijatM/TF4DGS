@@ -1,0 +1,70 @@
+{
+  "hypotheses": [
+    {
+      "id": "temporal_support",
+      "hypothesis": "Very short temporal support leaves gaps between captured frames. A soft 40 ms minimum marginal standard deviation may improve interpolation without forcing all Gaussians to be persistent."
+    },
+    {
+      "id": "compact_geometry",
+      "hypothesis": "Long conditional spatial ellipsoids produce cloth streaks and floaters. A mild aspect-ratio penalty may recover compact geometry rather than view-specific streaks."
+    },
+    {
+      "id": "pattern_detail",
+      "hypothesis": "Global RGB/SSIM objectives dilute small textile patterns. A motion-weighted image-gradient loss may recover weave, printed detail and hand boundaries."
+    },
+    {
+      "id": "motion_priority",
+      "hypothesis": "The surrounding room competes with the changing subject. Raising motion-region weight from 4 to 8 may improve the subject while retaining supervision on every room pixel."
+    },
+    {
+      "id": "point_capacity",
+      "hypothesis": "The early 450k cap limits births and fine detail. Allowing 600k Gaussians may reduce missing folds and preserve newly visible surfaces."
+    },
+    {
+      "id": "native_detail",
+      "hypothesis": "1280-edge supervision loses source detail. A matched 1920-edge continuation may improve detail at a common 1280 evaluation resolution, justifying later native 4K refinement."
+    },
+    {
+      "id": "simpler_appearance",
+      "hypothesis": "High-degree space/time color coefficients can fit appearance before geometry. Limiting active SH to spatial 1 / temporal 1 may reduce view-specific overfitting."
+    },
+    {
+      "id": "multi_time_support",
+      "hypothesis": "First-frame-only geometry misses later folds and hand positions. Timestamped calibrated seeds at three training times may improve coverage within the same joint model."
+    }
+  ],
+  "protocol": {
+    "parent_step": 10000,
+    "updates_per_trial": 600,
+    "textile_trials": [
+      "control",
+      "temporal_support",
+      "compact_geometry",
+      "pattern_detail",
+      "motion_priority",
+      "point_capacity",
+      "native_detail",
+      "simpler_appearance",
+      "multi_time_support"
+    ],
+    "validation_local_indices": [
+      17,
+      47,
+      77
+    ],
+    "validation_camera_images": 9,
+    "preview_local_index": 47,
+    "same_parent_rng": true,
+    "same_cameras_and_action_intervals": true,
+    "exceptions": "1920 trial uses more pixels; multi-time trial adds timestamped points and increases capacity. Compare capacity-only to separate the additional seed contribution.",
+    "confirmation": "Repeat control and the leading compatible variants on yogurt; run a matched combination confirmation on both captures.",
+    "scope": "Brief one-seed screening, not statistically conclusive convergence tests or independent geometric accuracy."
+  },
+  "sources": [
+    {
+      "url": "https://github.com/yangzf-1023/4C4D",
+      "pin": "ed6a3cb69782c4147151b3898944bc38132bae00",
+      "use": "Official sparse-camera initialization, geometry/appearance imbalance, neural opacity decay and analytic 4D covariance. The eight modifications are local hypotheses, not claims made by the paper."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "dataset": "textile",
+  "points": 120000,
+  "source_frame": 588,
+  "source_cloud_sha256": "be4aad8735982430359283bb2d83765bbf6300e3d23108ac6d829e40b430ca06",
+  "initial_points_sha256": "9071c682d13dbf6be206b96be58c4b1ec187894698d90be817a4bf755fa2ca58",
+  "initial_temporal_sigma_s": 1.328060400316525,
+  "policy": "One fresh whole-scene action-frame cloud, uniform temporal centers across the full timeline. Every primitive is trainable; no separately trained background or old scene. Multi-time injection rejected by the brief trials.",
+  "claim_limit": "Metric matching plus labelled inferred depths, not independently verified room geometry."
+}

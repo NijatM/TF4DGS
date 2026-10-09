@@ -1,0 +1,132 @@
+{
+  "dataset": "yogurt",
+  "points": 30000,
+  "stereo_points": 2433,
+  "inferred_depth_points": 27567,
+  "world_bounds_m": [
+    [
+      -2.214249224591233,
+      -3.5518850840373895,
+      -0.20242698115430724
+    ],
+    [
+      0.47532592123488593,
+      0.37182691375990745,
+      0.17788493955375184
+    ]
+  ],
+  "pairs": [
+    {
+      "pair": [
+        "dji",
+        "fuji"
+      ],
+      "method": "SIFT",
+      "ratio_matches": 22,
+      "robust_matches": 11,
+      "metric_points": 5,
+      "calibrated_epipolar_median_px": 64.14922178370182,
+      "median_reprojection_px": 0.7575736122924572
+    },
+    {
+      "pair": [
+        "dji",
+        "iphone"
+      ],
+      "method": "SIFT",
+      "ratio_matches": 78,
+      "robust_matches": 23,
+      "metric_points": 3,
+      "calibrated_epipolar_median_px": 51.97681074794589,
+      "median_reprojection_px": 1.9520074151077567
+    },
+    {
+      "pair": [
+        "fuji",
+        "iphone"
+      ],
+      "method": "SIFT",
+      "ratio_matches": 70,
+      "robust_matches": 17,
+      "metric_points": 1,
+      "calibrated_epipolar_median_px": 25.63679829904588,
+      "median_reprojection_px": 1.8724960765755505
+    },
+    {
+      "pair": [
+        "dji",
+        "fuji"
+      ],
+      "method": "MASt3R",
+      "metric_points": 3929,
+      "median_reprojection_px": 0.7502881672940648,
+      "inferred_fills": [
+        {
+          "camera": "dji",
+          "status": "registered inferred depth",
+          "points": 42937,
+          "registration_median_m": 0.004928502101550365
+        },
+        {
+          "camera": "fuji",
+          "status": "registered inferred depth",
+          "points": 20393,
+          "registration_median_m": 0.005007237208500412
+        }
+      ]
+    },
+    {
+      "pair": [
+        "dji",
+        "iphone"
+      ],
+      "method": "MASt3R",
+      "metric_points": 6169,
+      "median_reprojection_px": 0.548670422171881,
+      "inferred_fills": [
+        {
+          "camera": "dji",
+          "status": "registered inferred depth",
+          "points": 42997,
+          "registration_median_m": 0.004561707446195278
+        },
+        {
+          "camera": "iphone",
+          "status": "registered inferred depth",
+          "points": 14850,
+          "registration_median_m": 0.005892924702582308
+        }
+      ]
+    },
+    {
+      "pair": [
+        "fuji",
+        "iphone"
+      ],
+      "method": "MASt3R",
+      "metric_points": 5240,
+      "median_reprojection_px": 0.47772978652852854,
+      "inferred_fills": [
+        {
+          "camera": "fuji",
+          "status": "registered inferred depth",
+          "points": 36836,
+          "registration_median_m": 0.006228195784620232
+        },
+        {
+          "camera": "iphone",
+          "status": "registered inferred depth",
+          "points": 12336,
+          "registration_median_m": 0.00866699842645201
+        }
+      ]
+    }
+  ],
+  "initial_points_sha256": "91c2ec4cc10134221052aaad5838cd24a1e2eba3376c05b99316a0674b82ee87",
+  "source_frame": 348,
+  "first_pts_s": 11.6116,
+  "local_frame": 18,
+  "time_normalized": 0.20224719101123595,
+  "policy": "New full-scene cloud from one training timestamp. Points carry that timestamp. No separate/frozen base or older actor/table model.",
+  "claim_limit": "Calibrated matching plus explicitly inferred depth. Registration and reprojection are not independent metric accuracy."
+}

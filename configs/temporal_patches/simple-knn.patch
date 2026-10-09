@@ -1,0 +1,26 @@
+diff --git a/setup.py b/setup.py
+index 580d2bd..f013d2f 100644
+--- a/setup.py
++++ b/setup.py
+@@ -27,7 +27,7 @@ setup(
+             "spatial.cu", 
+             "simple_knn.cu",
+             "ext.cpp"],
+-            extra_compile_args={"nvcc": [], "cxx": cxx_compiler_flags})
++            extra_compile_args={"nvcc": (["-Xcompiler=/Zc:preprocessor"] if os.name == "nt" else []), "cxx": cxx_compiler_flags})
+         ],
+     cmdclass={
+         'build_ext': BuildExtension
+diff --git a/spatial.h b/spatial.h
+index 280c953..75a41fb 100644
+--- a/spatial.h
++++ b/spatial.h
+@@ -9,6 +9,6 @@
+  * For inquiries contact  george.drettakis@inria.fr
+  */
+ 
+-#include <torch/extension.h>
++#include <torch/types.h>
+ 
+ torch::Tensor distCUDA2(const torch::Tensor& points);
+\ No newline at end of file

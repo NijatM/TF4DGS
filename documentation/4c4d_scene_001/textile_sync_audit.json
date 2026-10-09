@@ -1,0 +1,187 @@
+{
+  "dataset": "textile",
+  "records": [
+    {
+      "camera": "dji",
+      "anchor_local_index": 32,
+      "candidate_frame_offset": -2,
+      "active_matches": 1316,
+      "median_epipolar_px": 3.296277259757197,
+      "fraction_below_2px": 0.2925531914893617
+    },
+    {
+      "camera": "dji",
+      "anchor_local_index": 32,
+      "candidate_frame_offset": -1,
+      "active_matches": 1386,
+      "median_epipolar_px": 3.3289229069327106,
+      "fraction_below_2px": 0.35353535353535354
+    },
+    {
+      "camera": "dji",
+      "anchor_local_index": 32,
+      "candidate_frame_offset": 0,
+      "active_matches": 1555,
+      "median_epipolar_px": 2.845911511556712,
+      "fraction_below_2px": 0.397427652733119
+    },
+    {
+      "camera": "dji",
+      "anchor_local_index": 32,
+      "candidate_frame_offset": 1,
+      "active_matches": 1169,
+      "median_epipolar_px": 2.670521219772775,
+      "fraction_below_2px": 0.39349871685201027
+    },
+    {
+      "camera": "dji",
+      "anchor_local_index": 32,
+      "candidate_frame_offset": 2,
+      "active_matches": 1240,
+      "median_epipolar_px": 4.0508103002470595,
+      "fraction_below_2px": 0.2701612903225806
+    },
+    {
+      "camera": "fuji",
+      "anchor_local_index": 32,
+      "candidate_frame_offset": -2,
+      "active_matches": 2244,
+      "median_epipolar_px": 1.8061076404985972,
+      "fraction_below_2px": 0.5307486631016043
+    },
+    {
+      "camera": "fuji",
+      "anchor_local_index": 32,
+      "candidate_frame_offset": -1,
+      "active_matches": 2318,
+      "median_epipolar_px": 1.730486727911333,
+      "fraction_below_2px": 0.5651423641069888
+    },
+    {
+      "camera": "fuji",
+      "anchor_local_index": 32,
+      "candidate_frame_offset": 0,
+      "active_matches": 2384,
+      "median_epipolar_px": 1.153312177521665,
+      "fraction_below_2px": 0.7273489932885906
+    },
+    {
+      "camera": "fuji",
+      "anchor_local_index": 32,
+      "candidate_frame_offset": 1,
+      "active_matches": 2145,
+      "median_epipolar_px": 2.583807494262562,
+      "fraction_below_2px": 0.38275058275058277
+    },
+    {
+      "camera": "fuji",
+      "anchor_local_index": 32,
+      "candidate_frame_offset": 2,
+      "active_matches": 1980,
+      "median_epipolar_px": 3.5019768934577167,
+      "fraction_below_2px": 0.29848484848484846
+    },
+    {
+      "camera": "dji",
+      "anchor_local_index": 62,
+      "candidate_frame_offset": -2,
+      "active_matches": 2274,
+      "median_epipolar_px": 1.1615966247267209,
+      "fraction_below_2px": 0.6525945470536499
+    },
+    {
+      "camera": "dji",
+      "anchor_local_index": 62,
+      "candidate_frame_offset": -1,
+      "active_matches": 2303,
+      "median_epipolar_px": 1.0069498753623929,
+      "fraction_below_2px": 0.6995223621363439
+    },
+    {
+      "camera": "dji",
+      "anchor_local_index": 62,
+      "candidate_frame_offset": 0,
+      "active_matches": 2326,
+      "median_epipolar_px": 1.4184561025393085,
+      "fraction_below_2px": 0.6199484092863284
+    },
+    {
+      "camera": "dji",
+      "anchor_local_index": 62,
+      "candidate_frame_offset": 1,
+      "active_matches": 2242,
+      "median_epipolar_px": 1.8692953949342477,
+      "fraction_below_2px": 0.5169491525423728
+    },
+    {
+      "camera": "dji",
+      "anchor_local_index": 62,
+      "candidate_frame_offset": 2,
+      "active_matches": 2272,
+      "median_epipolar_px": 1.6955919293566073,
+      "fraction_below_2px": 0.5576584507042254
+    },
+    {
+      "camera": "fuji",
+      "anchor_local_index": 62,
+      "candidate_frame_offset": -2,
+      "active_matches": 2216,
+      "median_epipolar_px": 1.1135876642637217,
+      "fraction_below_2px": 0.657942238267148
+    },
+    {
+      "camera": "fuji",
+      "anchor_local_index": 62,
+      "candidate_frame_offset": -1,
+      "active_matches": 2404,
+      "median_epipolar_px": 1.0217512462248903,
+      "fraction_below_2px": 0.7433444259567388
+    },
+    {
+      "camera": "fuji",
+      "anchor_local_index": 62,
+      "candidate_frame_offset": 0,
+      "active_matches": 2439,
+      "median_epipolar_px": 0.8991287630189301,
+      "fraction_below_2px": 0.7728577285772857
+    },
+    {
+      "camera": "fuji",
+      "anchor_local_index": 62,
+      "candidate_frame_offset": 1,
+      "active_matches": 2181,
+      "median_epipolar_px": 1.2303833728500866,
+      "fraction_below_2px": 0.594222833562586
+    },
+    {
+      "camera": "fuji",
+      "anchor_local_index": 62,
+      "candidate_frame_offset": 2,
+      "active_matches": 2182,
+      "median_epipolar_px": 1.6388309824964855,
+      "fraction_below_2px": 0.5430797433547204
+    }
+  ],
+  "aggregate_fraction_below_2px": {
+    "dji": {
+      "-2": 0.4725738692715058,
+      "-1": 0.5265288578358487,
+      "0": 0.5086880310097237,
+      "1": 0.4552239346971916,
+      "2": 0.413909870513403
+    },
+    "fuji": {
+      "-2": 0.5943454506843762,
+      "-1": 0.6542433950318638,
+      "0": 0.7501033609329382,
+      "1": 0.48848670815658435,
+      "2": 0.42078229591978444
+    }
+  },
+  "applied_offset": {
+    "dji": 0,
+    "fuji": 0,
+    "iphone": 0
+  },
+  "claim_limit": "Diagnostic correspondence score only; repeated texture, occlusion and provisional calibration confound physical sensor alignment. Original common timeline preserved."
+}

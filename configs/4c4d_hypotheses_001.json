@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "experiment_id": "4c4d_hypotheses_001",
+  "source_commit": "ed6a3cb69782c4147151b3898944bc38132bae00",
+  "seed": 42,
+  "source_fps": [
+    30000,
+    1001
+  ],
+  "frame_count": 90,
+  "datasets": {
+    "yogurt": {
+      "session": "data/dynamic_yogurt_001/session_measured_candidate.json",
+      "start_frame": 330,
+      "end_frame_exclusive": 420,
+      "initial_bundle": 110
+    },
+    "textile": {
+      "session": "data/dynamic_textile_001/session_measured_candidate.json",
+      "start_frame": 587,
+      "end_frame_exclusive": 677,
+      "initial_bundle": 196
+    }
+  },
+  "scene": {
+    "full_camera_frames": true,
+    "separate_background_model": false,
+    "frozen_primitives": false,
+    "include_hands": true,
+    "normalization": {
+      "center_m": [
+        0.175,
+        0.105,
+        0.0
+      ],
+      "scale_per_m": 6.666666666666667
+    },
+    "initialization": "One whole-scene cloud from the first selected synchronized frame: calibrated SIFT/MASt3R stereo and explicitly registered neural depth priors. No existing actor, table, older scene or later-frame geometry is merged.",
+    "initial_max_points": 120000,
+    "initial_max_camera_depth_m": 6.0
+  },
+  "training": {
+    "total_updates": 30000,
+    "checkpoints": [
+      10600
+    ],
+    "max_points": 450000,
+    "batch_size": 1,
+    "densify_from": 500,
+    "densify_until": 15000,
+    "densify_interval": 100,
+    "densify_threshold": 0.0002,
+    "densify_t_threshold": 5e-06,
+    "max_image_edge": 1280,
+    "lambda_dssim": 0.2,
+    "motion_region_weight": 4.0,
+    "ssim_max_edge": 1280
+  },
+  "tuning": {
+    "parent_step": 10000,
+    "end_step": 12000,
+    "presets": {
+      "baseline": {
+        "time_lr_factor": 1.0,
+        "rotation_lr_factor": 1.0,
+        "f_min": 0.996,
+        "f_max": 0.998
+      },
+      "slow_motion": {
+        "time_lr_factor": 0.5,
+        "rotation_lr_factor": 0.7,
+        "f_min": 0.996,
+        "f_max": 0.998
+      },
+      "gentle_decay": {
+        "time_lr_factor": 1.0,
+        "rotation_lr_factor": 1.0,
+        "f_min": 0.998,
+        "f_max": 0.999
+      },
+      "fast_time": {
+        "time_lr_factor": 2.0,
+        "rotation_lr_factor": 1.0,
+        "f_min": 0.996,
+        "f_max": 0.998
+      }
+    },
+    "selection": "Choose after matched 12000-update held-out appearance and orbit checks. These holdouts become validation data after selection; do not claim an independent final test score."
+  },
+  "refinement": {
+    "image_edges": [
+      1920,
+      3840
+    ],
+    "updates_per_stage": 4000,
+    "checkpoints": [
+      2000,
+      4000
+    ],
+    "host_image_cache_mib": 5120,
+    "max_points": 600000,
+    "position_lr_init": 4e-05,
+    "position_lr_final": 2e-06,
+    "feature_lr": 0.001,
+    "opacity_lr": 0.02,
+    "scaling_lr": 0.002,
+    "rotation_lr": 0.0004,
+    "densify_until": 2000,
+    "densify_interval": 200,
+    "memory_fallback_edge": 2560,
+    "optimizer_policy": "Lower-rate optimizer reset at each resolution stage; reuse the selected joint whole-scene model, not independently fit frames."
+  },
+  "production": {
+    "updates": 2000,
+    "checkpoints": [
+      1000,
+      2000
+    ],
+    "fit_all_frames": true,
+    "densify_until": 0,
+    "evaluation_scope": "Fit all 270 camera images after validation-based selection. Scores are fitted-reference appearance, not held-out generalization. Preserve the preceding validation-trained models."
+  },
+  "evaluation": {
+    "holdout_rule": "local_index % 6 == 5",
+    "ssim_edge": 1280,
+    "preview_local_frame": 47,
+    "oracle_geometry": false,
+    "quick_indices": [
+      17,
+      47,
+      77
+    ]
+  },
+  "limits": [
+    "Surroundings means surfaces visible in these three recordings; unseen room surfaces are not measured.",
+    "Camera calibration away from the board and physical synchronization remain provisional until diagnostics support them.",
+    "Neural depth fills are inferred, not independent metric measurements.",
+    "Parameter and resolution selection use the temporal holdouts as validation; no independent fourth-camera test is available."
+  ],
+  "data_experiment_id": "4c4d_scene_001",
+  "initialization_paths": {
+    "yogurt": "outputs/4c4d_scene_001/yogurt/initialization/initial_points.npz",
+    "textile": "outputs/4c4d_scene_001/textile/initialization/initial_points.npz"
+  },
+  "report_url": "http://127.0.0.1:8109/",
+  "variants": {
+    "control": {},
+    "temporal_support": {
+      "temporal_floor_s": 0.04,
+      "temporal_floor_weight": 0.005
+    },
+    "compact_geometry": {
+      "anisotropy_weight": 0.002,
+      "anisotropy_limit": 12
+    },
+    "pattern_detail": {
+      "detail_weight": 0.15
+    },
+    "motion_priority": {
+      "motion_region_weight": 8
+    },
+    "point_capacity": {
+      "max_points": 600000
+    },
+    "native_detail": {},
+    "simpler_appearance": {
+      "sh_limit": [
+        1,
+        1
+      ]
+    },
+    "multi_time_support": {
+      "max_points": 600000,
+      "injection_sigma_s": 0.12,
+      "inject_points": {
+        "yogurt": "outputs/4c4d_hypotheses_001/yogurt/multi_time/initial_points.npz",
+        "textile": "outputs/4c4d_hypotheses_001/textile/multi_time/initial_points.npz"
+      }
+    },
+    "capacity_900k": {
+      "max_points": 900000
+    },
+    "combination": {
+      "max_points": 600000,
+      "motion_region_weight": 8,
+      "temporal_floor_s": 0.04,
+      "temporal_floor_weight": 0.005
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "experiment_id": "4c4d_scene_001",
+  "updated_utc": "2026-10-09T05:02:04.806711+00:00",
+  "status": "Matched parameter selection complete; 30k continuations and resolution refinement pending",
+  "datasets": {
+    "textile": {
+      "continuation_attempt": "baseline_01",
+      "preset": "baseline",
+      "comparison_step": 12000,
+      "common_parent": "outputs/4c4d_scene_001/textile/baseline_01/checkpoint_010000.pth",
+      "candidates": [
+        {
+          "attempt": "baseline_01",
+          "metrics_file": "textile_baseline_01_step_012000_metrics.json",
+          "sha256": "96c6801f7bbfa99a80be08fb7188c82d1607ff85a1645732d6f5d5c94e63a79f",
+          "whole_psnr_db": 23.56823582119412,
+          "motion_psnr_db": 22.694263373480904,
+          "ssim": 0.8338182912932501
+        },
+        {
+          "attempt": "slow_motion_01",
+          "metrics_file": "textile_slow_motion_01_step_012000_metrics.json",
+          "sha256": "3c9fb17062190061ebf79151bc16084a0cdf6d2f113803debbc306fd2891dcc0",
+          "whole_psnr_db": 22.94665306939019,
+          "motion_psnr_db": 22.581224314371745,
+          "ssim": 0.823549747467041
+        },
+        {
+          "attempt": "gentle_decay_01",
+          "metrics_file": "textile_gentle_decay_01_step_012000_metrics.json",
+          "sha256": "64ecde8aeacfe1d7f1d613ac84ff0b3567522c087777e08840be550cb24a4f1c",
+          "whole_psnr_db": 23.66152653164334,
+          "motion_psnr_db": 22.680248726738824,
+          "ssim": 0.8347356438636779
+        },
+        {
+          "attempt": "fast_time_01",
+          "metrics_file": "textile_fast_time_01_step_012000_metrics.json",
+          "sha256": "76d74f688a1cd1303e6196f498209321fad5ee9ea20c695d0ebf68e69d2943ad",
+          "whole_psnr_db": 23.16195886400011,
+          "motion_psnr_db": 22.219344753689235,
+          "ssim": 0.8275103078948127
+        }
+      ],
+      "decision": "Baseline retains the highest matched moving-region score. Slower and faster time optimization both reduce it; gentle decay changes whole-image score by only +0.09dB and does not improve moving-region score or visibly resolve cloth streaking. Continue baseline while preserving earlier checkpoints.",
+      "visual_assessment": "Camera and orbit previews checked. Textile remains streaked and ghosted; surrounding novel-view geometry is incomplete. These are chosen continuation settings, not final quality acceptance."
+    },
+    "yogurt": {
+      "continuation_attempt": "slow_motion_01",
+      "preset": "slow_motion",
+      "comparison_step": 12000,
+      "common_parent": "outputs/4c4d_scene_001/yogurt/baseline_01/checkpoint_010000.pth",
+      "candidates": [
+        {
+          "attempt": "baseline_01",
+          "metrics_file": "yogurt_baseline_01_step_012000_metrics.json",
+          "sha256": "55c796f71e44997509620d595cf73fa74731201f948e1edd031b4eb886313518",
+          "whole_psnr_db": 30.31806335449219,
+          "motion_psnr_db": 26.694275241427952,
+          "ssim": 0.9579805705282424
+        },
+        {
+          "attempt": "slow_motion_01",
+          "metrics_file": "yogurt_slow_motion_01_step_012000_metrics.json",
+          "sha256": "9ffd2a99206d1ab464a1060c8f959bb3304a56458e79ee7fbcaf78f3958e0775",
+          "whole_psnr_db": 30.696697023179794,
+          "motion_psnr_db": 27.677562035454645,
+          "ssim": 0.9625501314798991
+        },
+        {
+          "attempt": "gentle_decay_01",
+          "metrics_file": "yogurt_gentle_decay_01_step_012000_metrics.json",
+          "sha256": "bc96b8feab6740d9ba63f95bd23f448a3ebb9eed974eadcc877305096634b6bd",
+          "whole_psnr_db": 31.179416571723092,
+          "motion_psnr_db": 26.865426932440865,
+          "ssim": 0.9613915138774448
+        }
+      ],
+      "decision": "Slow motion has the highest matched moving-region PSNR and SSIM, with +0.98dB motion PSNR over baseline. Gentle decay gives a higher whole-frame score but less motion-region improvement. Reviewed iPhone/orbit views still have unverified surrounding geometry; choose moving-object quality without importing a separate base.",
+      "visual_assessment": "Camera and orbit previews checked. Textile remains streaked and ghosted; surrounding novel-view geometry is incomplete. These are chosen continuation settings, not final quality acceptance."
+    }
+  }
+}

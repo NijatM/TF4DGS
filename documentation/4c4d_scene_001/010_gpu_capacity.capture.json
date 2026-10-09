@@ -1,0 +1,10 @@
+{
+    "captured_utc":  "2026-10-09T04:40:05.4298846Z",
+    "page_state":  {
+                       "stage":  10
+                   },
+    "kind":  "Headless local report browser screenshot",
+    "expression":  "true",
+    "filename":  "010_gpu_capacity.png",
+    "url":  "http://127.0.0.1:8109/"
+}

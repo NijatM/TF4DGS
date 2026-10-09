@@ -1,0 +1,10 @@
+{
+    "captured_utc":  "2026-10-09T03:15:02.9906457Z",
+    "page_state":  {
+                       "stage":  27
+                   },
+    "kind":  "Headless local report browser screenshot",
+    "expression":  "true",
+    "filename":  "028_export_failure_corrected.png",
+    "url":  "http://127.0.0.1:8108/"
+}

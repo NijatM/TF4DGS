@@ -1,0 +1,34 @@
+{
+  "dataset": "yogurt",
+  "attempt": "baseline_01",
+  "step": 12000,
+  "edge": 1280,
+  "preset": "baseline",
+  "point_count": 450000,
+  "elapsed_s": 1043.0228771999973,
+  "peak_cuda_allocated_gib": 3.7754907608032227,
+  "validation_psnr_db": 30.31806335449219,
+  "motion_region_psnr_db": 26.694275241427952,
+  "validation_ssim_at_1280": 0.9579805705282424,
+  "validation_psnr_common_1280": 30.31806335449219,
+  "motion_region_psnr_common_1280": 26.694275241427952,
+  "per_camera": {
+    "dji": {
+      "psnr_db": 29.524282455444336,
+      "motion_region_psnr_db": 26.518309783935546,
+      "ssim_at_1280": 0.9590459108352661
+    },
+    "fuji": {
+      "psnr_db": 30.68049456278483,
+      "motion_region_psnr_db": 27.54329833984375,
+      "ssim_at_1280": 0.9567594806353251
+    },
+    "iphone": {
+      "psnr_db": 30.749413045247397,
+      "motion_region_psnr_db": 26.021217600504556,
+      "ssim_at_1280": 0.9581363201141357
+    }
+  },
+  "scope": "Full frames and train-derived motion region. Holdouts used for parameter selection are validation, not an independent final test.",
+  "scene_policy": "Full frames, all pixels supervised, one jointly optimized temporal model; no separate or frozen background."
+}

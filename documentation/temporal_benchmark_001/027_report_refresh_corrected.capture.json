@@ -1,0 +1,10 @@
+{
+    "captured_utc":  "2026-10-09T03:12:40.9556111Z",
+    "page_state":  {
+                       "stage":  26
+                   },
+    "kind":  "Headless local report browser screenshot",
+    "expression":  "(async()=\u003e{await new Promise(r=\u003esetTimeout(r,1200));if(!document.getElementById(\"liveText\").textContent.includes(\"complete\"))throw Error(\"Live refresh failed\");window.scrollTo(0,0);return true;})()",
+    "filename":  "027_report_refresh_corrected.png",
+    "url":  "http://127.0.0.1:8108/"
+}

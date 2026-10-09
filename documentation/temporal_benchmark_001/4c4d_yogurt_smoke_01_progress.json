@@ -1,0 +1,12 @@
+{
+  "step": 25,
+  "total": 25,
+  "stage": "temporal",
+  "loss": 0.38370351791381835,
+  "point_count": 40000,
+  "elapsed_s": 1.4313937000115402,
+  "peak_cuda_allocated_gib": 0.4831676483154297,
+  "selected_camera": "iphone",
+  "selected_source_frame": 386,
+  "status": "training"
+}

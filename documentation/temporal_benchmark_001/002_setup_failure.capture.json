@@ -1,0 +1,10 @@
+{
+    "captured_utc":  "2026-10-09T00:26:42.6080667Z",
+    "page_state":  {
+                       "stage":  2
+                   },
+    "kind":  "Live local preview browser screenshot",
+    "expression":  "true",
+    "filename":  "002_setup_failure.png",
+    "url":  "http://127.0.0.1:8108/"
+}

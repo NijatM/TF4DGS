@@ -1,0 +1,511 @@
+{
+  "checkpoints": [
+    {
+      "dataset": "textile",
+      "attempt": "baseline_01",
+      "step": 10000,
+      "edge": 1280,
+      "preset": "baseline",
+      "point_count": 450000,
+      "elapsed_s": 875.8063542000018,
+      "peak_cuda_allocated_gib": 3.8915305137634277,
+      "validation_psnr_db": 24.00601382785373,
+      "motion_region_psnr_db": 22.774290127224393,
+      "validation_ssim_at_1280": 0.8425798098246257,
+      "per_camera": {
+        "dji": {
+          "psnr_db": 23.245067596435547,
+          "motion_region_psnr_db": 22.458202234903972,
+          "ssim_at_1280": 0.8262009421984354
+        },
+        "fuji": {
+          "psnr_db": 25.83356590270996,
+          "motion_region_psnr_db": 24.809546025594077,
+          "ssim_at_1280": 0.8718185186386108
+        },
+        "iphone": {
+          "psnr_db": 22.93940798441569,
+          "motion_region_psnr_db": 21.05512212117513,
+          "ssim_at_1280": 0.8297199686368306
+        }
+      },
+      "scope": "Full frames and train-derived motion region. Holdouts used for parameter selection are validation, not an independent final test.",
+      "scene_policy": "Full frames, all pixels supervised, one jointly optimized temporal model; no separate or frozen background.",
+      "image": "textile_baseline_01_step_010000_preview.png",
+      "orbit": "textile_baseline_01_step_010000_orbit.png",
+      "metrics_file": "textile_baseline_01_step_010000_metrics.json",
+      "common_psnr": 24.00601382785373,
+      "common_motion_psnr": 22.774290127224393
+    },
+    {
+      "dataset": "textile",
+      "attempt": "baseline_01",
+      "step": 12000,
+      "edge": 1280,
+      "preset": "baseline",
+      "point_count": 450000,
+      "elapsed_s": 1035.6892820000066,
+      "peak_cuda_allocated_gib": 3.8915305137634277,
+      "validation_psnr_db": 23.56823582119412,
+      "motion_region_psnr_db": 22.694263373480904,
+      "validation_ssim_at_1280": 0.8338182912932501,
+      "per_camera": {
+        "dji": {
+          "psnr_db": 22.379928334554037,
+          "motion_region_psnr_db": 22.297838719685874,
+          "ssim_at_1280": 0.8116186459859213
+        },
+        "fuji": {
+          "psnr_db": 25.702197265625,
+          "motion_region_psnr_db": 24.886644872029624,
+          "ssim_at_1280": 0.8683515866597493
+        },
+        "iphone": {
+          "psnr_db": 22.62258186340332,
+          "motion_region_psnr_db": 20.898306528727215,
+          "ssim_at_1280": 0.82148464123408
+        }
+      },
+      "scope": "Full frames and train-derived motion region. Holdouts used for parameter selection are validation, not an independent final test.",
+      "scene_policy": "Full frames, all pixels supervised, one jointly optimized temporal model; no separate or frozen background.",
+      "image": "textile_baseline_01_step_012000_preview.png",
+      "orbit": "textile_baseline_01_step_012000_orbit.png",
+      "metrics_file": "textile_baseline_01_step_012000_metrics.json",
+      "common_psnr": 23.56823582119412,
+      "common_motion_psnr": 22.694263373480904
+    },
+    {
+      "dataset": "textile",
+      "attempt": "baseline_01",
+      "step": 20000,
+      "edge": 1280,
+      "preset": "baseline",
+      "point_count": 450000,
+      "elapsed_s": 1681.14169400002,
+      "peak_cuda_allocated_gib": 2.8111867904663086,
+      "validation_psnr_db": 25.95274454752604,
+      "motion_region_psnr_db": 24.046013641357423,
+      "validation_ssim_at_1280": 0.8729541738828023,
+      "validation_psnr_common_1280": 25.95274454752604,
+      "motion_region_psnr_common_1280": 24.046013641357423,
+      "per_camera": {
+        "dji": {
+          "psnr_db": 24.962098185221354,
+          "motion_region_psnr_db": 23.46750170389811,
+          "ssim_at_1280": 0.8553345918655395
+        },
+        "fuji": {
+          "psnr_db": 28.512704849243164,
+          "motion_region_psnr_db": 26.996027119954427,
+          "ssim_at_1280": 0.8999820828437806
+        },
+        "iphone": {
+          "psnr_db": 24.383430608113606,
+          "motion_region_psnr_db": 21.674512100219726,
+          "ssim_at_1280": 0.8635458469390869
+        }
+      },
+      "scope": "Full frames and train-derived motion region. Holdouts used for parameter selection are validation, not an independent final test.",
+      "scene_policy": "Full frames, all pixels supervised, one jointly optimized temporal model; no separate or frozen background.",
+      "image": "textile_baseline_01_step_020000_preview.png",
+      "orbit": "textile_baseline_01_step_020000_orbit.png",
+      "metrics_file": "textile_baseline_01_step_020000_metrics.json",
+      "common_psnr": 25.95274454752604,
+      "common_motion_psnr": 24.046013641357423
+    },
+    {
+      "dataset": "textile",
+      "attempt": "fast_time_01",
+      "step": 12000,
+      "edge": 1280,
+      "preset": "fast_time",
+      "point_count": 450000,
+      "elapsed_s": 1043.4344817000092,
+      "peak_cuda_allocated_gib": 2.754011631011963,
+      "validation_psnr_db": 23.16195886400011,
+      "motion_region_psnr_db": 22.219344753689235,
+      "validation_ssim_at_1280": 0.8275103078948127,
+      "validation_psnr_common_1280": 23.16195886400011,
+      "motion_region_psnr_common_1280": 22.219344753689235,
+      "per_camera": {
+        "dji": {
+          "psnr_db": 22.417543411254883,
+          "motion_region_psnr_db": 21.76738929748535,
+          "ssim_at_1280": 0.8100752989451091
+        },
+        "fuji": {
+          "psnr_db": 25.11672452290853,
+          "motion_region_psnr_db": 24.306480662027994,
+          "ssim_at_1280": 0.864667546749115
+        },
+        "iphone": {
+          "psnr_db": 21.951608657836914,
+          "motion_region_psnr_db": 20.584164301554363,
+          "ssim_at_1280": 0.807788077990214
+        }
+      },
+      "scope": "Full frames and train-derived motion region. Holdouts used for parameter selection are validation, not an independent final test.",
+      "scene_policy": "Full frames, all pixels supervised, one jointly optimized temporal model; no separate or frozen background.",
+      "image": "textile_fast_time_01_step_012000_preview.png",
+      "orbit": "textile_fast_time_01_step_012000_orbit.png",
+      "metrics_file": "textile_fast_time_01_step_012000_metrics.json",
+      "common_psnr": 23.16195886400011,
+      "common_motion_psnr": 22.219344753689235
+    },
+    {
+      "dataset": "textile",
+      "attempt": "gentle_decay_01",
+      "step": 12000,
+      "edge": 1280,
+      "preset": "gentle_decay",
+      "point_count": 450000,
+      "elapsed_s": 1042.2096442000038,
+      "peak_cuda_allocated_gib": 2.7733874320983887,
+      "validation_psnr_db": 23.66152653164334,
+      "motion_region_psnr_db": 22.680248726738824,
+      "validation_ssim_at_1280": 0.8347356438636779,
+      "validation_psnr_common_1280": 23.66152653164334,
+      "motion_region_psnr_common_1280": 22.680248726738824,
+      "per_camera": {
+        "dji": {
+          "psnr_db": 23.11312764485677,
+          "motion_region_psnr_db": 22.389518610636394,
+          "ssim_at_1280": 0.8203703721364339
+        },
+        "fuji": {
+          "psnr_db": 25.39958750406901,
+          "motion_region_psnr_db": 24.745454025268554,
+          "ssim_at_1280": 0.8694119056065878
+        },
+        "iphone": {
+          "psnr_db": 22.471864446004233,
+          "motion_region_psnr_db": 20.905773544311522,
+          "ssim_at_1280": 0.8144246538480123
+        }
+      },
+      "scope": "Full frames and train-derived motion region. Holdouts used for parameter selection are validation, not an independent final test.",
+      "scene_policy": "Full frames, all pixels supervised, one jointly optimized temporal model; no separate or frozen background.",
+      "image": "textile_gentle_decay_01_step_012000_preview.png",
+      "orbit": "textile_gentle_decay_01_step_012000_orbit.png",
+      "metrics_file": "textile_gentle_decay_01_step_012000_metrics.json",
+      "common_psnr": 23.66152653164334,
+      "common_motion_psnr": 22.680248726738824
+    },
+    {
+      "dataset": "textile",
+      "attempt": "slow_motion_01",
+      "step": 12000,
+      "edge": 1280,
+      "preset": "slow_motion",
+      "point_count": 450000,
+      "elapsed_s": 1042.0808019999968,
+      "peak_cuda_allocated_gib": 2.7666854858398438,
+      "validation_psnr_db": 22.94665306939019,
+      "motion_region_psnr_db": 22.581224314371745,
+      "validation_ssim_at_1280": 0.823549747467041,
+      "validation_psnr_common_1280": 22.94665306939019,
+      "motion_region_psnr_common_1280": 22.581224314371745,
+      "per_camera": {
+        "dji": {
+          "psnr_db": 22.842428716023765,
+          "motion_region_psnr_db": 22.5198548634847,
+          "ssim_at_1280": 0.8184152523676554
+        },
+        "fuji": {
+          "psnr_db": 25.80566889444987,
+          "motion_region_psnr_db": 25.09790941874186,
+          "ssim_at_1280": 0.870716408888499
+        },
+        "iphone": {
+          "psnr_db": 20.19186159769694,
+          "motion_region_psnr_db": 20.125908660888673,
+          "ssim_at_1280": 0.7815175811449687
+        }
+      },
+      "scope": "Full frames and train-derived motion region. Holdouts used for parameter selection are validation, not an independent final test.",
+      "scene_policy": "Full frames, all pixels supervised, one jointly optimized temporal model; no separate or frozen background.",
+      "image": "textile_slow_motion_01_step_012000_preview.png",
+      "orbit": "textile_slow_motion_01_step_012000_orbit.png",
+      "metrics_file": "textile_slow_motion_01_step_012000_metrics.json",
+      "common_psnr": 22.94665306939019,
+      "common_motion_psnr": 22.581224314371745
+    },
+    {
+      "dataset": "textile",
+      "attempt": "smoke_scene_01",
+      "step": 650,
+      "edge": 1280,
+      "preset": "baseline",
+      "point_count": 126435,
+      "elapsed_s": 45.981012499993085,
+      "peak_cuda_allocated_gib": 0.7383852005004883,
+      "validation_psnr_db": 19.762500678168404,
+      "motion_region_psnr_db": 18.059323098924423,
+      "validation_ssim_at_1280": 0.7857985523011949,
+      "per_camera": {
+        "dji": {
+          "psnr_db": 19.92044016520182,
+          "motion_region_psnr_db": 18.430786069234212,
+          "ssim_at_1280": 0.7793715556462606
+        },
+        "fuji": {
+          "psnr_db": 20.216367212931313,
+          "motion_region_psnr_db": 18.60297088623047,
+          "ssim_at_1280": 0.8215618411699931
+        },
+        "iphone": {
+          "psnr_db": 19.15069465637207,
+          "motion_region_psnr_db": 17.144212341308595,
+          "ssim_at_1280": 0.7564622600873311
+        }
+      },
+      "scope": "Full frames and train-derived motion region. Holdouts used for parameter selection are validation, not an independent final test.",
+      "scene_policy": "Full frames, all pixels supervised, one jointly optimized temporal model; no separate or frozen background.",
+      "image": "textile_smoke_scene_01_step_000650_preview.png",
+      "orbit": "textile_smoke_scene_01_step_000650_orbit.png",
+      "metrics_file": "textile_smoke_scene_01_step_000650_metrics.json",
+      "common_psnr": 19.762500678168404,
+      "common_motion_psnr": 18.059323098924423
+    },
+    {
+      "dataset": "yogurt",
+      "attempt": "baseline_01",
+      "step": 10000,
+      "edge": 1280,
+      "preset": "baseline",
+      "point_count": 450000,
+      "elapsed_s": 857.1442219999881,
+      "peak_cuda_allocated_gib": 3.7754907608032227,
+      "validation_psnr_db": 30.444022538926866,
+      "motion_region_psnr_db": 26.19956440395779,
+      "validation_ssim_at_1280": 0.9574633359909057,
+      "validation_psnr_common_1280": 30.444022538926866,
+      "motion_region_psnr_common_1280": 26.19956440395779,
+      "per_camera": {
+        "dji": {
+          "psnr_db": 29.937936147054035,
+          "motion_region_psnr_db": 26.733459599812825,
+          "ssim_at_1280": 0.961258840560913
+        },
+        "fuji": {
+          "psnr_db": 30.25940450032552,
+          "motion_region_psnr_db": 26.659913635253908,
+          "ssim_at_1280": 0.9525349219640096
+        },
+        "iphone": {
+          "psnr_db": 31.13472696940104,
+          "motion_region_psnr_db": 25.205319976806642,
+          "ssim_at_1280": 0.9585962454477946
+        }
+      },
+      "scope": "Full frames and train-derived motion region. Holdouts used for parameter selection are validation, not an independent final test.",
+      "scene_policy": "Full frames, all pixels supervised, one jointly optimized temporal model; no separate or frozen background.",
+      "image": "yogurt_baseline_01_step_010000_preview.png",
+      "orbit": "yogurt_baseline_01_step_010000_orbit.png",
+      "metrics_file": "yogurt_baseline_01_step_010000_metrics.json",
+      "common_psnr": 30.444022538926866,
+      "common_motion_psnr": 26.19956440395779
+    },
+    {
+      "dataset": "yogurt",
+      "attempt": "baseline_01",
+      "step": 12000,
+      "edge": 1280,
+      "preset": "baseline",
+      "point_count": 450000,
+      "elapsed_s": 1043.0228771999973,
+      "peak_cuda_allocated_gib": 3.7754907608032227,
+      "validation_psnr_db": 30.31806335449219,
+      "motion_region_psnr_db": 26.694275241427952,
+      "validation_ssim_at_1280": 0.9579805705282424,
+      "validation_psnr_common_1280": 30.31806335449219,
+      "motion_region_psnr_common_1280": 26.694275241427952,
+      "per_camera": {
+        "dji": {
+          "psnr_db": 29.524282455444336,
+          "motion_region_psnr_db": 26.518309783935546,
+          "ssim_at_1280": 0.9590459108352661
+        },
+        "fuji": {
+          "psnr_db": 30.68049456278483,
+          "motion_region_psnr_db": 27.54329833984375,
+          "ssim_at_1280": 0.9567594806353251
+        },
+        "iphone": {
+          "psnr_db": 30.749413045247397,
+          "motion_region_psnr_db": 26.021217600504556,
+          "ssim_at_1280": 0.9581363201141357
+        }
+      },
+      "scope": "Full frames and train-derived motion region. Holdouts used for parameter selection are validation, not an independent final test.",
+      "scene_policy": "Full frames, all pixels supervised, one jointly optimized temporal model; no separate or frozen background.",
+      "image": "yogurt_baseline_01_step_012000_preview.png",
+      "orbit": "yogurt_baseline_01_step_012000_orbit.png",
+      "metrics_file": "yogurt_baseline_01_step_012000_metrics.json",
+      "common_psnr": 30.31806335449219,
+      "common_motion_psnr": 26.694275241427952
+    },
+    {
+      "dataset": "yogurt",
+      "attempt": "gentle_decay_01",
+      "step": 12000,
+      "edge": 1280,
+      "preset": "gentle_decay",
+      "point_count": 450000,
+      "elapsed_s": 1045.6127471999935,
+      "peak_cuda_allocated_gib": 2.708674430847168,
+      "validation_psnr_db": 31.179416571723092,
+      "motion_region_psnr_db": 26.865426932440865,
+      "validation_ssim_at_1280": 0.9613915138774448,
+      "validation_psnr_common_1280": 31.179416571723092,
+      "motion_region_psnr_common_1280": 26.865426932440865,
+      "per_camera": {
+        "dji": {
+          "psnr_db": 30.164316177368164,
+          "motion_region_psnr_db": 26.73756523132324,
+          "ssim_at_1280": 0.9629723350207011
+        },
+        "fuji": {
+          "psnr_db": 31.504814529418944,
+          "motion_region_psnr_db": 27.805534744262694,
+          "ssim_at_1280": 0.9590119997660319
+        },
+        "iphone": {
+          "psnr_db": 31.86911900838216,
+          "motion_region_psnr_db": 26.053180821736653,
+          "ssim_at_1280": 0.9621902068456014
+        }
+      },
+      "scope": "Full frames and train-derived motion region. Holdouts used for parameter selection are validation, not an independent final test.",
+      "scene_policy": "Full frames, all pixels supervised, one jointly optimized temporal model; no separate or frozen background.",
+      "image": "yogurt_gentle_decay_01_step_012000_preview.png",
+      "orbit": "yogurt_gentle_decay_01_step_012000_orbit.png",
+      "metrics_file": "yogurt_gentle_decay_01_step_012000_metrics.json",
+      "common_psnr": 31.179416571723092,
+      "common_motion_psnr": 26.865426932440865
+    },
+    {
+      "dataset": "yogurt",
+      "attempt": "slow_motion_01",
+      "step": 12000,
+      "edge": 1280,
+      "preset": "slow_motion",
+      "point_count": 450000,
+      "elapsed_s": 1045.9021349999966,
+      "peak_cuda_allocated_gib": 2.708723545074463,
+      "validation_psnr_db": 30.696697023179794,
+      "motion_region_psnr_db": 27.677562035454645,
+      "validation_ssim_at_1280": 0.9625501314798991,
+      "validation_psnr_common_1280": 30.696697023179794,
+      "motion_region_psnr_common_1280": 27.677562035454645,
+      "per_camera": {
+        "dji": {
+          "psnr_db": 30.81628557840983,
+          "motion_region_psnr_db": 27.676283899943034,
+          "ssim_at_1280": 0.9659425854682923
+        },
+        "fuji": {
+          "psnr_db": 31.374301528930665,
+          "motion_region_psnr_db": 28.47751146952311,
+          "ssim_at_1280": 0.9624134023984273
+        },
+        "iphone": {
+          "psnr_db": 29.899503962198892,
+          "motion_region_psnr_db": 26.878890736897787,
+          "ssim_at_1280": 0.9592944065729777
+        }
+      },
+      "scope": "Full frames and train-derived motion region. Holdouts used for parameter selection are validation, not an independent final test.",
+      "scene_policy": "Full frames, all pixels supervised, one jointly optimized temporal model; no separate or frozen background.",
+      "image": "yogurt_slow_motion_01_step_012000_preview.png",
+      "orbit": "yogurt_slow_motion_01_step_012000_orbit.png",
+      "metrics_file": "yogurt_slow_motion_01_step_012000_metrics.json",
+      "common_psnr": 30.696697023179794,
+      "common_motion_psnr": 27.677562035454645
+    }
+  ],
+  "selection": {
+    "experiment_id": "4c4d_scene_001",
+    "updated_utc": "2026-10-09T05:02:04.806711+00:00",
+    "status": "Matched parameter selection complete; 30k continuations and resolution refinement pending",
+    "datasets": {
+      "textile": {
+        "continuation_attempt": "baseline_01",
+        "preset": "baseline",
+        "comparison_step": 12000,
+        "common_parent": "outputs/4c4d_scene_001/textile/baseline_01/checkpoint_010000.pth",
+        "candidates": [
+          {
+            "attempt": "baseline_01",
+            "metrics_file": "textile_baseline_01_step_012000_metrics.json",
+            "sha256": "96c6801f7bbfa99a80be08fb7188c82d1607ff85a1645732d6f5d5c94e63a79f",
+            "whole_psnr_db": 23.56823582119412,
+            "motion_psnr_db": 22.694263373480904,
+            "ssim": 0.8338182912932501
+          },
+          {
+            "attempt": "slow_motion_01",
+            "metrics_file": "textile_slow_motion_01_step_012000_metrics.json",
+            "sha256": "3c9fb17062190061ebf79151bc16084a0cdf6d2f113803debbc306fd2891dcc0",
+            "whole_psnr_db": 22.94665306939019,
+            "motion_psnr_db": 22.581224314371745,
+            "ssim": 0.823549747467041
+          },
+          {
+            "attempt": "gentle_decay_01",
+            "metrics_file": "textile_gentle_decay_01_step_012000_metrics.json",
+            "sha256": "64ecde8aeacfe1d7f1d613ac84ff0b3567522c087777e08840be550cb24a4f1c",
+            "whole_psnr_db": 23.66152653164334,
+            "motion_psnr_db": 22.680248726738824,
+            "ssim": 0.8347356438636779
+          },
+          {
+            "attempt": "fast_time_01",
+            "metrics_file": "textile_fast_time_01_step_012000_metrics.json",
+            "sha256": "76d74f688a1cd1303e6196f498209321fad5ee9ea20c695d0ebf68e69d2943ad",
+            "whole_psnr_db": 23.16195886400011,
+            "motion_psnr_db": 22.219344753689235,
+            "ssim": 0.8275103078948127
+          }
+        ],
+        "decision": "Baseline retains the highest matched moving-region score. Slower and faster time optimization both reduce it; gentle decay changes whole-image score by only +0.09dB and does not improve moving-region score or visibly resolve cloth streaking. Continue baseline while preserving earlier checkpoints.",
+        "visual_assessment": "Camera and orbit previews checked. Textile remains streaked and ghosted; surrounding novel-view geometry is incomplete. These are chosen continuation settings, not final quality acceptance."
+      },
+      "yogurt": {
+        "continuation_attempt": "slow_motion_01",
+        "preset": "slow_motion",
+        "comparison_step": 12000,
+        "common_parent": "outputs/4c4d_scene_001/yogurt/baseline_01/checkpoint_010000.pth",
+        "candidates": [
+          {
+            "attempt": "baseline_01",
+            "metrics_file": "yogurt_baseline_01_step_012000_metrics.json",
+            "sha256": "55c796f71e44997509620d595cf73fa74731201f948e1edd031b4eb886313518",
+            "whole_psnr_db": 30.31806335449219,
+            "motion_psnr_db": 26.694275241427952,
+            "ssim": 0.9579805705282424
+          },
+          {
+            "attempt": "slow_motion_01",
+            "metrics_file": "yogurt_slow_motion_01_step_012000_metrics.json",
+            "sha256": "9ffd2a99206d1ab464a1060c8f959bb3304a56458e79ee7fbcaf78f3958e0775",
+            "whole_psnr_db": 30.696697023179794,
+            "motion_psnr_db": 27.677562035454645,
+            "ssim": 0.9625501314798991
+          },
+          {
+            "attempt": "gentle_decay_01",
+            "metrics_file": "yogurt_gentle_decay_01_step_012000_metrics.json",
+            "sha256": "bc96b8feab6740d9ba63f95bd23f448a3ebb9eed974eadcc877305096634b6bd",
+            "whole_psnr_db": 31.179416571723092,
+            "motion_psnr_db": 26.865426932440865,
+            "ssim": 0.9613915138774448
+          }
+        ],
+        "decision": "Slow motion has the highest matched moving-region PSNR and SSIM, with +0.98dB motion PSNR over baseline. Gentle decay gives a higher whole-frame score but less motion-region improvement. Reviewed iPhone/orbit views still have unverified surrounding geometry; choose moving-object quality without importing a separate base.",
+        "visual_assessment": "Camera and orbit previews checked. Textile remains streaked and ghosted; surrounding novel-view geometry is incomplete. These are chosen continuation settings, not final quality acceptance."
+      }
+    }
+  },
+  "scores": "Validation camera images, not independent novel-view or metric geometry tests."
+}

@@ -1,0 +1,10 @@
+{
+    "captured_utc":  "2026-10-09T04:40:37.8780965Z",
+    "page_state":  {
+                       "stage":  11
+                   },
+    "kind":  "Headless local report browser screenshot",
+    "expression":  "true",
+    "filename":  "yogurt_baseline_01_step_010000_checkpoint.png",
+    "url":  "http://127.0.0.1:8109/"
+}

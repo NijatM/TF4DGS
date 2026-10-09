@@ -1,0 +1,27 @@
+{
+  "method": "4c4d",
+  "dataset": "textile",
+  "attempt": "smoke_hands_01",
+  "updates": 625,
+  "point_count": 36660,
+  "elapsed_s": 28.79530139999406,
+  "peak_cuda_allocated_gib": 0.5859065055847168,
+  "heldout_psnr_db": 17.026857757568358,
+  "heldout_ssim": 0.718891003396776,
+  "per_camera": {
+    "dji": {
+      "psnr_db": 17.25517355600993,
+      "ssim": 0.7078498880068461
+    },
+    "fuji": {
+      "psnr_db": 18.467723973592122,
+      "ssim": 0.7810196320215861
+    },
+    "iphone": {
+      "psnr_db": 15.357675743103027,
+      "ssim": 0.6678034901618958
+    }
+  },
+  "scope": "Full cropped-image held-out timestamps; not independent novel-view geometry accuracy.",
+  "heldout_foreground_psnr_db": 18.13427143096924
+}

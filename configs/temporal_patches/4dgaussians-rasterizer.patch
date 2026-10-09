@@ -1,0 +1,39 @@
+diff --git a/rasterize_points.cu b/rasterize_points.cu
+index 7f88aa8..5f347fe 100644
+--- a/rasterize_points.cu
++++ b/rasterize_points.cu
+@@ -10,7 +10,7 @@
+  */
+ 
+ #include <math.h>
+-#include <torch/extension.h>
++#include <torch/types.h>
+ #include <cstdio>
+ #include <sstream>
+ #include <iostream>
+diff --git a/rasterize_points.h b/rasterize_points.h
+index d77a8bf..91bbeec 100644
+--- a/rasterize_points.h
++++ b/rasterize_points.h
+@@ -10,7 +10,7 @@
+  */
+ 
+ #pragma once
+-#include <torch/extension.h>
++#include <torch/types.h>
+ #include <cstdio>
+ #include <tuple>
+ #include <string>
+diff --git a/setup.py b/setup.py
+index bb7220d..ec40a47 100644
+--- a/setup.py
++++ b/setup.py
+@@ -26,7 +26,7 @@ setup(
+             "cuda_rasterizer/backward.cu",
+             "rasterize_points.cu",
+             "ext.cpp"],
+-            extra_compile_args={"nvcc": ["-I" + os.path.join(os.path.dirname(os.path.abspath(__file__)), "third_party/glm/")]})
++            extra_compile_args={"nvcc": (["-Xcompiler=/Zc:preprocessor"] if os.name == "nt" else []) + ["-I" + os.path.join(os.path.dirname(os.path.abspath(__file__)), "third_party/glm/")]})
+         ],
+     cmdclass={
+         'build_ext': BuildExtension

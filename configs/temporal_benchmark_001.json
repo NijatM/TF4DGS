@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "temporal_benchmark_001",
+  "description": "Matched three-camera short action pilots using official model classes and renderers with a shared calibrated data/training adapter; not a reproduction of published leaderboard results.",
+  "methods": {
+    "4dgaussians": {"url": "https://github.com/hustvl/4DGaussians.git", "commit": "843d5ac636c37e4b611242287754f3d4ed150144"},
+    "4c4d": {"url": "https://github.com/yangzf-1023/4C4D.git", "commit": "ed6a3cb69782c4147151b3898944bc38132bae00"}
+  },
+  "source_frame_rate": {"numerator": 30000, "denominator": 1001},
+  "frame_count": 90,
+  "seed": 42,
+  "holdout": {"rule": "local_frame_index % 6 == 5", "scope": "Held-out timestamps from all three cameras; no independent fourth camera available."},
+  "max_image_edge": 1280,
+  "fixed_crop_fractions": {"dji": [0.03, 0.25, 0.98, 0.99], "fuji": [0.04, 0.03, 0.97, 0.98], "iphone": [0.13, 0.32, 0.89, 0.97]},
+  "world_roi_m": {"min": [-0.12, -0.08, -0.30], "max": [0.50, 0.35, 0.025]},
+  "normalization": {"center_m": [0.175, 0.105, 0.0], "scale_per_m": 6.666666666666667},
+  "initialization": {"max_actor_points": 26000, "max_table_points": 14000, "textile_source": "outputs/temporal_benchmark_001/textile_initial_stereo_hands/frame_000196.npz", "source": "First selected timestamp only: textile calibrated stereo and explicit registered neural shape prior including hands; yogurt existing canonical actor transformed by first pose. Same XYZ/RGB seed for both methods. No subsequent pose or geometry supplied to the trainers."},
+  "training": {"total_image_updates": 6000, "4dgaussians_coarse_updates": 1000, "batch_size": 1, "max_points": 180000, "sh_degree": 3, "lambda_dssim": 0.2},
+  "photometric_loss": {"background_rgb": [1.0, 1.0, 1.0], "textile_foreground_weight": 4.0, "include_hands": true, "textile_hand_mask": "Available RGB-derived 5 Hz masks transported with 2D Farneback image flow to each native video frame. Fabric and hands are both reconstructed and weighted equally. Identical masks for both methods. Masks do not provide 3D geometry or future poses.", "mask_timing": "Nearest available source masks may be approximately 100 ms away; optical-flow transport is approximate and is not a verified boundary or physical correspondence."},
+  "datasets": {
+    "yogurt": {"session": "data/dynamic_yogurt_001/session_measured_candidate.json", "source_start_frame": 330, "source_end_frame_exclusive": 420, "first_pts_s": 11.011, "last_pts_s": 13.980633333333333, "source_10hz_first_index": 110, "selection": "Container dragging across the board, after the initial synchronization/drop and idle section."},
+    "textile": {"session": "data/dynamic_textile_001/session_measured_candidate.json", "source_start_frame": 587, "source_end_frame_exclusive": 677, "first_pts_s": 19.586233333333333, "last_pts_s": 22.555866666666667, "source_10hz_first_index": 196, "selection": "High image-motion interval containing hand-driven textile stretching/folding; includes occlusion and the difficult tracking interval."}
+  },
+  "limitations": ["Source exports are 30000/1001 fps, not exactly 30 fps.", "Premiere synchronization is user-aligned with approximately one-frame uncertainty; matching file PTS does not verify physical synchronization.", "Calibration is provisional away from the measured board; novel-view metric accuracy remains unverified.", "This is a 1280-pixel pilot. Original 4K sources remain untouched for later full-quality training.", "Hands and the board remain in the training views; no fabricated clean background or old scene is merged."]
+}

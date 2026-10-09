@@ -1,0 +1,80 @@
+{
+  "yogurt": {
+    "cameras": [
+      {
+        "width": 1536,
+        "height": 2304,
+        "r_frame_rate": "30000/1001",
+        "avg_frame_rate": "30000/1001",
+        "duration": "15.582233",
+        "nb_frames": "467",
+        "camera": "dji",
+        "video": "data/dynamic_yogurt_001/raw/dji/Dji_Yogurt.mp4"
+      },
+      {
+        "width": 3840,
+        "height": 2160,
+        "r_frame_rate": "30000/1001",
+        "avg_frame_rate": "30000/1001",
+        "duration": "15.582233",
+        "nb_frames": "467",
+        "camera": "fuji",
+        "video": "data/dynamic_yogurt_001/raw/fuji/Fuji_Yogurt.mp4"
+      },
+      {
+        "width": 3840,
+        "height": 2160,
+        "r_frame_rate": "30000/1001",
+        "avg_frame_rate": "30000/1001",
+        "duration": "15.582233",
+        "nb_frames": "467",
+        "camera": "iphone",
+        "video": "data/dynamic_yogurt_001/raw/iphone/Iphone_Yogurt.mp4"
+      }
+    ],
+    "common_frame_count": 467,
+    "duration_s": 15.582233333333333,
+    "first_source_index": 0,
+    "last_source_index": 466,
+    "policy": "Use the full common export interval at native cadence, retaining the user Premiere alignment. No new verified sensor synchronization is claimed."
+  },
+  "textile": {
+    "cameras": [
+      {
+        "width": 1536,
+        "height": 2304,
+        "r_frame_rate": "30000/1001",
+        "avg_frame_rate": "30000/1001",
+        "duration": "42.609233",
+        "nb_frames": "1277",
+        "camera": "dji",
+        "video": "data/dynamic_textile_001/raw/dji/Dji_Textile.mp4"
+      },
+      {
+        "width": 3840,
+        "height": 2160,
+        "r_frame_rate": "30000/1001",
+        "avg_frame_rate": "30000/1001",
+        "duration": "42.609233",
+        "nb_frames": "1277",
+        "camera": "fuji",
+        "video": "data/dynamic_textile_001/raw/fuji/Fuji_Textile.mp4"
+      },
+      {
+        "width": 3840,
+        "height": 2160,
+        "r_frame_rate": "30000/1001",
+        "avg_frame_rate": "30000/1001",
+        "duration": "42.609233",
+        "nb_frames": "1277",
+        "camera": "iphone",
+        "video": "data/dynamic_textile_001/raw/iphone/Iphone_Textile.mp4"
+      }
+    ],
+    "common_frame_count": 1277,
+    "duration_s": 42.609233333333336,
+    "first_source_index": 0,
+    "last_source_index": 1276,
+    "policy": "Use the full common export interval at native cadence, retaining the user Premiere alignment. No new verified sensor synchronization is claimed."
+  }
+}

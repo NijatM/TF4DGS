@@ -1,0 +1,39 @@
+{
+  "dataset": "yogurt",
+  "attempt": "confirm_capacity_900k",
+  "step": 10600,
+  "edge": 1280,
+  "preset": "slow_motion",
+  "variant": "capacity_900k",
+  "point_count": 566928,
+  "elapsed_s": 921.0539091999963,
+  "run_elapsed_s": 69.32906799999182,
+  "evaluation_image_count": 45,
+  "peak_cuda_allocated_gib": 2.2676339149475098,
+  "validation_psnr_db": 30.8732053120931,
+  "motion_region_psnr_db": 27.047024748060437,
+  "validation_ssim_at_1280": 0.961229674021403,
+  "validation_psnr_common_1280": 30.8732053120931,
+  "motion_region_psnr_common_1280": 27.047024748060437,
+  "per_camera": {
+    "dji": {
+      "psnr_db": 30.280795923868816,
+      "motion_region_psnr_db": 27.079733912150065,
+      "ssim_at_1280": 0.9646154721577962
+    },
+    "fuji": {
+      "psnr_db": 31.364734649658203,
+      "motion_region_psnr_db": 27.904333368937174,
+      "ssim_at_1280": 0.9597017168998718
+    },
+    "iphone": {
+      "psnr_db": 30.97408536275228,
+      "motion_region_psnr_db": 26.157006963094076,
+      "ssim_at_1280": 0.9593718330065409
+    }
+  },
+  "evaluation_role": "validation",
+  "fit_all_frames": false,
+  "scope": "Full frames and train-derived motion region. Holdouts used for parameter selection are validation, not an independent final test.",
+  "scene_policy": "Full frames, all pixels supervised, one jointly optimized temporal model; no separate or frozen background."
+}

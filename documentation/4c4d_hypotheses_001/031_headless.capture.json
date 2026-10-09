@@ -1,0 +1,10 @@
+{
+    "captured_utc":  "2026-10-09T06:02:58.0014850Z",
+    "page_state":  {
+                       "stage":  31
+                   },
+    "kind":  "Headless local report browser screenshot",
+    "expression":  "true",
+    "filename":  "031_headless.png",
+    "url":  "http://127.0.0.1:8109/"
+}

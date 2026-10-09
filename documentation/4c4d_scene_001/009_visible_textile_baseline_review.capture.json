@@ -1,0 +1,13 @@
+{
+    "captured_utc":  "2026-10-09T04:29:39.3448665Z",
+    "page_state":  {
+                       "gallery":  true,
+                       "dataset":  "all",
+                       "playback_check":  null,
+                       "controls_check":  null
+                   },
+    "kind":  "Live local preview browser screenshot",
+    "expression":  "document.getElementById(\u0027textile_baseline_01_step_012000_preview.png\u0027).scrollIntoView({block:\u0027start\u0027}); true",
+    "filename":  "009_visible_textile_baseline_review.png",
+    "url":  "http://127.0.0.1:8109/comparison.html"
+}

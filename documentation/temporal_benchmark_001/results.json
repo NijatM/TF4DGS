@@ -1,0 +1,499 @@
+{
+  "benchmark_id": "temporal_benchmark_001",
+  "datasets": {
+    "yogurt": {
+      "interval": "Source frames 330-419 / 11.011000-13.980633 s / 1280 x 616 iPhone crop; original sources preserved.",
+      "methods": {
+        "4dgaussians": {
+          "method": "4dgaussians",
+          "dataset": "yogurt",
+          "attempt": "pilot_01",
+          "updates": 6000,
+          "point_count": 180000,
+          "elapsed_s": 542.4751757000049,
+          "peak_cuda_allocated_gib": 2.198117256164551,
+          "heldout_psnr_db": 28.192842695448135,
+          "heldout_ssim": 0.9481653663847182,
+          "per_camera": {
+            "dji": {
+              "psnr_db": 28.78609987894694,
+              "ssim": 0.9532558639844259
+            },
+            "fuji": {
+              "psnr_db": 28.331231307983398,
+              "ssim": 0.9422809958457947
+            },
+            "iphone": {
+              "psnr_db": 27.461196899414062,
+              "ssim": 0.9489592393239339
+            }
+          },
+          "scope": "Full cropped-image held-out timestamps; not independent novel-view geometry accuracy.",
+          "videos": {
+            "fixed": "4dgaussians_yogurt_pilot_01_rgb_fixed.mp4",
+            "comparison": "4dgaussians_yogurt_pilot_01_source_comparison.mp4",
+            "orbit30": "4dgaussians_yogurt_pilot_01_rgb_orbit_30fps.mp4"
+          },
+          "video_validation": [
+            {
+              "file": "4dgaussians_yogurt_pilot_01_rgb_fixed.mp4",
+              "bytes": 542201,
+              "sha256": "4ae6b88260ab76f7e703f2f5213c3f3e39f5b8a7023c884160bf5c006f1f7172",
+              "width": 1280,
+              "height": 616,
+              "frames": 90,
+              "fps": "30000/1001",
+              "duration_s": 3.003,
+              "maximum_timestamp_error_s": 3.33333333379926e-07,
+              "full_decode_passed": true,
+              "http_range_206_matches": true
+            },
+            {
+              "file": "4dgaussians_yogurt_pilot_01_source_comparison.mp4",
+              "bytes": 1304525,
+              "sha256": "bfe7887181f4f0f5b5be7a75fe8841297a61260330500fc56d0dbcefd522fd11",
+              "width": 2560,
+              "height": 656,
+              "frames": 90,
+              "fps": "30000/1001",
+              "duration_s": 3.003,
+              "maximum_timestamp_error_s": 3.33333333379926e-07,
+              "full_decode_passed": true,
+              "http_range_206_matches": true
+            },
+            {
+              "file": "4dgaussians_yogurt_pilot_01_rgb_orbit_30fps.mp4",
+              "bytes": 2535770,
+              "sha256": "1ee42e56f15873e67e31f338c35b9ac4a83f3e1563f4550401e07613618b1dff",
+              "width": 1280,
+              "height": 616,
+              "frames": 90,
+              "fps": "30/1",
+              "duration_s": 3.0,
+              "maximum_timestamp_error_s": 3.33333333379926e-07,
+              "full_decode_passed": true,
+              "http_range_206_matches": true
+            },
+            {
+              "file": "4dgaussians_yogurt_pilot_01_rgb_orbit.mp4",
+              "bytes": 2528086,
+              "sha256": "a62c12f9668538929126abe7d89eb3f8116c5abd4d32bb84b7b9668b6154eda9",
+              "width": 1280,
+              "height": 616,
+              "frames": 90,
+              "fps": "30000/1001",
+              "duration_s": 3.003,
+              "maximum_timestamp_error_s": 3.33333333379926e-07,
+              "full_decode_passed": true,
+              "http_range_206_matches": true
+            }
+          ],
+          "model": {
+            "file": "outputs/temporal_benchmark_001/4dgaussians/yogurt/pilot_01/continuous_model.pth",
+            "bytes": 54944873,
+            "sha256": "647fe66392f90cd8d35a9f5067c1de788cd773db3a1722570dba271d6751a8ed"
+          },
+          "decoder_validation": {
+            "reference_image": "4dgaussians_yogurt_pilot_01_iphone_heldout.png",
+            "normalized_time": 0.5280898876404494,
+            "maximum_channel_error_8bit": 0,
+            "mean_channel_error_8bit": 0.0,
+            "matching_fraction": 1.0,
+            "independent_decoder": true
+          },
+          "motion_probe": {
+            "query_timestamps": [
+              0.0,
+              0.0056179775280898875,
+              0.5,
+              0.5056179775280899,
+              1.0
+            ],
+            "half_frame_queries_are_model_evaluations": true,
+            "endpoint_shared_visible_count": 178405,
+            "endpoint_displacement_median_mm": 0.2635149657726288,
+            "endpoint_displacement_p95_mm": 1.6950558423995972,
+            "scope": "Internal Gaussian motion for shared visible primitives; not verified material correspondence, strain or measurement accuracy.",
+            "continuous_model_bytes": 54944873
+          },
+          "initial_points_sha256": "ecdbf2043da88bd9e54b1638c2192fb2d0191f1ab145d83e791dd715755fac4f",
+          "source_commit": "843d5ac636c37e4b611242287754f3d4ed150144",
+          "camera_projection_max_error_px": {
+            "dji": 0.00010039764583780197,
+            "fuji": 5.579609728556534e-05,
+            "iphone": 5.969125641058781e-05
+          }
+        },
+        "4c4d": {
+          "method": "4c4d",
+          "dataset": "yogurt",
+          "attempt": "pilot_01",
+          "updates": 6000,
+          "point_count": 179651,
+          "elapsed_s": 327.1623599000013,
+          "peak_cuda_allocated_gib": 1.56508207321167,
+          "heldout_psnr_db": 32.16475584242079,
+          "heldout_ssim": 0.9619940320650736,
+          "per_camera": {
+            "dji": {
+              "psnr_db": 33.70261942545573,
+              "ssim": 0.9681183894475301
+            },
+            "fuji": {
+              "psnr_db": 32.62994219462077,
+              "ssim": 0.9600915233294169
+            },
+            "iphone": {
+              "psnr_db": 30.161705907185873,
+              "ssim": 0.957772183418274
+            }
+          },
+          "scope": "Full cropped-image held-out timestamps; not independent novel-view geometry accuracy.",
+          "videos": {
+            "fixed": "4c4d_yogurt_pilot_01_rgb_fixed.mp4",
+            "comparison": "4c4d_yogurt_pilot_01_source_comparison.mp4",
+            "orbit30": "4c4d_yogurt_pilot_01_rgb_orbit_30fps.mp4"
+          },
+          "video_validation": [
+            {
+              "file": "4c4d_yogurt_pilot_01_rgb_fixed.mp4",
+              "bytes": 580436,
+              "sha256": "ca7d71ab2ebde23d92dc71be2f27cc3593ad949c2385fb5b7dedf4bfa628e46c",
+              "width": 1280,
+              "height": 616,
+              "frames": 90,
+              "fps": "30000/1001",
+              "duration_s": 3.003,
+              "maximum_timestamp_error_s": 3.33333333379926e-07,
+              "full_decode_passed": true,
+              "http_range_206_matches": true
+            },
+            {
+              "file": "4c4d_yogurt_pilot_01_source_comparison.mp4",
+              "bytes": 1355541,
+              "sha256": "6e26af53cd8a4a319ddc8f92ca9f18a16ada490f8d4a8fe6f2a64367462be229",
+              "width": 2560,
+              "height": 656,
+              "frames": 90,
+              "fps": "30000/1001",
+              "duration_s": 3.003,
+              "maximum_timestamp_error_s": 3.33333333379926e-07,
+              "full_decode_passed": true,
+              "http_range_206_matches": true
+            },
+            {
+              "file": "4c4d_yogurt_pilot_01_rgb_orbit_30fps.mp4",
+              "bytes": 1928157,
+              "sha256": "5162a1600fac66757c1f406ea5fc886a2f20863e30631bdce13cf13743016e1b",
+              "width": 1280,
+              "height": 616,
+              "frames": 90,
+              "fps": "30/1",
+              "duration_s": 3.0,
+              "maximum_timestamp_error_s": 3.33333333379926e-07,
+              "full_decode_passed": true,
+              "http_range_206_matches": true
+            },
+            {
+              "file": "4c4d_yogurt_pilot_01_rgb_orbit.mp4",
+              "bytes": 1923224,
+              "sha256": "901f1f9a24cb491705aed27302bb441e2d7e3452af86314a1ec6eca473f5ca00",
+              "width": 1280,
+              "height": 616,
+              "frames": 90,
+              "fps": "30000/1001",
+              "duration_s": 3.003,
+              "maximum_timestamp_error_s": 3.33333333379926e-07,
+              "full_decode_passed": true,
+              "http_range_206_matches": true
+            }
+          ],
+          "model": {
+            "file": "outputs/temporal_benchmark_001/4c4d/yogurt/pilot_01/continuous_model.pth",
+            "bytes": 115703975,
+            "sha256": "ca5f278eaad42aedbe31facd9c06f4e9a1a8d6bd922b992386fa79c3c9f7b058"
+          },
+          "decoder_validation": {
+            "reference_image": "4c4d_yogurt_pilot_01_iphone_heldout.png",
+            "normalized_time": 0.5280898876404494,
+            "maximum_channel_error_8bit": 0,
+            "mean_channel_error_8bit": 0.0,
+            "matching_fraction": 1.0,
+            "independent_decoder": true
+          },
+          "motion_probe": {
+            "query_timestamps": [
+              0.0,
+              0.0056179775280898875,
+              0.5,
+              0.5056179775280899,
+              1.0
+            ],
+            "half_frame_queries_are_model_evaluations": true,
+            "endpoint_shared_visible_count": 29982,
+            "endpoint_displacement_median_mm": 2.2228548526763916,
+            "endpoint_displacement_p95_mm": 24.767715454101562,
+            "scope": "Internal Gaussian motion for shared visible primitives; not verified material correspondence, strain or measurement accuracy.",
+            "continuous_model_bytes": 115703975
+          },
+          "initial_points_sha256": "ecdbf2043da88bd9e54b1638c2192fb2d0191f1ab145d83e791dd715755fac4f",
+          "source_commit": "ed6a3cb69782c4147151b3898944bc38132bae00",
+          "camera_projection_max_error_px": {
+            "dji": 0.00010039764583780197,
+            "fuji": 5.579609728556534e-05,
+            "iphone": 5.969125641058781e-05
+          }
+        }
+      }
+    },
+    "textile": {
+      "interval": "Source frames 587-676 / 19.586233-22.555867 s / 1280 x 616 iPhone crop; original sources preserved.",
+      "methods": {
+        "4dgaussians": {
+          "method": "4dgaussians",
+          "dataset": "textile",
+          "attempt": "pilot_01",
+          "updates": 6000,
+          "point_count": 88647,
+          "elapsed_s": 453.16380200001004,
+          "peak_cuda_allocated_gib": 1.362393856048584,
+          "heldout_psnr_db": 22.944026904635958,
+          "heldout_ssim": 0.8141273101170857,
+          "per_camera": {
+            "dji": {
+              "psnr_db": 22.309215037027993,
+              "ssim": 0.8022608955701193
+            },
+            "fuji": {
+              "psnr_db": 25.741350173950195,
+              "ssim": 0.8769236087799073
+            },
+            "iphone": {
+              "psnr_db": 20.781515502929686,
+              "ssim": 0.7631974260012309
+            }
+          },
+          "scope": "Full cropped-image held-out timestamps; not independent novel-view geometry accuracy.",
+          "heldout_foreground_psnr_db": 21.885271072387695,
+          "videos": {
+            "fixed": "4dgaussians_textile_pilot_01_rgb_fixed.mp4",
+            "comparison": "4dgaussians_textile_pilot_01_source_comparison.mp4",
+            "orbit30": "4dgaussians_textile_pilot_01_rgb_orbit_30fps.mp4"
+          },
+          "video_validation": [
+            {
+              "file": "4dgaussians_textile_pilot_01_rgb_fixed.mp4",
+              "bytes": 1452526,
+              "sha256": "fa6b648111e6dce4094b8c59f8c995bac789c45f9f5c0e8977af0c14457a206c",
+              "width": 1280,
+              "height": 616,
+              "frames": 90,
+              "fps": "30000/1001",
+              "duration_s": 3.003,
+              "maximum_timestamp_error_s": 3.33333333379926e-07,
+              "full_decode_passed": true,
+              "http_range_206_matches": true
+            },
+            {
+              "file": "4dgaussians_textile_pilot_01_source_comparison.mp4",
+              "bytes": 5151839,
+              "sha256": "82e9ce4e9e7d6829077684e14aa6d0e73e81b7a22715c4d179307d4a02b03251",
+              "width": 2560,
+              "height": 656,
+              "frames": 90,
+              "fps": "30000/1001",
+              "duration_s": 3.003,
+              "maximum_timestamp_error_s": 3.33333333379926e-07,
+              "full_decode_passed": true,
+              "http_range_206_matches": true
+            },
+            {
+              "file": "4dgaussians_textile_pilot_01_rgb_orbit_30fps.mp4",
+              "bytes": 2031877,
+              "sha256": "8ce3af0388700b44a837401199375697835dc65afad476c6d86d42cd4768066c",
+              "width": 1280,
+              "height": 616,
+              "frames": 90,
+              "fps": "30/1",
+              "duration_s": 3.0,
+              "maximum_timestamp_error_s": 3.33333333379926e-07,
+              "full_decode_passed": true,
+              "http_range_206_matches": true
+            },
+            {
+              "file": "4dgaussians_textile_pilot_01_rgb_orbit.mp4",
+              "bytes": 2028651,
+              "sha256": "641edc82b3a13ca24637e7f3bfea162f866425f249c14c5e985753274206aac9",
+              "width": 1280,
+              "height": 616,
+              "frames": 90,
+              "fps": "30000/1001",
+              "duration_s": 3.003,
+              "maximum_timestamp_error_s": 3.33333333379926e-07,
+              "full_decode_passed": true,
+              "http_range_206_matches": true
+            }
+          ],
+          "model": {
+            "file": "outputs/temporal_benchmark_001/4dgaussians/textile/pilot_01/continuous_model.pth",
+            "bytes": 33294057,
+            "sha256": "1244431ca086552414d4b5c38f82635f4d81098549143d27b76090785d2b520c"
+          },
+          "decoder_validation": {
+            "reference_image": "4dgaussians_textile_pilot_01_iphone_heldout.png",
+            "normalized_time": 0.5280898876404494,
+            "maximum_channel_error_8bit": 0,
+            "mean_channel_error_8bit": 0.0,
+            "matching_fraction": 1.0,
+            "independent_decoder": true
+          },
+          "motion_probe": {
+            "query_timestamps": [
+              0.0,
+              0.0056179775280898875,
+              0.5,
+              0.5056179775280899,
+              1.0
+            ],
+            "half_frame_queries_are_model_evaluations": true,
+            "endpoint_shared_visible_count": 77284,
+            "endpoint_displacement_median_mm": 5.135426998138428,
+            "endpoint_displacement_p95_mm": 20.75690269470215,
+            "scope": "Internal Gaussian motion for shared visible primitives; not verified material correspondence, strain or measurement accuracy.",
+            "continuous_model_bytes": 33294057
+          },
+          "initial_points_sha256": "384213743256162cf878c656593a5babef6fff501fcccd255a96ed7fac7dafb9",
+          "source_commit": "843d5ac636c37e4b611242287754f3d4ed150144",
+          "camera_projection_max_error_px": {
+            "dji": 0.00010609538020389664,
+            "fuji": 0.00010104099737873184,
+            "iphone": 0.0001519241591267928
+          }
+        },
+        "4c4d": {
+          "method": "4c4d",
+          "dataset": "textile",
+          "attempt": "pilot_01",
+          "updates": 6000,
+          "point_count": 180000,
+          "elapsed_s": 351.37628910000785,
+          "peak_cuda_allocated_gib": 1.543736457824707,
+          "heldout_psnr_db": 24.354238679673937,
+          "heldout_ssim": 0.8258139279153612,
+          "per_camera": {
+            "dji": {
+              "psnr_db": 23.838562774658204,
+              "ssim": 0.8177360614140828
+            },
+            "fuji": {
+              "psnr_db": 27.824702580769856,
+              "ssim": 0.8883281628290812
+            },
+            "iphone": {
+              "psnr_db": 21.39945068359375,
+              "ssim": 0.7713775595029195
+            }
+          },
+          "scope": "Full cropped-image held-out timestamps; not independent novel-view geometry accuracy.",
+          "heldout_foreground_psnr_db": 22.853866153293186,
+          "videos": {
+            "fixed": "4c4d_textile_pilot_01_rgb_fixed.mp4",
+            "comparison": "4c4d_textile_pilot_01_source_comparison.mp4",
+            "orbit30": "4c4d_textile_pilot_01_rgb_orbit_30fps.mp4"
+          },
+          "video_validation": [
+            {
+              "file": "4c4d_textile_pilot_01_rgb_fixed.mp4",
+              "bytes": 1702361,
+              "sha256": "668e8e7a829cfb7f24f3710e8c7fe068ed4b80d27fcea3ae14231e18f858b26a",
+              "width": 1280,
+              "height": 616,
+              "frames": 90,
+              "fps": "30000/1001",
+              "duration_s": 3.003,
+              "maximum_timestamp_error_s": 3.33333333379926e-07,
+              "full_decode_passed": true,
+              "http_range_206_matches": true
+            },
+            {
+              "file": "4c4d_textile_pilot_01_source_comparison.mp4",
+              "bytes": 5393690,
+              "sha256": "1599c20ee892975b3156f4705b951827ede1bd07fb6dae00887de925afdf4349",
+              "width": 2560,
+              "height": 656,
+              "frames": 90,
+              "fps": "30000/1001",
+              "duration_s": 3.003,
+              "maximum_timestamp_error_s": 3.33333333379926e-07,
+              "full_decode_passed": true,
+              "http_range_206_matches": true
+            },
+            {
+              "file": "4c4d_textile_pilot_01_rgb_orbit_30fps.mp4",
+              "bytes": 2237963,
+              "sha256": "0ac5ab71bd6ca193e5f12b167f23e89065816cca0a5ca40338ddfb2ef7fac47a",
+              "width": 1280,
+              "height": 616,
+              "frames": 90,
+              "fps": "30/1",
+              "duration_s": 3.0,
+              "maximum_timestamp_error_s": 3.33333333379926e-07,
+              "full_decode_passed": true,
+              "http_range_206_matches": true
+            },
+            {
+              "file": "4c4d_textile_pilot_01_rgb_orbit.mp4",
+              "bytes": 2237138,
+              "sha256": "eff84c5bba8d401befbb46337beb06a091e660bb661515ca17ac78b78095ceab",
+              "width": 1280,
+              "height": 616,
+              "frames": 90,
+              "fps": "30000/1001",
+              "duration_s": 3.003,
+              "maximum_timestamp_error_s": 3.33333333379926e-07,
+              "full_decode_passed": true,
+              "http_range_206_matches": true
+            }
+          ],
+          "model": {
+            "file": "outputs/temporal_benchmark_001/4c4d/textile/pilot_01/continuous_model.pth",
+            "bytes": 115928999,
+            "sha256": "dbd919180fa70fe73828c821e06bd0a3f11a7d81f761de63e5ee5d9885369e71"
+          },
+          "decoder_validation": {
+            "reference_image": "4c4d_textile_pilot_01_iphone_heldout.png",
+            "normalized_time": 0.5280898876404494,
+            "maximum_channel_error_8bit": 0,
+            "mean_channel_error_8bit": 0.0,
+            "matching_fraction": 1.0,
+            "independent_decoder": true
+          },
+          "motion_probe": {
+            "query_timestamps": [
+              0.0,
+              0.0056179775280898875,
+              0.5,
+              0.5056179775280899,
+              1.0
+            ],
+            "half_frame_queries_are_model_evaluations": true,
+            "endpoint_shared_visible_count": 6204,
+            "endpoint_displacement_median_mm": 9.708866119384766,
+            "endpoint_displacement_p95_mm": 65.53578186035156,
+            "scope": "Internal Gaussian motion for shared visible primitives; not verified material correspondence, strain or measurement accuracy.",
+            "continuous_model_bytes": 115928999
+          },
+          "initial_points_sha256": "384213743256162cf878c656593a5babef6fff501fcccd255a96ed7fac7dafb9",
+          "source_commit": "ed6a3cb69782c4147151b3898944bc38132bae00",
+          "camera_projection_max_error_px": {
+            "dji": 0.00010609538020389664,
+            "fuji": 0.00010104099737873184,
+            "iphone": 0.0001519241591267928
+          }
+        }
+      }
+    }
+  },
+  "scope": "Matched adapted pilots; temporal holdouts, no independently validated geometry.",
+  "visual_assessment": "4C4D has better photometric scores. Both textile models remain blurred and ghosted; no pristine result claimed."
+}

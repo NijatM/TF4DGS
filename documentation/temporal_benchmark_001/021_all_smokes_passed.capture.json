@@ -1,0 +1,10 @@
+{
+    "captured_utc":  "2026-10-09T02:56:04.3628534Z",
+    "page_state":  {
+                       "stage":  22
+                   },
+    "kind":  "Headless local report browser screenshot",
+    "expression":  "true",
+    "filename":  "021_all_smokes_passed.png",
+    "url":  "http://127.0.0.1:8108/"
+}

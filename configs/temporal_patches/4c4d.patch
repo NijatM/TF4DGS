@@ -1,0 +1,60 @@
+diff --git a/diff-gaussian-rasterization/rasterize_points.cu b/diff-gaussian-rasterization/rasterize_points.cu
+index 2d1ece4..ece70ad 100644
+--- a/diff-gaussian-rasterization/rasterize_points.cu
++++ b/diff-gaussian-rasterization/rasterize_points.cu
+@@ -10,7 +10,7 @@
+  */
+ 
+ #include <math.h>
+-#include <torch/extension.h>
++#include <torch/types.h>
+ #include <cstdio>
+ #include <sstream>
+ #include <iostream>
+diff --git a/diff-gaussian-rasterization/rasterize_points.h b/diff-gaussian-rasterization/rasterize_points.h
+index ad17582..3eef199 100644
+--- a/diff-gaussian-rasterization/rasterize_points.h
++++ b/diff-gaussian-rasterization/rasterize_points.h
+@@ -10,7 +10,7 @@
+  */
+ 
+ #pragma once
+-#include <torch/extension.h>
++#include <torch/types.h>
+ #include <cstdio>
+ #include <tuple>
+ #include <string>
+diff --git a/diff-gaussian-rasterization/setup.py b/diff-gaussian-rasterization/setup.py
+index 1ad99bf..baad93c 100644
+--- a/diff-gaussian-rasterization/setup.py
++++ b/diff-gaussian-rasterization/setup.py
+@@ -26,7 +26,7 @@ setup(
+             "cuda_rasterizer/backward.cu",
+             "rasterize_points.cu",
+             "ext.cpp"],
+-            extra_compile_args={"cxx": ['-O3', '-DNDEBUG'], "nvcc": ["-O3", "-I" + os.path.join(os.path.dirname(os.path.abspath(__file__)), "third_party/glm/")]})
++            extra_compile_args={"cxx": (["/O2", "/DNDEBUG"] if os.name == "nt" else ["-O3", "-DNDEBUG"]), "nvcc": (["-Xcompiler=/Zc:preprocessor"] if os.name == "nt" else []) + ["-O3", "-I" + os.path.join(os.path.dirname(os.path.abspath(__file__)), "third_party/glm/")]})
+         ],
+     cmdclass={
+         'build_ext': BuildExtension
+diff --git a/utils/general_utils.py b/utils/general_utils.py
+index 021c3bd..29f94c6 100644
+--- a/utils/general_utils.py
++++ b/utils/general_utils.py
+@@ -14,7 +14,15 @@ import sys
+ from datetime import datetime
+ import numpy as np
+ import random
+-from pointops2.functions.pointops import furthestsampling, knnquery
++# Random downsampling does not require pointops; import only when requested.
++# TF4DGS native compatibility: no replacement of the pointops algorithms.
++def knnquery(*args, **kwargs):
++    from pointops2.functions.pointops import knnquery as implementation
++    return implementation(*args, **kwargs)
++
++def furthestsampling(*args, **kwargs):
++    from pointops2.functions.pointops import furthestsampling as implementation
++    return implementation(*args, **kwargs)
+ 
+ def inverse_sigmoid(x):
+     return torch.log(x/(1-x))

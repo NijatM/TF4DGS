@@ -132,7 +132,9 @@ Selected yogurt and textile playback models are prepared as downloadable
 and Git LFS. The textile bundle preserves every selected compressed keyframe;
 its timeline helper restores repeated files without bundling duplicate states.
 The yogurt bundle includes its full-precision actor, current surroundings and
-supported rigid poses. A continuous textile deformation backend remains pending.
+supported rigid poses. Short continuous textile-model pilots are now available
+in the comparison below; full-duration production-quality reconstruction remains
+unfinished.
 
 The [final demo gallery](documentation/demos/README.md) collects one viewer-interface
 recording and one native 4K RGB ±45-degree orbit for each experiment. Offline
@@ -141,3 +143,33 @@ shape/pose discontinuities remain. The four MP4s total 82.37 MB and are intended
 for Git. Open its `index.html`, or
 run `conda run --no-capture-output -n tf4dgs python scripts/Serve-Demos.py` and
 visit <http://127.0.0.1:8107/>.
+
+The [continuous 4D pilot comparison](documentation/temporal_benchmark_001/RESULTS.md)
+tests 4DGaussians and 4C4D on the same three-second action intervals for yogurt
+and textile. Textile includes the hands. Four single temporal models and
+independent decoders are installed and validated; 4C4D has better held-out image
+scores, while textile blur and novel-view geometry errors remain unresolved.
+The [Windows installation and replay guide](docs/TEMPORAL_BENCHMARK.md) records
+the isolated environments and exact input intervals. Start its local report
+server and visit <http://127.0.0.1:8108/comparison.html> for synchronized source
+comparisons and 30 fps orbit videos. Models and source footage remain ignored.
+
+The new [whole-scene 4C4D refinement](docs/4C4D_WHOLE_SCENE.md) uses full camera
+frames and one jointly optimized temporal model per capture, including the
+subject, hands, table and visible room. It preserves the same short action
+intervals for longer training, matched parameter branches and native-resolution
+refinement. Actual progress and screenshots are saved in the
+[whole-scene journal](documentation/4c4d_scene_001/README.md); the current local
+report is <http://127.0.0.1:8109/>. The short-scene experiment is now closed:
+its last evaluated textile checkpoint is 20,000 updates. The 30k continuation
+failed on a Windows live-status file lock; its saved evidence is retained.
+
+[Full-recording 4C4D training](docs/4C4D_FULL_TRAINING.md) follows eight brief
+matched improvement tests and all-validation confirmations. Textile selected
+a 600k splat budget; yogurt retained the 450k budget with slower motion updates.
+The full 42.61-second textile and 15.58-second yogurt recordings are prepared
+through native 4K. Both full models passed the initial finite training check;
+the long sequential training worker is running. The active report at
+<http://127.0.0.1:8109/> now shows the
+[full-recording journal](documentation/4c4d_full_001/README.md).
+Final convergence, native refinement and visual playback review are pending.

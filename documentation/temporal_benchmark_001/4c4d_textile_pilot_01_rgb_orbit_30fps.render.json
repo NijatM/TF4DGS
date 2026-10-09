@@ -1,0 +1,13 @@
+{
+  "model": "continuous_model.pth",
+  "method": "4c4d",
+  "frames": 90,
+  "fps": 30.0,
+  "duration_s": 3.0,
+  "source_time_origin_pts_s": 19.586233333333332,
+  "source_time_span_s": 2.9696333333333342,
+  "frame_states": "Direct continuous-model queries at exact output seconds; no training images or discrete PLY sequence used.",
+  "orbit_degrees": 45,
+  "width": 1280,
+  "height": 616
+}

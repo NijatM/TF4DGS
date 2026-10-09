@@ -1,0 +1,10 @@
+{
+    "captured_utc":  "2026-10-09T04:24:29.2588467Z",
+    "page_state":  {
+                       "stage":  6
+                   },
+    "kind":  "Headless local report browser screenshot",
+    "expression":  "true",
+    "filename":  "006_smoke_verified.png",
+    "url":  "http://127.0.0.1:8109/"
+}

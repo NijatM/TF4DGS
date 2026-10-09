@@ -1,0 +1,4 @@
+{
+  "title": "TF4DGS - Whole-scene 4C4D refinement",
+  "intro": "Same yogurt 330-419 and textile 587-676 source intervals. Full camera frames; hands and all visible surroundings in one jointly trained temporal model. No separate base model. 30k training, controlled parameter branches, then higher-resolution refinement. Hidden surfaces and metric accuracy remain unverified."
+}

@@ -1,0 +1,15 @@
+{
+  "query_timestamps": [
+    0.0,
+    0.0056179775280898875,
+    0.5,
+    0.5056179775280899,
+    1.0
+  ],
+  "half_frame_queries_are_model_evaluations": true,
+  "endpoint_shared_visible_count": 29982,
+  "endpoint_displacement_median_mm": 2.2228548526763916,
+  "endpoint_displacement_p95_mm": 24.767715454101562,
+  "scope": "Internal Gaussian motion for shared visible primitives; not verified material correspondence, strain or measurement accuracy.",
+  "continuous_model_bytes": 115703975
+}

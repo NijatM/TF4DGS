@@ -1,0 +1,39 @@
+{
+  "dataset": "textile",
+  "attempt": "h_compact_geometry",
+  "step": 10600,
+  "edge": 1280,
+  "preset": "baseline",
+  "variant": "compact_geometry",
+  "point_count": 450000,
+  "elapsed_s": 935.9179769000039,
+  "run_elapsed_s": 63.87447899999097,
+  "evaluation_image_count": 9,
+  "peak_cuda_allocated_gib": 3.744849681854248,
+  "validation_psnr_db": 23.602727042304146,
+  "motion_region_psnr_db": 23.394338819715713,
+  "validation_ssim_at_1280": 0.8332639469040765,
+  "validation_psnr_common_1280": 23.602727042304146,
+  "motion_region_psnr_common_1280": 23.394338819715713,
+  "per_camera": {
+    "dji": {
+      "psnr_db": 23.437631607055664,
+      "motion_region_psnr_db": 23.134185791015625,
+      "ssim_at_1280": 0.8241184949874878
+    },
+    "fuji": {
+      "psnr_db": 26.467175165812176,
+      "motion_region_psnr_db": 25.925609588623047,
+      "ssim_at_1280": 0.8792442282040914
+    },
+    "iphone": {
+      "psnr_db": 20.903374354044598,
+      "motion_region_psnr_db": 21.123221079508465,
+      "ssim_at_1280": 0.7964291175206503
+    }
+  },
+  "evaluation_role": "validation",
+  "fit_all_frames": false,
+  "scope": "Full frames and train-derived motion region. Holdouts used for parameter selection are validation, not an independent final test.",
+  "scene_policy": "Full frames, all pixels supervised, one jointly optimized temporal model; no separate or frozen background."
+}

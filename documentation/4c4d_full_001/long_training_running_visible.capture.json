@@ -1,0 +1,10 @@
+{
+    "captured_utc":  "2026-10-09T18:49:07.5483002Z",
+    "page_state":  {
+                       "stage":  8
+                   },
+    "kind":  "Live local preview browser screenshot",
+    "expression":  "true",
+    "filename":  "long_training_running_visible.png",
+    "url":  "http://127.0.0.1:8109/"
+}
