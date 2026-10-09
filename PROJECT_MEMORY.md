@@ -2045,3 +2045,82 @@ The assistant has performed no commits or pushes.
   Evidence: restore_validation.json and yogurt_playback_validation.json in
   documentation/baseline_release/. First metadata draft retained in ignored
   outputs/release_assets/baseline_2026-10-08_metadata_draft/.
+
+### Final demo gallery (2026-10-08)
+
+- User requested documentation/demos with the best final UI and reconstruction-only
+  90-degree orbital videos, and confirmed yogurt/textile only. Earlier desk and
+  Necto are excluded from this gallery. Source models and recordings are unchanged.
+- Build-DemoGallery.py copies the validated final UI clips byte-for-byte and
+  encodes clean RGB viewports directly from retained lossless browser PNGs.
+  It preserves actual paint times and center/+45/center/-45/center camera motion.
+  Yogurt clean selects the complete first RGB phase (348 paints, all53 poses);
+  textile clean omits one startup paint with the old viewport, retaining all214
+  selected source states. CSS-corner crop removes interface text/controls.
+- Four videos: yogurt_ui.mp4 10,630,560 bytes/55.10s; yogurt_reconstruction_orbit.mp4
+  2,310,365 bytes/22.70s; textile_ui.mp4 5,446,646 bytes/43.47s;
+  textile_reconstruction_orbit.mp4 4,699,518 bytes/43.43s. Total23,087,089 bytes.
+  UI copies reuse existing Git content; newly encoded videos total7,009,883 bytes.
+  H264/yuv420p/30fps, clean CRF20, no upscaling, faststart. Not new30Hz geometry.
+- Full video decoding, SHA256, viewport dimensions, phase/source identities and
+  +/-45degree trajectory checks pass. Decoded start/middle/end clean images were
+  visually reviewed and show only the reconstructed space. Proof and per-video
+  provenance live in documentation/demos/; raw frames/encoding diagnostics stay
+  ignored in .local/workflows/dynamic_setup/demo_gallery_01/.
+- Gallery index.html is offline; Serve-Demos.py reuses the validated byte-range
+  handler and serves only documentation/demos on loopback8107. Screenshot helper
+  now allows this dedicated gallery port. No Git staging, commit or push by Codex.
+- Actual Edge playback check passed for all four videos: seek5s, play beyond5.4s,
+  nonzero decoded frames, no video errors. HTTP206 ranges match all four MP4 bytes.
+  Genuine screenshot gallery_review.png and metadata, browser_validation.json
+  and range_validation.json are saved in documentation/demos. Chronological
+  textile journal stage37 links that genuine gallery screenshot and remains sorted.
+- Gallery is task-owned PID26676 at http://127.0.0.1:8107/. Reopen with:
+  conda run --no-capture-output -n tf4dgs python scripts/Serve-Demos.py
+  Existing reconstruction viewers and source pins were not changed. No training,
+  environment installation, restart, Git staging, commit or upload in this task.
+
+### Native 4K demo correction (2026-10-08; supersedes the cropped gallery above)
+
+- User rejected low detail/jagged clean demos and suggested slower rendering
+  followed by real-time encoding. Old browser capture averages: yogurt 19.59 fps
+  across three modes, max paint gap 3.135 s; textile 22.46 fps, max gap 0.197 s.
+- Render-GaussianOrbit.py rasterizes full-precision fitted NPZ models directly
+  at 3840 x 2160 with gsplat antialiasing and one render for every 30 fps camera frame.
+  Elevated iPhone-side +/-45degree sine orbit; H264/yuv420p CRF 16 slow/faststart.
+  Offline encoder waits for each frame; no source-model edit or image enlargement.
+- Original source speeds: yogurt 7.2072-15.5155 s in 8.366667 s / 251 frames; textile
+  0-42.509133 s in 42.566667 s / 1,277 frames. All 53 supported poses / all 214 fits remain.
+  Last state is padded by less than two frames; unsupported yogurt gaps hold.
+  The prior 22.7 s yogurt cinematic pose-order stretch is superseded for clean RGB.
+- Clean MP4 sizes: yogurt 21,325,401 bytes; textile 44,970,237 bytes. New native
+  videos total 66,295,638 bytes; all four gallery MP4s 82,372,844 bytes. Every file
+  below 50 MiB. UI clips remain identical to already tracked source videos and
+  retain their original recording resolution/timing. No LFS rule added.
+- Finalize-NativeDemoGallery.py verifies SHA256, full decoding, native dimensions
+  and all exact n/30 presentation timestamps (error < 0.34 microseconds; no missing
+  or duplicate frames) before replacing clips. Five exact lossless-render RGB
+  compression comparisons average 44.60 dB / 47.77 dB; not reconstruction accuracy.
+- Native masters/lossless references/manifests are ignored under
+  outputs/demos_native4k_01/. Earlier previews remain in demos_native4k_probe_01/.
+  Full rejected gallery/decoded diagnostics remain ignored in
+  .local/workflows/dynamic_setup/native_demo_gallery_02/. Compact history and
+  genuine earlier screenshot remain tracked under documentation/demos/.
+- Four foreground browser samples seek and present 33 frames each over ~1.1 s,
+  with zero drops/errors. Validate-DemoPlayback.ps1 repeats that check. Earlier
+  hidden-browser tests and screenshot timeouts are documented with actual
+  failed-page state and native_playback_attempt_01.png. All four HTTP206 ranges
+  match current MP4 bytes. Final screenshot: gallery_review_4k.png.
+- Textile journal stages 38-40 record native correction, failed hidden-browser
+  check, and verified playback. Native montage is labelled as decoded model
+  renders, not a desktop capture. All 40 stages remain in chronological order.
+  Initial journal validation hit Python 3.10's inability to parse 7-digit .NET
+  fractional seconds; the existing Python 3.11 environment verified original
+  timestamps successfully without altering them.
+- Geometric continuity remains unresolved: textile has about 5 independent fits
+  per second and can pop/flicker; yogurt has 53 supported poses with a 2.002 s gap.
+  30 fps camera rendering fixes capture stutter, not these model discontinuities.
+  Continuous reconstruction/tracking remains the next model-development phase.
+- Gallery: http://127.0.0.1:8107/ (task PID 26676); Serve-Demos.py provides seekable
+  loopback playback. No source-pin/environment changes, training, restart,
+  Git staging, commit, push or upload. The user owns publication.

@@ -1,0 +1,25 @@
+{
+  "status": "all four MP4 byte ranges passed",
+  "checks": [
+    {
+      "file": "yogurt/yogurt_ui.mp4",
+      "http_status": 206,
+      "range_matches_file": true
+    },
+    {
+      "file": "yogurt/yogurt_reconstruction_orbit.mp4",
+      "http_status": 206,
+      "range_matches_file": true
+    },
+    {
+      "file": "textile/textile_ui.mp4",
+      "http_status": 206,
+      "range_matches_file": true
+    },
+    {
+      "file": "textile/textile_reconstruction_orbit.mp4",
+      "http_status": 206,
+      "range_matches_file": true
+    }
+  ]
+}

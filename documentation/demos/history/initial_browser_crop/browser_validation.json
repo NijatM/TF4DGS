@@ -1,0 +1,51 @@
+{
+  "status": "all four demos played and sought successfully",
+  "videos": [
+    {
+      "id": "yogurt-ui",
+      "file": "yogurt_ui.mp4",
+      "duration_s": 55.1,
+      "width": 1500,
+      "height": 1000,
+      "seek_target_s": 5,
+      "played_beyond_seek_s": 5.408408,
+      "decoded_frames": 166,
+      "error": null
+    },
+    {
+      "id": "yogurt-clean",
+      "file": "yogurt_reconstruction_orbit.mp4",
+      "duration_s": 22.7,
+      "width": 990,
+      "height": 710,
+      "seek_target_s": 5,
+      "played_beyond_seek_s": 5.406757,
+      "decoded_frames": 167,
+      "error": null
+    },
+    {
+      "id": "textile-ui",
+      "file": "textile_ui.mp4",
+      "duration_s": 43.466667,
+      "width": 1500,
+      "height": 1150,
+      "seek_target_s": 5,
+      "played_beyond_seek_s": 5.41075,
+      "decoded_frames": 167,
+      "error": null
+    },
+    {
+      "id": "textile-clean",
+      "file": "textile_reconstruction_orbit.mp4",
+      "duration_s": 43.433333,
+      "width": 1060,
+      "height": 736,
+      "seek_target_s": 5,
+      "played_beyond_seek_s": 5.406715,
+      "decoded_frames": 167,
+      "error": null
+    }
+  ],
+  "recorded_utc": "2026-10-08T23:15:09.8091936Z",
+  "screenshot": "gallery_review.png"
+}

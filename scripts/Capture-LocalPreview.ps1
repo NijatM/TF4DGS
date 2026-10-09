@@ -6,7 +6,7 @@ param(
     [switch]$Reload
 )
 $ErrorActionPreference = 'Stop'
-if ($Url -notmatch '^http://127\.0\.0\.1:(8096|8097|8100|8101|8102|8103|8104|8105)/') { throw 'Only dedicated local TF4DGS preview pages may be captured.' }
+if ($Url -notmatch '^http://127\.0\.0\.1:(8096|8097|8100|8101|8102|8103|8104|8105|8107)/') { throw 'Only dedicated local TF4DGS preview pages may be captured.' }
 $Socket = [System.Net.WebSockets.ClientWebSocket]::new()
 $script:MessageId = 0
 function Invoke-Cdp([string]$Method, $Parameters) {

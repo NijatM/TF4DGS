@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>TF4DGS experiment demos</title>
+<style>:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#111820;color:#e9eff5}
+body{margin:0}main{max-width:1240px;margin:auto;padding:32px 24px 48px}h1{margin:0 0 10px;font-size:32px}
+h2{margin:30px 0 14px;font-size:24px}p{line-height:1.6;color:#bac8d6}header p{margin:0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}article{background:#1b2632;border:1px solid #344454;border-radius:12px;overflow:hidden}
+article h3{font-size:18px;margin:16px 18px 8px}article p{font-size:14px;margin:0 18px 16px}
+video{display:block;width:100%;background:#0b1016}a{color:#9bd1ff}.note{font-size:14px}
+footer{margin-top:30px;border-top:1px solid #344454;padding-top:12px}
+@media(max-width:780px){.grid{grid-template-columns:1fr}main{padding:24px 16px}}</style></head>
+<body><main><header><h1>TF4DGS experiment demos</h1><p>Yogurt and textile / elevated +/-45 degree orbital sweep</p></header>
+<section><h2>Yogurt</h2><div class="grid"><article><h3>Viewer interface</h3>
+<p>RGB and analysis controls<br>55.10 s / 10.63 MB</p>
+<video id="yogurt-ui" controls playsinline preload="metadata"
+poster="yogurt/yogurt_ui.jpg" src="yogurt/yogurt_ui.mp4?v=native4k"></video></article><article><h3>Native 4K reconstruction</h3>
+<p>3840 x 2160 / every camera frame rendered / 30 fps<br>8.37 s / 21.33 MB</p>
+<video id="yogurt-clean" controls playsinline preload="metadata"
+poster="yogurt/yogurt_reconstruction_orbit.jpg" src="yogurt/yogurt_reconstruction_orbit.mp4?v=native4k"></video></article></div><p class="note">Original source speed; all 53 supported rigid poses. Pose gaps remain held, including one 2-second gap.</p></section><section><h2>Textile</h2><div class="grid"><article><h3>Viewer interface</h3>
+<p>RGB and analysis controls<br>43.47 s / 5.45 MB</p>
+<video id="textile-ui" controls playsinline preload="metadata"
+poster="textile/textile_ui.jpg" src="textile/textile_ui.mp4?v=native4k"></video></article><article><h3>Native 4K reconstruction</h3>
+<p>3840 x 2160 / every camera frame rendered / 30 fps<br>42.57 s / 44.97 MB</p>
+<video id="textile-clean" controls playsinline preload="metadata"
+poster="textile/textile_reconstruction_orbit.jpg" src="textile/textile_reconstruction_orbit.mp4?v=native4k"></video></article></div><p class="note">All 214 fitted textile states and the current table. The camera is 30fps; fitted shape updates remain about 5Hz.</p></section><footer><p class="note">82.37 MB total / <a href="README.md">Recording notes</a> /
+<a href="validation.json">Validation</a> / <a href="stutter_diagnosis.json">Stutter diagnosis</a><br>
+Use the player's full-screen button to inspect the native 4K videos.</p></footer></main>
+<script>for(const v of document.querySelectorAll('video'))v.addEventListener('play',()=>{for(const o of document.querySelectorAll('video'))if(o!==v)o.pause()});</script>
+</body></html>

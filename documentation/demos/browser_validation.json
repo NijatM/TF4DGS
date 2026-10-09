@@ -1,0 +1,72 @@
+{
+  "status": "All four videos sought and played; no browser frame drops in the foreground samples",
+  "recorded_utc": "2026-10-08T23:36:07.6443992Z",
+  "screenshot": "gallery_review_4k.png",
+  "sample_scope": "About 1.1 seconds per video after seeking; full-file timestamps and decode checked separately",
+  "videos": [
+    {
+      "id": "yogurt-ui",
+      "file": "yogurt_ui.mp4?v=native4k",
+      "width": 1500,
+      "height": 1000,
+      "duration_s": 55.1,
+      "seek_s": 5,
+      "played_from_s": 5,
+      "played_to_s": 6.104368,
+      "presented_callbacks": 33,
+      "total_frames_during_play": 34,
+      "dropped_frames_during_play": 0,
+      "document_hidden": false,
+      "viewport_scroll_y": 0,
+      "error": null
+    },
+    {
+      "id": "yogurt-clean",
+      "file": "yogurt_reconstruction_orbit.mp4?v=native4k",
+      "width": 3840,
+      "height": 2160,
+      "duration_s": 8.366667,
+      "seek_s": 4.1833335,
+      "played_from_s": 4.183333,
+      "played_to_s": 5.290853,
+      "presented_callbacks": 33,
+      "total_frames_during_play": 34,
+      "dropped_frames_during_play": 0,
+      "document_hidden": false,
+      "viewport_scroll_y": 0,
+      "error": null
+    },
+    {
+      "id": "textile-ui",
+      "file": "textile_ui.mp4?v=native4k",
+      "width": 1500,
+      "height": 1150,
+      "duration_s": 43.466667,
+      "seek_s": 5,
+      "played_from_s": 5,
+      "played_to_s": 6.105037,
+      "presented_callbacks": 33,
+      "total_frames_during_play": 34,
+      "dropped_frames_during_play": 0,
+      "document_hidden": false,
+      "viewport_scroll_y": 442,
+      "error": null
+    },
+    {
+      "id": "textile-clean",
+      "file": "textile_reconstruction_orbit.mp4?v=native4k",
+      "width": 3840,
+      "height": 2160,
+      "duration_s": 42.566667,
+      "seek_s": 5,
+      "played_from_s": 5,
+      "played_to_s": 6.106906,
+      "presented_callbacks": 33,
+      "total_frames_during_play": 34,
+      "dropped_frames_during_play": 0,
+      "document_hidden": false,
+      "viewport_scroll_y": 442,
+      "error": null
+    }
+  ]
+}

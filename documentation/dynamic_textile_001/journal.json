@@ -351,5 +351,41 @@
     "recorded_utc": "2026-10-08T22:26:14.4226828Z",
     "image": "36_final_interactive_rgb.png",
     "image_kind": "Genuine local browser screenshot; see accompanying capture metadata"
+  },
+  {
+    "stage": 37,
+    "title": "Final yogurt and textile demo gallery",
+    "text": "Created documentation/demos with one final viewer-interface recording and one clean RGB reconstruction-only 90-degree orbit for each experiment. Four videos total 23.09 MB; new clean encodings total 7.01 MB and use original lossless browser paint captures. All 53 supported yogurt poses and 214 selected textile states remain represented. SHA256, complete decoding, dimensions, timing and trajectory checks pass. All four clips actually seek to 5 seconds, play beyond it and decode without errors in the browser; HTTP206 byte ranges match original bytes. Source models and chronological clips are unchanged. No Git staging, commit or push was performed. The user subsequently rejected the cropped clean clips for limited resolution and stutter. Stages 38-40 record their replacement with native 4K offline renders.",
+    "status": "playback passed; visual quality subsequently rejected",
+    "recorded_utc": "2026-10-08T23:15:09.8091936Z",
+    "image": "../demos/gallery_review.png",
+    "image_kind": "Genuine local browser screenshot; metadata: ../demos/gallery_review.capture.json"
+  },
+  {
+    "stage": 38,
+    "title": "Native 4K export and stutter diagnosis",
+    "text": "The user rejected the 990 x 710 and 1060 x 736 browser crops. Measured old capture rates are 19.59 fps for yogurt across all modes and 22.46 fps for textile, with maximum paint gaps of 3.135 s and 0.197 s. Native gsplat rendering now computes every frame at 3840 x 2160 with antialiasing, source-time playback and H264 CRF16 encoding. Yogurt: 251 frames / 8.37 s / 21.33 MB; textile: 1,277 frames / 42.57 s / 44.97 MB. All 53 supported poses and all 214 fitted cloth states remain. Full decode and constant 30fps timestamp checks pass; mean five-reference RGB compression PSNR is 44.60 dB / 47.77 dB (encoding fidelity, not reconstruction accuracy). The diagnostic below uses exact decoded native render frames. Underlying five-Hz cloth fits and unsupported yogurt pose gaps are unchanged. Rejected full gallery is retained in ignored .local/workflows/dynamic_setup/native_demo_gallery_02/rejected_browser_crop_gallery/.",
+    "status": "native renders validated; temporal model limitations remain",
+    "recorded_utc": "2026-10-08T23:31:14.210790+00:00",
+    "image": "../demos/native_4k_render_review.jpg",
+    "image_kind": "Diagnostic assembled from exact decoded native Gaussian render frames; not a desktop screenshot"
+  },
+  {
+    "stage": 39,
+    "title": "Background-browser playback check failed",
+    "text": "The first native-video browser sample showed dropped presentation callbacks. Subsequent checks and screenshot paint waits timed out while the dedicated browser was hidden/occluded. The retained actual failed page state reports document_hidden=true for all players and zero presentation callbacks. This does not indicate missing frames in the saved MP4: full-file decoding and timestamps already pass. Restore the browser to the foreground and scroll each player into view before checking presentation.",
+    "status": "failed attempt retained; browser visibility diagnosed",
+    "recorded_utc": "2026-10-08T23:35:35.5081753Z",
+    "image": "../demos/native_playback_attempt_01.png",
+    "image_kind": "Genuine local browser screenshot taken after the failed test; metadata retains the prior hidden-page playback results"
+  },
+  {
+    "stage": 40,
+    "title": "Native 4K gallery playback verified",
+    "text": "All four selected videos seek and present 33 visible frames over about 1.1 seconds per clip, with zero dropped frames and no media errors in the foreground browser samples. Both clean videos report native 3840 x 2160 dimensions. Four HTTP206 byte-range checks match the current MP4 bytes. The gallery now contains 82.37 MB of MP4s, including 66.30 MB of new native renders; UI recordings remain identical to existing Git blobs. Final selected clean camera orbits are smooth 30fps at original source speed, while fitted cloth shape changes and missing yogurt poses can still pop. This closes the demo rendering correction without claiming a continuous deformation model. Source models, calibrated poses and static source pins are unchanged. No Git staging, commit or upload was performed.",
+    "status": "native 4K demos ready; geometry continuity remains separate work",
+    "recorded_utc": "2026-10-08T23:36:07.6443992Z",
+    "image": "../demos/gallery_review_4k.png",
+    "image_kind": "Genuine local browser screenshot; playback and capture metadata: ../demos/gallery_review_4k.capture.json"
   }
 ]

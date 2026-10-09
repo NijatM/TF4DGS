@@ -1,0 +1,34 @@
+{
+  "status": "All four current MP4 byte ranges passed",
+  "recorded_utc": "2026-10-08T23:36:07.6443992Z",
+  "checks": [
+    {
+      "file": "yogurt/yogurt_ui.mp4",
+      "http_status": 206,
+      "content_range": "bytes 100-999/10630560",
+      "range_matches_file": true,
+      "file_sha256": "a0cc745cbc61d1bfe452c74a08c6538ad00d5255ef12278d9ddb5bb21be12c87"
+    },
+    {
+      "file": "yogurt/yogurt_reconstruction_orbit.mp4",
+      "http_status": 206,
+      "content_range": "bytes 100-999/21325401",
+      "range_matches_file": true,
+      "file_sha256": "614934934544f751eb9715b941825897fc192cb5f593d8bd41b4c87f9bf449c5"
+    },
+    {
+      "file": "textile/textile_ui.mp4",
+      "http_status": 206,
+      "content_range": "bytes 100-999/5446646",
+      "range_matches_file": true,
+      "file_sha256": "e6c6207047232902bdbc8d499eddbca11d5366f1d5a264ba635286b2f81c6cb3"
+    },
+    {
+      "file": "textile/textile_reconstruction_orbit.mp4",
+      "http_status": 206,
+      "content_range": "bytes 100-999/44970237",
+      "range_matches_file": true,
+      "file_sha256": "cd219b84a93900e8b1e45e3e4176568d0d0d8a96f6faa5cd6c9c8f6a50345a0f"
+    }
+  ]
+}

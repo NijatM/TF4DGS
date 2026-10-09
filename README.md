@@ -133,3 +133,11 @@ and Git LFS. The textile bundle preserves every selected compressed keyframe;
 its timeline helper restores repeated files without bundling duplicate states.
 The yogurt bundle includes its full-precision actor, current surroundings and
 supported rigid poses. A continuous textile deformation backend remains pending.
+
+The [final demo gallery](documentation/demos/README.md) collects one viewer-interface
+recording and one native 4K RGB ±45-degree orbit for each experiment. Offline
+rendering supplies every 30 fps camera frame at original source speed; fitted
+shape/pose discontinuities remain. The four MP4s total 82.37 MB and are intended
+for Git. Open its `index.html`, or
+run `conda run --no-capture-output -n tf4dgs python scripts/Serve-Demos.py` and
+visit <http://127.0.0.1:8107/>.

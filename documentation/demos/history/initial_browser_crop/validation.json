@@ -1,0 +1,58 @@
+{
+  "status": "complete; hashes, timing and full decoding passed",
+  "recorded_utc": "2026-10-08T23:12:09.091760+00:00",
+  "experiments": [
+    "yogurt",
+    "textile"
+  ],
+  "clips": [
+    {
+      "dataset": "yogurt",
+      "path": "yogurt/yogurt_ui.mp4",
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "width": 1500,
+      "height": 1000,
+      "fps": "30/1",
+      "duration_s": 55.1,
+      "bytes": 10630560,
+      "sha256": "a0cc745cbc61d1bfe452c74a08c6538ad00d5255ef12278d9ddb5bb21be12c87"
+    },
+    {
+      "dataset": "yogurt",
+      "path": "yogurt/yogurt_reconstruction_orbit.mp4",
+      "bytes": 2310365,
+      "duration_s": 22.7,
+      "width": 990,
+      "height": 710,
+      "sha256": "9e4584817e9733c46bf7216192527252c9879c4df41fc00b5d9b615ec548cf90"
+    },
+    {
+      "dataset": "textile",
+      "path": "textile/textile_ui.mp4",
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "width": 1500,
+      "height": 1150,
+      "fps": "30/1",
+      "duration_s": 43.466667,
+      "bytes": 5446646,
+      "sha256": "e6c6207047232902bdbc8d499eddbca11d5366f1d5a264ba635286b2f81c6cb3"
+    },
+    {
+      "dataset": "textile",
+      "path": "textile/textile_reconstruction_orbit.mp4",
+      "bytes": 4699518,
+      "duration_s": 43.433333,
+      "width": 1060,
+      "height": 736,
+      "sha256": "df89ef8aaa910a68db6a8d98037d5f033bc60fdb309f92f8ad7b9bdb7e741980"
+    }
+  ],
+  "total_video_bytes": 23087089,
+  "ui_copies_byte_identical": true,
+  "clean_orbits_encoded_from_lossless_png": true,
+  "camera_arc_degrees": 90,
+  "model_parameters_changed": false,
+  "git_staging_commit_push_performed": false
+}

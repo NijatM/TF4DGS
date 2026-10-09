@@ -1,0 +1,92 @@
+{
+    "captured_utc":  "2026-10-08T23:15:09.8091936Z",
+    "page_state":  {
+                       "videos":  [
+                                      {
+                                          "file":  "yogurt_ui.mp4",
+                                          "duration_s":  55.1,
+                                          "width":  1500,
+                                          "height":  1000,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      },
+                                      {
+                                          "file":  "yogurt_reconstruction_orbit.mp4",
+                                          "duration_s":  22.7,
+                                          "width":  990,
+                                          "height":  710,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      },
+                                      {
+                                          "file":  "textile_ui.mp4",
+                                          "duration_s":  43.466667,
+                                          "width":  1500,
+                                          "height":  1150,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      },
+                                      {
+                                          "file":  "textile_reconstruction_orbit.mp4",
+                                          "duration_s":  43.433333,
+                                          "width":  1060,
+                                          "height":  736,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      }
+                                  ],
+                       "playback_check":  {
+                                              "status":  "all four demos played and sought successfully",
+                                              "videos":  [
+                                                             {
+                                                                 "id":  "yogurt-ui",
+                                                                 "file":  "yogurt_ui.mp4",
+                                                                 "duration_s":  55.1,
+                                                                 "width":  1500,
+                                                                 "height":  1000,
+                                                                 "seek_target_s":  5,
+                                                                 "played_beyond_seek_s":  5.408408,
+                                                                 "decoded_frames":  166,
+                                                                 "error":  null
+                                                             },
+                                                             {
+                                                                 "id":  "yogurt-clean",
+                                                                 "file":  "yogurt_reconstruction_orbit.mp4",
+                                                                 "duration_s":  22.7,
+                                                                 "width":  990,
+                                                                 "height":  710,
+                                                                 "seek_target_s":  5,
+                                                                 "played_beyond_seek_s":  5.406757,
+                                                                 "decoded_frames":  167,
+                                                                 "error":  null
+                                                             },
+                                                             {
+                                                                 "id":  "textile-ui",
+                                                                 "file":  "textile_ui.mp4",
+                                                                 "duration_s":  43.466667,
+                                                                 "width":  1500,
+                                                                 "height":  1150,
+                                                                 "seek_target_s":  5,
+                                                                 "played_beyond_seek_s":  5.41075,
+                                                                 "decoded_frames":  167,
+                                                                 "error":  null
+                                                             },
+                                                             {
+                                                                 "id":  "textile-clean",
+                                                                 "file":  "textile_reconstruction_orbit.mp4",
+                                                                 "duration_s":  43.433333,
+                                                                 "width":  1060,
+                                                                 "height":  736,
+                                                                 "seek_target_s":  5,
+                                                                 "played_beyond_seek_s":  5.406715,
+                                                                 "decoded_frames":  167,
+                                                                 "error":  null
+                                                             }
+                                                         ]
+                                          }
+                   },
+    "kind":  "Live local preview browser screenshot",
+    "expression":  "(async()=\u003e{\n const delay=ms=\u003enew Promise(r=\u003esetTimeout(r,ms));\n const results=[];\n for(const v of document.querySelectorAll(\u0027video\u0027)){\n   v.muted=true;\n   const target=5;\n   await new Promise((resolve,reject)=\u003e{\n     const timeout=setTimeout(()=\u003ereject(Error(\u0027Video seek timeout: \u0027+v.id)),8000);\n     v.addEventListener(\u0027seeked\u0027,()=\u003e{clearTimeout(timeout);resolve()},{once:true});\n     v.currentTime=target;\n   });\n   await v.play();await delay(400);v.pause();\n   const quality=v.getVideoPlaybackQuality();\n   const item={id:v.id,file:v.currentSrc.split(\u0027/\u0027).at(-1),duration_s:v.duration,width:v.videoWidth,height:v.videoHeight,seek_target_s:target,played_beyond_seek_s:v.currentTime,decoded_frames:quality.totalVideoFrames,error:v.error?v.error.message:null};\n   if(item.error||item.decoded_frames\u003c1||item.played_beyond_seek_s\u003c=5.1)throw Error(\u0027Video playback failed: \u0027+JSON.stringify(item));\n   results.push(item);\n }\n window.tf4dgsVideoPlaybackCheck={status:\u0027all four demos played and sought successfully\u0027,videos:results};\n return window.tf4dgsVideoPlaybackCheck;\n})()",
+    "filename":  "gallery_review.png",
+    "url":  "http://127.0.0.1:8107/"
+}

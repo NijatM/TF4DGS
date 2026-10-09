@@ -1,0 +1,42 @@
+{
+  "recorded_utc": "2026-10-08T23:31:14.210790+00:00",
+  "old_browser_captures": [
+    {
+      "dataset": "yogurt",
+      "source_capture": ".local/workflows/dynamic_setup/web_recording_01/yogurt_gaussian_fitted_capture/capture.json",
+      "source_sha256": "274b6ae7122255d704dc891defcd92fe8c160bb585f4427a95049cea686456b0",
+      "browser_paints": 1065,
+      "wall_duration_s": 54.30952596664429,
+      "average_captured_fps": 19.59140649935861,
+      "median_paint_interval_s": 0.019840002059936523,
+      "p95_paint_interval_s": 0.1083714246749877,
+      "largest_paint_interval_s": 3.1347620487213135,
+      "intervals_over_66ms": 344,
+      "intervals_over_100ms": 80
+    },
+    {
+      "dataset": "textile",
+      "source_capture": ".local/workflows/dynamic_setup/textile_reconstruction_02/browser_captures/rgb_orbit_02/capture.json",
+      "source_sha256": "b28bc196d3baad43f07579af2016458bda8305067978558fdd121b515f870639",
+      "browser_paints": 959,
+      "wall_duration_s": 42.65697503089905,
+      "average_captured_fps": 22.458226334756795,
+      "median_paint_interval_s": 0.0434185266494751,
+      "p95_paint_interval_s": 0.10533859729766845,
+      "largest_paint_interval_s": 0.19664502143859863,
+      "intervals_over_66ms": 151,
+      "intervals_over_100ms": 57
+    }
+  ],
+  "causes": [
+    "Clean videos were limited to approximately 1K browser viewport pixels.",
+    "Irregular browser paints skipped camera renders; encoding at 30fps repeated those paints.",
+    "Textile geometry consists of 214 separate fits, approximately 5Hz; model changes can pop.",
+    "Yogurt has 53 supported poses and gaps up to 2.002s; holds and jumps remain in those gaps."
+  ],
+  "fix": "Native 4K offline rasterization of every camera frame, source-time playback and constant 30fps encoding.",
+  "camera_frame_drops_in_new_file": 0,
+  "fabricated_material_motion": false,
+  "underlying_temporal_model_fixed": false,
+  "remaining": "A temporally consistent reconstruction is still required to remove geometric popping; slower recording alone cannot repair missing poses or independent geometry."
+}

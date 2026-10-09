@@ -1,0 +1,109 @@
+{
+    "captured_utc":  "2026-10-08T23:35:35.5081753Z",
+    "page_state":  {
+                       "videos":  [
+                                      {
+                                          "file":  "yogurt_ui.mp4?v=native4k",
+                                          "duration_s":  55.1,
+                                          "width":  1500,
+                                          "height":  1000,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      },
+                                      {
+                                          "file":  "yogurt_reconstruction_orbit.mp4?v=native4k",
+                                          "duration_s":  8.366667,
+                                          "width":  3840,
+                                          "height":  2160,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      },
+                                      {
+                                          "file":  "textile_ui.mp4?v=native4k",
+                                          "duration_s":  43.466667,
+                                          "width":  1500,
+                                          "height":  1150,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      },
+                                      {
+                                          "file":  "textile_reconstruction_orbit.mp4?v=native4k",
+                                          "duration_s":  42.566667,
+                                          "width":  3840,
+                                          "height":  2160,
+                                          "ready_state":  4,
+                                          "error":  null
+                                      }
+                                  ],
+                       "playback_check":  [
+                                              {
+                                                  "id":  "yogurt-ui",
+                                                  "file":  "yogurt_ui.mp4?v=native4k",
+                                                  "width":  1500,
+                                                  "height":  1000,
+                                                  "duration_s":  55.1,
+                                                  "seek_s":  5,
+                                                  "played_from_s":  5,
+                                                  "played_to_s":  7.004282,
+                                                  "presented_callbacks":  0,
+                                                  "total_frames_during_play":  53,
+                                                  "dropped_frames_during_play":  29,
+                                                  "document_hidden":  true,
+                                                  "viewport_scroll_y":  0,
+                                                  "error":  null
+                                              },
+                                              {
+                                                  "id":  "yogurt-clean",
+                                                  "file":  "yogurt_reconstruction_orbit.mp4?v=native4k",
+                                                  "width":  3840,
+                                                  "height":  2160,
+                                                  "duration_s":  8.366667,
+                                                  "seek_s":  4.1833335,
+                                                  "played_from_s":  4.183333,
+                                                  "played_to_s":  6.192441,
+                                                  "presented_callbacks":  0,
+                                                  "total_frames_during_play":  54,
+                                                  "dropped_frames_during_play":  30,
+                                                  "document_hidden":  true,
+                                                  "viewport_scroll_y":  0,
+                                                  "error":  null
+                                              },
+                                              {
+                                                  "id":  "textile-ui",
+                                                  "file":  "textile_ui.mp4?v=native4k",
+                                                  "width":  1500,
+                                                  "height":  1150,
+                                                  "duration_s":  43.466667,
+                                                  "seek_s":  5,
+                                                  "played_from_s":  5,
+                                                  "played_to_s":  6.993514,
+                                                  "presented_callbacks":  0,
+                                                  "total_frames_during_play":  52,
+                                                  "dropped_frames_during_play":  30,
+                                                  "document_hidden":  true,
+                                                  "viewport_scroll_y":  442,
+                                                  "error":  null
+                                              },
+                                              {
+                                                  "id":  "textile-clean",
+                                                  "file":  "textile_reconstruction_orbit.mp4?v=native4k",
+                                                  "width":  3840,
+                                                  "height":  2160,
+                                                  "duration_s":  42.566667,
+                                                  "seek_s":  5,
+                                                  "played_from_s":  5,
+                                                  "played_to_s":  7.005026,
+                                                  "presented_callbacks":  0,
+                                                  "total_frames_during_play":  53,
+                                                  "dropped_frames_during_play":  29,
+                                                  "document_hidden":  true,
+                                                  "viewport_scroll_y":  441,
+                                                  "error":  null
+                                              }
+                                          ]
+                   },
+    "kind":  "Live local preview browser screenshot",
+    "expression":  "true",
+    "filename":  "native_playback_attempt_01.png",
+    "url":  "http://127.0.0.1:8107/"
+}
