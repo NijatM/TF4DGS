@@ -1,0 +1,9 @@
+{
+  "model": "outputs/4c4d_full_001/previews/textile/step_032000_continuous_model.pth",
+  "sha256": "250224c3b53c5f77f05d4126db173b2e8ec9198aea564ec2f8579838b28bc06c",
+  "step": 32000,
+  "edge": 1280,
+  "gaussians": 599996,
+  "status": "intermediate full-duration checkpoint; not final or 4K-refined",
+  "source": "Saved optimizer checkpoint, CPU export with official capture layout; no training images or discrete frame models."
+}

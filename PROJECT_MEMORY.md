@@ -2340,3 +2340,53 @@ The assistant has performed no commits or pushes.
   docs/4C4D_FULL_TRAINING.md explains stages and quality-review limits.
 - No Git files were staged, committed or pushed. Data/models/cache/envs/logs
   remain ignored; useful configs/scripts/documentation stay available to commit.
+
+### Textile checkpoint preview requested during full training
+
+- User asked where to inspect textile in the4D viewer. Full worker33372 is
+  still active, main trainer36620/25012; live progress32100/60000 and GPU
+  nearly full (~15934/16376MiB). Peak allocated rose to15.56GiB, with slow
+  updates; do not start another CUDA process concurrently. Investigate this
+  growth/quality after viewer inspection rather than claiming convergence.
+- Interactive8110 is not running. Report8109 remains available. Asked user
+  whether to temporarily pause training for interactive viewing or keep it
+  running. Do not stop/restart the training worker without that choice.
+- CPU-only scripts/Export-4C4DCheckpointPreview.py preserves a saved checkpoint
+  via a transient hardlink and maps the pinned official4D capture tuple to the
+  same inference fields, without CUDA. It exported step32000,599996Gaussians,
+  edge1280,full42.576s model span (42.609s capture including final frame).
+  Immutable packet: outputs/4c4d_full_001/previews/textile/
+  step_032000_continuous_model.pth, SHA256
+  250224c3b53c5f77f05d4126db173b2e8ec9198aea564ec2f8579838b28bc06c.
+  Ignored registry: outputs/4c4d_full_001/preview_models.json. Metadata saved
+  documentation/4c4d_full_001/textile_preview_export.json.
+- Viewer now handles a textile-only registry and labels intermediate step/
+  trained edge. After safely pausing the verified worker/trainer at a saved
+  checkpoint, launch4c4dPython scripts/Serve-4C4DScene.py --models
+  outputs/4c4d_full_001/preview_models.json and validate metadata/render on8110.
+  Verify CPU-export decoder output before calling it ready; GPU render check
+  has not been done. It is not a final or native4K-trained result.
+- Latest completed full-duration validation at20k is16.0028dB whole /17.9526dB
+  motion,SSIM.69850. Full duration differs from3s tests; don't compare these
+  as matched scores or describe the current fabric as pristine.
+
+### Full-duration 4C4D experiment ended at user request
+
+- User inspected the textile preview and rejected the reconstruction as a failure.
+  This supersedes the running/paused state described above. Do not resume this
+  full-training pipeline or start yogurt/refinement without new user direction.
+- Training had already stopped. Verified and stopped only the preview viewer
+  processes 32844/33108; no active full-training or scene-training worker found.
+- Last saved textile checkpoint: 32000 updates, 599996 Gaussians, edge1280.
+  Last unsaved progress: 32500. Native-resolution refinement was not reached.
+  Yogurt full-duration training remains at its initial smoke-test checkpoint.
+- Retain footage, models/checkpoints, configuration, failure evidence and logs
+  for diagnosis. The complete-duration cloth remains blurry with streaks and
+  does not meet the requested reconstruction quality. Successful HTTP playback
+  checks establish viewer function only, not reconstruction quality.
+- Review evidence: documentation/4c4d_full_001/textile_step_032000_viewer_20s.png,
+  textile_step_032000_interactive_viewer_visible.png,
+  textile_step_032000_playback_verified_visible.png,
+  textile_step_032000_orbit_verified_visible.png. Failure is recorded in the
+  chronological report and pipeline status. Static installation is preserved.
+- No Git staging, commits or pushes were performed.

@@ -1,0 +1,13 @@
+{
+    "captured_utc":  "2026-10-09T23:50:03.1087808Z",
+    "page_state":  {
+                       "model":  "outputs/4c4d_full_001/previews/textile/step_032000_continuous_model.pth",
+                       "time":  "0.717 / 42.576 s",
+                       "mode":  "rgb",
+                       "trails":  false
+                   },
+    "kind":  "Live local preview browser screenshot",
+    "expression":  "(async()=\u003e{document.getElementById(\"yaw\").value=15;document.getElementById(\"yaw\").oninput();await new Promise(r=\u003esetTimeout(r,1500));if(document.getElementById(\"camera\").value!==\"orbit\"||!document.getElementById(\"render\").naturalWidth)throw Error(\"Orbit failed\");return true;})()",
+    "filename":  "textile_step_032000_orbit_verified_visible.png",
+    "url":  "http://127.0.0.1:8110/"
+}

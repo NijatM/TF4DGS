@@ -107,5 +107,39 @@
       "textile_whole_1280_step_020000_orbit.png"
     ],
     "videos": []
+  },
+  {
+    "number": 11,
+    "utc": "2026-10-09T23:04:48.911634+00:00",
+    "title": "Textile 32k full-duration checkpoint exported for preview",
+    "detail": "Immutable CPU-only export from the saved 32,000-update checkpoint: 599,996 Gaussians, 1280-edge training, entire 42.61-second capture. Viewer on port8110 is not running because concurrent CUDA inference would compete with nearly full GPU memory. Awaiting user preference to pause training for inspection or continue training. Final 4K refinement remains pending.",
+    "status": "preview prepared; training continues; viewer not started",
+    "images": [],
+    "videos": []
+  },
+  {
+    "number": 12,
+    "utc": "2026-10-09T23:48:59.283697+00:00",
+    "title": "User-authorized training pause and textile 4D viewer opened",
+    "detail": "Stopped only the verified training coordinator and its CUDA process tree. Last saved optimizer checkpoint: 32,000 updates; last unsaved progress: 32,500. Resume will restore 32k and repeat unsaved work. Textile preview renders the complete 42.576s model span from 599,996 actual 4D Gaussians. HTTP page and metadata returned200; action-frame rendering verified. This is edge1280, not final or native4K-refined. Training remains paused during inspection.",
+    "status": "training paused; intermediate full-duration viewer available",
+    "images": [
+      "textile_step_032000_viewer_20s.png"
+    ],
+    "videos": []
+  },
+  {
+    "number": 13,
+    "utc": "2026-10-09T23:52:56.433771+00:00",
+    "title": "Full-duration textile reconstruction rejected; experiment ended",
+    "detail": "User inspected the actual 32k continuous Gaussian checkpoint and rejected its reconstruction quality. Cloth is blurry with streaks; functioning playback and orbit do not establish reconstruction accuracy. Full training is terminated, not waiting for automatic resume. Preview viewer stopped; footage, checkpoints and evidence retained. Native-resolution refinements and full yogurt training did not run.",
+    "status": "failed quality review; stopped at user request",
+    "images": [
+      "textile_step_032000_viewer_20s.png",
+      "textile_step_032000_interactive_viewer_visible.png",
+      "textile_step_032000_playback_verified_visible.png",
+      "textile_step_032000_orbit_verified_visible.png"
+    ],
+    "videos": []
   }
 ]

@@ -1,0 +1,13 @@
+{
+    "captured_utc":  "2026-10-09T23:50:04.8578082Z",
+    "page_state":  {
+                       "model":  "outputs/4c4d_full_001/previews/textile/step_032000_continuous_model.pth",
+                       "time":  "20.990 / 42.576 s",
+                       "mode":  "rgb",
+                       "trails":  false
+                   },
+    "kind":  "Live local preview browser screenshot",
+    "expression":  "(async()=\u003e{document.getElementById(\"reset\").click();document.getElementById(\"scrub\").value=493;document.getElementById(\"scrub\").oninput();await new Promise(r=\u003esetTimeout(r,1000));return true;})()",
+    "filename":  "textile_step_032000_viewer_ready_visible.png",
+    "url":  "http://127.0.0.1:8110/"
+}

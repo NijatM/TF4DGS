@@ -82,6 +82,14 @@ def main():
         raise ValueError('Registry must belong to a registered joint-scene experiment')
     record = json.loads(registry_path.read_text(encoding='utf-8-sig'))
     registry = record.get('datasets',record)
+    page = PAGE
+    for dataset,label in [('textile','Textile and hands'),('yogurt','Yogurt')]:
+        if dataset not in registry:
+            page = page.replace(f'<option value="{dataset}">{label}</option>','')
+    if registry_path.name == 'preview_models.json':
+        info = '; '.join(f'{name}: checkpoint {entry.get("step","unknown"):,} / edge {entry.get("edge",1280)}' for name,entry in registry.items())
+        page = page.replace('Experimental geometry; hidden surfaces remain unverified.',
+                            'Intermediate training preview. '+info+'. Native 4K refinement is pending. Hidden surfaces remain unverified.')
     pipe = SimpleNamespace(convert_SHs_python=False, compute_cov3D_python=False, debug=False, env_map_res=0)
     background = torch.ones(3, device='cuda')
 
@@ -107,6 +115,7 @@ def main():
         return {'source': registry[dataset]['model'], 'dataset': dataset, 'gaussians': len(model.get_xyz),
                 'time_origin_pts_s': packet['time_origin_pts_s'], 'time_span_s': packet['time_span_s'],
                 'camera_views': list(packet['cameras']), 'continuous_time': True, 'whole_scene': True,
+                'checkpoint_step': packet['step'], 'trained_image_edge': packet['setup']['edge'],
                 'separate_background_model': False, 'metric_accuracy_verified': False, 'persistent_material_ids': False}
 
     class Handler(BaseHTTPRequestHandler):
@@ -120,7 +129,7 @@ def main():
             dataset = query.get('dataset', ['textile'])[0]
             try:
                 if request.path == '/':
-                    self.reply(PAGE.encode(), 'text/html; charset=utf-8');return
+                    self.reply(page.encode(), 'text/html; charset=utf-8');return
                 if dataset not in registry:
                     raise ValueError('Unknown experiment')
                 if request.path == '/api/meta':
