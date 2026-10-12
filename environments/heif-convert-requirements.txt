@@ -1,0 +1,3 @@
+# Full-resolution HEIF -> 8bit RGB PNG conversion; tested on Python3.10 Windows.
+Pillow==11.3.0
+pillow-heif==1.8.1

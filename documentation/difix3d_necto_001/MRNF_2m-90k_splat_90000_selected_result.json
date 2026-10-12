@@ -1,0 +1,595 @@
+{
+  "input": "splat_90000.ply",
+  "output": "splat_90000_Refined_Difix3D.ply",
+  "source_sha256": "8fd9e026a3e5c7d6a6c9ac4a94ffdc45ed6bd97e7fb64e840529b1a4ea0c7545",
+  "output_sha256": "a6e55b8954746974d05752e4a89fe58f8c7eca482fb05246b9e4337d6f1c8bc4",
+  "original_preserved": true,
+  "gaussians": 2000000,
+  "recipe": "opacity_recovery",
+  "raw_repair": "splat_90000_opacity_recovery_Difix3D.ply",
+  "raw_repair_sha256": "a6e55b8954746974d05752e4a89fe58f8c7eca482fb05246b9e4337d6f1c8bc4",
+  "raw_recipe_provenance": {
+    "input": "splat_90000.ply",
+    "output": "splat_90000_opacity_recovery_Difix3D.ply",
+    "source_sha256": "8fd9e026a3e5c7d6a6c9ac4a94ffdc45ed6bd97e7fb64e840529b1a4ea0c7545",
+    "starting_model_sha256": "e6d5e9caa8589f4e5c94c440305d9a3382cc964917a873a6b298fae3033e4dd0",
+    "output_sha256": "a6e55b8954746974d05752e4a89fe58f8c7eca482fb05246b9e4337d6f1c8bc4",
+    "original_preserved": true,
+    "recipe": "opacity_recovery",
+    "steps": 3000,
+    "training_edge": 1024,
+    "target_edge": 1024,
+    "source_photos": 275,
+    "novel_targets": 26,
+    "opacity_attenuated": 30460,
+    "attenuated_still_below_1pct": 1215,
+    "sfm_depth_weight": 0.0,
+    "ssim_weight": 0.0,
+    "learning_rates": {
+      "means": 3.281216663505429e-05,
+      "scales": 0.001,
+      "quats": 0.0002,
+      "opacities": 0.02,
+      "sh0": 0.00015,
+      "shN": 7.5e-06
+    },
+    "before": {
+      "mean_psnr": 23.084035305225107,
+      "mean_support_psnr": 23.084035428505192,
+      "views": [
+        {
+          "name": "DJI_0004.JPG",
+          "psnr": 22.723294187461068,
+          "support_psnr": 22.723294187461068
+        },
+        {
+          "name": "DJI_0037.JPG",
+          "psnr": 24.69082103785102,
+          "support_psnr": 24.690821335638592
+        },
+        {
+          "name": "DJI_0073.JPG",
+          "psnr": 20.65799955356223,
+          "support_psnr": 20.65800002419745
+        },
+        {
+          "name": "DJI_0115.JPG",
+          "psnr": 23.170341643974574,
+          "support_psnr": 23.170341643974574
+        },
+        {
+          "name": "DJI_0154.JPG",
+          "psnr": 20.669059904073936,
+          "support_psnr": 20.669059904073936
+        },
+        {
+          "name": "DJI_0188.JPG",
+          "psnr": 23.266496741953617,
+          "support_psnr": 23.266496741953617
+        },
+        {
+          "name": "DJI_0231.JPG",
+          "psnr": 26.18332022167352,
+          "support_psnr": 26.18332022167352
+        },
+        {
+          "name": "DSCF1384.png",
+          "psnr": 21.11443844211898,
+          "support_psnr": 21.11443844211898
+        },
+        {
+          "name": "DSCF1425.png",
+          "psnr": 25.280546014357054,
+          "support_psnr": 25.280546355454973
+        }
+      ]
+    },
+    "after": {
+      "mean_psnr": 24.71533880411799,
+      "mean_support_psnr": 24.71533880411799,
+      "views": [
+        {
+          "name": "DJI_0004.JPG",
+          "psnr": 22.976465354757472,
+          "support_psnr": 22.976465354757472
+        },
+        {
+          "name": "DJI_0037.JPG",
+          "psnr": 27.438540557178563,
+          "support_psnr": 27.438540557178563
+        },
+        {
+          "name": "DJI_0073.JPG",
+          "psnr": 24.587956666783768,
+          "support_psnr": 24.587956666783768
+        },
+        {
+          "name": "DJI_0115.JPG",
+          "psnr": 24.946036928777524,
+          "support_psnr": 24.946036928777524
+        },
+        {
+          "name": "DJI_0154.JPG",
+          "psnr": 23.718955044459808,
+          "support_psnr": 23.718955044459808
+        },
+        {
+          "name": "DJI_0188.JPG",
+          "psnr": 25.461792536144042,
+          "support_psnr": 25.461792536144042
+        },
+        {
+          "name": "DJI_0231.JPG",
+          "psnr": 26.890680339173,
+          "support_psnr": 26.890680339173
+        },
+        {
+          "name": "DSCF1384.png",
+          "psnr": 22.50807505664848,
+          "support_psnr": 22.50807505664848
+        },
+        {
+          "name": "DSCF1425.png",
+          "psnr": 23.909546753139296,
+          "support_psnr": 23.909546753139296
+        }
+      ]
+    },
+    "gaussians": 2000000,
+    "camera_alignment": {
+      "scale": 1.0,
+      "rotation": [
+        [
+          0.9999999999999999,
+          -2.498001805406602e-16,
+          -1.249000902703301e-16
+        ],
+        [
+          -5.551115123125783e-17,
+          0.9999999999999999,
+          1.6653345369377348e-16
+        ],
+        [
+          -2.7755575615628914e-16,
+          1.6653345369377348e-16,
+          1.0
+        ]
+      ],
+      "translation": [
+        2.220446049250313e-16,
+        -2.220446049250313e-16,
+        2.220446049250313e-16
+      ],
+      "matrix": [
+        [
+          0.9999999999999999,
+          -2.498001805406602e-16,
+          -1.249000902703301e-16,
+          2.220446049250313e-16
+        ],
+        [
+          -5.551115123125783e-17,
+          0.9999999999999999,
+          1.6653345369377348e-16,
+          -2.220446049250313e-16
+        ],
+        [
+          -2.7755575615628914e-16,
+          1.6653345369377348e-16,
+          1.0,
+          2.220446049250313e-16
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matched_attributes": 3000,
+      "inliers": 3000,
+      "residual_p99": 2.8187134308097726e-15
+    },
+    "reopened_ply_verified": true,
+    "scope": "Experimental opacity attenuation and optional sparse SfM-depth adaptation with official Difix image targets. Same Gaussian count; no invented claim of complete missing geometry recovery.",
+    "elapsed_s": 271.6271876000101,
+    "reopened_psnr_delta_db": 0.0,
+    "starting_recipe_provenance": {
+      "input": "splat_90000.ply",
+      "output": "splat_90000_wide_official_Difix3D.ply",
+      "source_sha256": "8fd9e026a3e5c7d6a6c9ac4a94ffdc45ed6bd97e7fb64e840529b1a4ea0c7545",
+      "output_sha256": "e6d5e9caa8589f4e5c94c440305d9a3382cc964917a873a6b298fae3033e4dd0",
+      "original_preserved": true,
+      "gaussians": 2000000,
+      "diffusion_model": "nvidia/difix_ref",
+      "difix_commit": "c76edc595586e16732c91ddee82f3a6d83a8a9cc",
+      "weights_revision": "d4830559772a5795c9d136302c5b197d6418d3fb",
+      "adapter": "Repair-Difix3DSplats.py",
+      "steps": 3000,
+      "training_edge": 768,
+      "target_edge": 1024,
+      "camera_alignment": {
+        "scale": 1.0,
+        "rotation": [
+          [
+            0.9999999999999999,
+            -2.498001805406602e-16,
+            -1.249000902703301e-16
+          ],
+          [
+            -5.551115123125783e-17,
+            0.9999999999999999,
+            1.6653345369377348e-16
+          ],
+          [
+            -2.7755575615628914e-16,
+            1.6653345369377348e-16,
+            1.0
+          ]
+        ],
+        "translation": [
+          2.220446049250313e-16,
+          -2.220446049250313e-16,
+          2.220446049250313e-16
+        ],
+        "matrix": [
+          [
+            0.9999999999999999,
+            -2.498001805406602e-16,
+            -1.249000902703301e-16,
+            2.220446049250313e-16
+          ],
+          [
+            -5.551115123125783e-17,
+            0.9999999999999999,
+            1.6653345369377348e-16,
+            -2.220446049250313e-16
+          ],
+          [
+            -2.7755575615628914e-16,
+            1.6653345369377348e-16,
+            1.0,
+            2.220446049250313e-16
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "matched_attributes": 3000,
+        "inliers": 3000,
+        "residual_p99": 2.8187134308097726e-15
+      },
+      "recipe": "wide_official",
+      "learning_rates": {
+        "means": 3.272015601682649e-05,
+        "scales": 0.001,
+        "quats": 0.0002,
+        "opacities": 0.01,
+        "sh0": 5e-05,
+        "shN": 2.5e-06
+      },
+      "novel_target_count": 40,
+      "before": {
+        "mean_psnr": 21.146646664211065,
+        "mean_support_psnr": 21.14664673926219,
+        "views": [
+          {
+            "name": "DJI_0004.JPG",
+            "psnr": 22.24243824134301,
+            "support_psnr": 22.24243824134301
+          },
+          {
+            "name": "DJI_0037.JPG",
+            "psnr": 22.206389153064624,
+            "support_psnr": 22.206389153064624
+          },
+          {
+            "name": "DJI_0073.JPG",
+            "psnr": 18.948912095732503,
+            "support_psnr": 18.948912095732503
+          },
+          {
+            "name": "DJI_0115.JPG",
+            "psnr": 22.379639373111182,
+            "support_psnr": 22.379639722910053
+          },
+          {
+            "name": "DJI_0154.JPG",
+            "psnr": 21.781265825794907,
+            "support_psnr": 21.781265825794907
+          },
+          {
+            "name": "DJI_0188.JPG",
+            "psnr": 22.157937597671193,
+            "support_psnr": 22.157937597671193
+          },
+          {
+            "name": "DJI_0231.JPG",
+            "psnr": 19.0588167554748,
+            "support_psnr": 19.058817081136088
+          },
+          {
+            "name": "DSCF1384.png",
+            "psnr": 20.405508461878657,
+            "support_psnr": 20.405508461878657
+          },
+          {
+            "name": "DSCF1425.png",
+            "psnr": 21.13891247382869,
+            "support_psnr": 21.13891247382869
+          }
+        ]
+      },
+      "after": {
+        "mean_psnr": 23.084035305225107,
+        "mean_support_psnr": 23.084035428505192,
+        "views": [
+          {
+            "name": "DJI_0004.JPG",
+            "psnr": 22.723294187461068,
+            "support_psnr": 22.723294187461068
+          },
+          {
+            "name": "DJI_0037.JPG",
+            "psnr": 24.69082103785102,
+            "support_psnr": 24.690821335638592
+          },
+          {
+            "name": "DJI_0073.JPG",
+            "psnr": 20.65799955356223,
+            "support_psnr": 20.65800002419745
+          },
+          {
+            "name": "DJI_0115.JPG",
+            "psnr": 23.170341643974574,
+            "support_psnr": 23.170341643974574
+          },
+          {
+            "name": "DJI_0154.JPG",
+            "psnr": 20.669059904073936,
+            "support_psnr": 20.669059904073936
+          },
+          {
+            "name": "DJI_0188.JPG",
+            "psnr": 23.266496741953617,
+            "support_psnr": 23.266496741953617
+          },
+          {
+            "name": "DJI_0231.JPG",
+            "psnr": 26.18332022167352,
+            "support_psnr": 26.18332022167352
+          },
+          {
+            "name": "DSCF1384.png",
+            "psnr": 21.11443844211898,
+            "support_psnr": 21.11443844211898
+          },
+          {
+            "name": "DSCF1425.png",
+            "psnr": 25.280546014357054,
+            "support_psnr": 25.280546355454973
+          }
+        ]
+      },
+      "peak_cuda_gib": 2.9285268783569336,
+      "scope": "Short 3D refinement test. Audit cameras are not independently held-out from original training. Pseudo-targets are generative. No final neural image enhancement applied.",
+      "appearance": "PPISP is not applied by this gsplat adapter. Output retains canonical SH representation; no unchanged PPISP companion is attached.",
+      "elapsed_refine_s": 192.7508087999886,
+      "reopened_ply_verified": true,
+      "reopened_psnr_delta_db": 0.0
+    }
+  },
+  "camera_alignment": {
+    "scale": 1.0,
+    "rotation": [
+      [
+        0.9999999999999999,
+        -2.498001805406602e-16,
+        -1.249000902703301e-16
+      ],
+      [
+        -5.551115123125783e-17,
+        0.9999999999999999,
+        1.6653345369377348e-16
+      ],
+      [
+        -2.7755575615628914e-16,
+        1.6653345369377348e-16,
+        1.0
+      ]
+    ],
+    "translation": [
+      2.220446049250313e-16,
+      -2.220446049250313e-16,
+      2.220446049250313e-16
+    ],
+    "matrix": [
+      [
+        0.9999999999999999,
+        -2.498001805406602e-16,
+        -1.249000902703301e-16,
+        2.220446049250313e-16
+      ],
+      [
+        -5.551115123125783e-17,
+        0.9999999999999999,
+        1.6653345369377348e-16,
+        -2.220446049250313e-16
+      ],
+      [
+        -2.7755575615628914e-16,
+        1.6653345369377348e-16,
+        1.0,
+        2.220446049250313e-16
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matched_attributes": 3000,
+    "inliers": 3000,
+    "residual_p99": 2.8187134308097726e-15
+  },
+  "before": {
+    "mean_psnr": 21.146646664211065,
+    "mean_support_psnr": 21.14664673926219,
+    "views": [
+      {
+        "name": "DJI_0004.JPG",
+        "psnr": 22.24243824134301,
+        "support_psnr": 22.24243824134301
+      },
+      {
+        "name": "DJI_0037.JPG",
+        "psnr": 22.206389153064624,
+        "support_psnr": 22.206389153064624
+      },
+      {
+        "name": "DJI_0073.JPG",
+        "psnr": 18.948912095732503,
+        "support_psnr": 18.948912095732503
+      },
+      {
+        "name": "DJI_0115.JPG",
+        "psnr": 22.379639373111182,
+        "support_psnr": 22.379639722910053
+      },
+      {
+        "name": "DJI_0154.JPG",
+        "psnr": 21.781265825794907,
+        "support_psnr": 21.781265825794907
+      },
+      {
+        "name": "DJI_0188.JPG",
+        "psnr": 22.157937597671193,
+        "support_psnr": 22.157937597671193
+      },
+      {
+        "name": "DJI_0231.JPG",
+        "psnr": 19.0588167554748,
+        "support_psnr": 19.058817081136088
+      },
+      {
+        "name": "DSCF1384.png",
+        "psnr": 20.405508461878657,
+        "support_psnr": 20.405508461878657
+      },
+      {
+        "name": "DSCF1425.png",
+        "psnr": 21.13891247382869,
+        "support_psnr": 21.13891247382869
+      }
+    ]
+  },
+  "first_pass": {
+    "mean_psnr": 22.46625465269726,
+    "mean_support_psnr": 22.466254708742404,
+    "views": [
+      {
+        "name": "DJI_0004.JPG",
+        "psnr": 22.748464949569982,
+        "support_psnr": 22.748464949569982
+      },
+      {
+        "name": "DJI_0037.JPG",
+        "psnr": 24.72753756881502,
+        "support_psnr": 24.72753756881502
+      },
+      {
+        "name": "DJI_0073.JPG",
+        "psnr": 20.84296119543768,
+        "support_psnr": 20.84296119543768
+      },
+      {
+        "name": "DJI_0115.JPG",
+        "psnr": 23.348662635573714,
+        "support_psnr": 23.348662635573714
+      },
+      {
+        "name": "DJI_0154.JPG",
+        "psnr": 22.52097196125434,
+        "support_psnr": 22.52097196125434
+      },
+      {
+        "name": "DJI_0188.JPG",
+        "psnr": 23.320511809746954,
+        "support_psnr": 23.320511809746954
+      },
+      {
+        "name": "DJI_0231.JPG",
+        "psnr": 20.972559504799758,
+        "support_psnr": 20.972559504799758
+      },
+      {
+        "name": "DSCF1384.png",
+        "psnr": 20.95896062737093,
+        "support_psnr": 20.958961131777265
+      },
+      {
+        "name": "DSCF1425.png",
+        "psnr": 22.755661621706942,
+        "support_psnr": 22.755661621706942
+      }
+    ]
+  },
+  "after": {
+    "mean_psnr": 24.71533880411799,
+    "mean_support_psnr": 24.71533880411799,
+    "views": [
+      {
+        "name": "DJI_0004.JPG",
+        "psnr": 22.976465354757472,
+        "support_psnr": 22.976465354757472
+      },
+      {
+        "name": "DJI_0037.JPG",
+        "psnr": 27.438540557178563,
+        "support_psnr": 27.438540557178563
+      },
+      {
+        "name": "DJI_0073.JPG",
+        "psnr": 24.587956666783768,
+        "support_psnr": 24.587956666783768
+      },
+      {
+        "name": "DJI_0115.JPG",
+        "psnr": 24.946036928777524,
+        "support_psnr": 24.946036928777524
+      },
+      {
+        "name": "DJI_0154.JPG",
+        "psnr": 23.718955044459808,
+        "support_psnr": 23.718955044459808
+      },
+      {
+        "name": "DJI_0188.JPG",
+        "psnr": 25.461792536144042,
+        "support_psnr": 25.461792536144042
+      },
+      {
+        "name": "DJI_0231.JPG",
+        "psnr": 26.890680339173,
+        "support_psnr": 26.890680339173
+      },
+      {
+        "name": "DSCF1384.png",
+        "psnr": 22.50807505664848,
+        "support_psnr": 22.50807505664848
+      },
+      {
+        "name": "DSCF1425.png",
+        "psnr": 23.909546753139296,
+        "support_psnr": 23.909546753139296
+      }
+    ]
+  },
+  "camera_audit_pass": true,
+  "reopened_ply_verified": true,
+  "scope": "Repair deltas transferred through verified one-to-one source Gaussian identities and exact SH rotation. Existing subsets/crops retained; no deleted geometry reintroduced. Camera metrics do not prove complete novel-view repair."
+}

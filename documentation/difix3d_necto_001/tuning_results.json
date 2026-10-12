@@ -1,0 +1,89 @@
+{
+  "selected": "opacity_recovery",
+  "reason": "Selected moderate Difix3D refinement followed by opacity-only source-guided recovery: fewer window-side ghosts in matched actual 3D views, retained knit detail, and better source-camera fit. Aggressive rates, hard pruning and depth/SSIM recovery were rejected. This improves the tested views but does not fully repair glass/window streaks or unseen surfaces.",
+  "candidates": [
+    {
+      "recipe": "first_pass",
+      "steps": 750,
+      "edge": 768,
+      "psnr": 22.46625465269726,
+      "status": "user found little visible repair"
+    },
+    {
+      "recipe": "wide_official",
+      "steps": 3000,
+      "edge": 768,
+      "psnr": 23.084035305225107,
+      "status": "not selected"
+    },
+    {
+      "recipe": "wide_strong",
+      "steps": 3000,
+      "edge": 768,
+      "psnr": 22.833223876358055,
+      "status": "not selected"
+    },
+    {
+      "recipe": "wide_strong_pruned_balanced",
+      "steps": null,
+      "edge": null,
+      "psnr": 22.06332396833189,
+      "status": "rejected: damaged source reconstruction"
+    },
+    {
+      "recipe": "wide_official_pruned_conservative",
+      "steps": null,
+      "edge": null,
+      "psnr": 22.461959037026602,
+      "status": "rejected: damaged source reconstruction"
+    },
+    {
+      "recipe": "geometry_recovery",
+      "steps": 6000,
+      "edge": 1024,
+      "psnr": 14.28208591662041,
+      "status": "rejected: damaged source reconstruction"
+    },
+    {
+      "recipe": "opacity_recovery",
+      "steps": 3000,
+      "edge": 1024,
+      "psnr": 24.71533880411799,
+      "status": "selected"
+    }
+  ],
+  "final_2m": [
+    {
+      "input": "MRNF_2m-90k_Night_CleanUp-V1.ply",
+      "output": "MRNF_2m-90k_Night_CleanUp-V1_Refined_Difix3D.ply",
+      "gaussians": 1999193,
+      "before": 21.130440747517532,
+      "first_pass": 22.437910540194324,
+      "selected": 24.632376684851188,
+      "output_sha256": "1af6efd535361f4ee97c211755550cace5731d61346239d9480eea62b5704be7",
+      "reopened_ply_verified": true
+    },
+    {
+      "input": "MRNF_2m-90k_Night_CleanUp-V2_Isolated.ply",
+      "output": "MRNF_2m-90k_Night_CleanUp-V2_Isolated_Refined_Difix3D.ply",
+      "gaussians": 1539168,
+      "before": 17.94329676340884,
+      "first_pass": 18.878516672318298,
+      "selected": 19.297756858509825,
+      "output_sha256": "e153aade280551ff67edfc4146f8548889c6291bca63e4fc406d347d78dd547e",
+      "reopened_ply_verified": true
+    },
+    {
+      "input": "splat_90000.ply",
+      "output": "splat_90000_Refined_Difix3D.ply",
+      "gaussians": 2000000,
+      "before": 21.14664673926219,
+      "first_pass": 22.466254708742404,
+      "selected": 24.71533880411799,
+      "output_sha256": "a6e55b8954746974d05752e4a89fe58f8c7eca482fb05246b9e4337d6f1c8bc4",
+      "reopened_ply_verified": true
+    }
+  ],
+  "all_eight_original_hashes_preserved": true,
+  "limitations": "Window/glass streaks and unobserved surfaces are not fully repaired. Source-camera scores are not independent novel-view accuracy. No diffusion enhancer applied to evidence."
+}

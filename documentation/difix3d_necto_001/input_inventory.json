@@ -1,0 +1,62 @@
+{
+  "files": [
+    {
+      "name": "MRNF_2m-90k_Night_CleanUp-V1.ply",
+      "folder": "MRNF_2m-90k",
+      "count": 1999193,
+      "bytes": 495801396,
+      "sha256": "482a62ec9f7dbb753389456d79742c51b7fa13e70a618a06f4ec1aefdba27fae"
+    },
+    {
+      "name": "MRNF_2m-90k_Night_CleanUp-V2_Isolated.ply",
+      "folder": "MRNF_2m-90k",
+      "count": 1539168,
+      "bytes": 363245126,
+      "sha256": "6363b9bb1e27f496fcc5288bbb34ec1e78ebcd7d71746838707306e5f61acd26"
+    },
+    {
+      "name": "splat_90000.ply",
+      "folder": "MRNF_2m-90k",
+      "count": 2000000,
+      "bytes": 496001532,
+      "sha256": "8fd9e026a3e5c7d6a6c9ac4a94ffdc45ed6bd97e7fb64e840529b1a4ea0c7545"
+    },
+    {
+      "name": "MRNF_5m-210k_Night_CleanUp-V1.ply",
+      "folder": "MRNF_5m-210k",
+      "count": 4978251,
+      "bytes": 1234607780,
+      "sha256": "8d2aaddb49efae70fadbe5d4670ef8343641cc8bdc59a30506b67221c9734e2d"
+    },
+    {
+      "name": "MRNF_5m-210k_Night_CleanUp-V2.ply",
+      "folder": "MRNF_5m-210k",
+      "count": 4897316,
+      "bytes": 1214535900,
+      "sha256": "247260bf93e00c87d5d24f8fc79a7e197869f40a2116883a2e14d8440349c42e"
+    },
+    {
+      "name": "MRNF_5m-210k_Night_CleanUp-V3.ply",
+      "folder": "MRNF_5m-210k",
+      "count": 4564412,
+      "bytes": 1131975708,
+      "sha256": "e0ca53d24e5ea2cf96fd480f00d545754c1f48b0b4168236cfe543953071528e"
+    },
+    {
+      "name": "MRNF_5m-210k_Night_CleanUp-V4_Isolated.ply",
+      "folder": "MRNF_5m-210k",
+      "count": 3944031,
+      "bytes": 978121220,
+      "sha256": "3287b5a19794cee17dc34adc1ef1342502177b761b6820a391234f675f27a71d"
+    },
+    {
+      "name": "splat_210000.ply",
+      "folder": "MRNF_5m-210k",
+      "count": 5000000,
+      "bytes": 1240001532,
+      "sha256": "78a16432420a5b7186abbeabaed7f77ff35b8641336855426c8f42084fde3430"
+    }
+  ],
+  "camera_count": 44,
+  "registered_images": 275
+}

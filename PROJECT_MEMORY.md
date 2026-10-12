@@ -2390,3 +2390,135 @@ The assistant has performed no commits or pushes.
   textile_step_032000_orbit_verified_visible.png. Failure is recorded in the
   chronological report and pipeline status. Static installation is preserved.
 - No Git staging, commits or pushes were performed.
+
+### Difix3D NightV1 static repair test started (2026-10-12)
+
+- User authorized implementing Difix3D on all PLYs in external NightV1
+  MRNF_2m-90k (3 files) and MRNF_5m-210k (5 files), saving siblings with
+  _Difix3D suffix. Matching data is Desktop/Necto/NightV1/colmap. Do not use
+  the older project Necto capture. All original PLY hashes are in ignored
+  outputs/difix3d_necto_001/manifest.json.
+- Official Difix3D source c76edc595586e16732c91ddee82f3a6d83a8a9cc;
+  nvidia/difix_ref weights d4830559772a5795c9d136302c5b197d6418d3fb.
+  Isolated .local/envs/difix3d venv overlay reads tf4dgs-dynamic renderer
+  packages without modifying the base. Dependencies are in
+  environments/difix3d-requirements.txt; Setup-Difix3D.ps1 reproduces setup.
+- Initial diffusers0.27.2 import failure resolved using official0.25.1.
+  Pinned custom model loading requires trust_remote_code=True. Failures and
+  actual report screenshots are retained in documentation/difix3d_necto_001.
+- Cleaned PLYs had user-applied rotations. The first unaligned cleaned
+  attempts were rejected and their generated files archived into ignored
+  *_failed_unaligned_01 work folders. Original user files remain intact.
+  Align-Difix3DVariants.py recovered all transforms using3000 invariant
+  DC/opacity correspondences,3000 geometry inliers per file; camera poses
+  now move into each edited PLY frame. Original model coordinates stay intact.
+- Repair-Difix3DSplats.py imports SH3 PLY, checks PINHOLE camera/image sizes,
+  generates24 reference-guided interpolated novel targets at1024edge, then
+  refines existing primitives750updates at768edge with source anchoring.
+  No pruning/densification and no final image enhancer in saved-PLY tests.
+  PPISP is not applied or copied onto changed model parameters. Outputs are
+  canonical SH; compare at matching viewer appearance/exposure settings.
+- Batch uses separate sequential GPU processes; actualOOM allows512edge
+  fallback. All three2M variants completed and reopened;5M processing remains
+  active. Check outputs/difix3d_necto_001/batch_state.json and real process
+  commands before resuming. Do not start a second batch concurrently.
+- Current report at http://127.0.0.1:8110/ is static3D test documentation,
+  not the stopped4D textile viewer. Full4C4D experiment stays ended.
+- After batch, run orbit stress tests and Summarize-Difix3DTests.py to verify
+  all original/output hashes, restore archived failure evidence and produce
+  RESULTS.md. Capture final report and update this memory with completion.
+  Saved sibling .difix3d.json identifies each output, scores and verification.
+- No Git staging, commits, pushes, model uploads or static-source changes.
+
+### Difix3D first pass complete; stronger repair under evaluation (2026-10-12)
+
+- Supersedes the running batch status above: all eight first-pass PLY repairs
+  completed, were independently reopened/rendered, and all original hashes
+  remained unchanged. Results are in documentation/difix3d_necto_001/RESULTS.md.
+- User inspected the 2M repairs and correctly found little visible improvement.
+  Do not describe source-camera PSNR gains as proof of floater removal.
+- Two 3000-update, broader-view prototypes tested on raw splat_90000.ply:
+  wide_official mean camera PSNR23.084dB; wide_strong22.833dB, versus original
+  21.147 and first-pass22.466. Moderate geometry settings outperform aggressive
+  settings. Detached artifacts remain. Prototypes stay in ignored outputs/tuning;
+  existing external first-pass files have not been replaced.
+- SfM support pruning tests rejected: balanced strong model lost0.770dB;
+  conservative moderate model lost0.622dB. Useful room detail was removed.
+  Rejected PLYs/evidence are retained and are not final deliverables.
+- Refine-Difix3DGeometry.py now tests selective opacity attenuation with
+  recovery from all275 photographs, L1/SSIM and sparse accurate SfM depth
+  constraints. Only near-camera targets and two visually inspected wide poses
+  are used; wall-colliding target poses are excluded. 6000updates at1024edge.
+  Inspect actual processes and outputs before resuming; checkpoint every500.
+- Current work is static Necto repair only. The failed 4D textile training
+  remains ended. Preserve originals, camera transforms, PPISP and checkpoints.
+- Chronological live report: http://127.0.0.1:8110/ . Capture009 records the
+  rejected pruning tests and new recovery experiment. No Git actions performed.
+
+### Stronger 2M Difix3D repair completed (2026-10-12)
+
+- Supersedes the experimental-running status above. No repair trainer remains
+  active. Seven repair configurations were evaluated including the first pass.
+  New result table: documentation/difix3d_necto_001/TUNING_RESULTS.md.
+- Selected wide_official3000updates at768edge, then opacity_recovery3000updates
+  at1024edge using all275 original photos and26 repaired novel targets. Candidate
+  Gaussians were attenuated to5% opacity then allowed to recover. Depth and SSIM
+  weights zero. No Gaussian deletion/densification in the selected recipe.
+- Depth/SSIM recovery rejected at14.282dB with exaggerated knit edges/room damage.
+  Hard support pruning and aggressive rates also rejected. Failed prototypes,
+  parameter metadata, actual renders and chronological screenshots retained.
+- Best raw2M source-camera PSNR24.715dB versus first-pass22.466 and original21.147.
+  Actual matched1536edge renders show fewer window-side ghosts with knit detail
+  retained. Residual glass/window streaks remain; missing/unobserved geometry
+  is not claimed recovered. These cameras are not independently held out.
+- Every cleaned Gaussian uniquely mapped into the raw model. Verified original
+  covariance transforms and SH rotations; repair deltas transferred without
+  reintroducing removed Gaussians or undoing crops. Independently rendered all
+  saved variants and verified external copy hashes.
+- Three new external deliverables in Desktop/Necto/NightV1/MRNF_2m-90k:
+  splat_90000_Refined_Difix3D.ply,
+  MRNF_2m-90k_Night_CleanUp-V1_Refined_Difix3D.ply,
+  MRNF_2m-90k_Night_CleanUp-V2_Isolated_Refined_Difix3D.ply.
+  Source-support PSNRs24.715,24.632,19.298 respectively. Original Gaussian counts
+  retained. Provenance in sibling .difix3d.json; first-pass outputs also retained.
+- All eight original PLY SHA256 hashes rechecked unchanged. The5M files retain
+  their first-pass repairs; this user-requested stronger pass focused on2M.
+- Tools: Create-Difix3DVariantMaps.py, Transfer-Difix3DRepair.py,
+  Review-Difix3DTuning.py and Summarize-Difix3DTuning.py. Ignored models/maps/
+  checkpoints under outputs/difix3d_necto_001; no models or caches added to Git.
+- Review http://127.0.0.1:8110/final_comparison.html or tuning_comparison.html.
+  Static source pins preserved; ended4D textile training remains ended.
+  No staging, commits, pushes or uploads performed.
+
+### Difix3D repair work stopped at user request (2026-10-12)
+
+- User inspected the stronger repairs and found no noticeable improvement.
+  This supersedes the earlier positive visual assessment. The repair does not
+  meet the user's quality expectation despite better source-camera metrics.
+- Stop further repair experiments, training and parameter tuning. Do not resume
+  or extend the stronger pass to5M unless the user explicitly requests it.
+- Preserve originals, generated repairs, checkpoints, scripts and documentation
+  for later review. No deletion, Git staging, commits, pushes or uploads.
+
+### Fuji Day HEIF conversion completed (2026-10-12)
+
+- User requested converting Desktop/Necto/Day/Fuji/HEIF into8bit PNGs saved
+  directly in Desktop/Necto/Day/Fuji, without image-data compression.
+- All187 .HIF photographs converted using their original filenames: full
+  7728x4344 resolution (4344x7728 for portrait orientations), RGB8bit, PNG
+  compress_level0, optimizeFalse. Approximately18.84GB total output.
+- Sources are10bit sRGB HEIF with NCLX primaries1/transfer13. Only requested
+  8bit quantization applied; no exposure, sharpening, resize or colour grading.
+  Embedded sRGB profile and camera EXIF retained; decoder handles orientation.
+- Every PNG independently reopened and decoded pixels hashed against its
+  converted source buffer. Dimensions,8bit RGB header, ICC/EXIF and unchanged
+  source SHA256 verified.187completed,0failed; matching filename sets checked.
+- Reusable scripts/Convert-HeifToPng.py refuses existing outputs. Isolated
+  .local/envs/heif-convert reads existing Pillow11.3.0 without changing the
+  base environment; pillow-heif1.8.1/libheif1.23.6 used. Portable dependencies
+  in environments/heif-convert-requirements.txt. No system installs or restart.
+- Ignored per-image provenance and hashes:
+  .local/workflows/heif_fuji_day/conversion_report.json. Small inspection
+  preview also stays there; full-resolution external outputs unchanged.
+- No reconstruction/training started. Difix3D repair work remains stopped.
+  No staging, commits, pushes or uploads performed.

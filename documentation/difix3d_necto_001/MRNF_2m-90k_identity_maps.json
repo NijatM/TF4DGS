@@ -1,0 +1,30 @@
+[
+  {
+    "input": "MRNF_2m-90k_Night_CleanUp-V1.ply",
+    "folder": "MRNF_2m-90k",
+    "matched": 1999193,
+    "unique_source_matches": 1999193,
+    "max_attribute_residual": 0.0,
+    "max_geometry_residual": 2.9394858894461446e-05,
+    "covariance_relative_p99": 4.075073762270522e-06,
+    "sh_mode": "rotated",
+    "rotated_sh_error": 6.043371779310649e-08,
+    "unrotated_sh_error": 0.06854032725095749,
+    "source_sha256": "482a62ec9f7dbb753389456d79742c51b7fa13e70a618a06f4ec1aefdba27fae",
+    "raw_source_sha256": "8fd9e026a3e5c7d6a6c9ac4a94ffdc45ed6bd97e7fb64e840529b1a4ea0c7545"
+  },
+  {
+    "input": "MRNF_2m-90k_Night_CleanUp-V2_Isolated.ply",
+    "folder": "MRNF_2m-90k",
+    "matched": 1539168,
+    "unique_source_matches": 1539168,
+    "max_attribute_residual": 0.0,
+    "max_geometry_residual": 9.327837390407145e-06,
+    "covariance_relative_p99": 4.508279532840601e-06,
+    "sh_mode": "rotated",
+    "rotated_sh_error": 8.187754779322516e-08,
+    "unrotated_sh_error": 0.07425112277269363,
+    "source_sha256": "6363b9bb1e27f496fcc5288bbb34ec1e78ebcd7d71746838707306e5f61acd26",
+    "raw_source_sha256": "8fd9e026a3e5c7d6a6c9ac4a94ffdc45ed6bd97e7fb64e840529b1a4ea0c7545"
+  }
+]

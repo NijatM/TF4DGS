@@ -25,6 +25,8 @@ dynamic reconstruction and change-analysis pipeline.
 - [First real dynamic recordings: chronological evidence and screenshots](documentation/dynamic_capture_001/README.md)
 - [Revised textile RGB Gaussian replay, research and chronological evidence](documentation/dynamic_textile_001/README.md)
 - [Submodules, fork and first-push commands](GIT_SETUP.md)
+- [Static NightV1 Difix3D repair setup and experiments](docs/DIFIX3D_NECTO_TEST.md)
+- [Difix3D actual-render parameter comparison](documentation/difix3d_necto_001/tuning_comparison.html)
 
 The `tf4dgs` Conda environment contains Python 3.11 and the CPU capture/analysis
 foundation. Its portable recipe and tested Windows package lock are tracked.

@@ -1,0 +1,10 @@
+{
+    "captured_utc":  "2026-10-12T18:06:29.3079364Z",
+    "page_state":  {
+                       "stage":  3
+                   },
+    "kind":  "Headless local report browser screenshot",
+    "expression":  "true",
+    "filename":  "002_dependency_retry_report.png",
+    "url":  "http://127.0.0.1:8110/"
+}

@@ -1,0 +1,10 @@
+{
+    "captured_utc":  "2026-10-12T19:04:17.8062978Z",
+    "page_state":  {
+                       "stage":  67
+                   },
+    "kind":  "Headless local report browser screenshot",
+    "expression":  "true",
+    "filename":  "009_rejected_pruning_and_geometry_recovery.png",
+    "url":  "http://127.0.0.1:8110/"
+}

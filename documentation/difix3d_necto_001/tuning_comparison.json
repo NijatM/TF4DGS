@@ -1,0 +1,59 @@
+{
+  "images": {
+    "original": [
+      "tuning_original_view_0.jpg",
+      "tuning_original_view_1.jpg",
+      "tuning_original_view_2.jpg"
+    ],
+    "first_pass": [
+      "tuning_first_pass_view_0.jpg",
+      "tuning_first_pass_view_1.jpg",
+      "tuning_first_pass_view_2.jpg"
+    ],
+    "moderate": [
+      "tuning_moderate_view_0.jpg",
+      "tuning_moderate_view_1.jpg",
+      "tuning_moderate_view_2.jpg"
+    ],
+    "aggressive": [
+      "tuning_aggressive_view_0.jpg",
+      "tuning_aggressive_view_1.jpg",
+      "tuning_aggressive_view_2.jpg"
+    ],
+    "pruned_balanced": [
+      "tuning_pruned_balanced_view_0.jpg",
+      "tuning_pruned_balanced_view_1.jpg",
+      "tuning_pruned_balanced_view_2.jpg"
+    ],
+    "pruned_conservative": [
+      "tuning_pruned_conservative_view_0.jpg",
+      "tuning_pruned_conservative_view_1.jpg",
+      "tuning_pruned_conservative_view_2.jpg"
+    ],
+    "recovery": [
+      "tuning_recovery_view_0.jpg",
+      "tuning_recovery_view_1.jpg",
+      "tuning_recovery_view_2.jpg"
+    ],
+    "opacity_only": [
+      "tuning_opacity_only_view_0.jpg",
+      "tuning_opacity_only_view_1.jpg",
+      "tuning_opacity_only_view_2.jpg"
+    ]
+  },
+  "source_camera_psnr": {
+    "first_pass": 22.46625465269726,
+    "moderate": 23.084035305225107,
+    "aggressive": 22.833223876358055,
+    "pruned_balanced": 22.06332396833189,
+    "pruned_conservative": 22.461959037026602,
+    "recovery": 14.28208591662041,
+    "opacity_only": 24.71533880411799
+  },
+  "poses": [
+    "wide_0_-35",
+    "wide_0_-20",
+    "DJI_0037.JPG"
+  ],
+  "render_edge": 1536
+}
